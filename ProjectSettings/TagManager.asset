@@ -3,7 +3,34 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Rambo
+  - Ground
+  - Obstacle
+  - Obstacle2
+  - BombPlayer
+  - BombEnemy
+  - Enemy
+  - Tank
+  - Items
+  - Boss
+  - Boss0
+  - platform
+  - MenuMusic
+  - dialog
+  - showcoin
+  - Unlock_Char_3
+  - Explosive
+  - Gulf
+  - soldier
+  - gold
+  - MapManager
+  - Found_Jump
+  - Found_Gulf
+  - Found_Wall
+  - Trap
+  - StraightBullet
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -13,31 +40,52 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - bulletRambo
+  - Rambo
+  - Ground
+  - Bomb
+  - Obstacle
+  - Enemy
+  - Obstacle2
+  - BulletEnemy
+  - RocketPlayer
+  - linerenderer
+  - RocketEnemy
+  - border
+  - Tank
+  - RaycastBoder
+  - chanrambo
+  - chanenemy
+  - enemydung
+  - Boss
+  - Gift
+  - BulletAirplaneSupport
+  - Explosive
+  - GrenadesPlayer
+  - Trap
+  - StopRambo
   m_SortingLayers:
-  - name: Default
+  - name: "Default"
     uniqueID: 0
+    locked: 0
+  - name: "background"
+    uniqueID: 1249686993
+    locked: 0
+  - name: "forceground"
+    uniqueID: 1586920415
+    locked: 0
+  - name: "GUI_Form"
+    uniqueID: 1246083099
+    locked: 0
+  - name: "Gameplay"
+    uniqueID: 4213595441
+    locked: 0
+  - name: "GUI_PopUp"
+    uniqueID: 473871465
+    locked: 0
+  - name: "Tutorial"
+    uniqueID: 1994275487
+    locked: 0
+  - name: "Loading"
+    uniqueID: 642044107
     locked: 0
