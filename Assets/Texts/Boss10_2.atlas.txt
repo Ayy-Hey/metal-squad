@@ -1,0 +1,76 @@
+
+Boss10_2.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+13
+  rotate: true
+  xy: 811, 78
+  size: 44, 47
+  orig: 44, 47
+  offset: 0, 0
+  index: -1
+14
+  rotate: false
+  xy: 912, 83
+  size: 49, 39
+  orig: 49, 39
+  offset: 0, 0
+  index: -1
+15
+  rotate: false
+  xy: 2, 2
+  size: 56, 31
+  orig: 56, 31
+  offset: 0, 0
+  index: -1
+16
+  rotate: false
+  xy: 687, 83
+  size: 70, 39
+  orig: 70, 39
+  offset: 0, 0
+  index: -1
+17
+  rotate: false
+  xy: 532, 76
+  size: 83, 46
+  orig: 83, 46
+  offset: 0, 0
+  index: -1
+18
+  rotate: false
+  xy: 443, 75
+  size: 87, 47
+  orig: 87, 47
+  offset: 0, 0
+  index: -1
+19
+  rotate: false
+  xy: 617, 74
+  size: 68, 48
+  orig: 68, 48
+  offset: 0, 0
+  index: -1
+20
+  rotate: false
+  xy: 759, 76
+  size: 50, 46
+  orig: 50, 46
+  offset: 0, 0
+  index: -1
+30
+  rotate: false
+  xy: 860, 83
+  size: 50, 39
+  orig: 50, 39
+  offset: 0, 0
+  index: -1
+Layer 56
+  rotate: false
+  xy: 2, 35
+  size: 439, 87
+  orig: 439, 87
+  offset: 0, 0
+  index: -1

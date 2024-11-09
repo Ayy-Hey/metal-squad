@@ -1,0 +1,405 @@
+
+zombie-dao.png
+size: 496,496
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+a1
+  rotate: false
+  xy: 2, 443
+  size: 184, 51
+  orig: 184, 51
+  offset: 0, 0
+  index: -1
+a2
+  rotate: false
+  xy: 2, 314
+  size: 103, 127
+  orig: 103, 127
+  offset: 0, 0
+  index: -1
+a3
+  rotate: true
+  xy: 149, 229
+  size: 103, 28
+  orig: 103, 28
+  offset: 0, 0
+  index: -1
+a4
+  rotate: true
+  xy: 179, 338
+  size: 103, 26
+  orig: 103, 26
+  offset: 0, 0
+  index: -1
+a5
+  rotate: false
+  xy: 419, 129
+  size: 20, 57
+  orig: 20, 57
+  offset: 0, 0
+  index: -1
+b1
+  rotate: true
+  xy: 320, 437
+  size: 57, 103
+  orig: 57, 103
+  offset: 0, 0
+  index: -1
+b10
+  rotate: false
+  xy: 239, 7
+  size: 58, 61
+  orig: 58, 61
+  offset: 0, 0
+  index: -1
+b11
+  rotate: true
+  xy: 310, 290
+  size: 68, 70
+  orig: 68, 70
+  offset: 0, 0
+  index: -1
+b2
+  rotate: true
+  xy: 2, 2
+  size: 75, 90
+  orig: 75, 90
+  offset: 0, 0
+  index: -1
+b3
+  rotate: false
+  xy: 207, 354
+  size: 65, 91
+  orig: 65, 91
+  offset: 0, 0
+  index: -1
+b4
+  rotate: false
+  xy: 382, 269
+  size: 63, 63
+  orig: 63, 63
+  offset: 0, 0
+  index: -1
+b5
+  rotate: true
+  xy: 233, 209
+  size: 57, 58
+  orig: 57, 58
+  offset: 0, 0
+  index: -1
+b6
+  rotate: true
+  xy: 425, 408
+  size: 86, 68
+  orig: 86, 68
+  offset: 0, 0
+  index: -1
+b7
+  rotate: false
+  xy: 425, 335
+  size: 68, 71
+  orig: 68, 71
+  offset: 0, 0
+  index: -1
+b8
+  rotate: false
+  xy: 239, 70
+  size: 63, 64
+  orig: 63, 64
+  offset: 0, 0
+  index: -1
+b9
+  rotate: false
+  xy: 239, 70
+  size: 63, 64
+  orig: 63, 64
+  offset: 0, 0
+  index: -1
+chanphai-z1
+  rotate: false
+  xy: 297, 182
+  size: 62, 55
+  orig: 62, 55
+  offset: 0, 0
+  index: -1
+chanphai-z2
+  rotate: false
+  xy: 321, 14
+  size: 46, 55
+  orig: 46, 55
+  offset: 0, 0
+  index: -1
+chanphai-z3
+  rotate: false
+  xy: 447, 301
+  size: 47, 32
+  orig: 47, 32
+  offset: 0, 0
+  index: -1
+chantrai-z1
+  rotate: false
+  xy: 368, 130
+  size: 49, 51
+  orig: 49, 51
+  offset: 0, 0
+  index: -1
+chantrai-z2
+  rotate: false
+  xy: 382, 385
+  size: 41, 50
+  orig: 41, 50
+  offset: 0, 0
+  index: -1
+chantrai-z3
+  rotate: true
+  xy: 344, 136
+  size: 44, 22
+  orig: 44, 22
+  offset: 0, 0
+  index: -1
+co-z1
+  rotate: true
+  xy: 447, 266
+  size: 33, 45
+  orig: 33, 45
+  offset: 0, 0
+  index: -1
+dau-z
+  rotate: true
+  xy: 297, 136
+  size: 44, 45
+  orig: 44, 45
+  offset: 0, 0
+  index: -1
+giap-chanphai
+  rotate: false
+  xy: 361, 183
+  size: 54, 42
+  orig: 54, 42
+  offset: 0, 0
+  index: -1
+giap-chantrai
+  rotate: false
+  xy: 429, 227
+  size: 45, 37
+  orig: 45, 37
+  offset: 0, 0
+  index: -1
+giap-z
+  rotate: true
+  xy: 66, 219
+  size: 93, 81
+  orig: 93, 81
+  offset: 0, 0
+  index: -1
+hong-z
+  rotate: false
+  xy: 74, 80
+  size: 91, 45
+  orig: 91, 45
+  offset: 0, 0
+  index: -1
+khoi
+  rotate: false
+  xy: 360, 83
+  size: 51, 45
+  orig: 51, 45
+  offset: 0, 0
+  index: -1
+m1
+  rotate: true
+  xy: 441, 138
+  size: 48, 27
+  orig: 48, 27
+  offset: 0, 0
+  index: -1
+m2
+  rotate: false
+  xy: 369, 2
+  size: 33, 22
+  orig: 33, 22
+  offset: 0, 0
+  index: -1
+m3
+  rotate: true
+  xy: 470, 169
+  size: 26, 24
+  orig: 26, 24
+  offset: 0, 0
+  index: -1
+m4
+  rotate: true
+  xy: 413, 92
+  size: 35, 23
+  orig: 35, 23
+  offset: 0, 0
+  index: -1
+m5
+  rotate: false
+  xy: 404, 2
+  size: 21, 22
+  orig: 21, 22
+  offset: 0, 0
+  index: -1
+m6
+  rotate: true
+  xy: 460, 197
+  size: 28, 25
+  orig: 28, 25
+  offset: 0, 0
+  index: -1
+mu
+  rotate: false
+  xy: 372, 227
+  size: 55, 40
+  orig: 55, 40
+  offset: 0, 0
+  index: -1
+mu copy
+  rotate: true
+  xy: 369, 26
+  size: 55, 40
+  orig: 55, 40
+  offset: 0, 0
+  index: -1
+set1
+  rotate: false
+  xy: 179, 254
+  size: 52, 82
+  orig: 52, 82
+  offset: 0, 0
+  index: -1
+set2
+  rotate: true
+  xy: 293, 239
+  size: 49, 77
+  orig: 49, 77
+  offset: 0, 0
+  index: -1
+set3
+  rotate: false
+  xy: 233, 268
+  size: 58, 80
+  orig: 58, 80
+  offset: 0, 0
+  index: -1
+set4
+  rotate: true
+  xy: 165, 130
+  size: 53, 68
+  orig: 53, 68
+  offset: 0, 0
+  index: -1
+set5
+  rotate: false
+  xy: 179, 185
+  size: 52, 67
+  orig: 52, 67
+  offset: 0, 0
+  index: -1
+set6
+  rotate: true
+  xy: 167, 64
+  size: 64, 70
+  orig: 64, 70
+  offset: 0, 0
+  index: -1
+set7
+  rotate: false
+  xy: 304, 71
+  size: 54, 63
+  orig: 54, 63
+  offset: 0, 0
+  index: -1
+set8
+  rotate: false
+  xy: 417, 188
+  size: 41, 37
+  orig: 41, 37
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: true
+  xy: 299, 2
+  size: 66, 20
+  orig: 66, 20
+  offset: 0, 0
+  index: -1
+tayphai-z1
+  rotate: true
+  xy: 166, 2
+  size: 60, 71
+  orig: 60, 71
+  offset: 0, 0
+  index: -1
+tayphai-z1 copy
+  rotate: false
+  xy: 235, 136
+  size: 60, 71
+  orig: 60, 71
+  offset: 0, 0
+  index: -1
+tayphai-z2
+  rotate: true
+  xy: 188, 447
+  size: 47, 130
+  orig: 47, 130
+  offset: 0, 0
+  index: -1
+taytrai-z1
+  rotate: false
+  xy: 382, 334
+  size: 41, 49
+  orig: 41, 49
+  offset: 0, 0
+  index: -1
+taytrai-z2
+  rotate: false
+  xy: 2, 188
+  size: 62, 124
+  orig: 62, 124
+  offset: 0, 0
+  index: -1
+than-z1
+  rotate: false
+  xy: 74, 127
+  size: 89, 90
+  orig: 89, 90
+  offset: 0, 0
+  index: -1
+than-z2
+  rotate: true
+  xy: 107, 334
+  size: 107, 70
+  orig: 107, 70
+  offset: 0, 0
+  index: -1
+than-z2 copy
+  rotate: true
+  xy: 2, 79
+  size: 107, 70
+  orig: 107, 70
+  offset: 0, 0
+  index: -1
+than-z3
+  rotate: false
+  xy: 94, 3
+  size: 70, 75
+  orig: 70, 75
+  offset: 0, 0
+  index: -1
+than-z3 copy
+  rotate: false
+  xy: 310, 360
+  size: 70, 75
+  orig: 70, 75
+  offset: 0, 0
+  index: -1
+thatlung-z
+  rotate: true
+  xy: 274, 350
+  size: 95, 34
+  orig: 95, 34
+  offset: 0, 0
+  index: -1

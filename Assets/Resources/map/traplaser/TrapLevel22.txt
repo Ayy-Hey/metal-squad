@@ -1,0 +1,102 @@
+{
+  "isReaded": true,
+  "InforTrapLaser": [
+    {
+      "x": 9.26,
+      "y": -1.52,
+      "distance": 2,
+      "angle": 90,
+      "isrotate":false
+    },{
+      "x": 36.56,
+      "y": -1.74,
+      "distance": 2,
+      "angle": 130.1,
+      "isrotate":false
+    },{
+      "x": 48.71,
+      "y": 1.03,
+      "distance": 2,
+      "angle": 130.1,
+      "isrotate":false
+    },{
+      "x": 66.87,
+      "y": -1.58,
+      "distance": 2,
+      "angle": 120.7,
+      "isrotate":true
+    },{
+      "x": 85.06,
+      "y": 2.34,
+      "distance": 2,
+      "angle": 120.7,
+      "isrotate":true
+    },{
+      "x": 100.1,
+      "y":-1.41,
+      "distance": 2,
+      "angle": 90,
+      "isrotate":true
+    },{
+      "x": 117.4,
+      "y":2.41,
+      "distance": 2,
+      "angle": 126.5,
+      "isrotate":false
+    },{
+      "x": 128.44,
+      "y":1.93,
+      "distance": 2,
+      "angle": 90,
+      "isrotate":false
+    },{
+      "x": 151.6,
+      "y":-1.5,
+      "distance": 2,
+      "angle": 114.6,
+      "isrotate":false
+    },{
+      "x": 164.71,
+      "y":2.38,
+      "distance": 2,
+      "angle": 90,
+      "isrotate":true
+    },{
+      "x": 176.93,
+      "y":-1.72,
+      "distance": 2,
+      "angle": 90,
+      "isrotate":true
+    },{
+      "x": 188.17,
+      "y":-1.38,
+      "distance": 2,
+      "angle": 126.5,
+      "isrotate":true
+    },{
+      "x": 199.46,
+      "y":2.24,
+      "distance": 2,
+      "angle": 90,
+      "isrotate":true
+    },{
+      "x":220.39,
+      "y":-1.32,
+      "distance": 2,
+      "angle": 90,
+      "isrotate":true
+    },{
+      "x":237.41,
+      "y":-1.44,
+      "distance": 2,
+      "angle": 90,
+      "isrotate":true
+    },{
+      "x":243.7,
+      "y":2.29,
+      "distance": 2,
+      "angle": 90,
+      "isrotate":true
+    }
+  ]
+}

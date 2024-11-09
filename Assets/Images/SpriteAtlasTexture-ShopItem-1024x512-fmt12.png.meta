@@ -1,0 +1,462 @@
+fileFormatVersion: 2
+guid: be1a5d52deb0441c9f76c2f92301f590
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: sale
+  - first:
+      213: 21300002
+    second: khung video
+  - first:
+      213: 21300004
+    second: khung gem
+  - first:
+      213: 21300006
+    second: icon video
+  - first:
+      213: 21300008
+    second: chim UI shop
+  - first:
+      213: 21300010
+    second: gem
+  - first:
+      213: 21300012
+    second: video
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 12
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: chim UI shop
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 407
+        height: 272
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33.5, y: -123}
+        - {x: 36.5, y: -111}
+        - {x: 43.5, y: -136}
+      - - {x: 38.5, y: -98}
+        - {x: 43.5, y: -136}
+        - {x: 36.5, y: -111}
+      - - {x: 42.5, y: -90}
+        - {x: 43.5, y: -136}
+        - {x: 38.5, y: -98}
+      - - {x: 43.5, y: -89}
+        - {x: 43.5, y: -136}
+        - {x: 42.5, y: -90}
+      - - {x: 75.5, y: -136}
+        - {x: 43.5, y: -136}
+        - {x: 43.5, y: -89}
+      - - {x: 43.5, y: -86}
+        - {x: 75.5, y: -136}
+        - {x: 43.5, y: -89}
+      - - {x: 43.5, y: -84}
+        - {x: 75.5, y: -136}
+        - {x: 43.5, y: -86}
+      - - {x: 75.5, y: -136}
+        - {x: 79.5, y: -100}
+        - {x: 85.5, y: -120}
+      - - {x: 81.5, y: -103}
+        - {x: 85.5, y: -120}
+        - {x: 79.5, y: -100}
+      - - {x: 85.5, y: -117}
+        - {x: 85.5, y: -120}
+        - {x: 81.5, y: -103}
+      - - {x: -203.5, y: 55}
+        - {x: -203.5, y: 128}
+        - {x: 19.5, y: -128}
+      - - {x: -144.5, y: 136}
+        - {x: 19.5, y: -128}
+        - {x: -203.5, y: 128}
+      - - {x: 115.5, y: 136}
+        - {x: 19.5, y: -128}
+        - {x: -144.5, y: 136}
+      - - {x: 31.5, y: -116}
+        - {x: 19.5, y: -128}
+        - {x: 115.5, y: 136}
+      - - {x: 38.5, y: -98}
+        - {x: 31.5, y: -116}
+        - {x: 115.5, y: 136}
+      - - {x: 35.5, y: -110}
+        - {x: 31.5, y: -116}
+        - {x: 38.5, y: -98}
+      - - {x: 43.5, y: -84}
+        - {x: 38.5, y: -98}
+        - {x: 115.5, y: 136}
+      - - {x: 41.5, y: -91}
+        - {x: 38.5, y: -98}
+        - {x: 43.5, y: -84}
+      - - {x: 43.5, y: -86}
+        - {x: 41.5, y: -91}
+        - {x: 43.5, y: -84}
+      - - {x: 79.5, y: -95}
+        - {x: 43.5, y: -84}
+        - {x: 115.5, y: 136}
+      - - {x: 75.5, y: -136}
+        - {x: 43.5, y: -84}
+        - {x: 79.5, y: -95}
+      - - {x: 79.5, y: -100}
+        - {x: 75.5, y: -136}
+        - {x: 79.5, y: -95}
+      - - {x: 79.5, y: -97}
+        - {x: 79.5, y: -100}
+        - {x: 79.5, y: -95}
+      - - {x: 84.5, y: -111}
+        - {x: 79.5, y: -95}
+        - {x: 115.5, y: 136}
+      - - {x: 85.5, y: -117}
+        - {x: 84.5, y: -111}
+        - {x: 115.5, y: 136}
+      - - {x: 99.5, y: -113}
+        - {x: 85.5, y: -117}
+        - {x: 115.5, y: 136}
+      - - {x: 129.5, y: -38}
+        - {x: 99.5, y: -113}
+        - {x: 115.5, y: 136}
+      - - {x: 137.5, y: -47}
+        - {x: 99.5, y: -113}
+        - {x: 129.5, y: -38}
+      - - {x: 124.5, y: 125}
+        - {x: 129.5, y: -38}
+        - {x: 115.5, y: 136}
+      - - {x: 126.5, y: 111}
+        - {x: 129.5, y: -38}
+        - {x: 124.5, y: 125}
+      - - {x: 128.5, y: 92}
+        - {x: 129.5, y: -38}
+        - {x: 126.5, y: 111}
+      - - {x: 193.5, y: -16}
+        - {x: 199.5, y: 8}
+        - {x: 203.5, y: 7}
+      - - {x: 128.5, y: 92}
+        - {x: 139.5, y: 107}
+        - {x: 129.5, y: -38}
+      - - {x: 193.5, y: -16}
+        - {x: 129.5, y: -38}
+        - {x: 139.5, y: 107}
+      - - {x: 150.5, y: 119}
+        - {x: 193.5, y: -16}
+        - {x: 139.5, y: 107}
+      - - {x: 203.5, y: 126}
+        - {x: 193.5, y: -16}
+        - {x: 150.5, y: 119}
+      - - {x: 199.5, y: 8}
+        - {x: 193.5, y: -16}
+        - {x: 203.5, y: 126}
+      - - {x: 203.5, y: 8}
+        - {x: 199.5, y: 8}
+        - {x: 203.5, y: 126}
+      - - {x: 79.5, y: -97}
+        - {x: 79.5, y: -95}
+        - {x: 84.5, y: -111}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon video
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 0
+        width: 41
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: 15.5}
+        - {x: 20.5, y: 15.5}
+        - {x: -20.5, y: -15.5}
+      - - {x: -20.5, y: -15.5}
+        - {x: 20.5, y: 15.5}
+        - {x: 20.5, y: -15.5}
+      physicsShape:
+      - - {x: -15.5, y: 15.5}
+        - {x: -18.5, y: 14.5}
+        - {x: -18.5, y: -6.5}
+        - {x: -13.5, y: -11.5}
+        - {x: 14.5, y: -11.5}
+        - {x: 17.5, y: -8.5}
+        - {x: 17.5, y: 12.5}
+        - {x: 16.5, y: 15.5}
+        - {x: -2.5, y: 4.5}
+        - {x: 1.5, y: 2.5}
+        - {x: -3.5, y: -0.5}
+        - {x: -2.5, y: -0.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sale
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 0
+        width: 68
+        height: 69
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34, y: -34.5}
+        - {x: -34, y: 34.5}
+        - {x: -26, y: -34.5}
+      - - {x: 34, y: 34.5}
+        - {x: -26, y: -34.5}
+        - {x: -34, y: 34.5}
+      - - {x: 34, y: 25.5}
+        - {x: -26, y: -34.5}
+        - {x: 34, y: 34.5}
+      physicsShape:
+      - - {x: 31, y: 33.5}
+        - {x: -32, y: 33.5}
+        - {x: -32, y: -31.5}
+        - {x: -27, y: -31.5}
+        - {x: 32, y: 28.5}
+        - {x: 32, y: 31.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02305410000000000800000000000000
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: khung gem
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 0
+        width: 137
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -68.5, y: -92.5}
+        - {x: -68.5, y: 92.5}
+        - {x: 68.5, y: -92.5}
+      - - {x: 68.5, y: 92.5}
+        - {x: 68.5, y: -92.5}
+        - {x: -68.5, y: 92.5}
+      physicsShape:
+      - - {x: -68.5, y: 92.49999}
+        - {x: -68.5, y: -92.49999}
+        - {x: 68.5, y: -92.49999}
+        - {x: 68.5, y: 92.49999}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: video
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 401
+        width: 137
+        height: 47
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -68.5, y: -23.5}
+        - {x: -68.5, y: 23.5}
+        - {x: 68.5, y: -23.5}
+      - - {x: 68.5, y: 23.5}
+        - {x: 68.5, y: -23.5}
+        - {x: -68.5, y: 23.5}
+      physicsShape:
+      - - {x: -68.5, y: 23.5}
+        - {x: -68.5, y: -23.5}
+        - {x: 68.5, y: -23.5}
+        - {x: 68.5, y: 23.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2305410000000000800000000000000
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: khung video
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 0
+        width: 137
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -68.5, y: -92.5}
+        - {x: -68.5, y: 92.5}
+        - {x: 68.5, y: -92.5}
+      - - {x: 68.5, y: 92.5}
+        - {x: 68.5, y: -92.5}
+        - {x: -68.5, y: 92.5}
+      physicsShape:
+      - - {x: -68.5, y: 92.49999}
+        - {x: -68.5, y: -92.49999}
+        - {x: 68.5, y: -92.49999}
+        - {x: 68.5, y: 92.49999}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22305410000000000800000000000000
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gem
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 401
+        width: 137
+        height: 47
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -68.5, y: -23.5}
+        - {x: -68.5, y: 23.5}
+        - {x: 68.5, y: -23.5}
+      - - {x: 68.5, y: 23.5}
+        - {x: 68.5, y: -23.5}
+        - {x: -68.5, y: 23.5}
+      physicsShape:
+      - - {x: -68.5, y: 23.5}
+        - {x: -68.5, y: -23.5}
+        - {x: 68.5, y: -23.5}
+        - {x: 68.5, y: 23.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2305410000000000800000000000000
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

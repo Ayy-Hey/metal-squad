@@ -1,0 +1,41 @@
+
+completed.png
+size: 252,252
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+COMPLETED
+  rotate: true
+  xy: 122, 90
+  size: 160, 60
+  orig: 160, 60
+  offset: 0, 0
+  index: -1
+Ellipse 1
+  rotate: false
+  xy: 118, 2
+  size: 86, 86
+  orig: 86, 86
+  offset: 0, 0
+  index: -1
+Layer 30
+  rotate: false
+  xy: 2, 17
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Layer 32
+  rotate: true
+  xy: 184, 173
+  size: 77, 65
+  orig: 77, 65
+  offset: 0, 0
+  index: -1
+Layer 9 copy 4
+  rotate: false
+  xy: 2, 133
+  size: 118, 117
+  orig: 118, 117
+  offset: 0, 0
+  index: -1

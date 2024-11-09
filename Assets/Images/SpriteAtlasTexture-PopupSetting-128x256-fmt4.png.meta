@@ -1,0 +1,418 @@
+fileFormatVersion: 2
+guid: f46b914545fc4cd580b3f3c223af9c00
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Sound_Off
+  - first:
+      213: 21300002
+    second: Music_Off
+  - first:
+      213: 21300004
+    second: Music_On
+  - first:
+      213: 21300006
+    second: Sound_On
+  - first:
+      213: 21300008
+    second: icon_facebook
+  - first:
+      213: 21300010
+    second: Icon_Control
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 4
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Icon_Control
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 63
+        width: 66
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: -23}
+        - {x: -33, y: 1}
+        - {x: -6, y: -23}
+      - - {x: 5, y: 23}
+        - {x: -6, y: -23}
+        - {x: -33, y: 1}
+      - - {x: 27, y: -14}
+        - {x: -6, y: -23}
+        - {x: 5, y: 23}
+      - - {x: 25, y: 23}
+        - {x: 27, y: -14}
+        - {x: 5, y: 23}
+      - - {x: 32, y: 20}
+        - {x: 27, y: -14}
+        - {x: 25, y: 23}
+      - - {x: 33, y: -8}
+        - {x: 27, y: -14}
+        - {x: 32, y: 20}
+      - - {x: 33, y: 13}
+        - {x: 33, y: -8}
+        - {x: 32, y: 20}
+      physicsShape:
+      - - {x: 30, y: 1}
+        - {x: 30, y: 23}
+        - {x: 3, y: 23}
+        - {x: -33, y: -2}
+        - {x: -33, y: -19}
+        - {x: -32, y: -20}
+        - {x: -23, y: -20}
+        - {x: -17, y: -17}
+        - {x: 19, y: -9}
+        - {x: 24, y: -7}
+        - {x: -24, y: -11}
+        - {x: -25, y: -9.999999}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2305410000000000800000000000000
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sound_On
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 73
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36.5, y: -29.5}
+        - {x: -36.5, y: 30.5}
+        - {x: -28.5, y: -30.5}
+      - - {x: 28.5, y: 30.5}
+        - {x: -28.5, y: -30.5}
+        - {x: -36.5, y: 30.5}
+      - - {x: 36.5, y: -30.5}
+        - {x: -28.5, y: -30.5}
+        - {x: 28.5, y: 30.5}
+      - - {x: 36.5, y: 24.5}
+        - {x: 36.5, y: -30.5}
+        - {x: 28.5, y: 30.5}
+      physicsShape:
+      - - {x: 16.5, y: 16.5}
+        - {x: 13.5, y: 13.5}
+        - {x: 13.5, y: 11.5}
+        - {x: 17.5, y: 6.5}
+        - {x: 12.5, y: 11.5}
+        - {x: 12.5, y: 21.5}
+        - {x: -4.5, y: 21.5}
+        - {x: -27.5, y: 16.5}
+        - {x: -27.5, y: -7.5}
+        - {x: -25.5, y: -11.5}
+        - {x: -17.5, y: -14.5}
+        - {x: -3.5, y: -22.5}
+        - {x: 21.5, y: -22.5}
+        - {x: 26.5, y: -13.5}
+        - {x: 26.5, y: 14.5}
+        - {x: 18.5, y: 17.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_facebook
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 111
+        width: 42
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: -21}
+        - {x: -21, y: 21}
+        - {x: 21, y: -21}
+      - - {x: 21, y: 21}
+        - {x: 21, y: -21}
+        - {x: -21, y: 21}
+      physicsShape:
+      - - {x: -21, y: 21}
+        - {x: -21, y: -21}
+        - {x: 21, y: -21}
+        - {x: 21, y: 21}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sound_Off
+      rect:
+        serializedVersion: 2
+        x: 0.07612038
+        y: 129.0761
+        width: 56.89713
+        height: 48.87257
+      alignment: 9
+      pivot: {x: 0.464415, y: 0.540669}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28.52469, y: -10.5124}
+        - {x: -28.52469, y: 14.4876}
+        - {x: -25.52469, y: -13.5124}
+      - - {x: -16.52469, y: 24.4876}
+        - {x: -25.52469, y: -13.5124}
+        - {x: -28.52469, y: 14.4876}
+      - - {x: -5.524687, y: -24.5124}
+        - {x: -25.52469, y: -13.5124}
+        - {x: -16.52469, y: 24.4876}
+      - - {x: 17.47531, y: 24.4876}
+        - {x: -5.524687, y: -24.5124}
+        - {x: -16.52469, y: 24.4876}
+      - - {x: 10.47531, y: -24.5124}
+        - {x: -5.524687, y: -24.5124}
+        - {x: 17.47531, y: 24.4876}
+      - - {x: 28.47531, y: -17.5124}
+        - {x: 10.47531, y: -24.5124}
+        - {x: 17.47531, y: 24.4876}
+      - - {x: 28.47531, y: 18.4876}
+        - {x: 28.47531, y: -17.5124}
+        - {x: 17.47531, y: 24.4876}
+      physicsShape:
+      - - {x: -28.52468, y: -6.512403}
+        - {x: -27.52469, y: -9.512403}
+        - {x: 2.475313, y: -19.5124}
+        - {x: 5.475313, y: -18.5124}
+        - {x: 5.475313, y: 23.48759}
+        - {x: 0.4753129, y: 23.48759}
+        - {x: -28.52468, y: 12.4876}
+        - {x: 11.47531, y: 19.4876}
+        - {x: 11.47531, y: -13.5124}
+        - {x: 17.47531, y: -13.5124}
+        - {x: 24.47531, y: -7.512403}
+        - {x: 24.47531, y: 9.487597}
+        - {x: 22.47531, y: 14.4876}
+        - {x: 19.47531, y: 19.4876}
+        - {x: 5.475313, y: 14.4876}
+        - {x: 5.475313, y: -8.512403}
+        - {x: 14.47531, y: -8.512403}
+        - {x: 16.47531, y: -3.512403}
+        - {x: 16.47531, y: 10.4876}
+        - {x: 11.47531, y: 14.4876}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02305410000000000800000000000000
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Music_On
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 60
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30, y: -32}
+        - {x: -30, y: 3}
+        - {x: 23, y: -32}
+      - - {x: -27, y: 21}
+        - {x: 23, y: -32}
+        - {x: -30, y: 3}
+      - - {x: -17, y: 32}
+        - {x: 23, y: -32}
+        - {x: -27, y: 21}
+      - - {x: 28, y: 32}
+        - {x: 23, y: -32}
+        - {x: -17, y: 32}
+      - - {x: 30, y: -25}
+        - {x: 23, y: -32}
+        - {x: 28, y: 32}
+      - - {x: 30, y: 30}
+        - {x: 30, y: -25}
+        - {x: 28, y: 32}
+      physicsShape:
+      - - {x: 21, y: -23}
+        - {x: 21, y: 23}
+        - {x: 2, y: 23}
+        - {x: -6, y: 22}
+        - {x: -9.999999, y: 16}
+        - {x: -21, y: -11}
+        - {x: -21, y: -20}
+        - {x: -18, y: -23}
+        - {x: -4, y: -23}
+        - {x: -1, y: -21}
+        - {x: 3, y: -18}
+        - {x: 12, y: -23}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Music_Off
+      rect:
+        serializedVersion: 2
+        x: 0.07612038
+        y: 180.0761
+        width: 44.84776
+        height: 49.84776
+      alignment: 9
+      pivot: {x: 0.4665535, y: 0.5200611}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: -23}
+        - {x: -22.5, y: -9.999998}
+        - {x: -18.5, y: -25}
+      - - {x: -11.5, y: 24}
+        - {x: -18.5, y: -25}
+        - {x: -22.5, y: -9.999998}
+      - - {x: 13.5, y: -25}
+        - {x: -18.5, y: -25}
+        - {x: -11.5, y: 24}
+      - - {x: -1.499998, y: 25}
+        - {x: 13.5, y: -25}
+        - {x: -11.5, y: 24}
+      - - {x: 22.5, y: 25}
+        - {x: 13.5, y: -25}
+        - {x: -1.499998, y: 25}
+      - - {x: 22.5, y: -21}
+        - {x: 13.5, y: -25}
+        - {x: 22.5, y: 25}
+      physicsShape:
+      - - {x: 18.5, y: 25}
+        - {x: 3.500001, y: 25}
+        - {x: -14.5, y: 20}
+        - {x: -22.5, y: -2.999998}
+        - {x: -22.5, y: -19}
+        - {x: -19.5, y: -20}
+        - {x: -4.499998, y: -20}
+        - {x: -2.499998, y: -14}
+        - {x: 5.500002, y: -20}
+        - {x: 18.5, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22305410000000000800000000000000
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

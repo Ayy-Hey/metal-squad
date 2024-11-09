@@ -1,0 +1,48 @@
+
+fx-da.png
+size: 296,296
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 341
+  rotate: false
+  xy: 119, 216
+  size: 158, 78
+  orig: 158, 78
+  offset: 0, 0
+  index: -1
+Layer 341 copy
+  rotate: false
+  xy: 2, 138
+  size: 115, 156
+  orig: 115, 156
+  offset: 0, 0
+  index: -1
+Layer 341 copy 2
+  rotate: false
+  xy: 138, 61
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+Layer 341 copy 4
+  rotate: true
+  xy: 71, 50
+  size: 86, 65
+  orig: 86, 65
+  offset: 0, 0
+  index: -1
+Layer 343
+  rotate: false
+  xy: 119, 143
+  size: 144, 71
+  orig: 144, 71
+  offset: 0, 0
+  index: -1
+Layer 344
+  rotate: true
+  xy: 2, 2
+  size: 134, 67
+  orig: 134, 67
+  offset: 0, 0
+  index: -1

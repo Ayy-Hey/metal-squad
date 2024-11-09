@@ -1,0 +1,62 @@
+
+bosskhunglong.png
+size: 256,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 8 copy
+  rotate: false
+  xy: 2, 54
+  size: 81, 65
+  orig: 83, 67
+  offset: 1, 1
+  index: -1
+canh duoi sau
+  rotate: true
+  xy: 119, 2
+  size: 46, 42
+  orig: 48, 44
+  offset: 1, 1
+  index: -1
+canh duoi truoc
+  rotate: false
+  xy: 157, 70
+  size: 55, 49
+  orig: 57, 51
+  offset: 1, 1
+  index: -1
+canh tren sau
+  rotate: false
+  xy: 62, 3
+  size: 55, 45
+  orig: 57, 47
+  offset: 1, 1
+  index: -1
+canh tren truoc
+  rotate: false
+  xy: 2, 2
+  size: 58, 50
+  orig: 60, 52
+  offset: 1, 1
+  index: -1
+sung sau
+  rotate: false
+  xy: 214, 96
+  size: 39, 23
+  orig: 41, 25
+  offset: 1, 1
+  index: -1
+sung truoc
+  rotate: false
+  xy: 214, 72
+  size: 39, 22
+  orig: 41, 24
+  offset: 1, 1
+  index: -1
+than
+  rotate: true
+  xy: 85, 50
+  size: 69, 70
+  orig: 71, 72
+  offset: 1, 1
+  index: -1

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0069b5932680b9f26b385d59b675e4d9, type: 3}
+  m_Name: "Item_Gold"
+  m_EditorClassIdentifier: 
+  shopItem:
+  - item: 1
+    quantity: 800
+    discountMin: 10
+    discountMax: 10
+    price: 11
+  - item: 2
+    quantity: 1200
+    discountMin: 15
+    discountMax: 15
+    price: 17
+  - item: 2
+    quantity: 2000
+    discountMin: 30
+    discountMax: 20
+    price: 30
+  - item: 2
+    quantity: 4000
+    discountMin: 55
+    discountMax: 45
+    price: 55
+  - item: 3
+    quantity: 10000
+    discountMin: 135
+    discountMax: 110
+    price: 137

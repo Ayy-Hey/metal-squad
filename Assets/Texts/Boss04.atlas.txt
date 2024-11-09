@@ -1,0 +1,69 @@
+
+Boss04.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 638
+  size: 811, 380
+  orig: 811, 380
+  offset: 0, 0
+  index: -1
+body02
+  rotate: false
+  xy: 2, 263
+  size: 802, 373
+  orig: 802, 373
+  offset: 0, 0
+  index: -1
+gun
+  rotate: false
+  xy: 2, 2
+  size: 27, 34
+  orig: 27, 34
+  offset: 0, 0
+  index: -1
+image 10
+  rotate: false
+  xy: 2, 38
+  size: 123, 110
+  orig: 123, 110
+  offset: 0, 0
+  index: -1
+image 4
+  rotate: false
+  xy: 127, 153
+  size: 102, 108
+  orig: 102, 108
+  offset: 0, 0
+  index: -1
+image 6
+  rotate: true
+  xy: 815, 754
+  size: 112, 108
+  orig: 112, 108
+  offset: 0, 0
+  index: -1
+image 8
+  rotate: false
+  xy: 2, 150
+  size: 123, 111
+  orig: 123, 111
+  offset: 0, 0
+  index: -1
+light01
+  rotate: false
+  xy: 815, 868
+  size: 109, 150
+  orig: 109, 150
+  offset: 0, 0
+  index: -1
+light1_1
+  rotate: false
+  xy: 926, 935
+  size: 95, 83
+  orig: 95, 83
+  offset: 0, 0
+  index: -1

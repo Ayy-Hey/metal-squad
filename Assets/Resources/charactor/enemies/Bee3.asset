@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ffcd2c253497a76f5f538867889c16c, type: 3}
+  m_Name: "Bee3"
+  m_EditorClassIdentifier: 
+  datas:
+  - hp: 40
+    damage: 8
+    speed: 3
+    timeReload: 3
+    maxVision: 12
+  - hp: 176.55
+    damage: 9.38
+    speed: 3
+    timeReload: 2.97
+    maxVision: 12
+  - hp: 313.1
+    damage: 10.76
+    speed: 3
+    timeReload: 2.94
+    maxVision: 12
+  - hp: 449.65
+    damage: 12.14
+    speed: 3
+    timeReload: 2.91
+    maxVision: 12
+  - hp: 586.2
+    damage: 13.52
+    speed: 3
+    timeReload: 2.88
+    maxVision: 12
+  - hp: 722.75
+    damage: 14.9
+    speed: 3
+    timeReload: 2.85
+    maxVision: 12
+  - hp: 859.3
+    damage: 16.28
+    speed: 3
+    timeReload: 2.82
+    maxVision: 12
+  - hp: 995.85
+    damage: 17.66
+    speed: 3
+    timeReload: 2.79
+    maxVision: 12
+  - hp: 1132.4
+    damage: 19.04
+    speed: 3
+    timeReload: 2.76
+    maxVision: 12
+  - hp: 1268.95
+    damage: 20.42
+    speed: 3
+    timeReload: 2.73
+    maxVision: 12
+  - hp: 1405.5
+    damage: 21.8
+    speed: 3
+    timeReload: 2.7
+    maxVision: 12
+  - hp: 1542.05
+    damage: 23.18
+    speed: 3
+    timeReload: 2.67
+    maxVision: 12
+  - hp: 1678.6
+    damage: 24.56
+    speed: 3
+    timeReload: 2.64
+    maxVision: 12
+  - hp: 1815.15
+    damage: 25.94
+    speed: 3
+    timeReload: 2.61
+    maxVision: 12
+  - hp: 1951.7
+    damage: 27.32
+    speed: 3
+    timeReload: 2.58
+    maxVision: 12
+  - hp: 2088.25
+    damage: 28.7
+    speed: 3
+    timeReload: 2.55
+    maxVision: 12
+  - hp: 2224.8
+    damage: 30.08
+    speed: 3
+    timeReload: 2.52
+    maxVision: 12
+  - hp: 2361.35
+    damage: 31.46
+    speed: 3
+    timeReload: 2.49
+    maxVision: 12
+  - hp: 2497.9
+    damage: 32.84
+    speed: 3
+    timeReload: 2.46
+    maxVision: 12
+  - hp: 2634.45
+    damage: 34.22
+    speed: 3
+    timeReload: 2.43
+    maxVision: 12
+  - hp: 2771
+    damage: 35.6
+    speed: 3
+    timeReload: 2.4
+    maxVision: 12
+  - hp: 2907.55
+    damage: 36.98
+    speed: 3
+    timeReload: 2.37
+    maxVision: 12
+  - hp: 3044.1
+    damage: 38.36
+    speed: 3
+    timeReload: 2.34
+    maxVision: 12
+  - hp: 3180.65
+    damage: 39.74
+    speed: 3
+    timeReload: 2.31
+    maxVision: 12
+  - hp: 3317.2
+    damage: 41.12
+    speed: 3
+    timeReload: 2.28
+    maxVision: 12
+  - hp: 3453.75
+    damage: 42.5
+    speed: 3
+    timeReload: 2.25
+    maxVision: 12
+  - hp: 3590.3
+    damage: 43.88
+    speed: 3
+    timeReload: 2.22
+    maxVision: 12
+  - hp: 3726.85
+    damage: 45.26
+    speed: 3
+    timeReload: 2.19
+    maxVision: 12
+  - hp: 3863.4
+    damage: 46.64
+    speed: 3
+    timeReload: 2.16
+    maxVision: 12
+  - hp: 4000
+    damage: 48
+    speed: 3
+    timeReload: 2
+    maxVision: 12

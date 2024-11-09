@@ -1,0 +1,76 @@
+
+fx-attack.png
+size: 437,437
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 35
+  rotate: false
+  xy: 2, 182
+  size: 199, 199
+  orig: 199, 199
+  offset: 0, 0
+  index: -1
+Layer 36
+  rotate: false
+  xy: 162, 31
+  size: 126, 127
+  orig: 126, 127
+  offset: 0, 0
+  index: -1
+Layer 39
+  rotate: false
+  xy: 203, 259
+  size: 68, 122
+  orig: 68, 122
+  offset: 0, 0
+  index: -1
+Layer 40
+  rotate: false
+  xy: 290, 100
+  size: 123, 81
+  orig: 123, 81
+  offset: 0, 0
+  index: -1
+Layer 41
+  rotate: true
+  xy: 2, 2
+  size: 156, 158
+  orig: 156, 158
+  offset: 0, 0
+  index: -1
+Layer 42
+  rotate: false
+  xy: 282, 345
+  size: 136, 90
+  orig: 136, 90
+  offset: 0, 0
+  index: -1
+Layer 43
+  rotate: false
+  xy: 2, 383
+  size: 278, 52
+  orig: 278, 52
+  offset: 0, 0
+  index: -1
+Layer 45
+  rotate: false
+  xy: 273, 183
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+Layer 48
+  rotate: false
+  xy: 290, 18
+  size: 59, 80
+  orig: 59, 80
+  offset: 0, 0
+  index: -1
+Layer 49
+  rotate: false
+  xy: 203, 160
+  size: 67, 97
+  orig: 67, 97
+  offset: 0, 0
+  index: -1

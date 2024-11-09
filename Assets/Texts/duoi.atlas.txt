@@ -1,0 +1,104 @@
+
+duoi.png
+size: 442,442
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 117
+  rotate: false
+  xy: 381, 193
+  size: 59, 44
+  orig: 59, 44
+  offset: 0, 0
+  index: -1
+Layer 118
+  rotate: true
+  xy: 381, 239
+  size: 98, 48
+  orig: 98, 48
+  offset: 0, 0
+  index: -1
+Layer 120
+  rotate: false
+  xy: 301, 231
+  size: 78, 106
+  orig: 78, 106
+  offset: 0, 0
+  index: -1
+Layer 126
+  rotate: true
+  xy: 309, 134
+  size: 95, 54
+  orig: 95, 54
+  offset: 0, 0
+  index: -1
+Layer 126 copy
+  rotate: true
+  xy: 243, 78
+  size: 106, 64
+  orig: 106, 64
+  offset: 0, 0
+  index: -1
+Layer 126 copy 2
+  rotate: false
+  xy: 365, 136
+  size: 71, 55
+  orig: 71, 55
+  offset: 0, 0
+  index: -1
+Layer 143 copy
+  rotate: false
+  xy: 394, 394
+  size: 46, 46
+  orig: 46, 46
+  offset: 0, 0
+  index: -1
+Layer 146 copy
+  rotate: false
+  xy: 309, 88
+  size: 59, 44
+  orig: 59, 44
+  offset: 0, 0
+  index: -1
+Layer 81
+  rotate: true
+  xy: 243, 186
+  size: 151, 56
+  orig: 151, 56
+  offset: 0, 0
+  index: -1
+Layer 82
+  rotate: false
+  xy: 243, 339
+  size: 149, 101
+  orig: 149, 101
+  offset: 0, 0
+  index: -1
+Layer 86
+  rotate: false
+  xy: 2, 15
+  size: 239, 425
+  orig: 239, 425
+  offset: 0, 0
+  index: -1
+Layer 88
+  rotate: true
+  xy: 243, 3
+  size: 73, 81
+  orig: 73, 81
+  offset: 0, 0
+  index: -1
+Layer 96
+  rotate: false
+  xy: 370, 99
+  size: 32, 35
+  orig: 32, 35
+  offset: 0, 0
+  index: -1
+Layer 97
+  rotate: false
+  xy: 394, 350
+  size: 30, 42
+  orig: 30, 42
+  offset: 0, 0
+  index: -1

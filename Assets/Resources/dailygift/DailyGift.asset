@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b767df1d3c33b950c3fa2ad999d72d4, type: 3}
+  m_Name: "DailyGift"
+  m_EditorClassIdentifier: 
+  gifts:
+  - gift: 1
+    giftAmount: 1000
+  - gift: 41
+    giftAmount: 20
+  - gift: 51
+    giftAmount: 30
+  - gift: 41
+    giftAmount: 30
+  - gift: 1
+    giftAmount: 3000
+  - gift: 39
+    giftAmount: 1
+  - gift: 42
+    giftAmount: 20
+  - gift: 1
+    giftAmount: 2000
+  - gift: 22
+    giftAmount: 5
+  - gift: 5
+    giftAmount: 3
+  - gift: 38
+    giftAmount: 3
+  - gift: 52
+    giftAmount: 15
+  - gift: 39
+    giftAmount: 1
+  - gift: 43
+    giftAmount: 15
+  - gift: 1
+    giftAmount: 2000
+  - gift: 22
+    giftAmount: 5
+  - gift: 5
+    giftAmount: 3
+  - gift: 38
+    giftAmount: 3
+  - gift: 52
+    giftAmount: 20
+  - gift: 39
+    giftAmount: 1
+  - gift: 46
+    giftAmount: 10
+  - gift: 1
+    giftAmount: 2000
+  - gift: 5
+    giftAmount: 3
+  - gift: 38
+    giftAmount: 5
+  - gift: 23
+    giftAmount: 5
+  - gift: 39
+    giftAmount: 1
+  - gift: 53
+    giftAmount: 5
+  - gift: 45
+    giftAmount: 5

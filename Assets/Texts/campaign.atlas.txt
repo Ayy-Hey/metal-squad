@@ -1,0 +1,125 @@
+
+campaign.png
+size: 224,224
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 595 copy
+  rotate: false
+  xy: 2, 181
+  size: 155, 41
+  orig: 155, 41
+  offset: 0, 0
+  index: -1
+Layer 598 copy
+  rotate: false
+  xy: 159, 161
+  size: 63, 61
+  orig: 63, 61
+  offset: 0, 0
+  index: -1
+Layer 598 copy 2
+  rotate: false
+  xy: 2, 104
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Layer 599 copy 2
+  rotate: true
+  xy: 174, 43
+  size: 43, 34
+  orig: 43, 34
+  offset: 0, 0
+  index: -1
+Layer 599 copy 3
+  rotate: false
+  xy: 149, 111
+  size: 57, 48
+  orig: 57, 48
+  offset: 0, 0
+  index: -1
+Layer 603 copy 5
+  rotate: false
+  xy: 54, 22
+  size: 40, 58
+  orig: 40, 58
+  offset: 0, 0
+  index: -1
+Layer 640 copy 5
+  rotate: true
+  xy: 2, 14
+  size: 88, 50
+  orig: 88, 50
+  offset: 0, 0
+  index: -1
+Layer 645 copy
+  rotate: false
+  xy: 96, 28
+  size: 37, 52
+  orig: 37, 52
+  offset: 0, 0
+  index: -1
+Layer 647
+  rotate: true
+  xy: 79, 82
+  size: 97, 38
+  orig: 97, 38
+  offset: 0, 0
+  index: -1
+Layer 651
+  rotate: false
+  xy: 54, 2
+  size: 50, 18
+  orig: 50, 18
+  offset: 0, 0
+  index: -1
+Layer 660
+  rotate: true
+  xy: 119, 110
+  size: 69, 28
+  orig: 69, 28
+  offset: 0, 0
+  index: -1
+Layer 661
+  rotate: true
+  xy: 135, 34
+  size: 46, 37
+  orig: 46, 37
+  offset: 0, 0
+  index: -1
+Layer 662
+  rotate: false
+  xy: 135, 11
+  size: 29, 21
+  orig: 29, 21
+  offset: 0, 0
+  index: -1
+Layer 662 copy
+  rotate: false
+  xy: 119, 82
+  size: 45, 26
+  orig: 45, 26
+  offset: 0, 0
+  index: -1
+Layer 663 copy
+  rotate: false
+  xy: 166, 88
+  size: 40, 21
+  orig: 40, 21
+  offset: 0, 0
+  index: -1
+Layer 664 copy
+  rotate: true
+  xy: 174, 24
+  size: 17, 32
+  orig: 17, 32
+  offset: 0, 0
+  index: -1
+Layer 665
+  rotate: false
+  xy: 106, 2
+  size: 15, 24
+  orig: 15, 24
+  offset: 0, 0
+  index: -1

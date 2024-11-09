@@ -1,0 +1,48 @@
+
+cau.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Ellipse 1 copy 10
+  rotate: false
+  xy: 714, 29
+  size: 257, 255
+  orig: 257, 255
+  offset: 0, 0
+  index: -1
+Ellipse 1 copy 14
+  rotate: false
+  xy: 2, 2
+  size: 101, 101
+  orig: 101, 101
+  offset: 0, 0
+  index: -1
+Layer 23 copy 2
+  rotate: false
+  xy: 2, 379
+  size: 937, 111
+  orig: 937, 111
+  offset: 0, 0
+  index: -1
+Layer 26
+  rotate: false
+  xy: 2, 215
+  size: 710, 69
+  orig: 710, 69
+  offset: 0, 0
+  index: -1
+Layer 26 copy
+  rotate: false
+  xy: 2, 105
+  size: 535, 108
+  orig: 535, 108
+  offset: 0, 0
+  index: -1
+Layer 27
+  rotate: false
+  xy: 2, 286
+  size: 891, 91
+  orig: 891, 91
+  offset: 0, 0
+  index: -1

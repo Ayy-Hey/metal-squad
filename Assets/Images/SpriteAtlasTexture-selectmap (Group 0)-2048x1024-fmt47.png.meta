@@ -1,0 +1,714 @@
+fileFormatVersion: 2
+guid: a7a0da6e6eff41149c3f89eb20c18c5d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: boss
+  - first:
+      213: 21300002
+    second: nen-ten-map
+  - first:
+      213: 21300004
+    second: vach-ten
+  - first:
+      213: 21300006
+    second: khung-nen-lv
+  - first:
+      213: 21300008
+    second: vach-ngan
+  - first:
+      213: 21300010
+    second: bt-start-2
+  - first:
+      213: 21300012
+    second: khung-nen-lv-2
+  - first:
+      213: 21300014
+    second: complete
+  - first:
+      213: 21300016
+    second: bosss
+  - first:
+      213: 21300018
+    second: bt-start-1
+  - first:
+      213: 21300020
+    second: bt-start
+  - first:
+      213: 21300022
+    second: khoa
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 47
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: khung-nen-lv-2
+      rect:
+        serializedVersion: 2
+        x: 643.0761
+        y: 712.0761
+        width: 89.84776
+        height: 89.84776
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45, y: -33}
+        - {x: -45, y: 29}
+        - {x: -30, y: -44}
+      - - {x: -37, y: 45}
+        - {x: -30, y: -44}
+        - {x: -45, y: 29}
+      - - {x: 25, y: 45}
+        - {x: -30, y: -44}
+        - {x: -37, y: 45}
+      - - {x: -19, y: -45}
+        - {x: -30, y: -44}
+        - {x: 25, y: 45}
+      - - {x: 24, y: -45}
+        - {x: -19, y: -45}
+        - {x: 25, y: 45}
+      - - {x: 44, y: -35}
+        - {x: 24, y: -45}
+        - {x: 25, y: 45}
+      - - {x: 45, y: 31}
+        - {x: 44, y: -35}
+        - {x: 25, y: 45}
+      - - {x: 45, y: -29}
+        - {x: 44, y: -35}
+        - {x: 45, y: 31}
+      physicsShape:
+      - - {x: 19.99999, y: 34}
+        - {x: 11, y: 36}
+        - {x: -8.000004, y: 36}
+        - {x: -15, y: 35}
+        - {x: -22, y: 31}
+        - {x: -32, y: 19}
+        - {x: -36, y: 9.999995}
+        - {x: -36, y: -17}
+        - {x: -17, y: -36}
+        - {x: 14, y: -36}
+        - {x: 22.99999, y: -33}
+        - {x: 36, y: -14}
+        - {x: 36, y: 17}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2305410000000000800000000000000
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bt-start-1
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 68
+        width: 185
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -92.5, y: -33}
+        - {x: -92.5, y: 24}
+        - {x: 92.5, y: -33}
+      - - {x: -83.5, y: 33}
+        - {x: 92.5, y: -33}
+        - {x: -92.5, y: 24}
+      - - {x: 92.5, y: 33}
+        - {x: 92.5, y: -33}
+        - {x: -83.5, y: 33}
+      physicsShape:
+      - - {x: -82.5, y: 33}
+        - {x: -92.49999, y: 23}
+        - {x: -92.49999, y: -33}
+        - {x: 82.5, y: -33}
+        - {x: 92.49999, y: -27}
+        - {x: 92.49999, y: 33}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23305410000000000800000000000000
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 847
+        width: 92
+        height: 92
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46, y: -35}
+        - {x: -46, y: 34}
+        - {x: -28, y: -46}
+      - - {x: -43, y: 46}
+        - {x: -28, y: -46}
+        - {x: -46, y: 34}
+      - - {x: 26, y: 46}
+        - {x: -28, y: -46}
+        - {x: -43, y: 46}
+      - - {x: 30, y: -46}
+        - {x: -28, y: -46}
+        - {x: 26, y: 46}
+      - - {x: 44, y: 34}
+        - {x: 30, y: -46}
+        - {x: 26, y: 46}
+      - - {x: 35, y: -45}
+        - {x: 30, y: -46}
+        - {x: 44, y: 34}
+      - - {x: 46, y: -28}
+        - {x: 35, y: -45}
+        - {x: 44, y: 34}
+      - - {x: 46, y: 25}
+        - {x: 46, y: -28}
+        - {x: 44, y: 34}
+      physicsShape:
+      - - {x: 34, y: 24}
+        - {x: 18, y: 38}
+        - {x: 12, y: 39}
+        - {x: -13, y: 39}
+        - {x: -23, y: 34}
+        - {x: -38, y: 18}
+        - {x: -39, y: 12}
+        - {x: -39, y: -15}
+        - {x: -38, y: -18}
+        - {x: -19, y: -38}
+        - {x: -18, y: -39}
+        - {x: 12, y: -39}
+        - {x: 25, y: -36}
+        - {x: 38, y: -18}
+        - {x: 39, y: -11}
+        - {x: 39, y: 14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02305410000000000800000000000000
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: complete
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 41
+        width: 68
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34, y: -16}
+        - {x: -34, y: 10}
+        - {x: 34, y: -16}
+      - - {x: -8, y: 16}
+        - {x: 34, y: -16}
+        - {x: -34, y: 10}
+      - - {x: 34, y: 16}
+        - {x: 34, y: -16}
+        - {x: -8, y: 16}
+      physicsShape:
+      - - {x: 32, y: 16}
+        - {x: 9.999999, y: 16}
+        - {x: -29, y: 9.999999}
+        - {x: -34, y: 7}
+        - {x: -34, y: -9}
+        - {x: -31, y: -16}
+        - {x: -8, y: -16}
+        - {x: -2, y: -15}
+        - {x: 33, y: -8}
+        - {x: 34, y: -7}
+        - {x: 34, y: 12}
+        - {x: -23, y: -11}
+        - {x: -19, y: -8}
+        - {x: -18, y: -9}
+        - {x: -15, y: -9}
+        - {x: -13, y: -7}
+        - {x: -11, y: -8}
+        - {x: -7, y: -7}
+        - {x: -6, y: -6}
+        - {x: 0, y: -9}
+        - {x: 4, y: -4}
+        - {x: 5, y: -5}
+        - {x: 11, y: -5}
+        - {x: 13, y: -3}
+        - {x: 15, y: -4}
+        - {x: 17, y: -3}
+        - {x: 21, y: -3}
+        - {x: 26, y: -2}
+        - {x: 26, y: -3}
+        - {x: 20, y: -3}
+        - {x: 19, y: -4}
+        - {x: 14, y: -4}
+        - {x: 13, y: -5}
+        - {x: 7, y: -5}
+        - {x: 6, y: -6}
+        - {x: 2, y: -6}
+        - {x: 1, y: -7}
+        - {x: -5, y: -7}
+        - {x: -6, y: -8}
+        - {x: -11, y: -8}
+        - {x: -12, y: -9}
+        - {x: -17, y: -9}
+        - {x: -18, y: -9.999999}
+        - {x: -24, y: -9.999999}
+        - {x: -25, y: -11}
+        - {x: -26, y: 2}
+        - {x: -25, y: 3}
+        - {x: -20, y: 3}
+        - {x: -2, y: 6}
+        - {x: -1, y: 7}
+        - {x: 6, y: 7}
+        - {x: 11, y: 8}
+        - {x: 12, y: 9}
+        - {x: 17, y: 9}
+        - {x: 18, y: 9.999999}
+        - {x: 24, y: 9.999999}
+        - {x: 26, y: 12}
+        - {x: 23, y: 9}
+        - {x: 13, y: 9}
+        - {x: 11, y: 7}
+        - {x: 8, y: 7}
+        - {x: 7, y: 6}
+        - {x: 5, y: 8}
+        - {x: 4, y: 8}
+        - {x: 1, y: 5}
+        - {x: -13, y: 3}
+        - {x: -18, y: 2}
+        - {x: -20, y: 0}
+        - {x: -19, y: 0}
+        - {x: -22, y: 3}
+        - {x: -26, y: 3}
+        - {x: -30, y: -1}
+        - {x: -29, y: -2}
+        - {x: -28, y: -1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2305410000000000800000000000000
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bosss
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 0
+        width: 92
+        height: 92
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46, y: -35}
+        - {x: -46, y: 34}
+        - {x: -28, y: -46}
+      - - {x: -43, y: 46}
+        - {x: -28, y: -46}
+        - {x: -46, y: 34}
+      - - {x: 26, y: 46}
+        - {x: -28, y: -46}
+        - {x: -43, y: 46}
+      - - {x: 30, y: -46}
+        - {x: -28, y: -46}
+        - {x: 26, y: 46}
+      - - {x: 44, y: 34}
+        - {x: 30, y: -46}
+        - {x: 26, y: 46}
+      - - {x: 35, y: -45}
+        - {x: 30, y: -46}
+        - {x: 44, y: 34}
+      - - {x: 46, y: -28}
+        - {x: 35, y: -45}
+        - {x: 44, y: 34}
+      - - {x: 46, y: 25}
+        - {x: 46, y: -28}
+        - {x: 44, y: 34}
+      physicsShape:
+      - - {x: 34, y: 24}
+        - {x: 18, y: 38}
+        - {x: 12, y: 39}
+        - {x: -13, y: 39}
+        - {x: -23, y: 34}
+        - {x: -38, y: 18}
+        - {x: -39, y: 12}
+        - {x: -39, y: -15}
+        - {x: -38, y: -18}
+        - {x: -19, y: -38}
+        - {x: -18, y: -39}
+        - {x: 12, y: -39}
+        - {x: 25, y: -36}
+        - {x: 38, y: -18}
+        - {x: 39, y: -11}
+        - {x: 39, y: 14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03305410000000000800000000000000
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vach-ngan
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 629
+        width: 329
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -164.5, y: 1}
+        - {x: 164.5, y: 1}
+        - {x: -164.5, y: -1}
+      - - {x: -164.5, y: -1}
+        - {x: 164.5, y: 1}
+        - {x: 164.5, y: -1}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bt-start-2
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 0
+        width: 185
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -92.5, y: -33}
+        - {x: -92.5, y: 29}
+        - {x: 87.5, y: -33}
+      - - {x: -89.5, y: 33}
+        - {x: 87.5, y: -33}
+        - {x: -92.5, y: 29}
+      - - {x: 92.5, y: 33}
+        - {x: 87.5, y: -33}
+        - {x: -89.5, y: 33}
+      - - {x: 92.5, y: -31}
+        - {x: 87.5, y: -33}
+        - {x: 92.5, y: 33}
+      physicsShape:
+      - - {x: -82.5, y: 33}
+        - {x: -92.49999, y: 23}
+        - {x: -92.49999, y: -33}
+        - {x: 82.5, y: -33}
+        - {x: 92.49999, y: -27}
+        - {x: 92.49999, y: 33}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2305410000000000800000000000000
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: khung-nen-lv
+      rect:
+        serializedVersion: 2
+        x: 1360.076
+        y: 136.0761
+        width: 89.84776
+        height: 89.84776
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45, y: -33}
+        - {x: -45, y: 29}
+        - {x: -30, y: -44}
+      - - {x: -37, y: 45}
+        - {x: -30, y: -44}
+        - {x: -45, y: 29}
+      - - {x: 25, y: 45}
+        - {x: -30, y: -44}
+        - {x: -37, y: 45}
+      - - {x: -19, y: -45}
+        - {x: -30, y: -44}
+        - {x: 25, y: 45}
+      - - {x: 24, y: -45}
+        - {x: -19, y: -45}
+        - {x: 25, y: 45}
+      - - {x: 44, y: -35}
+        - {x: 24, y: -45}
+        - {x: 25, y: 45}
+      - - {x: 45, y: 31}
+        - {x: 44, y: -35}
+        - {x: 25, y: 45}
+      - - {x: 45, y: -29}
+        - {x: 44, y: -35}
+        - {x: 45, y: 31}
+      physicsShape:
+      - - {x: 19.99999, y: 34}
+        - {x: 11, y: 36}
+        - {x: -8.000004, y: 36}
+        - {x: -15, y: 35}
+        - {x: -22, y: 31}
+        - {x: -32, y: 19}
+        - {x: -36, y: 9.999995}
+        - {x: -36, y: -17}
+        - {x: -17, y: -36}
+        - {x: 14, y: -36}
+        - {x: 22.99999, y: -33}
+        - {x: 36, y: -14}
+        - {x: 36, y: 17}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bt-start
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 712
+        width: 185
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -92.5, y: -33}
+        - {x: -92.5, y: 24}
+        - {x: 92.5, y: -33}
+      - - {x: -83.5, y: 33}
+        - {x: 92.5, y: -33}
+        - {x: -92.5, y: 24}
+      - - {x: 92.5, y: 33}
+        - {x: 92.5, y: -33}
+        - {x: -83.5, y: 33}
+      physicsShape:
+      - - {x: -82.5, y: 33}
+        - {x: -92.49999, y: 23}
+        - {x: -92.49999, y: -33}
+        - {x: 82.5, y: -33}
+        - {x: 92.49999, y: -27}
+        - {x: 92.49999, y: 33}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43305410000000000800000000000000
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vach-ten
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 712
+        width: 348
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -174, y: -17}
+        - {x: -174, y: 17}
+        - {x: 174, y: -17}
+      - - {x: 174, y: 17}
+        - {x: 174, y: -17}
+        - {x: -174, y: 17}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nen-ten-map
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 421
+        width: 407
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -203.5, y: -24}
+        - {x: -203.5, y: 24}
+        - {x: 203.5, y: -24}
+      - - {x: 203.5, y: 24}
+        - {x: 203.5, y: -24}
+        - {x: -203.5, y: 24}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22305410000000000800000000000000
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: khoa
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 847
+        width: 35
+        height: 41
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: -20.5}
+        - {x: -17.5, y: 15.5}
+        - {x: 17.5, y: -20.5}
+      - - {x: -12.5, y: 20.5}
+        - {x: 17.5, y: -20.5}
+        - {x: -17.5, y: 15.5}
+      - - {x: 17.5, y: 20.5}
+        - {x: 17.5, y: -20.5}
+        - {x: -12.5, y: 20.5}
+      physicsShape:
+      - - {x: -8.5, y: 20.5}
+        - {x: -13.5, y: 16.5}
+        - {x: -13.5, y: -12.5}
+        - {x: 14.5, y: -12.5}
+        - {x: 14.5, y: 11.5}
+        - {x: 11.5, y: 20.5}
+        - {x: 0.5, y: 10.5}
+        - {x: 1.5, y: 9.5}
+        - {x: -0.5, y: 10.5}
+        - {x: -0.5, y: 9.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63305410000000000800000000000000
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,89 @@
+{
+  "isReaded": true,
+  "InforTrapLaser": [
+    {
+      "x": 11.51,
+      "y": -0.7,
+      "distance": 2,
+      "angle": 90,
+      "isrotate":false
+    },
+    {
+      "x": 18.85,
+      "y": 1.92,
+      "distance": 2.43,
+      "angle": 117.65,
+      "isrotate":false
+    },
+    {
+      "x": 24.04,
+      "y": -1.89,
+      "distance": 2.43,
+      "angle": 63.4,
+      "isrotate":false
+    },
+    {
+      "x": 36.93,
+      "y": -1.5,
+      "distance": 3.24,
+      "angle": 63.4,
+      "isrotate":true
+    },
+    {
+      "x": 53.84,
+      "y": -1.62,
+      "distance": 2.236,
+      "angle": 90,
+      "isrotate":false
+    },
+    {
+      "x":79.07,
+      "y": -1,
+      "distance": 3.34,
+      "angle": 90,
+      "isrotate":true
+    },
+    {
+      "x":89.86,
+      "y": 0.86,
+      "distance": 2.23,
+      "angle": 90,
+      "isrotate":false
+    },
+    {
+      "x":106.19,
+      "y": -1.63,
+      "distance": 2.23,
+      "angle": 90,
+      "isrotate":true
+    },
+    {
+      "x": 122.1,
+      "y": 0.72,
+      "distance": 3.36,
+      "angle": 71.9,
+      "isrotate":true
+    },
+    {
+      "x": 148.38,
+      "y": -0.45,
+      "distance": 3.36,
+      "angle": 90,
+      "isrotate":false
+    },
+    {
+      "x": 158.06,
+      "y": 0.96,
+      "distance": 2.27,
+      "angle": 90,
+      "isrotate":true
+    },
+    {
+      "x": 174.18,
+      "y": 1.77,
+      "distance": 2.27,
+      "angle": 90,
+      "isrotate":true
+    }
+  ]
+}

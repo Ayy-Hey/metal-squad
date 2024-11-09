@@ -1,0 +1,27 @@
+
+Warning.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Group 1
+  rotate: false
+  xy: 2, 25
+  size: 737, 92
+  orig: 737, 92
+  offset: 0, 0
+  index: -1
+Group 4
+  rotate: false
+  xy: 2, 2
+  size: 61, 21
+  orig: 61, 21
+  offset: 0, 0
+  index: -1
+Layer 7 copy 7
+  rotate: false
+  xy: 2, 119
+  size: 1020, 259
+  orig: 1020, 259
+  offset: 0, 0
+  index: -1

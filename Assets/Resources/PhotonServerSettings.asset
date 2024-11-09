@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -157247028, guid: 28d52be8689d954a6da42d867d7dd4d4, type: 3}
+  m_Name: "PhotonServerSettings"
+  m_EditorClassIdentifier: 
+  AppSettings:
+    AppIdRealtime: "c712ea9f-c36d-4dbd-b747-fd1d7dc56c01"
+    AppIdChat: 
+    AppIdVoice: 
+    AppVersion: 
+    UseNameServer: 1
+    FixedRegion: 
+    Server: 
+    Port: 0
+    Protocol: 0
+    EnableLobbyStatistics: 0
+    NetworkLogging: 1
+  StartInOfflineMode: 0
+  PunLogging: 0
+  EnableSupportLogger: 0
+  RunInBackground: 1
+  RpcList:
+  - "DestroySpaceship"
+  - "Fire"
+  - "RespawnSpaceship"
+  - "InitRemotePlayer"
+  - "RemoteAddHealthPoint"
+  - "RemoteBoss_ChanState"
+  - "RemoteBoss_Die"
+  - "RemoteCreateSkyStone"
+  - "RemotePlayer_CallEyeBotSupport"
+  - "RemotePlayer_CreateBulletCt9"
+  - "RemotePlayer_CreateBulletFc"
+  - "RemotePlayer_CreateICE"
+  - "RemotePlayer_CreateM4A1"
+  - "RemotePlayer_CreateMachine"
+  - "RemotePlayer_CreateMGL140"
+  - "RemotePlayer_CreateRainBomb"
+  - "RemotePlayer_CreateSniper"
+  - "RemotePlayer_CreateSpread"
+  - "RemotePlayer_FlameGun_ChangeFireActiveStatus"
+  - "RemotePlayer_FlameGun_ChangeFirePos"
+  - "RemotePlayer_LaserGun_ChangeFireActiveStatus"
+  - "RemotePlayer_LaserGun_ChangeFirePos"
+  - "RemotePlayer_OnInvisible"
+  - "RemotePlayer_OnVsible"
+  - "RemotePlayer_SwitchGun"
+  - "RemotePlayer_ThrowGrendeBasic"
+  - "RemotePlayer_ThrowGrendeFire"
+  - "RemotePlayer_ThrowGrendeIce"
+  - "RemotePlayer_ThrowGrendeSmoke"
+  - "RemotePlayer_ThunderGun_OnCreateBullet"
+  - "RemotePlayer_ThunderGun_OnRelease"
+  - "RemoteRocket_ExplosiveBullet"
+  - "RemoteRocket_Init"
+  - "RpcClearBuffer"
+  - "RpcNonServerOwnedTeleportFromServer"
+  - "RpcTeleport"
+  - "RequestInitPlayer"
+  DisableAutoOpenWizard: 1

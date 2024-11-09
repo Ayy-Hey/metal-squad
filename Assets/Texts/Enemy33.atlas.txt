@@ -1,0 +1,181 @@
+
+Enemy33.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+0
+  rotate: false
+  xy: 417, 151
+  size: 115, 103
+  orig: 115, 103
+  offset: 0, 0
+  index: -1
+1
+  rotate: false
+  xy: 299, 151
+  size: 116, 103
+  orig: 116, 103
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 2, 70
+  size: 116, 115
+  orig: 116, 115
+  offset: 0, 0
+  index: -1
+3
+  rotate: true
+  xy: 179, 170
+  size: 84, 118
+  orig: 84, 118
+  offset: 0, 0
+  index: -1
+ballet
+  rotate: true
+  xy: 522, 123
+  size: 26, 10
+  orig: 26, 10
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 619, 179
+  size: 72, 75
+  orig: 72, 75
+  offset: 0, 0
+  index: -1
+bom
+  rotate: false
+  xy: 493, 113
+  size: 27, 36
+  orig: 27, 36
+  offset: 0, 0
+  index: -1
+face01
+  rotate: false
+  xy: 89, 9
+  size: 52, 59
+  orig: 52, 59
+  offset: 0, 0
+  index: -1
+face02
+  rotate: false
+  xy: 395, 93
+  size: 50, 56
+  orig: 50, 56
+  offset: 0, 0
+  index: -1
+gun01
+  rotate: false
+  xy: 2, 187
+  size: 175, 67
+  orig: 175, 67
+  offset: 0, 0
+  index: -1
+gun02
+  rotate: false
+  xy: 534, 169
+  size: 83, 85
+  orig: 83, 85
+  offset: 0, 0
+  index: -1
+gun03
+  rotate: true
+  xy: 693, 200
+  size: 54, 87
+  orig: 54, 87
+  offset: 0, 0
+  index: -1
+gun04
+  rotate: true
+  xy: 275, 93
+  size: 56, 58
+  orig: 56, 58
+  offset: 0, 0
+  index: -1
+gun05
+  rotate: false
+  xy: 166, 77
+  size: 40, 20
+  orig: 40, 20
+  offset: 0, 0
+  index: -1
+gun06
+  rotate: true
+  xy: 335, 93
+  size: 56, 58
+  orig: 56, 58
+  offset: 0, 0
+  index: -1
+gun07
+  rotate: true
+  xy: 782, 211
+  size: 43, 95
+  orig: 43, 95
+  offset: 0, 0
+  index: -1
+gun08
+  rotate: true
+  xy: 120, 83
+  size: 102, 44
+  orig: 102, 44
+  offset: 0, 0
+  index: -1
+gun09
+  rotate: false
+  xy: 2, 2
+  size: 85, 66
+  orig: 85, 66
+  offset: 0, 0
+  index: -1
+hand01
+  rotate: true
+  xy: 959, 199
+  size: 55, 61
+  orig: 55, 61
+  offset: 0, 0
+  index: -1
+hand02
+  rotate: false
+  xy: 534, 131
+  size: 69, 36
+  orig: 69, 36
+  offset: 0, 0
+  index: -1
+hand03
+  rotate: false
+  xy: 447, 98
+  size: 44, 51
+  orig: 44, 51
+  offset: 0, 0
+  index: -1
+helpmat
+  rotate: false
+  xy: 216, 109
+  size: 57, 59
+  orig: 57, 59
+  offset: 0, 0
+  index: -1
+leg01
+  rotate: true
+  xy: 879, 203
+  size: 51, 78
+  orig: 51, 78
+  offset: 0, 0
+  index: -1
+leg02
+  rotate: false
+  xy: 166, 99
+  size: 48, 69
+  orig: 48, 69
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 693, 173
+  size: 82, 25
+  orig: 82, 25
+  offset: 0, 0
+  index: -1

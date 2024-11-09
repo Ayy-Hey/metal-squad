@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ffcd2c253497a76f5f538867889c16c, type: 3}
+  m_Name: "ChuotRocket"
+  m_EditorClassIdentifier: 
+  datas:
+  - hp: 30
+    damage: 50
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 50
+    damage: 58.62
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 70
+    damage: 67.24
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 90
+    damage: 75.86
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 110
+    damage: 84.48
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 130
+    damage: 93.1
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 150
+    damage: 101.72
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 170
+    damage: 110.34
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 190
+    damage: 118.96
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 210
+    damage: 127.58
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 230
+    damage: 136.2
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 250
+    damage: 144.82
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 270
+    damage: 153.44
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 290
+    damage: 162.06
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 310
+    damage: 170.68
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 330
+    damage: 179.3
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 350
+    damage: 187.92
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 370
+    damage: 196.54
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 390
+    damage: 205.16
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 410
+    damage: 213.78
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 430
+    damage: 222.4
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 450
+    damage: 231.02
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 470
+    damage: 239.64
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 490
+    damage: 248.26
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 510
+    damage: 256.88
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 530
+    damage: 265.5
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 550
+    damage: 274.12
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 570
+    damage: 282.74
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 590
+    damage: 291.36
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8
+  - hp: 610
+    damage: 300
+    speed: 3.5
+    timeReload: 2
+    maxVision: 8

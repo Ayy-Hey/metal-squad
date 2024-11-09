@@ -1,0 +1,83 @@
+
+Fx-chuyen-map.png
+size: 344,344
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+111
+  rotate: true
+  xy: 209, 195
+  size: 149, 111
+  orig: 149, 111
+  offset: 0, 0
+  index: -1
+1111
+  rotate: true
+  xy: 180, 44
+  size: 149, 111
+  orig: 149, 111
+  offset: 0, 0
+  index: -1
+Layer 31
+  rotate: true
+  xy: 180, 200
+  size: 28, 27
+  orig: 28, 27
+  offset: 0, 0
+  index: -1
+a1
+  rotate: true
+  xy: 127, 44
+  size: 184, 51
+  orig: 184, 51
+  offset: 0, 0
+  index: -1
+a11
+  rotate: true
+  xy: 293, 9
+  size: 184, 51
+  orig: 184, 51
+  offset: 0, 0
+  index: -1
+a2
+  rotate: false
+  xy: 0, 88
+  size: 125, 140
+  orig: 125, 140
+  offset: 0, 0
+  index: -1
+a21
+  rotate: false
+  xy: 0, 230
+  size: 207, 114
+  orig: 207, 114
+  offset: 0, 0
+  index: -1
+a3
+  rotate: false
+  xy: 0, 58
+  size: 103, 28
+  orig: 103, 28
+  offset: 0, 0
+  index: -1
+a31
+  rotate: false
+  xy: 0, 28
+  size: 103, 28
+  orig: 103, 28
+  offset: 0, 0
+  index: -1
+a4
+  rotate: false
+  xy: 0, 0
+  size: 103, 26
+  orig: 103, 26
+  offset: 0, 0
+  index: -1
+a41
+  rotate: false
+  xy: 105, 16
+  size: 137, 26
+  orig: 137, 26
+  offset: 0, 0
+  index: -1

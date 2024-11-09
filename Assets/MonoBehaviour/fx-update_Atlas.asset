@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d057d5df1c3e7986783d54ef9fce7951, type: 3}
+  m_Name: "fx-update_Atlas"
+  m_EditorClassIdentifier: 
+  atlasFile: {fileID: 4900000, guid: a458bf1bccca495c8631242fcfc6e3cd, type: 3}
+  materials:
+  - {fileID: 2100000, guid: f538b2279c1c4579b8090d26b9731697, type: 2}

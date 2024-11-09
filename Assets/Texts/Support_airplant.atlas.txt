@@ -1,0 +1,118 @@
+
+Support_airplant.png
+size: 529,529
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 289
+  size: 525, 238
+  orig: 525, 238
+  offset: 0, 0
+  index: -1
+body02
+  rotate: false
+  xy: 404, 119
+  size: 87, 64
+  orig: 87, 64
+  offset: 0, 0
+  index: -1
+fan01
+  rotate: false
+  xy: 2, 241
+  size: 287, 46
+  orig: 287, 46
+  offset: 0, 0
+  index: -1
+fan02
+  rotate: false
+  xy: 2, 193
+  size: 287, 46
+  orig: 287, 46
+  offset: 0, 0
+  index: -1
+fan03
+  rotate: false
+  xy: 2, 145
+  size: 287, 46
+  orig: 287, 46
+  offset: 0, 0
+  index: -1
+gun01
+  rotate: false
+  xy: 2, 13
+  size: 133, 67
+  orig: 133, 67
+  offset: 0, 0
+  index: -1
+gun02
+  rotate: false
+  xy: 145, 84
+  size: 105, 59
+  orig: 105, 59
+  offset: 0, 0
+  index: -1
+gun03
+  rotate: false
+  xy: 482, 191
+  size: 43, 36
+  orig: 43, 36
+  offset: 0, 0
+  index: -1
+gun04
+  rotate: true
+  xy: 482, 229
+  size: 58, 39
+  orig: 58, 39
+  offset: 0, 0
+  index: -1
+gun05
+  rotate: false
+  xy: 403, 78
+  size: 58, 39
+  orig: 58, 39
+  offset: 0, 0
+  index: -1
+gun06
+  rotate: false
+  xy: 291, 142
+  size: 111, 41
+  orig: 111, 41
+  offset: 0, 0
+  index: -1
+light1_1
+  rotate: false
+  xy: 252, 57
+  size: 95, 83
+  orig: 95, 83
+  offset: 0, 0
+  index: -1
+muzzle
+  rotate: true
+  xy: 349, 78
+  size: 62, 52
+  orig: 62, 52
+  offset: 0, 0
+  index: -1
+rocket
+  rotate: false
+  xy: 2, 82
+  size: 141, 61
+  orig: 141, 61
+  offset: 0, 0
+  index: -1
+wing02
+  rotate: true
+  xy: 349, 51
+  size: 25, 60
+  orig: 25, 60
+  offset: 0, 0
+  index: -1
+wing03
+  rotate: false
+  xy: 291, 185
+  size: 189, 102
+  orig: 189, 102
+  offset: 0, 0
+  index: -1

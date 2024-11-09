@@ -1,0 +1,41 @@
+
+chung.png
+size: 177,177
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 248
+  rotate: false
+  xy: 46, 45
+  size: 14, 17
+  orig: 14, 17
+  offset: 0, 0
+  index: -1
+Layer 251
+  rotate: false
+  xy: 2, 64
+  size: 59, 60
+  orig: 59, 60
+  offset: 0, 0
+  index: -1
+Layer 253
+  rotate: false
+  xy: 63, 100
+  size: 21, 24
+  orig: 21, 24
+  offset: 0, 0
+  index: -1
+Layer 794 copy
+  rotate: true
+  xy: 2, 2
+  size: 60, 42
+  orig: 60, 42
+  offset: 0, 0
+  index: -1
+sd
+  rotate: false
+  xy: 2, 126
+  size: 169, 49
+  orig: 169, 49
+  offset: 0, 0
+  index: -1

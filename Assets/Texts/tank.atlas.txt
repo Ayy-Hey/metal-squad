@@ -1,0 +1,286 @@
+
+tank.png
+size: 784,784
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 387, 316
+  size: 155, 170
+  orig: 155, 170
+  offset: 0, 0
+  index: -1
+10
+  rotate: true
+  xy: 590, 7
+  size: 53, 76
+  orig: 53, 76
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 558, 493
+  size: 162, 175
+  orig: 162, 175
+  offset: 0, 0
+  index: -1
+3
+  rotate: false
+  xy: 387, 488
+  size: 169, 180
+  orig: 169, 180
+  offset: 0, 0
+  index: -1
+4
+  rotate: false
+  xy: 232, 122
+  size: 140, 152
+  orig: 140, 152
+  offset: 0, 0
+  index: -1
+5
+  rotate: false
+  xy: 80, 85
+  size: 150, 165
+  orig: 150, 165
+  offset: 0, 0
+  index: -1
+6
+  rotate: false
+  xy: 573, 62
+  size: 95, 112
+  orig: 95, 112
+  offset: 0, 0
+  index: -1
+7
+  rotate: true
+  xy: 696, 183
+  size: 49, 68
+  orig: 49, 68
+  offset: 0, 0
+  index: -1
+8
+  rotate: false
+  xy: 721, 115
+  size: 47, 66
+  orig: 47, 66
+  offset: 0, 0
+  index: -1
+9
+  rotate: false
+  xy: 670, 112
+  size: 49, 69
+  orig: 49, 69
+  offset: 0, 0
+  index: -1
+Ellipse 1 copy 21
+  rotate: true
+  xy: 529, 2
+  size: 58, 59
+  orig: 58, 59
+  offset: 0, 0
+  index: -1
+Layer 13
+  rotate: false
+  xy: 2, 646
+  size: 366, 136
+  orig: 366, 136
+  offset: 0, 0
+  index: -1
+Layer 13 copy
+  rotate: false
+  xy: 370, 670
+  size: 353, 112
+  orig: 353, 112
+  offset: 0, 0
+  index: -1
+Layer 14
+  rotate: false
+  xy: 670, 66
+  size: 66, 44
+  orig: 66, 44
+  offset: 0, 0
+  index: -1
+Layer 25
+  rotate: true
+  xy: 286, 461
+  size: 183, 99
+  orig: 183, 99
+  offset: 0, 0
+  index: -1
+Layer 25 copy
+  rotate: true
+  xy: 286, 276
+  size: 183, 99
+  orig: 183, 99
+  offset: 0, 0
+  index: -1
+Layer 31
+  rotate: true
+  xy: 112, 283
+  size: 361, 85
+  orig: 361, 85
+  offset: 0, 0
+  index: -1
+Layer 31 copy
+  rotate: true
+  xy: 199, 283
+  size: 361, 85
+  orig: 361, 85
+  offset: 0, 0
+  index: -1
+Layer 36
+  rotate: true
+  xy: 696, 234
+  size: 72, 53
+  orig: 72, 53
+  offset: 0, 0
+  index: -1
+Layer 38
+  rotate: true
+  xy: 2, 11
+  size: 239, 76
+  orig: 239, 76
+  offset: 0, 0
+  index: -1
+Layer 39
+  rotate: true
+  xy: 2, 252
+  size: 392, 108
+  orig: 392, 108
+  offset: 0, 0
+  index: -1
+Layer 46
+  rotate: false
+  xy: 464, 2
+  size: 63, 63
+  orig: 63, 63
+  offset: 0, 0
+  index: -1
+Layer 47 copy 4
+  rotate: true
+  xy: 722, 558
+  size: 107, 40
+  orig: 107, 40
+  offset: 0, 0
+  index: -1
+Layer 49
+  rotate: false
+  xy: 374, 122
+  size: 77, 52
+  orig: 77, 52
+  offset: 0, 0
+  index: -1
+Layer 50
+  rotate: true
+  xy: 725, 667
+  size: 115, 40
+  orig: 115, 40
+  offset: 0, 0
+  index: -1
+Layer 51
+  rotate: false
+  xy: 722, 513
+  size: 35, 43
+  orig: 35, 43
+  offset: 0, 0
+  index: -1
+Layer 52
+  rotate: false
+  xy: 387, 291
+  size: 135, 23
+  orig: 135, 23
+  offset: 0, 0
+  index: -1
+Layer 53
+  rotate: false
+  xy: 738, 70
+  size: 35, 43
+  orig: 35, 43
+  offset: 0, 0
+  index: -1
+Layer 70 copy 2
+  rotate: false
+  xy: 80, 34
+  size: 148, 49
+  orig: 148, 49
+  offset: 0, 0
+  index: -1
+Sparks M416 00001
+  rotate: false
+  xy: 544, 294
+  size: 97, 77
+  orig: 97, 77
+  offset: 0, 0
+  index: -1
+Sparks M416 00002
+  rotate: false
+  xy: 643, 308
+  size: 97, 77
+  orig: 97, 77
+  offset: 0, 0
+  index: -1
+Sparks M416 00003
+  rotate: true
+  xy: 617, 195
+  size: 97, 77
+  orig: 97, 77
+  offset: 0, 0
+  index: -1
+ff1
+  rotate: false
+  xy: 642, 387
+  size: 104, 104
+  orig: 104, 104
+  offset: 0, 0
+  index: -1
+ff2
+  rotate: false
+  xy: 464, 67
+  size: 107, 107
+  orig: 107, 107
+  offset: 0, 0
+  index: -1
+ff3
+  rotate: false
+  xy: 387, 176
+  size: 113, 113
+  orig: 113, 113
+  offset: 0, 0
+  index: -1
+ff4
+  rotate: false
+  xy: 502, 176
+  size: 113, 113
+  orig: 113, 113
+  offset: 0, 0
+  index: -1
+ff6
+  rotate: false
+  xy: 232, 5
+  size: 115, 115
+  orig: 115, 115
+  offset: 0, 0
+  index: -1
+ff7
+  rotate: false
+  xy: 349, 5
+  size: 113, 115
+  orig: 113, 115
+  offset: 0, 0
+  index: -1
+ff8
+  rotate: false
+  xy: 544, 373
+  size: 96, 113
+  orig: 96, 113
+  offset: 0, 0
+  index: -1
+nl
+  rotate: true
+  xy: 742, 309
+  size: 76, 40
+  orig: 76, 40
+  offset: 0, 0
+  index: -1

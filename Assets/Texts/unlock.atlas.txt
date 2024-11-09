@@ -1,0 +1,34 @@
+
+unlock.png
+size: 238,238
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 26
+  rotate: false
+  xy: 205, 189
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+Layer 27
+  rotate: false
+  xy: 2, 108
+  size: 40, 48
+  orig: 40, 48
+  offset: 0, 0
+  index: -1
+Layer 28
+  rotate: true
+  xy: 2, 158
+  size: 38, 201
+  orig: 38, 201
+  offset: 0, 0
+  index: -1
+Layer 29
+  rotate: false
+  xy: 2, 198
+  size: 234, 38
+  orig: 234, 38
+  offset: 0, 0
+  index: -1

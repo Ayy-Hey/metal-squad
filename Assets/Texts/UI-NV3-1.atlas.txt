@@ -1,0 +1,41 @@
+
+UI-NV3-1.png
+size: 302,302
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+12121212
+  rotate: true
+  xy: 137, 0
+  size: 87, 101
+  orig: 87, 101
+  offset: 0, 0
+  index: -1
+Layer 18
+  rotate: false
+  xy: 137, 89
+  size: 144, 99
+  orig: 144, 99
+  offset: 0, 0
+  index: -1
+Layer 68 copy 3
+  rotate: false
+  xy: 137, 190
+  size: 139, 112
+  orig: 139, 112
+  offset: 0, 0
+  index: -1
+btay
+  rotate: false
+  xy: 0, 19
+  size: 83, 56
+  orig: 83, 56
+  offset: 0, 0
+  index: -1
+tay
+  rotate: false
+  xy: 0, 77
+  size: 135, 225
+  orig: 135, 225
+  offset: 0, 0
+  index: -1

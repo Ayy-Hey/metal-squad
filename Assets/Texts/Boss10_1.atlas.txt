@@ -1,0 +1,104 @@
+
+Boss10_1.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+21
+  rotate: false
+  xy: 2, 349
+  size: 1000, 157
+  orig: 1000, 157
+  offset: 0, 0
+  index: -1
+6
+  rotate: false
+  xy: 2, 181
+  size: 754, 166
+  orig: 754, 166
+  offset: 0, 0
+  index: -1
+Layer 31
+  rotate: false
+  xy: 456, 116
+  size: 139, 63
+  orig: 139, 63
+  offset: 0, 0
+  index: -1
+Layer 32
+  rotate: false
+  xy: 758, 284
+  size: 227, 63
+  orig: 227, 63
+  offset: 0, 0
+  index: -1
+Layer 33
+  rotate: false
+  xy: 2, 116
+  size: 256, 63
+  orig: 256, 63
+  offset: 0, 0
+  index: -1
+Layer 34
+  rotate: false
+  xy: 758, 238
+  size: 196, 44
+  orig: 196, 44
+  offset: 0, 0
+  index: -1
+Layer 35
+  rotate: true
+  xy: 832, 11
+  size: 113, 44
+  orig: 113, 44
+  offset: 0, 0
+  index: -1
+Layer 36
+  rotate: false
+  xy: 2, 2
+  size: 151, 44
+  orig: 151, 44
+  offset: 0, 0
+  index: -1
+Layer 37
+  rotate: false
+  xy: 2, 48
+  size: 222, 66
+  orig: 222, 66
+  offset: 0, 0
+  index: -1
+Layer 38
+  rotate: false
+  xy: 260, 118
+  size: 194, 61
+  orig: 194, 61
+  offset: 0, 0
+  index: -1
+image 10
+  rotate: false
+  xy: 758, 126
+  size: 123, 110
+  orig: 123, 110
+  offset: 0, 0
+  index: -1
+image 4
+  rotate: true
+  xy: 722, 22
+  size: 102, 108
+  orig: 102, 108
+  offset: 0, 0
+  index: -1
+image 6
+  rotate: true
+  xy: 883, 124
+  size: 112, 108
+  orig: 112, 108
+  offset: 0, 0
+  index: -1
+image 8
+  rotate: false
+  xy: 597, 68
+  size: 123, 111
+  orig: 123, 111
+  offset: 0, 0
+  index: -1

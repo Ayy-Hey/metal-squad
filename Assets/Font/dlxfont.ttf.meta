@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: b4a6af86dc5d4c06a9c40dcb1d20ebb4
+timeCreated: 1610845320
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: "dlxfont"
+  fontNames:
+  - DeluxeFont
+  fallbackFontReferences: []
+  customCharacters:
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData:
+  assetBundleName: 
+  assetBundleVariant: 

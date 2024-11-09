@@ -1,0 +1,55 @@
+
+truc-thang.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 55
+  rotate: false
+  xy: 316, 256
+  size: 113, 130
+  orig: 113, 130
+  offset: 0, 0
+  index: -1
+Layer 68
+  rotate: false
+  xy: 2, 388
+  size: 506, 120
+  orig: 506, 120
+  offset: 0, 0
+  index: -1
+Layer 71
+  rotate: true
+  xy: 316, 133
+  size: 121, 115
+  orig: 121, 115
+  offset: 0, 0
+  index: -1
+Layer 72
+  rotate: false
+  xy: 316, 98
+  size: 182, 33
+  orig: 182, 33
+  offset: 0, 0
+  index: -1
+Layer 73
+  rotate: false
+  xy: 2, 5
+  size: 215, 66
+  orig: 215, 66
+  offset: 0, 0
+  index: -1
+Layer 74
+  rotate: false
+  xy: 316, 65
+  size: 162, 31
+  orig: 162, 31
+  offset: 0, 0
+  index: -1
+Layer 77
+  rotate: false
+  xy: 2, 73
+  size: 312, 313
+  orig: 312, 313
+  offset: 0, 0
+  index: -1

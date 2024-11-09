@@ -1,0 +1,55 @@
+
+nong4.png
+size: 222,222
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 10
+  rotate: false
+  xy: 140, 29
+  size: 31, 31
+  orig: 31, 31
+  offset: 0, 0
+  index: -1
+Layer 11
+  rotate: true
+  xy: 159, 117
+  size: 103, 55
+  orig: 103, 55
+  offset: 0, 0
+  index: -1
+Layer 12
+  rotate: true
+  xy: 68, 2
+  size: 48, 63
+  orig: 48, 63
+  offset: 0, 0
+  index: -1
+Layer 9
+  rotate: false
+  xy: 140, 62
+  size: 53, 53
+  orig: 53, 53
+  offset: 0, 0
+  index: -1
+n1
+  rotate: false
+  xy: 2, 52
+  size: 136, 67
+  orig: 136, 67
+  offset: 0, 0
+  index: -1
+n2
+  rotate: true
+  xy: 2, 2
+  size: 48, 64
+  orig: 48, 64
+  offset: 0, 0
+  index: -1
+nat4
+  rotate: false
+  xy: 2, 121
+  size: 155, 99
+  orig: 155, 99
+  offset: 0, 0
+  index: -1

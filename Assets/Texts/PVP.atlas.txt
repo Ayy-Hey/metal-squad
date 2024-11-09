@@ -1,0 +1,83 @@
+
+PVP.png
+size: 284,284
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 3
+  rotate: true
+  xy: 149, 113
+  size: 117, 133
+  orig: 117, 133
+  offset: 0, 0
+  index: -1
+Layer 5
+  rotate: true
+  xy: 148, 4
+  size: 107, 64
+  orig: 107, 64
+  offset: 0, 0
+  index: -1
+Layer 5 copy
+  rotate: false
+  xy: 32, 29
+  size: 107, 64
+  orig: 107, 64
+  offset: 0, 0
+  index: -1
+Layer 555 copy
+  rotate: false
+  xy: 2, 234
+  size: 189, 48
+  orig: 189, 48
+  offset: 0, 0
+  index: -1
+Layer 595 copy 7
+  rotate: false
+  xy: 214, 44
+  size: 67, 67
+  orig: 67, 67
+  offset: 0, 0
+  index: -1
+Layer 617 copy 2
+  rotate: false
+  xy: 2, 135
+  size: 145, 97
+  orig: 145, 97
+  offset: 0, 0
+  index: -1
+Layer 651 copy
+  rotate: false
+  xy: 2, 4
+  size: 50, 18
+  orig: 50, 18
+  offset: 0, 0
+  index: -1
+Layer 660 copy
+  rotate: true
+  xy: 2, 24
+  size: 69, 28
+  orig: 69, 28
+  offset: 0, 0
+  index: -1
+Layer 662
+  rotate: true
+  xy: 214, 13
+  size: 29, 21
+  orig: 29, 21
+  offset: 0, 0
+  index: -1
+Layer 681
+  rotate: false
+  xy: 193, 232
+  size: 88, 50
+  orig: 88, 50
+  offset: 0, 0
+  index: -1
+boss
+  rotate: false
+  xy: 2, 95
+  size: 144, 38
+  orig: 144, 38
+  offset: 0, 0
+  index: -1

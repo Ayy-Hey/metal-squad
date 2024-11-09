@@ -1,0 +1,76 @@
+
+1v1.png
+size: 392,392
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BOSS MODE copy
+  rotate: false
+  xy: 203, 35
+  size: 94, 30
+  orig: 94, 30
+  offset: 0, 0
+  index: -1
+Layer 204 copy 28
+  rotate: false
+  xy: 313, 92
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+Layer 651 copy
+  rotate: true
+  xy: 293, 67
+  size: 50, 18
+  orig: 50, 18
+  offset: 0, 0
+  index: -1
+Layer 652
+  rotate: true
+  xy: 2, 11
+  size: 142, 199
+  orig: 142, 199
+  offset: 0, 0
+  index: -1
+Layer 660 copy
+  rotate: false
+  xy: 203, 5
+  size: 69, 28
+  orig: 69, 28
+  offset: 0, 0
+  index: -1
+Layer 681
+  rotate: false
+  xy: 203, 67
+  size: 88, 50
+  orig: 88, 50
+  offset: 0, 0
+  index: -1
+boss
+  rotate: false
+  xy: 203, 119
+  size: 144, 38
+  orig: 144, 38
+  offset: 0, 0
+  index: -1
+boy1
+  rotate: false
+  xy: 197, 159
+  size: 193, 231
+  orig: 193, 231
+  offset: 0, 0
+  index: -1
+boy2
+  rotate: false
+  xy: 2, 155
+  size: 193, 235
+  orig: 193, 235
+  offset: 0, 0
+  index: -1
+thuoc
+  rotate: false
+  xy: 349, 119
+  size: 35, 38
+  orig: 35, 38
+  offset: 0, 0
+  index: -1

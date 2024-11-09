@@ -1,0 +1,160 @@
+
+UI-NV3.png
+size: 652,652
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Group 3 copy 4
+  rotate: true
+  xy: 484, 39
+  size: 66, 67
+  orig: 66, 67
+  offset: 0, 0
+  index: -1
+Layer 1
+  rotate: false
+  xy: 459, 283
+  size: 145, 194
+  orig: 145, 194
+  offset: 0, 0
+  index: -1
+Layer 10
+  rotate: false
+  xy: 484, 107
+  size: 86, 97
+  orig: 86, 97
+  offset: 0, 0
+  index: -1
+Layer 100 copy
+  rotate: true
+  xy: 247, 60
+  size: 222, 90
+  orig: 222, 90
+  offset: 0, 0
+  index: -1
+Layer 15
+  rotate: false
+  xy: 459, 479
+  size: 178, 173
+  orig: 178, 173
+  offset: 0, 0
+  index: -1
+Layer 15 copy 2
+  rotate: false
+  xy: 339, 49
+  size: 143, 145
+  orig: 143, 145
+  offset: 0, 0
+  index: -1
+Layer 17
+  rotate: false
+  xy: 606, 416
+  size: 38, 61
+  orig: 38, 61
+  offset: 0, 0
+  index: -1
+Layer 19
+  rotate: false
+  xy: 632, 348
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+Layer 20
+  rotate: true
+  xy: 606, 370
+  size: 44, 40
+  orig: 44, 40
+  offset: 0, 0
+  index: -1
+Layer 21
+  rotate: false
+  xy: 339, 196
+  size: 104, 86
+  orig: 104, 86
+  offset: 0, 0
+  index: -1
+Layer 30 copy
+  rotate: true
+  xy: 0, 0
+  size: 18, 32
+  orig: 18, 32
+  offset: 0, 0
+  index: -1
+Layer 4
+  rotate: false
+  xy: 0, 20
+  size: 245, 334
+  orig: 245, 334
+  offset: 0, 0
+  index: -1
+Layer 4 copy
+  rotate: false
+  xy: 287, 284
+  size: 170, 368
+  orig: 170, 368
+  offset: 0, 0
+  index: -1
+Layer 5
+  rotate: false
+  xy: 445, 206
+  size: 101, 75
+  orig: 101, 75
+  offset: 0, 0
+  index: -1
+Layer 6
+  rotate: false
+  xy: 606, 337
+  size: 24, 31
+  orig: 24, 31
+  offset: 0, 0
+  index: -1
+Layer 61 copy
+  rotate: false
+  xy: 0, 356
+  size: 285, 296
+  orig: 285, 296
+  offset: 0, 0
+  index: -1
+Layer 8
+  rotate: false
+  xy: 572, 94
+  size: 59, 56
+  orig: 59, 56
+  offset: 0, 0
+  index: -1
+Layer 9
+  rotate: true
+  xy: 315, 33
+  size: 25, 12
+  orig: 25, 12
+  offset: 0, 0
+  index: -1
+Layer 90 copy 2
+  rotate: false
+  xy: 548, 214
+  size: 57, 67
+  orig: 57, 67
+  offset: 0, 0
+  index: -1
+Layer 90 copy 4
+  rotate: true
+  xy: 247, 2
+  size: 56, 66
+  orig: 56, 66
+  offset: 0, 0
+  index: -1
+Layer 90 copy 5
+  rotate: false
+  xy: 247, 288
+  size: 38, 66
+  orig: 38, 66
+  offset: 0, 0
+  index: -1
+Layer 93 copy 3
+  rotate: false
+  xy: 572, 152
+  size: 49, 60
+  orig: 49, 60
+  offset: 0, 0
+  index: -1

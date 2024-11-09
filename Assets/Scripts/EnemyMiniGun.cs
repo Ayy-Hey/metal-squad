@@ -1,0 +1,611 @@
+using System;
+using Spine;
+using Spine.Unity;
+using UnityEngine;
+
+public class EnemyMiniGun : BaseEnemy2
+{
+	private void OnValidate()
+	{
+		if (!this.data)
+		{
+			this.data = Resources.Load<DataEVL>("Charactor/Enemies/" + base.GetType().ToString());
+		}
+		if (!this.skeletonAnimation)
+		{
+			this.skeletonAnimation = base.GetComponentInChildren<SkeletonAnimation>();
+		}
+		if (!this.meshRenderer)
+		{
+			this.meshRenderer = base.GetComponentInChildren<MeshRenderer>();
+		}
+	}
+
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+		if ((collision.CompareTag("Found_Gulf") || collision.CompareTag("Found_Wall")) && this.isMove)
+		{
+			base.Flip = !base.Flip;
+			float num = UnityEngine.Random.Range(1f, 3f);
+			this._targetX = ((!base.Flip) ? (this.pos.x + num) : (this.pos.x - num));
+		}
+		if (collision.CompareTag("Found_Jump"))
+		{
+			if (this._state == EnemyMiniGun.EState.Day1 || this._state == EnemyMiniGun.EState.Parachute)
+			{
+				if (this.dayDu)
+				{
+					this.dayDu.Off();
+					this.dayDu = null;
+				}
+				base.Gravity = 2f;
+			}
+			this._state = EnemyMiniGun.EState.Jump1;
+			this.isChangeState = false;
+			this.isMove = true;
+		}
+	}
+
+	private void OnCollisionEnter2D(Collision2D collision)
+	{
+		switch (this._state)
+		{
+		case EnemyMiniGun.EState.Jump3:
+			this.rigidbody2D.velocity = Vector2.zero;
+			this.ChangeState();
+			break;
+		case EnemyMiniGun.EState.Parachute:
+		case EnemyMiniGun.EState.Day1:
+			if (this.dayDu)
+			{
+				this.dayDu.Off();
+				this.dayDu = null;
+			}
+			base.Gravity = 2f;
+			this.ChangeState();
+			break;
+		case EnemyMiniGun.EState.Walk1:
+		case EnemyMiniGun.EState.Walk2:
+			if (collision.contacts != null && collision.contacts[0].normal.y < 0.5f)
+			{
+				float num = UnityEngine.Random.Range(2f, 4f);
+				this._targetX = ((!base.Flip) ? (this.pos.x - num) : (this.pos.x + num));
+				base.Flip = !base.Flip;
+			}
+			break;
+		}
+	}
+
+	public override void Init(EnemyDataInfo enemyDataInfo, Action hideCallback)
+	{
+		base.Init(enemyDataInfo, hideCallback);
+		this.sitCollider.enabled = false;
+		if (this._boneTarget == null)
+		{
+			this._boneTarget = this.skeletonAnimation.Skeleton.FindBone(this.strBoneTarget);
+			this._boneGuntip1 = this.skeletonAnimation.Skeleton.FindBone(this.strBoneGuntip1);
+			this._boneGuntip2 = this.skeletonAnimation.Skeleton.FindBone(this.strBoneGuntip2);
+			this._boneGuntip3 = this.skeletonAnimation.Skeleton.FindBone(this.strBoneGuntip3);
+			this._boneGuntip4 = this.skeletonAnimation.Skeleton.FindBone(this.strBoneGuntip4);
+		}
+		if (this.cacheEnemyData.ismove)
+		{
+			this._state = EnemyMiniGun.EState.Idle;
+			this.ChangeState();
+		}
+		else
+		{
+			this._state = EnemyMiniGun.EState.Walk1;
+			this.ChangeState();
+		}
+	}
+
+	public override void OnUpdate(float deltaTime)
+	{
+		base.OnUpdate(deltaTime);
+		if (this.isAttack && !this.isDie)
+		{
+			if (!this._isStartAttack)
+			{
+				bool flag = base.Flip == this.pos.x < GameManager.Instance.player.transform.position.x;
+				if (this._state == EnemyMiniGun.EState.Hit_Ice || flag)
+				{
+					return;
+				}
+				this._isStartAttack = true;
+				base.PlayAnim(0, 2, false);
+			}
+			else
+			{
+				float a = 1f - (float)this.modeLv * 0.5f;
+				this._targetLockPos = GameManager.Instance.player.tfOrigin.position - this.pos;
+				this._targetLockPos.x = ((!base.Flip) ? this._targetLockPos.x : (-this._targetLockPos.x));
+				this._targetLockPos.x = Mathf.Max(a, this._targetLockPos.x);
+				this._targetPos = Vector3.SmoothDamp(this._targetPos, this._targetLockPos, ref this._veloSmoothTarget, 0.2f);
+				this._boneTarget.SetPosition(this._targetPos);
+				if (!this._isLockAttack)
+				{
+					this._isLockAttack = (Vector3.Distance(this._targetPos, this._targetLockPos) < 1f);
+					if (this._isLockAttack)
+					{
+						base.PlayAnim(1, 1, false);
+					}
+				}
+			}
+		}
+	}
+
+	public override void SetParachuter(float gravity = 0.5f)
+	{
+		base.SetParachuter(gravity);
+		base.Gravity = gravity;
+		bool flag = UnityEngine.Random.Range(0, 4) < 3;
+		this._state = ((!flag) ? EnemyMiniGun.EState.Parachute : EnemyMiniGun.EState.Day1);
+		if (flag)
+		{
+			this._state = EnemyMiniGun.EState.Day1;
+			Vector3 pos = this.pos;
+			pos.x += ((!base.Flip) ? 0.2f : -0.2f);
+			this.dayDu = EnemyManager.Instance.CreateDayDu(pos);
+		}
+		else
+		{
+			this._state = EnemyMiniGun.EState.Parachute;
+		}
+		this.isChangeState = true;
+		base.PlayAnim((int)this._state, 0, true);
+	}
+
+	protected override void StartState()
+	{
+		base.StartState();
+		bool flag = false;
+		switch (this._state)
+		{
+		case EnemyMiniGun.EState.Idle:
+			base.Flip = (this.pos.x > GameManager.Instance.player.transform.position.x);
+			break;
+		case EnemyMiniGun.EState.Idle_Walk:
+			this.sitCollider.enabled = true;
+			this.bodyCollider2D.enabled = false;
+			base.Flip = (this.pos.x > GameManager.Instance.player.transform.position.x);
+			break;
+		case EnemyMiniGun.EState.Jump1:
+		{
+			float d = Mathf.Sqrt(Mathf.Abs(5f * this.rigidbody2D.gravityScale * Physics2D.gravity.y));
+			this.rigidbody2D.velocity = Vector2.up * d;
+			break;
+		}
+		case EnemyMiniGun.EState.Walk1:
+		case EnemyMiniGun.EState.Walk2:
+			flag = true;
+			this.isMove = true;
+			base.Flip = (this.pos.x > this._targetX);
+			break;
+		}
+		int state = (int)this._state;
+		bool loop = flag;
+		base.PlayAnim(state, 0, loop);
+	}
+
+	protected override void UpdateState(float deltaTime)
+	{
+		base.UpdateState(deltaTime);
+		switch (this._state)
+		{
+		case EnemyMiniGun.EState.Jump1:
+		case EnemyMiniGun.EState.Jump3:
+			this._speed = this.cacheEnemy.Speed * 2f;
+			goto IL_D5;
+		case EnemyMiniGun.EState.Jump2:
+			this._speed = this.cacheEnemy.Speed * 2f;
+			if (this.rigidbody2D.velocity.y < 0f)
+			{
+				this.ChangeState();
+			}
+			goto IL_D5;
+		case EnemyMiniGun.EState.Walk1:
+			this._speed = this.cacheEnemy.Speed * 2f;
+			goto IL_D5;
+		case EnemyMiniGun.EState.Walk2:
+			this._speed = this.cacheEnemy.Speed;
+			goto IL_D5;
+		}
+		this._speed = 0f;
+		IL_D5:
+		if (this.isMove)
+		{
+			if (base.Flip)
+			{
+				this.pos.x = this.pos.x - this._speed * deltaTime;
+				bool flag = this.pos.x < this._targetX && (this._state == EnemyMiniGun.EState.Walk1 || this._state == EnemyMiniGun.EState.Walk2);
+				if (flag)
+				{
+					this.ChangeState();
+				}
+			}
+			else
+			{
+				this.pos.x = this.pos.x + this._speed * deltaTime;
+				bool flag2 = this.pos.x > this._targetX && (this._state == EnemyMiniGun.EState.Walk1 || this._state == EnemyMiniGun.EState.Walk2);
+				if (flag2)
+				{
+					this.ChangeState();
+				}
+			}
+		}
+	}
+
+	protected override void OnStuckMove()
+	{
+		base.OnStuckMove();
+		if (this._state == EnemyMiniGun.EState.Walk1 || this._state == EnemyMiniGun.EState.Walk2)
+		{
+			this._state = EnemyMiniGun.EState.Jump1;
+			this.isChangeState = false;
+		}
+	}
+
+	protected override void ChangeState()
+	{
+		if (this.isDie)
+		{
+			return;
+		}
+		switch (this._state)
+		{
+		case EnemyMiniGun.EState.Hit_Ice:
+		case EnemyMiniGun.EState.Idle:
+		case EnemyMiniGun.EState.Idle_Walk:
+		case EnemyMiniGun.EState.Day2:
+			this.sitCollider.enabled = false;
+			this.bodyCollider2D.enabled = true;
+			if (!this.cacheEnemyData.ismove)
+			{
+				this._state = EnemyMiniGun.EState.Idle;
+			}
+			else if (this.canAttack)
+			{
+				float num = UnityEngine.Random.Range(2f, 5f);
+				this._targetX = ((this.pos.x >= CameraController.Instance.camPos.x) ? (this.pos.x - num) : (this.pos.x + num));
+				this._state = EnemyMiniGun.EState.Walk2;
+			}
+			else
+			{
+				bool flag = false;
+				CameraController.Orientation orientaltion = CameraController.Instance.orientaltion;
+				if (orientaltion != CameraController.Orientation.HORIZONTAL)
+				{
+					if (orientaltion == CameraController.Orientation.VERTICAL)
+					{
+						flag = ((!CameraController.Instance.isVerticalDown) ? (this.pos.y < CameraController.Instance.camPos.y + CameraController.Instance.Size().y) : (this.pos.y > CameraController.Instance.camPos.y - CameraController.Instance.Size().y));
+					}
+				}
+				else
+				{
+					flag = (this.pos.x < CameraController.Instance.camPos.x || Mathf.Abs(this.pos.x - CameraController.Instance.camPos.x) <= CameraController.Instance.Size().x + 3f);
+				}
+				if (flag)
+				{
+					float num2 = UnityEngine.Random.Range(2f, 4f);
+					this._targetX = CameraController.Instance.camPos.x + ((this.pos.x >= CameraController.Instance.camPos.x) ? num2 : (-num2));
+					this._state = EnemyMiniGun.EState.Walk1;
+				}
+				else
+				{
+					float num3 = UnityEngine.Random.Range(1f, 2f);
+					this._targetX = ((!base.Flip) ? (this.pos.x - num3) : (this.pos.x + num3));
+					this._state = EnemyMiniGun.EState.Walk2;
+				}
+			}
+			break;
+		case EnemyMiniGun.EState.Jump1:
+			this._state = EnemyMiniGun.EState.Jump2;
+			break;
+		case EnemyMiniGun.EState.Jump2:
+			this._state = EnemyMiniGun.EState.Jump3;
+			break;
+		case EnemyMiniGun.EState.Jump3:
+			this.isMove = false;
+			this._state = EnemyMiniGun.EState.Idle;
+			break;
+		case EnemyMiniGun.EState.Parachute:
+		{
+			bool flag2 = UnityEngine.Random.Range(0, 2) == 1;
+			if (flag2)
+			{
+				this._state = EnemyMiniGun.EState.Idle;
+			}
+			else
+			{
+				this._state = EnemyMiniGun.EState.Walk2;
+				float num4 = UnityEngine.Random.Range(1f, 3f);
+				this._targetX = ((this.pos.x >= CameraController.Instance.camPos.x) ? (this.pos.x - num4) : (this.pos.x + num4));
+			}
+			break;
+		}
+		case EnemyMiniGun.EState.Walk1:
+		case EnemyMiniGun.EState.Walk2:
+			this.isMove = false;
+			this._state = EnemyMiniGun.EState.Idle;
+			break;
+		case EnemyMiniGun.EState.Day1:
+			this._state = EnemyMiniGun.EState.Day2;
+			break;
+		}
+		base.ChangeState();
+	}
+
+	protected override void OnPowerUp()
+	{
+		base.OnPowerUp();
+		base.PlayAnim(18, 3, false);
+	}
+
+	protected override void OnAttack()
+	{
+		if (this._state == EnemyMiniGun.EState.Hit_Ice || this._state == EnemyMiniGun.EState.Parachute)
+		{
+			base.ResetTimeReload();
+			return;
+		}
+		this._isStartAttack = false;
+		this._isLockAttack = false;
+		this._targetPos = this._boneGuntip1.GetLocalPosition();
+		this._boneTarget.SetPosition(this._targetPos);
+		base.OnAttack();
+	}
+
+	protected override void Hit()
+	{
+		base.Hit();
+		if (this._state == EnemyMiniGun.EState.Hit_Ice)
+		{
+			return;
+		}
+		EWeapon lastWeapon = this.lastWeapon;
+		if (lastWeapon != EWeapon.GRENADE_ICE)
+		{
+			if (lastWeapon == EWeapon.THUNDER)
+			{
+				base.PlayAnim(10, 4, false);
+				return;
+			}
+			if (lastWeapon != EWeapon.ICE)
+			{
+				base.PlayAnim(9, 4, false);
+				return;
+			}
+		}
+		this.isMove = false;
+		if (this.dayDu)
+		{
+			this.dayDu.Off();
+			this.dayDu = null;
+		}
+		if (this._state == EnemyMiniGun.EState.Walk1 || this._state == EnemyMiniGun.EState.Walk2)
+		{
+			base.SetEmptyAnim(0, 0f);
+		}
+		this._state = EnemyMiniGun.EState.Hit_Ice;
+		base.PlayAnim(11, 4, false);
+	}
+
+	protected override void Die(bool isRambo)
+	{
+		base.Die(isRambo);
+		this.sitCollider.enabled = false;
+		base.SetEmptyAnims(0f);
+		EWeapon lastWeapon = this.lastWeapon;
+		switch (lastWeapon)
+		{
+		case EWeapon.GRENADE_M61:
+		case EWeapon.GRENADE_CHEMICAL:
+			goto IL_A1;
+		case EWeapon.GRENADE_ICE:
+			break;
+		case EWeapon.GRENADE_MOLOYOV:
+			goto IL_93;
+		default:
+			switch (lastWeapon)
+			{
+			case EWeapon.FLAME:
+				goto IL_93;
+			case EWeapon.THUNDER:
+				base.PlayAnim(4, 0, false);
+				return;
+			default:
+				switch (lastWeapon)
+				{
+				case EWeapon.ICE:
+					goto IL_77;
+				case EWeapon.MGL140:
+					goto IL_A1;
+				}
+				base.PlayAnim(3, 0, false);
+				return;
+			case EWeapon.ROCKET:
+				goto IL_A1;
+			}
+			break;
+		}
+		IL_77:
+		base.PlayAnim(8, 0, false);
+		return;
+		IL_93:
+		base.PlayAnim(5, 0, false);
+		return;
+		IL_A1:
+		bool flag = UnityEngine.Random.Range(0, 2) == 1;
+		if (flag)
+		{
+			base.PlayAnim(6, 0, false);
+		}
+		else
+		{
+			base.PlayAnim(7, 0, false);
+		}
+	}
+
+	protected override void Disable()
+	{
+		base.Disable();
+	}
+
+	protected override void OnEvent(TrackEntry trackEntry, Spine.Event e)
+	{
+		base.OnEvent(trackEntry, e);
+		string name = e.Data.Name;
+		if (name != null)
+		{
+			if (!(name == "shoot"))
+			{
+				if (name == "shoot2")
+				{
+					Vector3 worldPosition = this._boneGuntip3.GetWorldPosition(this.transform);
+					Vector3 v = worldPosition - this._boneGuntip2.GetWorldPosition(this.transform);
+					float speed = this.cacheEnemy.Speed * 4f;
+					GameManager.Instance.bulletManager.CreateBulletEnemy(11, v, worldPosition, this.cacheEnemy.Damage, speed, 0f).spriteRenderer.flipX = false;
+				}
+			}
+			else
+			{
+				Vector3 worldPosition = this._boneGuntip1.GetWorldPosition(this.transform);
+				Vector3 v = worldPosition - this._boneGuntip4.GetWorldPosition(this.transform);
+				float speed = this.cacheEnemy.Speed * 4f;
+				GameManager.Instance.bulletManager.CreateBulletEnemy(11, v, worldPosition, this.cacheEnemy.Damage, speed, 0f).spriteRenderer.flipX = false;
+			}
+		}
+	}
+
+	protected override void OnComplete(TrackEntry trackEntry)
+	{
+		base.OnComplete(trackEntry);
+		string text = trackEntry.ToString();
+		switch (text)
+		{
+		case "Idle":
+		case "Idle-walk":
+		case "Jump01":
+		case "day-2":
+			if (this._state != EnemyMiniGun.EState.Hit_Ice)
+			{
+				this.ChangeState();
+			}
+			break;
+		case "Hit-Ice":
+			this.ChangeState();
+			break;
+		case "Attack_1":
+			if (this._state != EnemyMiniGun.EState.Hit_Ice)
+			{
+				base.PlayAnim(2, 1, false);
+			}
+			else
+			{
+				this._isStartAttack = false;
+			}
+			break;
+		case "Attack_2":
+			this.attackCount++;
+			if (this.attackCount > this.modeLv || this._state == EnemyMiniGun.EState.Hit_Ice)
+			{
+				this.attackCount = 0;
+				base.ResetTimeReload();
+				base.SetEmptyAnim(2, 0.2f);
+				base.SetEmptyAnim(1, 0.2f);
+			}
+			else
+			{
+				base.PlayAnim(2, 1, false);
+			}
+			break;
+		case "Death":
+		case "Death-Elec":
+		case "Death_Fire":
+		case "Death_Ice":
+		case "Death_Grenade_Boom":
+		case "Death_Grenade_Boom2":
+			base.gameObject.SetActive(false);
+			break;
+		}
+	}
+
+	[SerializeField]
+	private Collider2D sitCollider;
+
+	[SerializeField]
+	[SpineBone("", "", true, false)]
+	private string strBoneTarget;
+
+	[SpineBone("", "", true, false)]
+	[SerializeField]
+	private string strBoneGuntip1;
+
+	[SerializeField]
+	[SpineBone("", "", true, false)]
+	private string strBoneGuntip2;
+
+	[SerializeField]
+	[SpineBone("", "", true, false)]
+	private string strBoneGuntip3;
+
+	[SerializeField]
+	[SpineBone("", "", true, false)]
+	private string strBoneGuntip4;
+
+	private EnemyMiniGun.EState _state;
+
+	private Bone _boneTarget;
+
+	private Bone _boneGuntip1;
+
+	private Bone _boneGuntip2;
+
+	private Bone _boneGuntip3;
+
+	private Bone _boneGuntip4;
+
+	private float _targetX;
+
+	private bool _isStartAttack;
+
+	private bool _isLockAttack;
+
+	private float _speed;
+
+	private Vector3 _targetPos;
+
+	private Vector3 _targetLockPos;
+
+	private Vector3 _veloSmoothTarget;
+
+	private DayDu dayDu;
+
+	private enum EState
+	{
+		Aim_Target,
+		Attack_1,
+		Attack_2,
+		Death,
+		Death_Elec,
+		Death_Fire,
+		Death_Bomb,
+		Death_Bomb2,
+		Death_Ice,
+		Hit,
+		Hit_Elec,
+		Hit_Ice,
+		Idle,
+		Idle_Walk,
+		Jump1,
+		Jump2,
+		Jump3,
+		Parachute,
+		PowerUp,
+		Walk1,
+		Walk2,
+		Day1,
+		Day2
+	}
+}

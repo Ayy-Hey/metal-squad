@@ -1,0 +1,14 @@
+using System;
+
+public enum EEnemyAIType
+{
+	CLEAR,
+	MOVE_TO_TARGET,
+	FINDING,
+	NOT_FOUND_WALK,
+	NOT_FOUND_IDLE,
+	HAS_FOUND,
+	HAS_GULF,
+	HAS_WALL,
+	WITHOUT_CAMERA
+}

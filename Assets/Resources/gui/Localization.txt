@@ -1,0 +1,1008 @@
+{
+    "Metal Squad":
+        ["Metal Squad","Metal Squad","Pasukan Metal","Esquadrão metálico","Metal Squad","เมทัลสควอด","Металлический отряд"],
+    "Campaign":
+        ["Campaign","Chiến Dịch","Kampanye","Campanha","Campaña","แคมเปญ","Кампания"],
+    "Boss Mode":
+        ["Boss Mode","Đấu Trùm","Mode Bos","Corrida contra chefes","Modo Jefe","โหมดบอส","Режим босса"],
+    "PVP":
+        ["Multiplayer","Đấu Trường","Multipemain","Multijogador","Multijugador","ผู้เล่นหลายคน","Многопользовательская игра"],
+    "Tip_1":
+        ["Tip: Save bullets to defeat BOSS easily","Mẹo: Hãy tiết kiệm đạn để tiêu diệt BOSS dễ dàng","Tip: Hemat peluru agar mudah mengalahkan BOS","Dica: economize munição para derrotar o CHEFE facilmente!","Consejo: Guarda balas para derrotar al JEFE fácilmente","คำแนะนำ: ประหยัดกระสุนไว้เพื่อให้จัดการบอสได้ง่ายขึ้น","Подсказка: экономьте патроны, чтобы легче победить БОССА."],
+    "Tip_2":
+        ["Tip: Join the game to receive daily gifts","Mẹo: Vào game hàng ngày để nhận thưởng","Tip: Masuk ke game untuk menerima hadiah harian","Dica: jogue todos os dias para receber presentes diários!","Consejo: Únete al juego para recibir regalos diarios","คำแนะนำ: เข้าเกมเพื่อรับของขวัญประจำวัน","Подсказка: присоединитесь к игре, чтобы получать ежедневные подарки."],
+    "Tip_3":
+        ["Tip: Go slowly and look around to complete tasks more easily.","Mẹo: Hãy đi chậm và quan sát để hoàn thành nhiệm vụ dễ dàng hơn","Tip: Bergerak perlahan dan perhatikan sekitar untuk mempermudah menyelesaikan tugas.","Dica: vá devagar e olhe bem onde você está para completar tarefas mais facilmente.","Consejo: Tómate tu tiempo y observa bien para completar los trabajos más fácilmente.","คำแนะนำ: ใช้เวลาสังเกตสิ่งรอบตัวให้ดีเพื่อให้ปฏิบัติภารกิจให้สำเร็จได้ง่ายขึ้น","Подсказка: передвигайтесь медленно и осматривайтесь, чтобы легче выполнять задачи."],
+    "Tip_4":
+        ["Tip: Do not jump into water. You can not swim","Mẹo: Đừng nhảy xuống nước. Bạn không thể bơi được","Tip: Jangan melompat ke air. Kamu tidak bisa berenang","Dica: não pule na água. Você não pode nadar.","Consejo: No saltes al agua. No puedes nadar","คำแนะนำ: อย่ากระโดดลงน้ำ คุณไม่สามารถว่ายน้ำได้","Подсказка: не прыгайте в воду. Вы не можете плавать."],
+    "Tip_5":
+        ["Tip: Approach an enemy and kill him with your knife","Mẹo: Đến gần quân địch và tiêu diệt chúng bằng vũ khí cận chiến","Tip: Dekati musuh dan bunuh dengan pisaumu","Dica: aproxime-se de um inimigo e mate-o com sua faca.","Consejo: Acércate al enemigo y mátalo con tu cuchillo","คำแนะนำ: เข้าใกล้ศัตรูเพื่อใช้มีดจัดการ","Подсказка: приблизьтесь к врагу и убейте его ножом."],
+    "Tip_6":
+        ["Tip: Use Special Weapon to kill more enemies at once","Mẹo: Sử dụng súng đặc biệt để tiêu diệt nhiều kẻ địch trong 1 lần bắn","Tip: Gunakan Senjata Khusus untuk membunuh lebih banyak musuh sekaligus","Dica: Use sua Arma Especial para matar mais inimigos de uma só vez.","Consejo: Usa el arma especial para matar a más enemigos a la vez","คำแนะนำ: ใช้อาวุธพิเศษเพื่อจัดการศัตรูหลายรายพร้อมกัน","Подсказка: используйте специальное оружие, чтобы убить больше врагов за раз."],
+    "Tip_7":
+        ["Tip: We regularly update the content and event for game","Mẹo: Chúng tôi thường xuyên cập nhật nội dung và sự kiện cho trò chơi","Tip: Kami memperbarui konten dan event game secara rutin","Dica: nós atualizamos regularmente o conteúdo e eventos do jogo","Consejo: Proporcionamos actualizaciones regulares de contenido y eventos del juego","คำแนะนำ: เรามีการอัพเดตข้อมูลและกิจกรรมเป็นระยะๆ","Подсказка: мы регулярно обновляем содержание и события игры."],
+    "Tip_8":
+        ["Tip: Loading game. Please wait…","Mẹo: Trò chơi đang được tải. Vui lòng đợi trong giây lát…","Tip: Memuat game. Harap tunggu…","Dica: carregando o jogo... Aguarde.","Consejo: Cargando. Espera…","คำแนะนำ: กำลังโหลดเกม กรุณารอสักครู่...","Подсказка: Загрузка игры. Подождите..."],
+    "Tip_9":
+        ["Tip: Upgrade your heroes to clear stage easily","Mẹo: Nâng cấp anh hùng của bạn để vượt qua màn chơi dễ dàng","Tip: Tingkatkan heromu untuk menyelesaikan tahap dengan mudah","Dica: Melhore seus heróis para passar mais facilmente de fase.","Consejo: Mejora tus héroes para completar la etapa más fácilmente","คำแนะนำ: อัพเกรดฮีโร่ของคุณเพื่อให้ผ่านด่านได้ง่ายขึ้น","Подсказка: расширяйте возможности своих героев, чтобы легче проходить уровни."],
+    "Tip_10":
+        ["Tip: Enemies will become stronger. Be careful!","Mẹo: Quân địch sẽ ngày càng mạnh hơn . Hãy cẩn thận","Tip: Musuh akan semakin kuat. Hati-hati!","Dica: cuidado! Os inimigos vão ficar mais fortes.","Consejo: Los enemigos se volverán más fuertes. ¡Ten cuidado!","คำแนะนำ: ศัตรูจะแข็งแกร่งขึ้น ระวัง!","Подсказка: враги будут становиться все сильнее. Будь осторожен!"],
+    "Tip_11":
+        ["Tip: Don't forget to throw grenades ","Mẹo: Đừng quên sử dụng lựu đạn của bạn","Tip: Jangan lupa lempar granatnya ","Dica: não esqueça de lançar granadas. ","Consejo: No te olvides de arrojar granadas ","คำแนะนำ: อย่าลืมขว้างระเบิด ","Подсказка: не забывайте бросать гранаты. "],
+    "Tip_12":
+        ["Tip: Ice-Gun can freeze enemies","Mẹo: Súng băng có thể đóng băng kẻ địch","Tip: Senapan Es dapat membekukan musuh","Dica: a Arma de Gelo pode congelar inimigos.","Consejo: La Pistola de Hielo puede congelar a los enemigos","คำแนะนำ: ปืนน้ำแข็งใช้แช่แข็งศัตรู","Подсказка: ледяная пушка может замораживать врагов."],
+    "Tip_13":
+        ["Tip: Let's use Special Weapon to complete the task more easily.","Mẹo: Sử dụng súng đặc biệt để hoàn thành nhiệm vụ dễ dàng hơn","Tip: Ayo gunakan Senjata Khusus untuk menyelesaikan tugas dengan lebih mudah.","Dica: use a Arma Especial para concluir a tarefa mais facilmente.","Consejo: Usemos el arma especial para completar el trabajo más fácilmente.","คำแนะนำ: ใช้อาวุธพิเศษเพื่อให้ปฏิบัติภารกิจได้ง่ายขึ้น","Подсказка: чтобы легче выполнить задачу, воспользуйтесь специальным оружием."],
+    "Tip_14":
+        ["Tip: Enemies will become more and more powerful. Be careful!","Mẹo: Quân địch sẽ ngày càng mạnh hơn . Hãy cẩn thận","Tip: Musuh akan jadi semakin kuat. Hati-hati!","Dica: Cuidado! Os inimigos se tornarão cada vez mais poderosos.","Consejo: Los enemigos se volverán cada vez más poderosos. ¡Ten cuidado!","คำแนะนำ: ศัตรูจะเข้มแข็งมากขึ้นเรื่อย ๆ ระวัง!","Подсказка: враги будут становиться все более и более могущественными. Будь осторожен!"],
+    "Tip_15":
+        ["Tip: You can get rare items from Daily Spin","Mẹo: Bạn có thể nhận được vật phẩm quý ở vòng quay may mắn","Tip: Kamu bisa mendapat item langka dari Putaran Harian","Dica: você pode obter itens raros na Roleta Diária.","Consejo: Puedes conseguir objetos raros en la Ruleta Diaria","คำแนะนำ: คุณสามารถรับไอเท็มหายากได้จากการสุ่มรางวัลประจำวัน","Подсказка: можно обзавестись редкими предметами на ежедневной рулетке."],
+    "Tip_16":
+        ["Tip: You can get rare items from Lucky Crates","Mẹo: Bạn có thể nhận được vật phẩm quý ở rương may mắn","Tip: Kamu bisa mendapat item langka dari Peti Keberuntungan","Dica: você pode obter itens raros nos Caixotes da Sorte.","Consejo: Puedes conseguir objetos raros de las Cajas de la Suerte","คำแนะนำ: คุณสามารถรับไอเท็มหายากได้จากกล่องชิงโชค","Подсказка: можно обзавестись редкими предметами в ящиках удачи."],
+    "Tip_17":
+        ["Tip: Sniper Rifle can fire multiple targets","Mẹo: Súng bắn tỉa có thể bắn xuyên nhiều mục tiêu","Tip: Senapan Sniper dapat menembak banyak sasaran","Dica: o Rifle Sniper pode atacar vários alvos.","Consejo: El Rifle de Francotirador puede disparar a varios blancos","คำแนะนำ: ปืนซุ่มยิงสามารถยิงเป้าหมายได้หลายรายพร้อมกัน","Подсказка: снайперская винтовка может обстреливать несколько целей."],
+    "Tip_18":
+        ["Tip: Let's choose the right weapon for each task","Mẹo: Hãy chọn vũ khí phù hợp cho từng nhiệm vụ","Tip: Ayo pilih senjata yang tepat untuk masing-masing tugas","Dica: cada arma é mais adequada para uma tarefa.","Consejo: Elijamos al arma correcta para cada trabajo","คำแนะนำ: เลือกอาวุธที่เหมาะกับภารกิจ","Подсказка: давайте для каждой задачи выбирать подходящее оружие."],
+    "Tip_19":
+        ["Tip: Weapon with High Damage may not be the most powerful weapon","Mẹo: Vũ khí có sát thương cao có thể không phải là vũ khí mạnh nhất","Tip: Senjata dengan Daya Perusak tinggi belum tentu senjata terhebat","Dica: uma arma com dano alto pode não ser a mais poderosa.","Consejo: Un arma con un gran daño podría no ser la más poderosa","คำแนะนำ: อาวุธทำลายล้างสูงอาจไม่ใช่อาวุธที่ดีที่สุด","Подсказка: оружие с максимальным наносимым ущербом может оказаться не самым мощным оружием."],
+    "Tip_20":
+        ["Tip: Use booster items to help complete tasks easily","Mẹo: Sử dụng vật phẩm tăng cường để hoàn thành nhiệm vụ dễ dàng","Tip: Gunakan item booster untuk mempermudah menyelesaikan tugas","Dica: use itens de reforço para ajudar a concluir tarefas facilmente.","Consejo: Usa los potenciadores para ayudarte a completar los trabajos más fácilmente","คำแนะนำ: ใช้ไอเท็มพิเศษเพื่อให้ปฏิบัติภารกิจสำเร็จได้ง่ายขึ้น","Подсказка: чтобы легче выполнять задачи, пользуйтесь бустерами."],
+    "Gift":
+        ["Free Gifts","Quà Miễn Phí","Hadiah Gratis","Presentes grátis","Regalos gratis","ของขวัญฟรี","Бесплатные подарки"],
+    "Gacha":
+        ["Lucky Crates","Rương May Mắn","Peti Keberuntungan","Caixotes da sorte","Cajas de la Suerte","กล่องชิงโชค","Ящики удачи"],
+    "Spin":
+        ["Spin","Quay May Mắn","Putar","Girar","Ruleta","หมุน","Рулетка"],
+    "Daily Gift":
+        ["Daily Gift","Thưởng Ngày","Hadiah Harian","Presente diário","Regalo diario","ของขวัญประจำวัน","Ежедневный подарок"],
+    "Quest":
+        ["Quest","Nhiệm Vụ","Pencarian","Missão","Misión","เควสต์","Квест"],
+    "Leaderboard":
+        ["Leaderboard","Bảng Xếp Hạng","Papan Skor","Classificação","Tabla de clasificación","กระดานผู้นำ","Рейтинг игроков"],
+    "Starter Pack":
+        ["Starter Pack","Gói Tân Thủ","Paket Pemula","Pacote de iniciantes","Paquete inicial","ชุดเริ่มต้น","Набор начинающего"],
+    "Weapon":
+        ["Weapon","Vũ Khí","Senjata","Arma","Arma","อาวุธ","Оружие"],
+    "Character":
+        ["Character","Nhân Vật","Karakter","Personagem","Personaje","ตัวละคร","Персонаж"],
+    "Loadout":
+        ["Loadout","Trang Bị","Loadout","Carga","Equipo","ยุทโธปกรณ์","Начальный набор оружия"],
+    "Campaign Map":
+        ["Campaign Map","Bản Đồ Chiến Dịch","Peta Kampanye","Mapa de campanha","Mapa de la campaña","แผนที่แคมเปญ","Карта кампании"],
+    "Boss":
+        ["Boss","Trùm","Bos","Chefe","Jefe","บอส","Босс"],
+    "Campaign Map S":
+        ["Campaign Map S","Bản Đồ Chiến Dịch S","Peta Kampanye S","Mapa de campanha S","Mapa de la campaña S","แผนที่แคมเปญ S","Карта кампании S"],
+    "Main Menu":
+        ["Main Menu","Màn Hình Chính","Menu Utama","Menu principal","Menú principal","เมนูหลัก","Главное меню"],
+    "Damage":
+        ["Damage","Sát Thương","Kerusakan","Dano","Daños","ความเสียหาย","Наносимый ущерб"],
+    "Firerate":
+        ["Firerate","Tốc Độ Bắn","Laju tembakan","Taxa de disparo","Cadencia de tiro","อัตราการยิง","Скорострельность"],
+    "Critical":
+        ["Critical","Bạo Kích","Critical","Crítico","Golpe crítico","คริติคอล","Критический"],
+    "Ammo":
+        ["Ammo","Số Đạn","Amunisi","Munição","Munición","กระสุน","Боеприпасы"],
+    "Range":
+        ["Range","Tầm Bắn","Jangkauan","Alcance","Alcance","ระยะ","Дальность"],
+    "Time":
+        ["Time","Thời Gian","Waktu","Tempo","Tiempo","เวลา","Время"],
+    "Primary":
+        ["Primary","Vũ Khí Chính","Utama","Primária","Principal","หลัก","Основной"],
+    "Special":
+        ["Special","Vũ Khí Đặc Biệt","Khusus","Especial","Especial","พิเศษ","Специальный"],
+    "Melee":
+        ["Melee","Vũ Khí Cận Chiến","Perkelahian","Combate próximo","Cuerpo a cuerpo","ประชิด","Рукопашный бой"],
+    "Grenade":
+        ["Grenade","Lựu Đạn","Granat","Granada","Granada","ระเบิด","Граната"],
+    "Power":
+        ["Power","Sức Mạnh","Kekuatan","Força","Poder","พลัง","Мощность"],
+    "Rank":
+        ["Rank","Thứ Hạng","Peringkat","Classe","Rango","อันดับ","Ранг"],
+    "Upgrade":
+        ["Upgrade","Nâng Cấp","Tingkatkan","Melhorar","Mejorar","อัพเกรด","Повысить уровень"],
+    "Unlock":
+        ["Unlock","Mở Khóa","Buka","Desbloquear","Desbloquear","ปลดล็อค","Разблокировать"],
+    "Rankup":
+        ["Rankup","Nâng Hạng","Naik Peringkat","Promover","Subir de rango","ยศเพิ่ม","Повысить ранг"],
+    "Or":
+        ["Or","Hoặc","Atau","Ou","O","หรือ","Или"],
+    "Past level campaign":
+        ["Pass Campaign level","Hoàn thành màn chơi chiến dịch","Menyelesaikan level Kampanye","Passar nível de campanha","Pasar el nivel de Campaña","ผ่านเลเวลแคมเปญ","Пройти уровень кампании"],
+    "Not enough":
+        ["Not enough","Không đủ","Tidak cukup","Insuficiente","No es suficiente","ไม่เพียงพอ","Недостаточно"],
+    "Would you like to get more":
+        ["Would you like to get more","Bạn có muốn kiếm thêm","Kamu ingin mendapat lebih banyak","Você gostaria de obter mais?","Tal vez quieras conseguir más","ต้องการเพิ่มหรือไม่","Хочешь получить больше?"],
+    "You need to unlock":
+        ["You need to unlock","Bạn cần phải mở khóa","Kamu harus membuka","Você precisa desbloquear","Debes desbloquear","คุณต้องปลดล็อค","Необходимо разблокировать"],
+    "You need past level campaign":
+        ["You need to pass Campaign level","Bạn cần hoàn thành màn chơi chiến dịch","Kamu harus menyelesaikan tingkat Kampanye","Você precisa passar o nível de campanha","Debes pasar el nivel de Campaña","คุณต้องผ่านเลเวลแคมเปญ","Необходимо пройти уровень кампании"],
+    "Gold":
+        ["Gold","Vàng","Emas","Ouro(s)","Oro","ทอง","Золото"],
+    "Gem":
+        ["Gem","Ngọc","Permata","Joia(s)","Gema","เจม","Драгоценный камень"],
+    "Mekit":
+        ["Medkit","Bình máu","Perlengkapan Medis","Kit médico","Botiquín","ชุดปฐมพยาบาล","Аптечка"],
+    "Booster Amor":
+        ["Armor Booster","Tăng giáp","Booster Armor","Melhorador de armadura","Potenciador de armadura","เพิ่มเกราะ","Усилитель брони"],
+    "Booster Crit":
+        ["Crit Booster","Tăng bạo kích","Booster Crit","Melhorador de Crítico","Potenciador de golpe crítico","เพิ่มคริติคอล","Критический усилитель"],
+    "Booster Damage":
+        ["Damage Booster","Tăng sát thương","Booster Kerusakan","Melhorador de Danos","Potenciador de daños","เพิ่มความเสียหาย","Усилитель наносимого ущерба"],
+    "Booster Maget":
+        ["Magnet Booster","Nam châm","Booster Magnet","Melhorador de Ímã","Potenciador magnético","เพิ่มแรงดูด","Усилитель магнита"],
+    "Booster Skill":
+        ["Skill Booster","Giảm hồi chiêu","Booster Kecakapan","Melhorador de Habilidade","Potenciador de habilidad","เพิ่มทักษะ","Усилитель навыка"],
+    "Booster Speed":
+        ["Speed Booster","Tăng tốc độ","Booster Kecepatan","Melhorador de Velocidade","Potenciador de velocidad","เพิ่มความเร็ว","Ускоритель"],
+    "Booster X2Exp":
+        ["X2Exp Booster","Gấp đôi kinh nghiệm","Booster X2Exp","Melhorador x2 Exp","Potenciador de experiencia x2","เพิ่มประสบการณ์ 2 เท่า","Усилитель, удваивающий опыт"],
+    "Booster X2Gold":
+        ["X2Gold Booster","Gấp đôi Vàng","X2Booster Emas","Melhorador x2 Ouros","Potenciador de oro x2","เพิ่มทอง 2 เท่า","Усилитель, удваивающий количество золота"],
+    "Ticket Spin":
+        ["Spin Ticket","Vé vòng quay","Tiket Putaran","Bilhete de roleta","Boleto de la Ruleta","ตั๋วลุ้นโชค","Билет рулетки"],
+    "Ticket BossMode":
+        ["Boss Mode Ticket ","Vé đấu trùm","Tiket Mode Bos ","Bilhete do Modo Chefe ","Boleto del modo Jefe ","ตั๋วโหมดบอส ","Билет режима босса "],
+    "Exp":
+        ["Exp","Kinh nghiệm","Exp","Exp","Experiencia","ประสบการณ์","Опыт"],
+    "Hammer":
+        ["Hammer","Búa gỗ","Palu","Martelo","Martillo","ค้อน","Молоток"],
+    "Silver Axe":
+        ["Silver Axe","Rìu bạc","Kapak Perak","Machado de prata","Hacha de plata","ขวานเงิน","Серебряный топор"],
+    "Sword":
+        ["Sword","Kiếm","Pedang","Espada","Espada","ดาบ","Меч"],
+    "M61 Grenades":
+        ["M61 Grenade","Lựu M61","Granat M61","Granada M61","Granada M61","ระเบิด M61","Граната M61"],
+    "Ice Grenades":
+        ["Ice Grenade","Lựu băng","Granat Es","Granada de gelo","Granada de hielo","ระเบิดน้ำแข็ง","Ледяная граната"],
+    "Molotov":
+        ["Molotov","Bom xăng","Molotov","Molotov","Molotov","ระเบิดขวด","Коктейль Молотова"],
+    "Chemical":
+        ["Chemical","Lựu hóa học","Kimia","Químico","Química","เคมี","Химический"],
+    "M4A1":
+        ["M4A1","M4A1","M4A1","M4A1","M4A1","M4A1","M4A1"],
+    "Machine Gun":
+        ["Machine Gun","Súng Máy","Senapan Mesin","Metralhadora","Ametralladora","ปืนกล","Пулемет"],
+    "Ice Gun":
+        ["Ice Gun","Súng Băng","Senapan Es","Pistola de gelo","Pistola de hielo","ปืนน้ำแข็ง","Ледяная пушка"],
+    "Sniper":
+        ["Sniper","Súng Ngắm","Sniper","Sniper","Francotirador","สไนเปอร์","Снайпер"],
+    "MGL 140":
+        ["MGL-140","MGL-140","MGL-140","MGL-140","MGL-140","MGL-140","MGL-140"],
+    "Spread Gun":
+        ["Spread Gun","Súng Hoa Cải","Senapan Sebar","Arma Multidirecional","Arma desperdigante","ปืนกระจาย","Расширяющая пушка"],
+    "Flame Gun":
+        ["Flame Gun","Súng Phun Lửa","Senapan Penyembur Api","Arma Flamejante","Pistola de llamas","ปืนไฟ","Огнемет"],
+    "Thunder Shot":
+        ["Thunder Shot","Súnng Điện","Tembakan Petir","Tiro Elétrico","Arma de truenos","สายฟ้า","Удар молнии"],
+    "Laser Gun":
+        ["Laser Gun","Súng Laze","Senapan Laser","Arma a laser","Arma láser","ปืนเลเซอร์","Лазерная пушка"],
+    "Rocket":
+        ["Rocket","Súng Tên Lửa","Roket","Foguete","Cohete","จรวด","Ракета"],
+    "John D":
+        ["John D","John D","John D","John D","John D","จอห์น ดี","Джон Д"],
+    "Yoo na":
+        ["Yoo-na","Yoo-na","Yoo-na","Yoo-na","Yoo-na","ยูนะ","Ю-на"],
+    "Dvornikov":
+        ["Dvornikov","Dvornikov","Dvornikov","Dvornikov","Dvornikov","ดวอร์นิคอฟ","Дворников"],
+    "Exp Vip":
+        ["VIP exp","Điểm VIP","Exp VIP","Exp VIP","Exp VIP","ประสบการณ์ VIP","VIP-опыт"],
+    "Common Crate":
+        ["Normal Crate","Rương thường","Peti Biasa","Caixote normal","Caja normal","กล่องปกติ","Нормальный ящик"],
+    "Epic Crate":
+        ["Epic Crate","Rương đặc biệt ","Peti Epik","Caixote Épico","Caja épica","กล่องตำนาน","Ящик Epic"],
+    "Gacha A":
+        ["Lucky Crate A","Rương may mắn A","Peti Keberuntungan A","Caixote da sorte A","Caja de la Suerte A","กล่องชิงโชค A","Ящик удачи A"],
+    "Character Fragment":
+        ["Character Fragment","Mảnh nhân vật","Fragmen Karakter","Fragmento de Personagem","Fragmento de personaje","ชิ้นส่วนตัวละคร","Фрагмент персонажа"],
+    "Weapon Fragment":
+        ["Weapon Fragment","Mảnh vũ khí","Fragmen Senjata","Fragmento de Arma","Fragmento de arma","ชิ้นส่วนอาวุธ","Фрагмент оружия"],
+    "Bullet of":
+        ["Bullet of","Đạn của","Peluru dari","Bala de","Bala de","กระสุน","Патрон от"],
+    "Supply Shop":
+        ["Supply Shop","Cửa hàng hỗ trợ","Toko Perlengkapan","Loja de suprimentos","Tienda de suministros","ร้านขายสินค้า","Склад запасов"],
+    "Speed":
+        ["Speed","Tốc độ","Kecepatan","Velocidade","Velocidad","ความเร็ว","Скорость"],
+    "Require unlock":
+        ["Require Unlock","Yêu cầu mở khóa","Perlu Dibuka","Exige desbloqueio","Necesita un desbloqueo","ต้องปลดล็อค","Требуется разблокировка"],
+    "Map Select":
+        ["Map Select","Bản đồ","Pilih Peta","Seleção de mapa","Selección del mapa","เลือกแผนที่","Выбор карты"],
+    "Normal":
+        ["Normal","Bình thường","Normal","Normal","Normal","ปกติ","Нормальный"],
+    "Hard":
+        ["Hard","Khó","Sulit","Difícil","Difícil","ยาก","Сложный"],
+    "Crazy":
+        ["Crazy","Rất khó","Gila","Insuportável","Demente","สุดเหวี่ยง","Сумасшедший"],
+    "Level":
+        ["Level","Cấp độ","Tingkat","Nível","Nivel","เลเวล","Уровень"],
+    "Rewards":
+        ["Rewards","Phần thưởng","Hadiah","Recompensas","Recompensas","รางวัล","Награды"],
+    "Completed":
+        ["Completed","Hoàn thành","Selesai","Concluído","Completado","ผ่านแล้ว","Завершенный"],
+    "Best result":
+        ["Best result","Kết quả tốt nhất","Hasil terbaik","Melhor resultado","Mejor resultado","ผลลัพธ์ที่ดีที่สุด","Лучший результат"],
+    "Rec Power":
+        ["Rec Power","Yêu cầu sức mạnh","Kekuatan Disarankan","Poder Recomendado","Poder recomendado","ความแข็งแกร่งที่แนะนำ","Рекомендуемая мощность"],
+    "Your Power":
+        ["Your Power","Sức mạnh của bạn","Kekuatanmu","Seu poder","Tu poder","ความแข็งแกร่งของคุณ","Ваша мощность"],
+    "Skip Tutorial":
+        ["Skip Tutorial","Bỏ qua hướng dẫn","Lewati Tutorial","Pular tutorial","Omitir tutorial","ข้ามการแนะนำ","Пропустить обучающую часть"],
+    "Pick boss form list to challenge again":
+        ["Pick Boss from the list to challenge again","Chọn trùmtrong danh sách để thách thức","Pilih Bos dari daftar untuk ditantang kembali","Escolha um chefe da lista para desafiar novamente","Elige a un Jefe para volver a desafiarlo","เลือกบอสจากรายการเพื่อท้าทายอีกครั้ง","Выберите босса из списка, чтобы повторить попытку"],
+    "Choose difficulty level":
+        ["Select level difficulty ","Chọn độ khó màn chơi","Pilih tingkat kesulitan level ","Selecione nível de dificuldade ","Elige el nivel de dificultad ","เลือกระดับความยาก ","Выберите уровень сложности "],
+    "Information rewards":
+        ["Reward Information","Thông tin phần thưởng","Informasi Hadiah","Informação sobre recompensa","Información de la recompensa","ข้อมูลรางวัล","Информация о наградах"],
+    "Drop list":
+        ["Drop-item list","Danh sách đồ rơi","Daftar item yang dijatuhkan","Lista de itens","Lista de objetos obtenibles","รายการไอเท็มที่ตก","Список выпадающих предметов"],
+    "Guarantee":
+        ["Guarantee","Đảm bảo","Garansi","Garantia","Garantía","รับประกัน","Гарантия"],
+    "First time":
+        ["First time","Lần đầu tiên","Pertama kali","Primeira vez","Primera vez","ครั้งแรก","Первый раз"],
+    "Bonus":
+        ["Bonus","Thưởng thêm","Bonus","Bônus","Bonificación","โบนัส","Бонус"],
+    "Next":
+        ["Next","Tiếp theo","Berikutnya","Próximo(a)","Siguiente","ถัดไป","Следующий"],
+    "Complete Stage":
+        ["Complete Stage","Hoàn thành màn chơi","Selesaikan Tahap","Concluir fase","Completar la etapa","ผ่านด่าน","Пройденный уровень"],
+    "Challenge Boss in level {1} ({2}) to unlock":
+        ["Challenge Boss in level {1} ({2}) to unlock","Thách đấu trùm ở màn chơi {1} ({2}) để mở khóa","Tantang Bos di level {1} ({2}) untuk membuka","Desafie o chefe no nível {1} ({2}) para desbloquear","Desafía al Jefe en nivel {1} ({2}) para desbloquear","ท้าทายบอสในระดับ {1} ({2}) เพื่อปลดล็อค","Для разблокировки победите босса на уровне {1} ({2})"],
+    "to unlock":
+        ["to unlock","để mở khóa","untuk membuka","para desbloquear","para desbloquear","เพื่อปลดล็อค","для разблокировки"],
+    "Locked":
+        ["Locked","Khóa","Terkunci","Bloqueado","Bloqueado","ล็อคอยู่","Заблокировано"],
+    "Ok":
+        ["Ok","Đồng ý","Ok","Ok","Aceptar","ตกลง","ОК"],
+    "Cancel":
+        ["Cancel","Hủy","Batal","Cancelar","Cancelar","ยกเลิก","Отмена"],
+    "Health":
+        ["Health","Máu","Kesehatan","Saúde","Salud","สุขภาพ","Здоровье"],
+    "Stamina":
+        ["Stamina","Thể lực","Stamina","Energia","Resistencia","ความอดทน","Выносливость"],
+    "Upgrade Character":
+        ["Upgrade Character","Nâng cấp nhân vật","Tingkatkan Karakter","Melhorar personagem","Mejorar personaje","อัพเกรดตัวละคร","Повысить уровень персонажа"],
+    "Max Upgrade":
+        ["Max Upgrade","Tối đa","Peningkatan Maksimum","Melhoramento máximo","Mejora máxima","อัพเกรดสูงสุด","Максимальное повышение уровня"],
+    "Select booster":
+        ["Select booster","Chọn hỗ trợ","Pilih booster","Selecione melhorador","Selecciona un potenciador","เลือกบูสเตอร์","Выбрать усилитель"],
+    "Increase movement speed":
+        ["Increase movement speed","Tăng tốc độ di chuyển","Menambah kecepatan gerak","Aumentar a velocidade de movimento","Aumenta la velocidad de movimiento","เพิ่มความเร็วในการเคลื่อนที่","Повысить скорость передвижения"],
+    "Increase 30% damage":
+        ["Increase 30% damage","Tăng 30% sát thương","Meningkatkan 30% kerusakan","Aumentar dano em 30%","Aumenta el daño un 30 %","เพิ่มความเสียหาย 30%","Повысить наносимый ущерб на 30 %"],
+    "Decrease Special Skill cooldown":
+        ["Decrease Special Skill cooldown","Giảm thời gian hồi chiêu","Mengurangi waktu pendinginan Kecakapan Khusus","Diminuir o tempo de espera da habilidade especial","Reduce el tiempo de reutilización de la habilidad especial","ลดระยะเวลาคูลดาวน์ทักษะพิเศษ","Уменьшить убывание специального навыка"],
+    "Have 20 % chance to deal x3 Crit Damage":
+        ["Have 20 % chance to deal x3 Crit Damage","Tăng 20% bạo kích gây x3 sát thương","Mendapat 20% kesempatan untuk menghasilkan kerusakan x3 Crit","20% de chance de causar x3 Dano Crítico","Consigue un 20 % de probabilidad de infligir el triple de daño por golpe crítico","มีโอกาส 20% ในการทำความเสียหายคริติคอลเป็น 3 เท่า","Получить 20 % вероятность нанесения 3-кратного критического ущерба"],
+    "Increase 50% hostage's health":
+        ["Increase 50% hostage's health","Tăng 50% sức chịu đựng cho con tin","Meningkatkan 50% kesehatan sandera","Aumentar a saúde dos reféns em 50%","Aumenta la salud del rehén un 50 %","เพิ่มสุขภาพของตัวประกัน 50%","Повысить здоровье заложника на 50 %"],
+    "Auto collect Golds":
+        ["Auto collect Gold","Tự động thu thập Vàng","Otomatis kumpulkan Emas","Coleta automática de ouros","Recolección automática de oro","เก็บทองอัตโนมัติ","Автоматически собирать золото"],
+    "Decrease 30% enemies' damage":
+        ["Decrease 30% enemies' damage","Giảm 30% sát thương của địch","Mengurangi 30% damage musuh","Diminui 30% do dano dos inimigos","Reduce un 30 % el daño de los enemigos","ลดความเสี่ยหายของศัตรู 30%","Уменьшить наносимый врагами ущерб на 30 %"],
+    "Increase Rank experiences for completed mission objectives":
+        ["Increase Rank experiences for completed mission objectives","Tăng điểm xếp hạng từ việc hoàn thành nhiệm vụ màn chơi","Menambah exp Peringkat untuk misi yang diselesaikan","Aumenta as experiências de classe para objetivos de missão concluídos","Aumenta las experiencias de Rango para los objetivos de la misión completados","เพิ่มประสบการณ์สำหรับภารกิจที่ผ่าน","Повысить ранг за выполненные цели миссии"],
+    "Restore the health fully":
+        ["Fully restore health ","Hồi phục sức chịu đựng hoàn toàn","Memulihkan kesehatan sepenuhnya ","Restaura totalmente a saúde ","Restaura la salud por completo ","ฟื้นฟูร่างกายจนเต็ม ","Полностью восстановить здоровье "],
+    "Increase looted gold during mission":
+        ["Increase looted Gold during mission","Tăng số Vàng nhặt được trong suốt màn chơi","Menambah Emas rampasan selama misi","Aumenta ouros saqueados durante a missão","Aumenta el oro obtenido durante la misión","เพิ่มทอดที่ปล้นได้ระหว่างภารกิจ","Повысить количество собираемого во время миссии золота"],
+    "Start":
+        ["Start","Bắt đầu","Mulai","Começar","Comenzar","เริ่ม","Начать"],
+    "Stage":
+        ["Stage","Màn chơi","Tahap","Fase","Etapa","ด่าน","Уровень"],
+    "Clear all previous stages to unlock this map":
+        ["Clear all previous stages to unlock this map","Hoàn thành tất cả màn chơi trước để mở khóa bản đồ này","Hapus semua tahap sebelumnya untuk membuka peta ini","Conclua todas as fases anteriores para desbloquear este mapa","Completa todas las etapas anteriores para desbloquear este mapa","ผ่านด่านก่อนหน้าทั้งหมดเพื่อปลดล็อคแผนที่นี้","Пройдите все предыдущие уровни, чтобы разблокировать эту карту."],
+    "You need complete previous difficulties":
+        ["You need complete previous difficulties","Bạn cần hoàn thành độ khó trước","Kamu harus menyelesaikan rintangan sebelumnya","Você precisa concluir as dificuldades anteriores","Debes completar las dificultades anteriores","คุณจะต้องผ่านระดับความยากก่อนหน้าก่อน","Нужно преодолеть предыдущие трудности."],
+    "You must complete the previous stages":
+        ["You must complete the previous stages","Bạn cần hoàn thành màn chơi trước","Kamu harus menyelesaikan tahap sebelumnya","Você precisa concluir as fases anteriores","Debes completar las etapas anteriores","คุณจะต้องผ่านด่านก่อนหน้าก่อน","Необходимо выполнить предыдущие уровни."],
+    "Special Campaign":
+        ["Special Campaign","Chiến dịch đặc biệt","Kampanye Khusus","Campanha Especial","Campaña especial","แคมเปญพิเศษ","Специальная кампания"],
+    "Clear stage":
+        ["Clear stage","Hoàn thành màn chơi","Selesaikan tahap","Termine a fase","Completa la etapa","ผ่านด่านให้ได้","Пройти уровень"],
+    "Complete {1} kill combo":
+        ["Complete {1} kill combo","Hoàn thành {1} chuỗi diệt địch","Selesaikan {1} kill kombo","Complete {1} combo(s) mortal(is)","Completa {1} combo de asesinato","คอมโบคิล {1}","Выполнить {1} комбинацию попаданий"],
+    "Clear stage with {1}% HP remaining or more":
+        ["Clear stage with {1}% HP remaining or more","Hoàn thành màn chơi với tối thiểu {1}% sức chịu đựng","Selesaikan tahap dengan {1}% atau lebih sisa HP","Termine a fase com {1}% de HP restante ou mais","Completa la etapa con un {1} % de vida restante o más","ผ่านด่านโดยมี HP เหลือ {1}% ขึ้นไป","Пройти уровень с остатком здоровья {1}% или больше"],
+    "Clear stage in {1} seconds or less":
+        ["Clear stage in {1} seconds or fewer","Hoàn thành màn chơi trong vòng tối đa {1} giây","Selesaikan stage dalam {1} detik atau kurang","Termine a fase em {1} segundo(s) ou menos","Completa la etapa en {1} o menos segundos","ผ่านด่านภายในเวลาไม่เกิน {1} วินาที","Пройти уровень за {1} секунд или меньше"],
+    "Defeat at least {1} enemies by {2}":
+        ["Defeat at least {1} enemies by {2}","Hạ gục tối thiểu {1} địch với {2}","Kalahkan setidaknya {1} musuh menggunakan {2}","Derrote pelo menos {1} inimigo(s) até {2}","Derrota a al menos {1} enemigos por medio de {2}","จัดการศัตรูให้ได้อย่างน้อย {1} ด้วย {2}","Победить не менее {1} врагов в помощью {2}"],
+    "Clear stage without using Hero's skill":
+        ["Clear stage without using Hero's skill","Hoàn thành màn chơi mà không sử dụng kỹ năng của nhân vật","Selesaikan tahap tanpa menggunakan kecakapan Hero","Termine a fase sem usar a habilidade do herói","Completa la etapa sin usar la habilidad de Héroe","ผ่านด่านโดยไม่ใช่ทักษะของฮีโร่","Пройти уровень без использования навыка героя"],
+    "Clear stage without any casualties":
+        ["Clear stage without any casualties","Hoàn thành màn chơi mà không có thương vong","Selesaikan tahap tanpa korban","Termine a fase sem nenhuma baixa","Completa la etapa sin bajas de civiles","ผ่านด่านโดยไม่มีผู้บาดเจ็บ","Пройти уровень без потерь"],
+    "Complete {1} kill combo by {2}":
+        ["Complete {1} kill combo by {2}","Hoàn thành {1} chuỗi diệt địch với {2}","Selesaikan {1} kill kombo menggunakan {2}","Complete {1} combo(s) mortal(is) em {2}","Completa {1} combo de asesinato por medio de {2}","ฆ่าคอมโบคิล {1} ด้วย {2}","Выполнить {1} комбинированных попаданий с помощью {2}"],
+    "Cast a Hero's skill at least {1} time(s)":
+        ["Cast a Hero's skill at least {1} time(s)","Sử dụng kỹ năng tối thiểu {1} lần","Gunakan kecakapan Hero setidaknya {1} kali","Lance a habilidade de um Herói pelo menos {1} vez(es)","Usa una habilidad de Héroe al menos {1} vez (veces)","ใช้ทักษะของฮีโร่อย่างน้อย {1} ครั้ง","Применить навык героя не менее {1} раз (-а)"],
+    "melee weapon":
+        ["melee weapon","vũ khí cận chiến","senjata perkelahian","Arma combate próximo","arma cuerpo a cuerpo","อาวุธระยะประชิด","Оружие рукопашного боя"],
+    "You win":
+        ["You win","Chiến thắng","Kamu menang","Você ganhou!","Victoria","คุณชนะ","Ты победил!"],
+    "Desc_PVP":
+        ["- Finish the match at the last stage
+- Finish the match at a higher wave than your Opponent
+- Take the lead of 3 waves ahead your Opponent","- Hoàn thành trận đấu sau cùng
+- Hoàn thành trận đấu với kết quả cao hơn đối thủ
+- Dẫn trước đối thủ với khoảng cách là 3 đợt tấn công","- Selesaikan pertandingan di tahap terakhir
+- Selesaikan pertandingan pada gelombang yang lebih tinggi dari Lawanmu
+- Menangkan 3 gelombang mendahului Lawanmu","- Termine a partida na última fase 
+- Termine a partida em uma onda maior do que seu adversário 
+- Tome a liderança de 3 ondas à frente de seu oponente","- Concluye la partida en la última etapa
+- Concluye la partida en una oleada mayor que la de tu oponente
+- Supera a tu oponente por 3 oleadas","- ผ่านการแข่งขันในด่านล่าสุด
+- ผ่านการแข่งขันในเวฟที่สูงกว่าคู่แข่งของคุณ
+- นำหน้าคู่แข่งอย่างน้อย 3 เวฟ","- Завершить схватку на последнем уровне
+- Завершить схватку на более высокой волне, чем у противника
+- Опередить противника на 3 волны"],
+    "Each type of PvP requires a certain amount of Gold or Gem, which will {1} if you win":
+        ["Each type of PvP requires a certain amount of Gold or Gem, which will {1} if you win","Mỗi kiểu chơi PvP yêu cầu lượng Vàng hoặc Ngọc nhất định. Nếu bạn thắng sẽ chuyển thành phần thưởng vỡi {1} số lượng.","Tiap jenis PvP membutuhkan sejumlah Emas atau Permata, yang akan {1} jika kamu menang","Cada tipo de JvJ requer uma certa quantidade de ouros ou joias, que será {1} se você ganhar","Cada tipo de partida JcJ requiere una cierta cantidad de oro o gemas, la cual {1} si ganas","PvP แต่ละประเภทจะต้องใช้ทองหรือเจม ซึ่งคุณจะได้รับ {1} หากชนะ","Каждый тип PvP требует определенного количества золота или драгоценных камней, которые в случае вашей победы будут {1}"],
+    "Score":
+        ["Score","Điểm","Skor","Pontuação","Puntuación","คะแนน","Счет"],
+    "Winrate":
+        ["Win Rate","Tỉ lệ thắng","Tingkat Kemenangan","Taxa de vitórias","Índice de victorias","อัตราการชนะ","Процент побед"],
+    "Finding":
+        ["Searching","Đang tìm","Mencari","Procurando","Buscando","กำลังค้นหา","Поиск"],
+    "Cannot connect to your opponent":
+        ["Unable to connect to your opponent","Không thể kết nối tới đối thủ","Tidak dapat terhubung dengan lawanmu","Impossível se conectar ao seu oponente","Imposible conectarse con tu oponente","ไม่สามารถเชื่อมต่อไปยังคู่แข่งของคุณ","Невозможно связаться с вашим противником"],
+    "Maintenance":
+        ["Maintenance","Bảo trì","Pemeliharaan","Manutenção","Mantenimiento","การดูแลรักษา","Техническое обслуживание"],
+    "PvP 1vs3 is under maintenance. Please try it again later!":
+        ["PvP 1vs3 is under maintenance. Please try it again later!","Chế độ PvP 1vs3 đang được bảo trì. Làm ơn thử lại sau!","PvP 1vs3 sedang dalam pemeliharaan. Coba lagi nanti!","O JvJ 1 vs 3 está em manutenção. Por favor, tente novamente mais tarde!","El modo JcJ de 1 contra 3 está en mantenimiento. ¡Inténtalo de nuevo más tarde!","PvP 1vs3 อยู่ระหว่างการดูแลรักษา กรุณาลองใหม่อีกครั้งในภายหลัง!","PvP 1vs3 проходит техническое обслуживание. Попробуйте еще раз попозже!"],
+    "Cannot connect to your teammate":
+        ["Unable to connect to your teammate","Không thể kết nối tới đồng đội","Tidak dapat terhubung dengan rekan satu timmu","Não é possível conectar-se ao seu companheiro de equipe","Imposible conectarse con tu compañero de equipo","ไม่สามารถเชื่อมต่อไปยังเพื่อนร่วมทีมของคุณ","Невозможно связаться с вашим товарищем по команде"],
+    "Skill":
+        ["Skill","Kỹ năng","Kecakapan","Habilidade","Habilidad","ทักษะ","Навык"],
+    "Maximum":
+        ["Maximum","Tối đa","Maksimum","Máximo","Máximo","สูงสุด","Максимальный"],
+    "Require":
+        ["Require","Yêu cầu","Membutuhkan","Requer","Requiere","ต้องการ","Требуется"],
+    "Summon fighting droid for seconds":
+        ["Summon fighting droid for seconds","Gọi vũ khi yểm trợ trong vài giây","Panggil droid petarung untuk beberapa detik","Chama um androide de combate por alguns segundos","Invoca al droide de combate durante algunos segundos","เรียกหุ่นรบได้ในเวลาสั้น ๆ","Вызвать боевого робота на несколько секунд"],
+    "Grants Yoona the ability to blend in with any enviroment as if invisible. Yoona can dodges all attacks (except explosion) during activating time":
+        ["Grants Yoona the ability to blend in any enviroment to become invisible. Yoona can dodge all attacks (except explosion) during activating time","Cho phép Yoona khả năng ngụy trang vào môi trường giống như tàng hình. Yoona có thể tránh né toàn bộ đòn đánh (ngoại trừ các vụ nổ) trong suốt quá trình kích hoạt.","Memberikan Yoona kemampuan menyatu dengan lingkungan apa pun agar tidak terlihat. Yoona dapat menghindari semua serangan (kecuali ledakan) selama waktu pengaktifan","Concede a Yoona a capacidade de se camuflar em qualquer ambiente para ficar invisível. Yoona consegue evitar todos os ataques (exceto explosão) durante o tempo de ativação","Concede a Yoona la capacidad de mimetizarse con cualquier entorno y volverse invisible. Yoona puede evadir todos los ataques (salvo explosiones) mientras esté activo","ยูนะสามารถพรางตัวเพื่อซ่อนตัว ยูนะสามารถหลบหลีกการโจมตีทั้งหมด (ยกเว้นแรงระเบิด) ระหว่างเปิดใช้งาน","Дает Юне способность сливаться с любым окружением и становиться невидимой. В период активации Юна может уворачиваться от всех атак (кроме взрыва)."],
+    "Drop rockets from above":
+        ["Drop rockets","Thả tên lửa từ trên xuống","Jatuhkan roket","Soltar foguetes","Soltar cohetes","ทิ้งจรวด","Бросать ракеты"],
+    "Star":
+        ["Star","Sao","Bintang","Estrela","Estrella","ดาว","Звезда"],
+    "Information Weapon":
+        ["Weapon Information","Thông tin vũ khí","Informasi Senjata","Informações sobre armas","Información del arma","ข้อมูลอาวุธ","Информация об оружии"],
+    "Desc_Primary":
+        ["You have to equip Main weapon before starting playing","Vũ khí chính phải được trang bị trước khi bắt đầu màn chơi","Kamu harus memakai senjata Utama sebelum mulai bermain","Você tem que equipar a arma principal antes de começar a jogar","Debes equipar el arma principal antes de comenzar a jugar","คุณจะต้องติดตั้งอาวุธหลักก่อนเริ่มเล่น","Прежде чем приступать к игре, необходимо снарядить основное оружие."],
+    "Desc_Special":
+        ["Powerful weapon can sweep out enemies. You can pick them up after defeating enemy.","Vũ khí uy lực cao có khả năng tiêu diệt được nhiều kẻ địch cùng lúc. Bạn có thể nhặt được chúng sau khi hạ gục địch.","Senjata kuat dapat menyapu bersih musuh. Kamu bisa mengambilnya setelah mengalahkan musuh.","Arma poderosa que pode varrer os inimigos. Você pode pegá-los depois de derrotar o inimigo.","Arma poderosa capaz de arrasar con los enemigos. Se pueden recoger después de derrotar al enemigo.","อาวุธที่ทรงพลังสามารถทำลายล้างศัตรูได้เป็นจำนวนมาก คุณสามารถเก็บได้หลังจากชนะศัตรูแล้ว","Мощное оружие может выкашивать врагов. Ты можешь подбирать его после победы над врагом."],
+    "Desc_Melee":
+        ["Melee weapon can cause high damage. Use it whenever enemies stay close.","Vũ khí cận chiến với sát thương lớn. Tự động sử dụng khi có địch đứng quá gần.","Senjata perkelahian dapat menyebabkan kerusakan tinggi. Gunakan kapan saja musuh mendekat.","A arma de combate próximo pode causar grandes danos. Use-a sempre que os inimigos ficarem próximos.","Arma cuerpo a cuerpo capaz de provocar un gran daño. Úsala cuando los enemigos estén cerca.","อาวุธระยะประชิดสร้างความเสียหายได้สูง ใช้เมื่อมีศัตรูในระยะใกล้","Оружие ближнего боя может наносить большой урон. Пользуйся им каждый раз, когда враги приблизятся."],
+    "Desc_Grenade":
+        ["Explosive weapon can defeat many enemies in its effective area.","Vũ khí nổ gấy sát thương cho nhiều kẻ địch trong vùng ảnh hưởng","Senjata peledak dapat mengalahkan banyak musuh dalam area ledaknya.","Arma explosiva pode derrotar muitos inimigos em sua área de efeito.","Arma explosiva capaz de derrotar a varios enemigos dentro de su área de efecto.","ระเบิดมีผลต่อศัตรูในพื้นที่ทำลายล้าง","Взрывающееся оружие способно уничтожить много врагов в зоне поражения."],
+    "Item":
+        ["Item","Vật phẩm","Item","Item","Objeto","ไอเท็ม","Предмет"],
+    "Pack":
+        ["Pack","Gói","Paket","Pacote","Paquete","ชุดไอเท็ม","Упаковка"],
+    "Special offer":
+        ["Special Offer","Ưu Đãi Đặc Biệt","Penawaran Khusus","Oferta especial","Oferta especial","ข้อเสนอพิเศษ","Специальное предложение"],
+    "Loading":
+        ["Loading","Đang tải","Memuat","Carregando","Cargando","กำลังโหลด","Загрузка"],
+    "Alert":
+        ["Alert","Cảnh báo","Waspada","Alerta","Alerta","แจ้งเตือน","Тревога"],
+    "You have already received {1} golds":
+        ["You have already received {1} Gold","Bạn đã nhận được {1} Vàng","Kamu sudah menerima {1} Emas","Você já recebeu {1} ouro(s)","Ya recibiste {1} de Oro","คุณได้รับ {1} ทอง","Ты уже получил {1} золота"],
+    "Warning":
+        ["Warning","Báo động","Peringatan","Alerta","Advertencia","คำเตือน","Предупреждение"],
+    "Video ad is not ready yet":
+        ["Video ad is not ready yet","Quảng cáo chưa sẵn sàng","Iklan video belum siap","O anúncio em vídeo ainda não está pronto","El aviso comercial en video aún no está listo","วิดีโอโฆษณายังไม่พร้อม","Видеореклама еще не готова."],
+    "Your opponent has left the room":
+        ["Your opponent has left the room","Đối thủ vừa rời khỏi phòng","Lawanmu telah meninggalkan ruangan","Seu oponente saiu da sala","Tu oponente abandonó la sala","คู่แข่งของคุณออกจากห้องแล้ว","Ваш противник вышел из комнаты."],
+    "Do you want save your changed":
+        ["Do you want to save your change?","Bạn có muốn lưu thay đổi","Simpan perubahan?","Você quer salvar sua mudança?","¿Quieres guardar tus cambios?","ต้องการบันทึกการเปลี่ยนแปลงของคุณหรือไม่","Сохранить изменение?"],
+    "Can not connect to Facebook. Please try again!":
+        ["Unable to connect to Facebook. Please try again!","Không thể kết nối tới Facebook. Hãy thử lại sau!","Tidak dapat terhubung ke Facebook. Coba lagi!","Não é possível conectar-se ao Facebook. Por favor, tente novamente!","Imposible conectarse con Facebook. ¡Inténtalo de nuevo!","ไม่สามารถเชื่อมต่อกับ Facebook กรุณาลองใหม่อีกครั้ง!","Невозможно связаться с Facebook. Попробуйте еще раз!"],
+    "Sync Data Success.  Restart Game for apply!":
+        ["Data Sync  successful.  Restart Game to complete!","Đồng bộ dữ liệu thành công. Khởi động lại để hoàn thành!","Sinkronisasi Data berhasil.  Mulai kembali Game untuk menyelesaikan!","Sincronização de dados bem-sucedida.  Reinicie o jogo para concluir!","Sincronización de datos exitosa.  ¡Reinicia el juego para completarlo!","ถ่ายโอนข้อมูลเสร็จสิ้น  รีสตาร์ทเกมเพื่อดำเนินการให้เสร็จสิ้น!","Данные успешно синхронизированы.  Для завершения перезапустите игру!"],
+    "Cannot connect to Server. Please try later!":
+        ["Unable to connect to Server. Please try later!","Không thể kết nối tới máy chủ. Hãy thử lại sau!","Tidak dapat terhubung ke Server. Coba lagi nanti!","Não é possível conectar-se ao servidor. Por favor, tente mais tarde!","Imposible conectarse con el servidor. ¡Inténtalo más tarde!","ไม่สามารถเชื่อมต่อกับเซิร์ฟเวอร์ ลองใหม่ในภายหลัง!","Невозможно связаться с сервером. Попробуйте позже!"],
+    "Boss mode is only available after completing Stage {1}":
+        ["Boss mode is only available after completing Stage {1}","Chế độ Đấu Trùm được mở khóa sau khi hoàn thành màn chơi {1}","Mode Bos hanya tersedia setelah menyelesaikan Tahap {1}","Modo de chefe só está disponível após a fase {1}","El modo Jefe está disponible solo tras completar la Etapa {1}","โหมดบอสใช้ได้หลังจากผ่านด่าน {1}","Режим босса доступен только после завершения уровня {1}"],
+    "PvP mode is only available after completing Stage {1}":
+        ["PvP mode is only available after completing Stage {1}","Chế độ PvP được mở khóa sau khi hoàn thành màn chơi {1}","Mode PvP hanya tersedia setelah menyelesaikan Tahap {1}","O modo JvJ só está disponível após a fase {1}","El modo JcJ está disponible solo tras completar la Etapa {1}","โหมด PvP ใช้ได้หลังจากผ่านด่าน {1}","Режим PvP доступен только после завершения уровня {1}"],
+    "PvP mode is under maintenance. Please try it again later!":
+        ["PvP mode is under maintenance. Please try it again later!","Chế độ PvP đang được bảo trì. Hãy thử lại sau!","Mode PvP sedang dalam pemeliharaan. Coba lagi nanti!","O modo JvJ está em manutenção. Por favor, tente novamente mais tarde!","El modo JcJ está en mantenimiento. ¡Inténtalo de nuevo más tarde!","โหมด PvP อยู่ระหว่างการดูแลรักษา กรุณาลองใหม่อีกครั้งในภายหลัง!","Режим PvP проходит техническое обслуживание. Попробуйте еще раз попозже!"],
+    "Restore purchase failed!":
+        ["Purchase restoration failed!","Khôi phục giao dịch thất bại!","Pemulihan pembelian gagal!","Falha na restauração da compra!","¡La restauración de compra falló!","การกู้คืนข้อมูลการจัดซื้อล้มเหลว!","Не удалось вернуть покупку!"],
+    "Restore Purchase":
+        ["Restore Purchase","Khôi phục giao dịch","Pulihkan Pembelian","Restaurar compra","Restaurar compra","การกู้คืนข้อมูลการจัดซื้อ","Вернуть покупку"],
+    "Restore purchase success!":
+        ["Purchase restoration successful!","Khôi phục giao dịch thành công!","Pemulihan pembelian berhasil!","Restauração de compra bem-sucedida!","¡Restauración de compra exitosa!","การกู้คืนข้อมูลการจัดซื้อเสร็จสิ้น!","Покупка успешно возвращена!"],
+    "Not purchasing product, either is not found or is not available for purchase!":
+        ["Product is not found or unavailable for purchase!","Sản phẩm không được tìm thấy hoặc không tồn tại để hoàn thành giao dịch!","Produk tidak ditemukan atau tidak bisa dibeli!","O produto não foi encontrado ou está indisponível para compra!","¡El producto no se encuentra o no está disponible para adquirirse!","ไม่พบสินค้าหรือไม่มีให้ซื้อ!","Продукт не найден или недоступен для покупки!"],
+    "Setting":
+        ["Settings","Thiết lập","Pengaturan","Configurações","Ajustes","ค่าปรับตั้ง","Настройки"],
+    "Purchase Failed":
+        ["Purchase Failed","Giao dịch thất bại!","Pembelian Gagal","Falha na compra","Compra fallida","การจัดซื้อล้มเหลว","Не удалось выполнить покупку"],
+    "Please check your network connection and try again!":
+        ["Please check your network connection and try again!","Hãy kiểm tra lại kết nối mạng và thử lại!","Periksa sambungan jaringanmu dan coba lagi!","Por favor, verifique sua conexão de rede e tente novamente!","¡Revisa tu conexión de red e intenta nuevamente!","กรุณาตรวจสอบการเชื่อมต่อเครือข่ายและลองใหม่อีกครั้ง!","Проверьте подключение к сети и повторите попытку!"],
+    "This user's information is being loaded. Please try again later!":
+        ["This user's information is being loaded. Please try again later!","Thông tin người chơi được được tải. Hãy thử lại sau!","Informasi pengguna ini sedang dimuat. Coba lagi nanti!","As informações deste usuário estão sendo carregadas. Tente novamente mais tarde!","Cargando la información del usuario. ¡Inténtalo de nuevo más tarde!","กำลังโหลดข้อมูลผู้ใช้นี้ กรุณาลองใหม่อีกครั้งในภายหลัง!","Загружаются данные этого пользователя. Попробуйте еще раз позже!"],
+    "Do you want to exit game?":
+        ["Do you want to exit game?","Bạn có muốn thoát trò chơi?","Keluar dari game?","Você quer sair do jogo?","¿Quieres salir del juego?","ต้องการออกจากเกมหรือไม่","Хотите выйти из игры?"],
+    "Quit Game":
+        ["Quit Game","Thoát trò chơi","Keluar dari Game","Sair do jogo","Salir del juego","ออกจากเกม","Прекратить игру"],
+    "Error":
+        ["Error","Lỗi","Kesalahan","Erro","Error","ข้อผิดพลาด","Ошибка"],
+    "Do you want to logout facebook?":
+        ["Do you want to logout facebook?","Bạn có muốn đăng xuất Facebook?","Keluar dari facebook?","Você quer sair do Facebook?","¿Quieres cerrar sesión en Facebook?","ต้องการออกจาก Facebook หรือไม่","Хотите выйти из игры сети Facebook?"],
+    "Logout":
+        ["Logout","Đăng xuất","Keluar","Sair","Cerrar sesión","ออกจากระบบ","Выход"],
+    "You must login to facebook in advance!":
+        ["You must login to facebook first!","Bạn cần đăng nhập Facebook!","Kamu harus masuk ke facebook terlebih dahulu!","Você deve entrar no Facebook primeiro!","¡Primero debes iniciar sesión en Facebook!","คุณต้องล็อกอินไปยัง Facebook ก่อน","Сначала необходимо войти в Facebook!"],
+    "Login":
+        ["Login","Đăng nhập","Masuk","Entrar","Iniciar sesión","ล็อกอิน","Войти"],
+    "Save data successfully!":
+        ["Save data successfully!","Lưu dữ liệu thành công","Berhasil menyimpan data!","Dados salvos com sucesso!","¡Datos guardados exitosamente!","บันทึกข้อมูลเสร็จสิ้น!","Данные успешно сохранены!"],
+    "This action helps you save your game progress on the server. Do you want to continue?":
+        ["This action helps you save your game progress on the server. Do you want to continue?","Hành động này giúp bạn lưu dữ liệu trò chơi của bạn trên Server. Bạn có muốn tiếp tục?","Tindakan ini akan membantumu menyimpan kemajuan game-mu di server. Lanjutkan?","Esta ação ajuda você a salvar o progresso do seu jogo no servidor. Você quer continuar?","Esto te ayuda a guardar tu avance del juego en el servidor. ¿Quieres continuar?","นี่เป็นการบันทึกเกมของคุณไว้ที่เซิร์ฟเวอร์ ต้องการดำเนินการต่อหรือไม่","Это действие помогает вам сохранять ход игры на сервере. Хотите продолжить?"],
+    "Save Data":
+        ["Save Data","Lưu Dữ Liệu","Simpan Data","Salvar dados","Guardar datos","บันทึกข้อมูล","Сохранить данные"],
+    "You can only save data 3 times per day!":
+        ["You can only save data 3 times per day!","Bạn chỉ được lưu dữ liệu 3 lần mỗi ngày!","Kamu hanya bisa menyimpan data 3 kali sehari!","Você só pode salvar dados 3 vezes por dia!","¡Puedes guardar datos solo 3 veces al día!","คุณสามารถบันทึกข้อมูลได้ 3 ครั้งต่อวันเท่านั้น!","Вы можете сохранять данные только 3 раза в день!"],
+    "Do you agree with the restoration?":
+        ["Do you agree with the restoration?","Bạn có đồng ý khôi phục?","Setuju dengan pemulihan?","Você concorda com a restauração?","¿Aceptas la restauración?","ยอมรับการกู้ข้อมูลหรือไม่","Вы согласны с возвратом?"],
+    "Restore purchased items":
+        ["Restore purchased items","Khôi phục vật phẩm đã giao dịch","Pulihkan item yang dibeli","Restaurar itens comprados","Restaurar los objetos comprados","กู้คืนสินค้าที่ซื้อ","Вернуть купленные предметы"],
+    "Congratulations":
+        ["Congratulations","Chúc mừng","Selamat","Parabéns","Felicidades","ขอแสดงความยินดี","Поздравляем"],
+    "Tap screen to continue":
+        ["Tap the screen to continue","Chạm vào màn hình để tiếp tục","Ketuk layar untuk melanjutkan","Toque na tela para continuar","Toca la pantalla para continuar","กดที่หน้าจอเพื่อดำเนินการต่อ","Коснитесь экрана, чтобы продолжить"],
+    "Claim":
+        ["Claim","Nhận","Klaim","Recompensa","Canjear","ใช้สิทธิ์","Жалоба"],
+    "You've reached the next rank":
+        ["You've reached the next rank","Bạn đã đến cấp bậc tiếp theo","Kamu telah mencapai peringkat berikutnya","Você alcançou a próxima classe","Alcanzaste el siguiente rango","คุณเข้าสู่ยศถัดไปแล้ว","Вы достигли следующего ранга"],
+    "Rate us":
+        ["Rate us","Bình chọn","Nilai kami","Avalie-nos","Valóranos","ให้คะแนนเรา","Поставьте нам оценку"],
+    "Enjoying Metal Squad?":
+        ["Enjoy playing Metal Squad?","Bạn thích Metal Squad chứ?","Menikmati permainan Pasukan Metal?","Você gosta de jogar Esquadrão Metálico?","¿Te gusta jugar Brigada Metal?","พอใจกับการเล่นเมทัลสควอดหรือไม่","Нравится играть в Металлический отряд?"],
+    "Tap a star to rate it on store":
+        ["Tap a star to rate it on store","Chạm vào ngôi sao để bình chọn trên cửa hàng","Ketuk gambar bintang untuk memberinya peringkat di toko aplikasi","Toque em uma estrela para avaliar o jogo na loja","Toca sobre una estrella para valorarnos en la tienda","กดที่ดาวเพื่อให้คะแนนจากร้านค้า","Нажмите на звезду, чтобы поставить оценку в магазине."],
+    "Submit":
+        ["Submit","Gửi","Kirim","Enviar","Enviar","ส่ง","Отправить"],
+    "You are playing on the old version. Do you want to update to the latest version?":
+        ["You are playing the old version. Do you want to update to the latest version?","Bạn đang chơi phiên bản cũ. Bạn có muốn cập nhật lên phiên bản mới nhất?","Kamu memainkan versi lama. Perbarui ke versi terkini?","Você está jogando a versão antiga. Você quer atualizar para a versão mais recente?","Estás jugando una versión antigua. ¿Quieres actualizar a la versión más reciente?","คุณกำลังเล่นเวอร์ชั่นเก่า ต้องการอัพเดตเป็นเวอร์ชั่นล่าสุดหรือไม่","Вы играете в устаревшую версию. Хотите обновить до последней версии?"],
+    "What's new":
+        ["What's new","Tin tức mới","Apa yang baru","O que há de novo","Qué hay de nuevo","มีอะไรใหม่","Что нового"],
+    "Free":
+        ["Free","Miễn phí","Gratis","Grátis","Gratis","ฟรี","Бесплатно"],
+    "Open":
+        ["Open","Mở Khóa","Buka","Abrir","Abierto","เปิด","Открыть"],
+    "Free in":
+        ["Free in","Miễn phí trong","Gratis dalam","Grátis em","Gratis en","ฟรีใน","Бесплатный вход"],
+    "Available":
+        ["Available","Đang có","Tersedia","Disponível","Disponible","ใช้ได้","Доступный"],
+    "Back":
+        ["Back","Quay lại","Kembali","Voltar","Volver","ย้อนกลับ","Назад"],
+    "You will get 40 vip points for every {1} spent.":
+        ["You will get 40 Vip points for every {1} spent.","Bạn sẽ nhận được 40 điểm VIP với mỗi {1} được tiêu.","Kamu akan mendapat 40 poin Vip tiap kali kamu membelanjakan {1}.","Você receberá 40 pontos Vip para cada {1} gasto.","Conseguirás 40 puntos VIP por cada {1} gastado.","คุณจะได้รับคะแนน VIP 40 คะแนนทุก ๆ ยอด {1} ที่ใช้จ่าย","Вы получите 40 Vip-очков за каждый отправленный {1}."],
+    "Vip":
+        ["Vip","VIP","Vip","Vip","Vip","Vip","Vip"],
+    "Daily Benefits":
+        ["Daily Benefits","Lợi ích hàng ngày","Keuntungan Harian","Benefícios diários","Beneficios diarios","สิทธิพิเศษประจำวัน","Ежедневные бонусы"],
+    "Get 1,000 more Gold Daily":
+        ["Daily get 1,000 Gold more","Nhận thêm 1.000 Vàng mỗi ngày","Mendapat 1.000 Emas lebih setiap hari","Ganhe mais 1.000 ouros diariamente","Consigue 1000 más de oro al día","รับ 1,000 เหรียญขึ้นไปต่อวัน","Получайте на 1000 золота в день больше"],
+    "Receive {1} free {2} Daily":
+        ["Receive {1} free {2} Daily","Nhận {1} miễn phí {2} mỗi ngày","Mendapat {1} gratis {2} setiap hari","Receba {1} grátis {2} diariamente","Recibe {1} gratis {2} todos los días","รับ {1} ฟรี {2} ทุกวัน","Получайте {1} бесплатных {2} каждый день"],
+    "Remove Ads":
+        ["Remove Ads","Loại bỏ quảng cáo","Hapus Iklan","Remover anúncios","Elimina los anuncios","ลบโฆษณา","Убрать объявления"],
+    "Make your first purchase to get VIP 1":
+        ["Make your first purchase to get VIP 1","Thực hiện giao dịch đầu tiên để đạt VIP 1","Lakukan pembelian pertamamu untuk mendapat VIP 1","Faça sua primeira compra para obter VIP 1","Realiza tu primera compra para ser VIP 1","จัดซื้อครั้งแรกเพื่อรับ VIP 1","Совершите первую покупку, чтобы получить VIP 1."],
+    "Free Spin cooldown reduced to 15 minutes":
+        ["Free Spin cooldown reduced to 15 minutes","Giảm thời gian nhận lượt quay miễn phí 15 phút","Waktu pendinginan Putaran Gratis dikurangi menjadi 15 menit","Tempo de espera de roleta grátis reduzido para 15 minutos","El tiempo de reutilización de la Ruleta gratis se reduce a 15 minutos","เวลารอลุ้นรางวัลลดลง 15 นาที","Сокращение бесплатного вращения уменьшается до 15 минут."],
+    "Include all VIP {1} Features":
+        ["Include all VIP {1} Features","Bao gồm tất cả lợi ích của VIP {1}","Termasuk semua Fitur VIP {1}","Incluir todos os recursos VIP {1}","Incluye todas las {1} características VIP","รวมสิทธิ์ VIP {1} ทั้งหมด","Включить все функции VIP {1}"],
+    "Can bring {1} Medkits each Match":
+        ["Can bring {1} Medkits each Match","Có thể mang theo {1} gói sơ cứu vào màn chơi","Dapat membawa {1} Perlengkapan Medis di tiap Pertandingan","Pode levar {1} kit(s) médico(s) a cada partida","Puedes llevar {1} botiquines cada partida","พกชุดปฐมพยาบาลได้ {1} ชุดต่อแมตช์","Может приносить {1} аптечек во время каждой схватки."],
+    "Increase reward limit of Boss defeated by 3 Gem in Campaign Mode":
+        ["Increase reward limit for defeating Boss by 3 Gem in Campaign Mode","Tăng giới hạn phần thưởng hạ Trùm lên 3 Ngọc trong chế độ Chiến Dịch","Menambah batas hadiah mengalahkan Bos sebesar 3 Permata pada Mode Kampanye","Aumenta o limite de recompensa em 3 joias ao derrotar o chefe no modo de campanha","Aumenta el límite de recompensa por derrotar al Jefe en 3 gemas en el modo Campaña","เพิ่มเกณฑ์รางวัลเมื่อผ่านบอสโดยใช้ 3 เจมในโหมดแคมเปญ","Повышение предела вознаграждения за победу над боссом на 3 драгоценных камня в режиме кампании"],
+    "Ticket Spin cost reduced by 30%":
+        ["Cost of Spin Ticket reduced by 30%","Giảm giá vé vòng quay may mắn 30%","Biaya Tiket Putaran dikurangi 30%","Custo de Bilhete de Roleta reduzido em 30%","Costo del boleto de la Ruleta reducido un 30 %","ลดค่าใช้จ่ายในการลุ้นรางวัล 30%","Цена билета на вращение снижена на 30 %."],
+    "Get more {1} chance to Revive using Gems":
+        ["Get more {1} chances to Revive by Gems","Nhận thêm {1} lần hồi sinh bằng Ngọc","Dapatkan lebih banyak kesempatan {1} untuk Bangkit dengan Permata","Obtenha mais {1} chance(s) de Reviver com joias","Consigue {1} más probabilidades de revivir con gemas","มีโอกาสเพิ่ม {1} ครั้งในการฟื้นฟูด้วยเจม","Получить еще {1} шансов на оживление за счет драгоценных камней"],
+    "Double rewards of {1}":
+        ["Double rewards of {1}","Gấp đôi phần thưởng của {1}","Hadiah ganda {1}","Recompensas duplas de {1}","Duplica las recompensas de {1}","รางวัล {1} เป็นสองเท่า","Удвоение вознаграждения {1}"],
+    "Get 2 more Gem after every Achievement":
+        ["Get 2 more Gem after every Achievement","Nhận thêm 2 Ngọc cho mỗi Thành Tựu đạt được","Dapatkan 2 Permata tambahan setelah setiap Pencapaian","Obter mais 2 joias após cada conquista","Consigue 2 gemas más tras cada logro","รับเจมเพิ่ม 2 ชิ้นทุกครั้งที่ผ่าน","Получать еще 2 драгоценных камня после каждого достижения"],
+    "Achievement":
+        ["Achievement","Thành tựu","Pencapaian","Conquista","Logro","ความสำเร็จ","Достижение"],
+    "CoOp":
+        ["CoOp","Phối hợp","Kerja sama","Cooperação","Cooperativo","ร่วมกัน","Действовать совместно"],
+    "Global":
+        ["World","Thế giới","Dunia","Mundo","Mundo","โลก","Мир"],
+    "Friends":
+        ["Friends","Bạn bè","Teman","Amigos","Amigos","เพื่อน","Друзья"],
+    "Profile":
+        ["Profile","Hồ sơ","Profil","Perfil","Perfil","โพรไฟล์","Профиль"],
+    "Benefits":
+        ["Benefits","Lợi ích","Keuntungan","Benefícios","Beneficios","สิทธิประโยชน์","Преимущества"],
+    "Information":
+        ["Information","Thông tin","Informasi","Informações","Información","ข้อมูล","Информация"],
+    "Open Lucky Crate":
+        ["Lucky Crate","Rương may mắn","Peti Keberuntungan","Caixote da sorte","Caja de la Suerte","กล่องชิงโชค","Ящик удачи"],
+    "Go Shop":
+        ["Shop","Cửa Hàng","Toko","Loja","Tienda","ร้านค้า","Магазин"],
+    "Roll Lucky Spin":
+        ["Lucky Spin","Vòng Quay May Mắn","Putaran Keberuntungan","Roleta da sorte","Ruleta de la Suerte","ลุ้นโชค","Рулетка удачи"],
+    "Collect Campaign Star Reward":
+        ["Campaign Reward","Phần Thưởng Chiến Dịch","Hadiah Kampanye","Recompensa de campanha","Recompensa de campaña","รางวัลแคมเปญ","Вознаграждение за кампанию"],
+    "Daily Quest":
+        ["Daily Quest","Nhiệm Vụ Ngày","Pencarian Harian","Missão Diária","Misión diaria","เควสต์ประจำวัน","Ежедневный квест"],
+    "Current Rank":
+        ["Current Rank","Cấp Bậc Hiện Tại","Peringkat Saat Ini","Classe atual","Rango actual","อันดับปัจจุบัน","Текущий ранг"],
+    "Reset in":
+        ["Reset in","Làm mới trong","Atur ulang dalam","Reiniciar em","Reinicio en","รีเซ็ตใน","Сбросить в"],
+    "Go":
+        ["Go","Đi","Lanjutkan","Voltar","Ir","ไป","Идти"],
+    "Rank Tiers":
+        ["Ranks","Các Cấp Bậc","Peringkat","Classe","Rangos","อันดับ","Ранги"],
+    "Daily Spin":
+        ["Daily Spin","Vòng Quay Hàng Ngày","Putaran Harian","Giro diário","Ruleta Diaria","ลุ้นประจำวัน","Ежедневная рулетка"],
+    "Video Gift":
+        ["Video Gift","Phần Thưởng Quảng Cáo","Hadiah Video","Presente de vídeo","Regalo en video","วิดีโอของขวัญ","Видеоподарок"],
+    "Day":
+        ["Day","Ngày","Hari","Dia","Día","วัน","День"],
+    "X2 Gift":
+        ["X2 Gift","x2 Quà","Hadiah X2","Presente x2","Regalo x2","ของขวัญ 2 เท่า","Двойной подарок"],
+    "You have received daily gifts":
+        ["You have received daily gift today","Hôm nay bạn đã nhận quà đăng nhập ","Kamu sudah menerima hadiah harian hari ini","Você recebeu um presente diário hoje","Recibiste el regalo diario de hoy","คุณได้รับของขวัญประจำวันในวันนี้","Вы уже получили сегодня ежедневный подарок"],
+    "Spin now":
+        ["Spin now","Quay ngay","Putar sekarang","Girar agora","Girar ahora","ลุ้นตอนนี้","Вращать сейчас"],
+    "Account":
+        ["Account","Tài khoản","Akun","Conta","Cuenta","บัญชี","Учетная запись"],
+    "Support":
+        ["Support","Hỗ trợ","Dukungan","Ajuda","Soporte","สนับสนุน","Поддержка"],
+    "Music":
+        ["Music","Nhạc","Musik","Música","Música","ดนตรี","Музыка"],
+    "Sound":
+        ["Sound","Âm Thanh","Suara","Som","Sonido","เสียง","Звук"],
+    "Control":
+        ["Control","Điều Khiển","Kontrol","Controle","Controles","ควบคุม","Контроль"],
+    "On":
+        ["On","Bật","Aktif","Lig","Activ.","เปิด","Вкл."],
+    "Off":
+        ["Off","Tắt","Nonaktif","Desl","Desac.","ปิด","Выкл."],
+    "Facebook":
+        ["Facebook","Facebook","Facebook","Facebook","Facebook","Facebook","Facebook"],
+    "User Data":
+        ["User Data","Dữ Liệu Người Chơi","Data Pengguna","Dados do usuário","Datos del usuario","ข้อมูลผู้ใช้","Данные пользователя"],
+    "Want to ask a question or give us feedback?":
+        ["Want to ask a question or give us feedback?","Bạn có muốn hỏi hay đóng góp gì cho chúng tôi?","Ingin bertanya atau memberikan umpan balik?","Quer fazer uma pergunta ou nos avaliar?","¿Quieres hacer alguna pregunta o enviarnos tus comentarios?","ต้องการถามคำถามหรือให้ข้อเสนอแนะหรือไม่","Хотите задать вопрос или оставить отзыв?"],
+    "Follow us on social media":
+        ["Follow us on social media","Theo dõi chúng tôi trên mạng xã hội","Ikuti kami di media sosial","Siga-nos nas redes sociais","Síguenos en las redes sociales","ติดตามเราทางโซเชียลมีเดีย","Следите за нами в социальной сети"],
+    "E-mail us":
+        ["E-mail us","Gửi thư điện tử","Kirimkan e-mail pada kami","Email de contato","Envíanos un correo electrónico","ส่งอีเมลถึงเรา","Свяжитесь с нами по электронной почте"],
+    "Join Group":
+        ["Join Group","Vào nhóm","Gabung dengan Grup","Juntar-se ao grupo","Unirse al grupo","เข้าร่วมกลุ่ม","Присоединиться к группе"],
+    "Custom":
+        ["Custom","Tùy chỉnh","Kustom","Personalizado","Personalizado","กำหนดเอง","Особые настройки"],
+    "Control Setting":
+        ["Control Settings","Thiết lập điều khiển","Pengaturan Kontrol","Configurações de controle","Ajuste de los controles","การตั้งค่าปุ่มควบคุม","Настройки управления"],
+    "X Location":
+        ["X Location","Địa Điểm X","Lokasi X","Localização X","Ubicación X","ตำแหน่ง X","Местоположение X"],
+    "Autumn Forest":
+        ["Autumn Forest","Rừng Thu","Hutan Musim Gugur","Floresta de outono","Bosque otoñal","ป่าในฤดูใบไม้ร่วง","Осенний лес"],
+    "Winter Campaign":
+        ["Winter Campaign","Chiến Dịch Mùa Đông","Kampanye Musim Dingin","Campanha de inverno","Campaña invernal","แคมเปญแดนน้ำแข็ง","Зимняя кампания"],
+    "China":
+        ["China","Trung Quốc","Cina","China","China","จีน","Китай"],
+    "Red Alert":
+        ["Red Alert","Báo Động Đỏ","Bahaya","Alerta vermelho","Alerta roja","การแจ้งเตือนสีแดง","Полная боевая готовность"],
+    "Kill {1} enemies":
+        ["Kill {1} enemies","Tiêu diệt {1} kẻ địch","Bunuh {1} musuh","Mate {1} inimigo(s)","Mata {1} enemigos","ฆ่าศัตรู {1} ตัว","Убить {1} врагов"],
+    "Kill {1} enemies by {2}":
+        ["Kill {1} enemies by {2}","Tiêu diệt {1} kẻ địch bằng {2}","Bunuh {1} musuh menggunakan {2}","Mate {1} inimigo(s) em {2}","Mata {1} enemigos por medio de {2}","ฆ่าศัตรู {1} ตัวภายใน {2}","Убить {1} врагов с помощью {2}"],
+    "Complete Map {1} In Campaign Mode - {2} Difficulty":
+        ["Complete Map {1} In Campaign Mode - {2} Difficulty","Hoàn thành màn chơi {1} trong chế độ Chiến Dịch - độ khó {2}","Selesaikan Peta {1} pada Mode Kampanye - Tingkat Kesulitan {2}","Complete o mapa {1} no Modo de Campanha - Dificuldade {2}","Completa el mapa {1} en modo Campaña - Dificultad {2}","เปิดแผนที่ {1} ในโหมดแคมเปญ - ความยาก {2}","Выполнить карту {1} в режима кампании, уровень сложности {2}"],
+    "Earn {1} Gold":
+        ["Earn {1} Gold","Kiếm {1} Vàng","Dapatkan {1} Emas","Ganhe {1} ouros","Consigue {1} de Oro","เก็บทอง {1} หน่วย","Заработать {1} золота"],
+    "Gain {1} stars from Campaign Mode":
+        ["Gain {1} stars from Campaign Mode","Kiếm {1} Sao trong chế độ Chiến Dịch","Dapatkan {1} bintang dari Mode Kampanye","Ganhe {1} estrela(s) no modo de campanha","Gana {1} estrellas en el modo Campaña","เก็บดาว {1} ดวงในโหมดแคมเปญ","Получить {1} звезд из режима кампании"],
+    "Buy {1} Gun":
+        ["Buy {1} Guns","Mua {1} súng","Beli {1} Senjata","Compre {1} arma(s)","Compra {1} armas","ซื้อปืน {1} กระบอก","Купить {1} единиц оружия"],
+    "Shot down {1} planes":
+        ["Shoot down {1} planes","Bắn hạ {1} máy bay","Tembak jatuh {1} pesawat","Abata {1} avião(ões)","Derriba {1} aviones","ยิงเครื่องบินตก {1} เครื่อง","Сбить {1} самолетов"],
+    "Destroy {1} gun bunkers":
+        ["Destroy {1} Gun bunkers","Hạ {1} trụ súng","Hancurkan {1} bunker Senjata","Destrua {1} bunker(s) de armas","Destruye {1} búnkeres de armas","ทำลายบังเกอร์ {1} แนว","Уничтожить {1} орудийных сооружений"],
+    "Destroy {1} tanks":
+        ["Destroy {1} Tanks","Hạ {1} xe tăng","Hancurkan {1} Tank","Destrua {1} tanque(s)","Destruye {1} tanques","ทำลายรถถัง {1} คัน","Уничтожить {1} танков"],
+    "Kill Boss {1} Times In BossMode - Normal Difficulty":
+        ["Kill Boss {1} Times In Boss Mode - Normal Difficulty","Hạ Trùm {1} lần trong chế độ Đấu Trùm - độ khó Bình Thường","Bunuh Bos {1} Kali pada Mode Bos - Tingkat Kesulitan Normal","Mate o chefe {1} vez(es) no Modo chefe - Dificuldade Normal","Mata al Jefe {1} veces en modo Jefe - Dificultad normal","ฆ่าบอส {1} ครั้งในโหมดบอส - ระดับปกติ","Убить босса {1} раз в режиме босса на нормальной уровне сложности"],
+    "Body Bagger":
+        ["Body Bag","Túi Đựng Xác","Kantong mayat","Saco para cadáver","Bolsa para cadáveres","บอดี้แบ็ก","Мешок для трупа"],
+    "Commando Expert":
+        ["Commando Expert","Biệt Kích Lão Luyện","Ahli Komando","Especialista em comando","Experto comando","คอมมานโดผู้เชี่ยวชาญ","Эксперт по специальным операциям"],
+    "Rapid Fire Expert":
+        ["Rapid Fire Expert","Liên Thanh Lão Luyện","Ahli Tembakan Cepat","Especialista em Fogo Rápido","Experto del fuego rápido","มือแม่นปืน","Эксперт по быстрому ведению огня"],
+    "Cold Shell Expert":
+        ["Cold Shell Expert","Đạn Lạnh Lão Luyên","Ahli Senjata Cold Shell","Especialista em Congelamento","Experto del casquillo frío","ผู้เชี่ยวชาญกระสุนน้ำแข็ง","Эксперт по боевым действиям в зданиях"],
+    "Death Mark Expert":
+        ["Death Mark Expert","Dấu Tử Lão Luyện","Ahli Senjata Death Mark","Especialista em Marca da Morte","Experto de la marca de la muerte","นักฆ่า","Эксперт по убийствам"],
+    "Bush Fire Expert ":
+        ["Bush Fire Expert ","Bắn Chùm Lão Luyện","Ahli Senjata Ledak ","Especialista em Incêndios ","Experto del fuego rápido ","นักซุ่มโจมตี ","Эксперт по стрельбе очередями "],
+    "Shot Gun Master":
+        ["Shot Gun Master","Bậc Thầy Súng Hoa Cải","Pakar Senapan Berburu","Mestre da Espingarda","Amo de la escopeta","สิงห์ปืนสั้น","Мастер стрельбы из дробовика"],
+    "Flame Thrower Master":
+        ["Flame Thrower Master","Bậc Thầy Súng Phun Lửa","Pakar Senjata Penyembur Api","Mestre do Lança-chamas","Amo del lanzallamas","ผู้คุมหอปืนไฟ","Мастер метания огня"],
+    "Laser Gun Master":
+        ["Laser Gun Master","Bậc Thầy Súng Laze","Pakar Senjata Laser","Mestre da Arma a laser","Amo del arma láser","ผู้คุมปืนเลเซอร์","Мастер стрельбы из лазерной пушки"],
+    "Rocket Launcher Master":
+        ["Rocket Launcher Master","Bậc Thầy Súng Tên Lửa","Pakar Peluncur Roket","Mestre dos Lançadores de foguetes","Amo del lanzacohetes","ผู้คุมการปล่อยจรวด","Мастер стрельбы из гранатомета"],
+    "Thunder Gun Master":
+        ["Thunder Gun Master","Bậc Thầy Súng Điện","Pakar Senjata Petir","Mestre da Arma Elétrica","Amo del arma de truenos","ผู้คุมปืนสายฟ้า","Мастер стрельбы из громовой пушки"],
+    "M61 Grenade Elite":
+        ["M61 Grenade Elite","Lựu M61 Chuyên Nghiệp","Granat Elit M61","Granada elite M61","Élite de la granada M61","ผู้เชี่ยวชาญระเบิด M61","Элитный уровень применения гранаты M61"],
+    "Ice Spark Elite":
+        ["Ice Spark Elite","Chông Băng Chuyên Nghiệp","Percikan Es Elit","Faísca de gelo Elite","Élite de la chispa de hielo","จอมเทพน้ำแข็ง","Элитный уровень применения ледяной искры"],
+    "Bartender Elite":
+        ["Bartender Elite","Người Pha Rượu Chuyên Nghiệp","Bartender Elit","Barman Elite","Élite cantinero","จอมเทพบาร์เทนเดอร์","Бармен, элитный уровень"],
+    "Chemical Elite":
+        ["Chemical Elite","Nhà Hóa Học Chuyên Nghiệp","Zat Kimia Elit","Elite Química","Élite químico","นักเล่นแร่แปรธาตุ","Химическое оружие, элитный уровень"],
+    "Rammer Work":
+        ["Carpenter","Máy Dập","Tukang Kayu","Carpinteiro","Carpintero","เครื่องกระทุ้ง","Плотник"],
+    "Chopper Work":
+        ["Butcher","Đồ Tể","Tukang Jagal","Açougueiro","Carnicero","มีดสับ","Мясник"],
+    "Blade Work":
+        ["Hunter","Kiếm kỹ","Pemburu","Caçador","Cazador","ดาบ","Охотник"],
+    "{1} Veteran":
+        ["{1} Veteran","{1} Thuần Thục","{1} Veteran","{1} veterano","{1} Veterano","{1} ทหารผู้กล้า","{1} Ветеран"],
+    "Gold Miner":
+        ["Gold Miner","Kẻ Đào Vàng","Penambang Emas","Garimpeiro","Minero de oro","นักขุดแร่ทอง","Золотодобытчик"],
+    "Shooting Star":
+        ["Shooting Star","Sao Băng","Bintang Jatuh","Estrela cadente","Estrella fugaz","ดาวตก","Падающая звезда"],
+    "Secret Armory":
+        ["Secret Armory","Kho Bí Mật","Gudang Senjata Rahasia","Arsenal Secreto","Arsenal secreto","ยุทธภัณฑ์ลับ","Секретный склад оружия"],
+    "Fly Catcher":
+        ["Fly Catcher","Kẻ Bắt Ruồi","Penangkap Lalat","Pega-moscas","Cazador de moscas","นักสอยเครื่องบิน","Мухолов"],
+    "Breaker":
+        ["Breaker","Kẻ Phá Hoại","Sang Perusak","Neutralizador","Destrozador","ผู้ทำลาย","Взломщик"],
+    "Destroyer":
+        ["Destroyer","Kẻ Hủy Diệt","Sang Penghancur","Destruidor","Destructor","นักทำลาย","Разрушитель"],
+    "Victorious Challenger":
+        ["Victorious Challenger","Kẻ Thách Thức Vinh Quang","Sang Penantang Juara","Desafiador vitorioso","Retador victorioso","ผู้ท้าชิงที่มีประวัติโดดเด่น","Победоносный оппонент"],
+    "Upgrade your hero {1} times":
+        ["Upgrade your hero {1} times","Nâng cấp nhân vật {1} lần","Tingkatkan heromu {1} kali","Atualize seu herói {1} vez(es)","Mejora a tu héroe {1} veces","อัพเกรดฮีโร่ของคุณ {1} ครั้ง","Повысить уровень своего героя {1} раз"],
+    "Spin the lucky wheel {1} times":
+        ["Spin the Lucky wheel {1} times","Quay vòng quay may mắn {1} lần","Putar roda Keberuntungan {1} kali","Gire a Roleta da Sorte {1} vez(es)","Gira la Ruleta de la Suerte {1} veces","หมุนเสี่ยงโชค {1} ครั้ง","Вращать барабан {1} раз"],
+    "Open gacha box {1} times":
+        ["Open Lucky crate {1} times","Mở rương {1} lần","Buka Peti keberuntungan {1} kali","Abra o Caixote da Sorte {1} vez(es)","Abre la Caja de la Suerte {1} veces","เปิดกล่องลุ้นโชค {1} ครั้ง","Открыть ящик удачи {1} раз"],
+    "Finish PvP mode {1} times":
+        ["Finish PvP mode {1} times","Hoàn thành chế độ PvP {1} lần","Selesaikan mode PvP {1} kali","Termine o modo JvJ {1} vez(es)","Finaliza el modo JcJ {1} veces","ผ่านโหมด PvP {1} ครั้ง","Завершить режим PvP {1} раз"],
+    "Win PvP mode {1} times":
+        ["Win PvP mode {1} times","Dành {1} chiến thắng trong chế độ PvP","Menangkan mode PvP {1} kali","Ganhe no modo JvJ {1} vez(es)","Gana en modo JcJ {1} veces","ชนะโหมด PvP {1} ครั้ง","Выиграть в режиме PvP {1} раз"],
+    "Play Boss Mode {1} times":
+        ["Play Boss Mode {1} times","Chơi chế độ Đấu Trùm {1} lần","Mainkan Mode Bos {1} kali","Jogue no Modo Chefe {1} vez(es)","Juega en modo Jefe {1} veces","เล่นโหมดบอส {1} ครั้ง","Играть в режиме босса {1} раз"],
+    "Destroy {1} {2}":
+        ["Destroy {1} {2}","Tiêu diệt {1} {2}","Hancurkan {1} {2}","Destrua {1} {2}","Destruye {1} {2}","ทำลาย {1} {2}","Уничтожить {1} {2}"],
+    "Helicopter":
+        ["Helicopter","Trực thăng","Helikopter","Helicóptero","Helicóptero","เฮลิคอปเตอร์","Вертолет"],
+    "Use {1} {2}":
+        ["Use {1} {2}","Sử dụng {1} {2}","Gunakan {1} {2}","Use {1} {2}","Usa {1} {2}","ใช้ {1} {2}","Использовать {1} {2}"],
+    "Defeat boss in Boss mode {1} times":
+        ["Defeat boss in Boss mode {1} times","Hạ trùm trong chế độ Đấu Trùm {1} lần","Kalahkan bos pada mode Bos {1} kali","Derrote o chefe no Modo Chefe {1} vez(es)","Derrota al jefe en modo Jefe {1} veces","เอาชนะบอสในโหมดบอส {1} ครั้ง","Победить босса в режиме босса {1} раз"],
+    "Defeat {1} Bosses In Campaign Mode - {2} Difficulty":
+        ["Defeat {1} Bosses In Campaign Mode - {2} Difficulty","Hạ trùm {1} trong chế độ Chiến Dịch - độ khó {2}","Kalahkan {1} Bos Pada Mode Kampanye - Tingkat Kesulitan {2}","Derrote {1} Chefe(s) no modo de campanha - Dificuldade {2}","Derrota a {1} jefes en modo Campaña - Dificultad {2}","จัดการบอส {1} ตัวในโหมดแคมเปญ - ระดับ {2}","Победить {1} боссов в режиме кампании, уровень сложности {2}"],
+    "Upgrade weapon {1} times":
+        ["Upgrade weapon {1} times","Nâng cấp vũ khí {1} lần","Tingkatkan senjata {1} kali","Melhore arma {1} vez(es)","Mejora el arma {1} veces","อัพเกรดอาวุธ {1} ครั้ง","Повысить уровень оружия {1} раз"],
+    "Get {1} Combo By {2}":
+        ["Get {1} Combo By {2}","Đạt {1} chuỗi tiêu diệt bằng {2}","Dapatkan {1} Kombo menggunakan {2}","Obtenha {1} Combo(s) por {2}","Consigue {1} Combo por medio de {2}","ทำ {1} คอมโบภายใน {2}","Получить {1} Combo с помощью {2}"],
+    "Exchange Gem to Gold {1} times":
+        ["Exchange Gem to Gold {1} times","Đổi Ngọc sang Vàng {1} lần","Tukarkan Permata dengan Emas {1} kali","Troque joias para ouros {1} vez(es)","Cambia gemas por oro {1} veces","แลกเจมเป็นทอง {1} ครั้ง","Поменять драгоценные камни на золото {1} раз"],
+    "Commanders":
+        ["Commanders","Chỉ huy","Komandan","Comandantes","Comandantes","ผู้บัญชาการ","Командиры"],
+    "List rewards":
+        ["Reward list","Danh sách phần thưởng","Daftar hadiah","Lista de recompensas","Recompensas","รายการรางวัล","Список вознаграждений"],
+    "Drop":
+        ["Drop","Rơi","Item Jatuh","Item","Botín","ของตก","Трофей"],
+    "Up to":
+        ["Up to","Lên tới","Hingga","Até","Hasta","สูงสุด","До"],
+    "PVP Point":
+        ["PVP Point","Điểm PvP","Poin PVP","Ponto JvJ","Punto JcJ","คะแนน PvP","Точка PVP"],
+    "There are no items":
+        ["There are no items","Không có vật phẩm nào","Tidak ada item","Não há itens","No hay objetos","ไม่มีรายการใด ๆ","Нет предметов"],
+    "Sorry that wasn’t quite enough strength.
+You should train more to try again":
+        ["Sorry you are not strong enough.
+You should practice more to try again.","Rất tiếc vì bạn chưa đủ mạnh.
+Bạn hãy luyện tập nhiều hơn và thử lại sau.","Maaf, kamu tidak cukup kuat.
+Kamu harus lebih banyak latihan untuk mencoba lagi.","Desculpe, mas você não é forte o suficiente.
+Pratique mais para tentar novamente.","Lástima que no eres lo suficientemente fuerte.
+Deberías practicar más y volver a intentarlo.","ขออภัยคุณแข็งแกร่งไม่เพียงพอ
+ฝึกฝนให้มากขึ้น แล้วลองดูใหม่","К сожалению, вы недостаточно сильны.
+Вам следует попрактиковаться и повторить попытку."],
+    "Menu":
+        ["Menu","Menu","Menu","Menu","Menú","เมนู","Меню"],
+    "Restart":
+        ["Restart","Chơi Lại","Mulai Kembali","Reiniciar","Reiniciar","รีสตาร์ท","Начать заново"],
+    "Continue":
+        ["Continue","Tiếp tục","Lanjutkan","Continuar","Continuar","ดำเนินการต่อ","Продолжить"],
+    "Save me":
+        ["Save me","Cứu tôi","Selamatkan aku","Salve-me","Sálvame","ช่วยด้วย","Сохранить меня"],
+    "Do you want to resurrect your Hero?":
+        ["Do you want to resurrect your character?","Bạn có muốn hồi sinh nhân vật của bạn?","Bangkitkan kembali karaktermu?","Você quer ressuscitar seu personagem?","¿Quieres revivir a tu personaje?","ต้องการคืนชีพตัวละครหรือไม่","Хотите воскресить своего персонажа?"],
+    "Watch Ads":
+        ["Watch Ads","Xem quảng cáo","Lihat Iklan","Assistir anúncios","Ver anuncios","ชมโฆษณา","Просмотреть рекламные объявления"],
+    "Tutorial":
+        ["Tutorial","Hướng dẫn","Tutorial","Tutorial","Tutorial","แนะนำ","Обучающий курс"],
+    "Pvp Mode is unlocked!":
+        ["Multiplayer Mode is unlocked!","Chế độ Đấu Trường vừa được mở khóa!","Mode Multiplayer terbuka!","Modo multijogador desbloqueado!","¡Modo multijugador desbloqueado!","โหมดผู้เล่นหลายรายเล่นได้แล้ว!","Многопользовательский режим разблокирован!"],
+    "Time Comsuming":
+        ["Time Comsumed","Thời gian đã qua","Waktu yang Dihabiskan","Tempo gasto","Tiempo consumido","เวลาที่ใช้","Затраченное время"],
+    "Enemies Killed":
+        ["Enemies Killed","Số địch bị hạ","Musuh yang Dibunuh","Inimigos mortos","Enemigos asesinados","ศัตรูที่ฆ่าได้","Количество убитых врагов"],
+    "Percent Completed":
+        ["Completion rate","Tỉ lệ hoàn thành","Tingkat penyelesaian","Taxa de finalização","Porcentaje completado","อัตราความสำเร็จ","Процент выполнения"],
+    "Wave":
+        ["Wave","Đợt tấn công","Gelombang","Onda","Oleada","เวฟ","Волна"],
+    "Pause":
+        ["Pause","Tạm dừng","Jeda","Pausa","Pausa","หยุดชั่วคราว","Пауза"],
+    "Mission":
+        ["Mission","Nhiệm vụ","Misi","Missão","Misión","ภารกิจ","Миссия"],
+    "Boss mode has just been unlocked":
+        ["Boss Mode has been unlocked","Chế độ đấu trùm vừa được mở khóa!","Mode Bos telah dibuka","Modo Chefe desbloqueado","Modo Jefe desbloqueado","ปลดล็อคโหมดบอสแล้ว","Режим босса разблокирован."],
+    "You have enough gold to upgrade weapons":
+        ["You have enough Gold to upgrade weapons","Đã đủ Vàng để nâng cấp vũ khí","Kamu memiliki cukup Emas untuk meningkatkan senjata","Você tem ouros o suficiente para melhorar armas","Tienes oro suficiente para mejorar armas","คุณมีทองเพียงพอสำหรับอัพเกรดอาวุธ","У вас достаточно золота для повышения уровня оружия."],
+    "Tap here to upgrade your weapon":
+        ["Tap here to upgrade your weapon","Bấm vào đây để nâng cấp vũ khí","Ketuk di sini untuk meningkatkan senjatamu","Toque aqui para melhorar sua arma","Toca aquí para mejorar tu arma","กดที่นี่เพื่ออัพเกรดอาวุธของคุณ","Нажмите здесь, чтобы повысить уровень оружия."],
+    "You have enough gold to upgrade character":
+        ["You have enough Gold to upgrade your character","Đã đủ Vàng để nâng cấp nhân vật","Kamu memiliki cukup Emas untuk meningkatkan karaktermu","Você tem ouros o suficiente para melhorar seu personagem","Tienes oro suficiente para mejorar tu personaje","คุณมีทองเพียงพอสำหรับอัพเกรดตัวละครของคุณ","У вас достаточно золота для повышения уровня своего персонажа."],
+    "Tap here to upgrade character":
+        ["Tap here to upgrade your character","Bấm vào đây để nâng cấp nhân vật","Ketuk di sini untuk meningkatkan karaktermu","Toque aqui para melhorar seu personagem","Toca aquí para mejorar tu personaje","กดที่นี่เพื่ออัพเกรดตัวละครของคุณ","Нажмите здесь, чтобы повысить уровень своего персонажа."],
+    "Mission has just been completed
+Tap here to check the rewards":
+        ["Mission has been completed
+Tap here to check the rewards","Nhiệm vụ vừa hoàn thành
+Bấm vào đây để kiểm tra phần thưởng","Misi telah selesai
+Ketuk di sini untuk melihat hadiahnya","Missão concluída 
+Toque aqui para verificar as recompensas","Misión completada
+Toca aquí para ver las recompensas","ภารกิจเสร็จสิ้นแล้ว
+กดที่นี่เพื่อตรวจสอบรางวัล","Миссия выполнена.
+Нажмите здесь, чтобы проверить вознаграждения."],
+    "Tap here to claim your rewards":
+        ["Tap here to claim your rewards","Bấm vào đây để nhận thưởng","Ketuk di sini untuk mengklaim hadiahmu","Toque aqui para reivindicar suas recompensas","Toca aquí para reclamar tus recompensas","กดที่นี่เพื่อรับรางวัลของคุณ","Нажмите здесь, чтобы запросить вознаграждения."],
+    "You VIP level increased
+Tap here to check the rewards  and benefits":
+        ["You VIP level is increased
+Tap here to check the rewards  and benefits","Cấp độ VIP của bạn vừa tăng
+Bấm vào đây để xem phần thưởng và lợi ích","Level VIP-mu bertambah
+Ketuk di sini untuk melihat hadiah dan keuntungannya","Nível VIP aumentou
+Toque aqui para verificar as recompensas e benefícios","Tu nivel VIP aumentó
+Toca aquí para ver las recompensas y beneficios","ระดับ VIP ของคุณเพิ่มขึ้น
+กดที่นี่เพื่อตรวจสอบรางวัลและสิทธิประโยชน์","Ваш VIP-уровень повысился.
+Нажмите здесь, чтобы проверить вознаграждения и преимущества."],
+    "VIP will give you permanent benefits":
+        ["VIP will give you permanent benefits","VIP sẽ đem đến những lợi ích vĩnh viễn cho bạn","VIP akan memberimu keuntungan permanen","O VIP lhe dará benefícios permanentes","El estado VIP te dará beneficios permanentes","VIP ทำให้คุณได้สิทธิประโยชน์แบบถาวร","VIP даст вам постоянные преимущества."],
+    "Tap here to claim your VIP rewards":
+        ["Tap here to claim your VIP rewards","Bấm vào đây để nhận phần thưởng VIP","Ketuk di sini untuk mengklaim hadiah VIP-mu","Toque aqui para reivindicar suas recompensas VIP","Toca aquí para reclamar tus recompensas VIP","กดที่นี่เพื่อรับรางวัล VIP ของคุณ","Нажмите здесь, чтобы потребовать VIP-вознаграждения."],
+    "You collected enough objective stars
+Tap here to receive reward":
+        ["You have collected enough Stars
+Tap here to receive rewards","Đã thu thập đủ số Sao
+Bấm vào đây để nhận thưởng","Kamu telah mengumpulkan cukup Bintang
+Ketuk di sini untuk menerima hadiah","Você coletou Estrelas o suficiente 
+Toque aqui para receber recompensas","Recolectaste suficientes estrellas
+Toca aquí para recibir las recompensas","คุณมีดาวเพียงพอแล้ว
+กดที่นี่เพื่อรับรางวัล","Вы собрали достаточно звезд.
+Нажмите здесь, чтобы получить вознаграждения."],
+    "All Normal stages are completed
+Unlock Hard stages":
+        ["All Normal stages are completed
+Unlock Hard stages","Tất cả màn chơi độ khó bình thường đã hoàn thành
+Mở khóa độ khó tiếp theo","Semua tahap Normal selesai
+Buka tahap Sulit","Todas as fases normais concluídas 
+Desbloquear fases difíceis","Todas las etapas normales completados
+Desbloquea las etapas en dificultad difícil","ผ่านด่านปกติทั้งหมดแล้ว
+ปลดล็อคด่านยาก","Все нормальные уровни выполнены.
+Разблокировать сложные уровни."],
+    "You collect enough objective stars
+New map is unlocked":
+        ["You have collected enough Stars
+New map is unlocked","Thu thập đủ số Sao
+Bấm vào đây để nhận thưởng","Kamu telah mengumpulkan cukup Bintang
+Peta baru terbuka","Você coletou estrelas suficientes 
+Novo mapa desbloqueado","Recolectaste suficientes estrellas
+Nuevo mapa desbloqueado","คุณมีดาวเพียงพอแล้ว
+แผนที่ใหม่ถูกปลดล็อคแล้ว","Вы собрали достаточно звезд.
+Новая карта разблокирована."],
+    "Tap button to start game":
+        ["Tap button to start game","Bấm nút để bắt đầu màn chơi","Ketuk tombol untuk memulai permainan","Toque no botão para iniciar o jogo","Toca el botón para comenzar la partida","กดปุ่มเพื่อเริ่มเกม","Нажмите клавишу, чтобы начать игру."],
+    "Tap on node to open mission":
+        ["Tap on node to open mission","Bấm vào nút để xem nhiệm vụ","Ketuk pada titik untuk membuka misi","Toque no nó para abrir a missão","Toca sobre el nodo para abrir la misión","กดที่โหมดเพื่อเปิดภารกิจ","Нажмите на узел, чтобы открыть миссию."],
+    "Complete stage objectives to receive stars":
+        ["Complete stage tasks to receive Stars","Hoàn thành nhiệm vụ màn chơi để nhận Sao","Selesaikan tugas tahap untuk menerima Bintang","Complete as tarefas do palco para receber Estrelas","Completa los trabajos la etapa para recibir estrellas","ผ่านภารกิจประจำด่านเพื่อรับดาว","Выполните задачи уровня, чтобы получить звезды."],
+    "Collect objective stars to receive rewards":
+        ["Collect Stars to receive rewards","Thu thập Sao để nhận thưởng","Kumpulkan Bintang untuk menerima hadiah","Colete Estrelas para receber recompensas","Reúne estrellas para recibir recompensas","เก็บดาวเพื่อรับรางวัล","Соберите звезды, чтобы получить вознаграждения."],
+    "Tap Buy button to confirm the transaction":
+        ["Tap Buy button to confirm the transaction","Bấm nút Mua để xác nhận giao dịch","Ketuk tombol Beli untuk mengonfirmasi transaksi","Toque no botão Comprar para confirmar a transação","Toca el botón Comprar para confirmar la transacción","กดปุ่มซื้อเพื่อยืนยันการทำรายการ","Нажмите клавишу «Купить», чтобы подтвердить транзакцию."],
+    "Use boosters to finish the mission easier":
+        ["Use boosters to finish the mission more easily","Sử dụng vật phẩm hỗ trợ để hoàn thành màn chơi dễ hơn","Gunakan booster untuk menyelesaikan misi dengan lebih mudah","Use os Melhoradores para terminar a missão mais facilmente","Usa potenciadores para completar la misión más fácilmente","ใช้บูสเตอร์เพื่อให้ทำภารกิจได้ง่ายขึ้น","Пользуйтесь усилителями, чтобы легче закончить миссию."],
+    "Tap plus button to increase quantity":
+        ["Tap plus button to increase quantity","Bấm nút cộng để tăng số lượng","Ketuk tombol plus untuk menambah jumlah","Toque no botão com um “mais” para aumentar a quantidade","Toca el botón más para aumentar la cantidad","กดปุ่มบวกเพื่อเพิ่มจำนวน","Чтобы увеличить количество, нажмите плюс."],
+    "Tap switch button to change weapon":
+        ["Tap switch button to change weapon","Bấm nút đổi để chuyển vũ khí","Ketuk tombol alih untuk mengganti senjata","Toque no botão de trocar para trocar de arma","Toca el botón cambiar para cambiar de arma","กดปุ่มสลับเพื่อเปลี่ยนอาวุธ","Чтобы изменить оружие, нажмите клавишу переключения."],
+    "Tap plus button to purchase ammunition":
+        ["Tap plus button to purchase ammunition","Bấm nút cộng để mua đạn","Ketuk tombol plus untuk membeli amunisi","Toque no botão mais para comprar munição","Toca el botón más para comprar munición","กดปุ่มบวกเพื่อซื้อกระสุน","Чтобы купить боеприпасы, нажмите плюс."],
+    "Sale off":
+        ["Sale Off","Giảm Giá","Jual","Liquidação","Venta con descuentos","ส่วนลด","Продажа закрыта"],
+    "Weapon Novice Pack":
+        ["Novice Weapon Pack","Gói Vũ Khí Tân Binh","Paket Senjata Pemula","Pacote de armas para principiantes","Paquete de armas principiante","อาวุธสำหรับมือใหม่","Комплект оружия новичка"],
+    "Weapon Skilled Pack":
+        ["Skilled Weapon Pack","Gói Vũ Khí Chuyên Nghiệp","Paket Senjata Cakap","Pacote de armas para amadores","Paquete de armas hábil","อาวุธสำหรับตัวจริง","Комплект оружия опытного бойца"],
+    "Weapon Expert Pack":
+        ["Expert Weapon Pack","Gói Vũ Khí Lão Luyện","Paket Senjata Ahli","Pacote de armas para especialistas","Paquete de armas experto","อาวุธสำหรับผู้เชี่ยวชาญ","Комплект оружия эксперта"],
+    "Share":
+        ["Share","Chia sẻ","Bagikan","Compartilhar","Compartir","แชร์","Поделиться"],
+    "Trainee":
+        ["Trainee","Thực Tập Sinh","Peserta Pelatihan","Estagiário","Conscripto","เด็กฝึกหัด","Новобранец"],
+    "Private":
+        ["Private","Binh Nhì","Prajurit Biasa","Praça","Soldado","พลทหาร","Рядовой"],
+    "Private First Class":
+        ["Private First Class","Binh Nhất","Prajurit Satu","Primeiro-cabo","Soldado de Primera Clase","พลทหารมือหนึ่ง","Ефрейтор"],
+    "Corporal":
+        ["Corporal","Hạ Sĩ","Kopral","Segundo-cabo","Cabo","นายสิบ","Младший сержант"],
+    "Sergeant":
+        ["Sergeant","Trung Sĩ","Sersan","Sargento","Sargento","จ่า","Сержант"],
+    "Master Sergeant":
+        ["Master Sergeant","Thượng Sĩ","Sersan Kepala","Sargento-mor","Sargento Mayor","จ่าสิบเอก","Старший сержант"],
+    "Sergeant First":
+        ["Second Lieutenant","Thiếu Úy","Letnan Dua","Segundo tenente","Teniente Segundo","ร้อยจัตวา","Младший лейтенант"],
+    "Master Sergeant 2":
+        ["First Lieutenan","Trung Úy","Letnan Satu","Primeiro tenente","Teniente Primero","ร้อยตรี","Лейтенант"],
+    "Second Lieutenant":
+        ["Senior Lieutenant","Thượng Úy","Letnan Senior","Tenente Sênior","Teniente Superior","ร้อยโท","Старший лейтенант"],
+    "First Lieutenant":
+        ["Captain","Đại Úy","Kapten","Capitão","Capitán","ร้อยเอก","Капитан"],
+    "Captain":
+        ["Major","Thiếu Tá","Mayor","Major","Mayor","พันจัตวา","Майор"],
+    "Major":
+        ["Lieutenant colonel","Trung Tá","Letnan kolonel","Tenente-coronel","Teniente Coronel","พันตรี","Подполковник"],
+    "Lieutenant Colonel":
+        ["Senior Lieutenant colonel","Thượng Tá","Letnan Kolonel Senior","Tenente-coronel sênior","Teniente Coronel Superior","พันโท","Старший подполковник"],
+    "Colonel":
+        ["Colonel","Đại Tá","Kolonel","Coronel","Coronel","พันเอก","Полковник"],
+    "Brigadier General":
+        ["Brigadier General","Chuẩn Tướng","Brigadir Jenderal","General de brigada","General Brigadier","พลบริเกรด","Бригадный генерал"],
+    "Major General":
+        ["Major General","Thiếu Tướng","Mayor Jenderal","Major general","General Mayor","พลจัตวา","Генерал-майор"],
+    "Lieutenant General":
+        ["Lieutenant General","Trung Tướng","Letnan Jenderal","Tenente-general","General Teniente","พลตี","Генерал-лейтенант"],
+    "General":
+        ["Senior Lieutenant-General","Thượng Tướng","Letnan Jenderal Senior","Tenente-general sênior","General Teniente Superior","พลโท","Генерал-полковник"],
+    "Marshall":
+        ["General","Đại Tướng","Jenderal","General","General","พลเอก","Генерал"],
+    "CT-9":
+        ["CT-9","CT-9","CT-9","CT-9","CT-9","CT-9","CT-9"],
+    "FC-10":
+        ["FC-10","FC-10","FC-10","FC-10","FC-10","FC-10","FC-10"],
+    "EyeBot":
+        ["EyeBot","EyeBot","EyeBot","EyeBot","Robot vigía","EyeBot","EyeBot"],
+    "Invisble Cloak":
+        ["Invisible Cloak","Áo tàng hình","Jubah Tembus Pandang","Capa invisível","Manto de invisibilidad","ชุดล่องหน","Плащ-невидимка"],
+    "Support Rocket":
+        ["Support Rocket","Tên lửa hỗ trợ","Roket Pendukung","Foguete de apoio","Cohete de apoyo","จรวจสนับสนุน","Вспомогательная ракета"],
+    "Get reward":
+        ["Get reward","Nhận thưởng","Dapatkan hadiah","Receber recompensa","Conseguir recompensa","รับรางวัล","Получить вознаграждение"],
+    "Gem Pack":
+        ["Gem Pack","Gói Ngọc","Paket Permata","Pacote de joias","Paquete de gemas","ชุดเจม","Упаковка драгоценных камней"],
+    "Double Gem for In-app Package":
+        ["Double Gem for In-app Package","Gấp đôi Ngọc cho thanh toán trong game","Permata Ganda untuk Paket Dalam Aplikasi","Jóia dupla para Pacote no aplicativo","Doble de gemas para el paquete dentro de la aplicación","เจมสองเท่าสำหรับแพคเกจ In-app","Удвоить число драгоценных камней для пакета в приложении"],
+    "Richman pack":
+        ["Richman Pack","Gói Nhà Giàu","Paket Orang Kaya","Pacote esbanjador","Paquete de hombre rico","ชุดริชแมน","Пакет богача"],
+    "Millionaire pack":
+        ["Millionaire Pack","Gói Triệu Phú","Paket Jutawan","Pacote milionário","Paquete de millonario","ชุดมิลเลียนแนร์","Пакет миллионера"],
+    "Billionaire pack":
+        ["Billionaire Pack","Gói Tỉ Phú","Paket Miliarder","Pacote bilionário","Paquete de billonario","ชุดบิลเลียนแนร์","Пакет миллиардера"],
+    "Grenade Crate":
+        ["Grenade Crate","Rương Lựu Đạn","Peti Granat","Caixa de granada","Caja de granadas","กล่องระเบิด","Ящик с гранатами"],
+    "Medic Pack":
+        ["Medic Pack","Gói Y Tế","Paket Medis","Pacote médico","Paquete médico","กล่องเวชภัณฑ์","Аптечка"],
+    "Deathly beaty pack":
+        ["Deathly beauty pack","Gói Vẻ Đẹp Chết Chóc","Paket kecantikan yang mematikan","Pacote de beleza mortal","Paquete de belleza letal","ชุดนักฆ่า","Пакет смертельной красоты"],
+    "Burning Ice pack":
+        ["Burning Ice pack","Gói Băng Lửa","Paket Es Membara","Pacote de gelo ardente","Paquete de quemadura por frío","ชุดน้ำแข็งพิฆาต","Пакет горящего льда"],
+    "Flying TNT pack":
+        ["Flying TNT Pack","Gói TNT Bay","Paket TNT Terbang","Pacote dinamite voadora","Paquete de TNT volador","ชุดปา TNT","Пакет снаряда с ТНТ"],
+    "Death eye pack":
+        ["Death Eye Pack","Gói Ánh Nhìn Chết Chóc","Paket Mata Kematian","Pacote de olho da morte","Paquete de ojo de la muerte","ชุดสายตาพิฆาต","Пакет с глазом смерти"],
+    "Special force pack":
+        ["Special Force Pack","Gói Đặc Nhiệm","Paket Kekuatan Khusus","Pacote especial de força","Paquete de fuerzas especiales","ชุดกองกำลังพิเศษ","Пакет специального назначения"],
+    "Brutal force pack":
+        ["Brutal Force Pack","Gói Sức Mạnh","Paket Kekuatan Kejam","Pacote de força brutal","Paquete de fuerza bruta","ชุดกองกำลังแดนเถื่อน","Пакет грубой силы"],
+    "Bubbles Gun Pack":
+        ["Bubble Gun Pack","Gói Súng Bong Bóng","Paket Senjata Gelembung","Pacote de chiclarma","Paquete de arma de burbujas","ชุดปืนฟองอากาศ","Пакет пушки с мыльными пузырями"],
+    "Blaster Packs":
+        ["Blaster Pack","Gói Bùng Nổ","Paket Blaster","Pacote detonador","Paquete de bláster","ชุดบลาสเตอร์","Пакет бластера"],
+    "Any purchase removes all ads permanently":
+        ["Any purchase removes all ads permanently","Bất cứ giao dịch tiền mặt nào cũng xóa bỏ quảng cáo vĩnh viễn","Setiap pembelian akan menghapus semua iklan secara permanen","Qualquer compra remove todos os anúncios permanentemente","Cualquier compra elimina los anuncios permanentemente","การจัดซื้อจะเป็นการลบโฆษณาออกไปอย่างถาวร","Любая покупка навсегда убирает все рекламные объявления."],
+    "Gold Pack":
+        ["Gold Pack","Gói Vàng","Paket Emas","Pacote dourado","Paquete de oro","ชุดทองคำ","Пакет золота"],
+    "Get Free Gifts":
+        ["Get Free Gifts","Nhận thưởng miễn phí","Dapatkan Hadiah Gratis","Receba presentes grátis","Conseguir regalos gratis","รับของขวัญฟรี","Получить бесплатные подарки"],
+    "Open Supply Shop":
+        ["Open Supply Shop","Vào cửa hàng hỗ trợ","Buka Toko Perlengkapan","Abrir loja de suprimentos","Abrir la tienda de suministros","เปิดร้านขายสินค้า","Открыть магазин снабжения"],
+    "Not enough Fragments to Unlock/RankUp":
+        ["Not enough Fragments to Unlock/RankUp","Không đủ mảnh vũ khí để mở khóa / Nâng hạng","Tidak cukup Fragmen untuk Membuka/Naik Peringkat","Fragmentos insuficientes para desbloquear/subir de classe","Sin suficientes fragmentos para desbloquear/subir de rango","ชิ้นส่วนเพื่อปลดล็อค/เพิ่มยศไม่เพียงพอ","Недостаточно фрагментов для разблокировки/повышения ранга"],
+    "Not enough Golds to Upgrade":
+        ["Not enough Gold to Upgrade","Không đủ Vàng để nâng cấp","Tidak cukup Emas untuk Peningkatan","Ouros insuficientes para melhorar","Sin suficiente oro para mejorar","ทองไม่เพียงพอสำหรับอัพเกรด","Недостаточно золота для повышения уровня"],
+    "Not enough Gems to Unlock":
+        ["Not enough Gem to Unlock","Không đủ Ngọc để mở khóa","Tidak cukup Permata untuk Membuka Kunci","Joias insuficientes para desbloquear","Sin suficientes gemas para desbloquear","เจมไม่เพียงพอสำหรับปลดล็อค","Недостаточно драгоценных камней для разблокировки"],
+    "Collect Fragments to Unlock/RankUp":
+        ["Collect Fragments to Unlock/RankUp","Thu thập mảnh để mở khóa / Nâng hạng","Kumpulkan Fragmen untuk Membuka/Naik Peringkat","Colete Fragmentos para desbloquear subida de classe","Reúne fragmentos para desbloquear/subir de rango","รวบรวมชิ้นส่วนเพื่อปลดล็อค/เพิ่มยศ","Соберите фрагменты для разблокировки/повышения ранга."],
+    "Coming Soon":
+        ["Coming Soon","Chuẩn bị cập nhật","Segera Hadir","Em breve","Próximamente","เร็ว ๆ นี้","Скоро"],
+    "Desc_FreeGift":
+        ["You get free gifts every day","Mỗi ngày bạn có thể nhận quà miễn phí","Kamu mendapat hadiah gratis setiap hari","Você recebe brindes todos os dias","Consigues regalos gratis cada día","รับของขวัญฟรีทุกวัน","Вы получаете бесплатные подарки каждый день."],
+    "Desc_SupplyShop":
+        ["Buy rare items in the supply shop","Mua vật phẩm quý hiếm ở cửa hàng hỗ trợ","Beli item langka di toko perlengkapan","Compre itens raros na loja de suprimentos","Compra objetos raros en la tienda de suministros","ซื้อไอเท็มหายากได้จากร้านค้า","Покупайте редкие предметы в магазине снабжения."],
+    "Desc_LuckyCrate":
+        ["Collect Lucky crates to get more rare items","Thu thập rương may mắn để kiếm được nhiều vật phẩm quý hiếm","Kumpulkan Peti Keberuntungan untuk mendapat lebih banyak item langka","Colete caixotes da sorte para obter itens mais raros","Reúne Cajas de la Suerte para obtener más objetos raros","รวบรวมกล่องลุ้นโชคเพื่อหาไอเท็มหายากเพิ่มเติม","Собирайте ящики удачи, чтобы получить больше редких предметов."],
+    "Desc_Shop":
+        ["Go to shop to buy more items ","Mở cửa hàng để mua thêm vật phẩm","Kunjungi toko untuk membeli lebih banyak item ","Vá à loja para comprar mais itens ","Ve a la tienda para comprar más objetos ","ไปที่ร้านค้าเพื่อซื้อของเพิ่ม ","Идите в магазин, чтобы купить больше предметов. "],
+    "Desc_Spin":
+        ["Collect Spin tickets to scroll Lucky Spin","Thu thập vé vóng quay may mắn để quay","Kumpulkan tiket Putaran untuk memutar Putaran Keberuntungan","Colete bilhetes para a Roleta da Sorte","Reúne boletos de la Ruleta para hacerla girar","รวบรวมตั๋วลุ้นโชคเพื่อลุ้นโชค","Собирайте билеты для вращения рулетки удачи."],
+    "Desc_CampaignReward":
+        ["Complete new stages to get more rewards","Hoàn thành các màn chơi để nhận được nhiều phần thưởng hơn","Selesaikan tahap baru untuk mendapat lebih banyak hadiah","Termine mais fases para obter mais recompensas","Completa las nuevas etapas para obtener más recompensas","ผ่านด่านใหม่ ๆ เพื่อรับรางวัลเพิ่ม","Проходите новые уровни, чтобы получать больше наград."],
+    "Where_to_find":
+        ["Where to find","Nơi để thu thập","Di mana menemukan","Onde achar","Dónde encontrar","สถานที่ค้นหา","Где найти"],
+    "Play_Game_To_Get_Free_Spin":
+        ["Play game to get free Spin ticket in","Chơi để nhận miễn phí vé vòng quay may mắn trong ","Mainkan game untuk mendapat tiket Putaran gratis di","Jogue o jogo para obter um bilhete gratuito de roleta em","Juega para conseguir un boleto de la Ruleta gratuito en","เล่นเกมเพื่อรับตั๋วลุ้นรางวัลใน","Играйте в игру, чтобы получить билет на бесплатное вращение."],
+    "Tiny_Gem_Pack":
+        ["Tiny Gem Pack","Gói Ngọc Nhỏ 1","Paket Permata Mungil","Pacote minúsculo de joias","Paquete de gemas diminuto","ชุดเจมจิ๋ว","Очень маленькая упаковка драгоценных камней"],
+    "Small_Gem_Pack":
+        ["Small Gem Pack","Gói Ngọc Nhỏ 2","Paket Permata Kecil","Pacote pequeno de joias","Paquete de gemas pequeño","ชุดเจมเล็ก","Маленькая упаковка драгоценных камней"],
+    "Medium_Gem_Pack":
+        ["Medium Gem Pack","Gói Ngọc Vừa","Paket Permata Sedang","Pacote médio de joias","Paquete de gemas mediano","ชุดเจมกลาง","Средняя упаковка драгоценных камней"],
+    "Deluxe_Gem_Pack":
+        ["Deluxe Gem Pack","Gói Ngọc Sang Trọng","Paket Permata Mewah","Pacote luxuoso de joias","Paquete de gemas de lujo","ชุดเจมเดอลุกซ์","Элитная упаковка драгоценных камней"],
+    "Large_Gem_Pack":
+        ["Large Gem Pack","Gói Ngọc Lớn","Paket Permata Besar","Pacote grande de joias","Paquete de gemas grande","ชุดเจมใหญ่","Большая упаковка драгоценных камней"],
+    "Huge_Gem_Pack":
+        ["Huge Gem Pack","Gói Ngọc Khổng Lồ","Paket Permata Super Besar","Pacote enormes de joias","Paquete de gemas enorme","ชุดเจมใหญ่พิเศษ","Огромная упаковка драгоценных камней"],
+    "Lv":
+        ["Lv","Cấp","Lv","Nv","Niv.","ระดับ","Уровень"],
+    "Waiting_For_Other_Player":
+        ["Waiting for other players","Đang đợi đối thủ","Menunggu pemain lainnya","Esperando por outros jogadores","Esperando a otros jugadores","กำลังรอผู้เล่นอื่น","Ожидание других игроков"],
+    "Try_To_Reconnect_And_Rejoin":
+        ["Trying to reconnect and rejoin …","Đang kết nối lại","Mencoba menghubungkan kembali dan bergabung kembali …","Tentando se reconectar e se entrar novamente...","Intentando reconectarse y reingresar...","กำลังลองเชื่อมต่อและเข้าร่วมใหม่อีกครั้ง...","Выполняется попытка установить соединение и присоединиться снова…"],
+    "Rejoin_Room_Failed":
+        ["Rejoin room failed","Kết nối lại thất bại","Gagal bergabung kembali ke ruangan","Falha ao se reconectar novamente à sala","No se pudo reingresar a la sala","เข้าร่วมใหม่ล้มเหลว","Попытка снова присоединиться к комнате не удалась."],
+    "Rejoin_Room_Success":
+        ["Rejoin successful","Kết nối lại thành công","Berhasil bergabung kembali ke ruangan","Reconexão bem-sucedida","Reingreso exitoso","เข้าร่วมใหม่เสร็จสิ้น","Попытка прошла успешно."],
+    "You_Lost_Internet":
+        ["You have lost internet connection","Bạn đã mất kết nối mạng","Sambungan internetmu terputus","Você perdeu a conexão com a Internet","Perdiste tu conexión a Internet","ขาดการเชื่อมต่ออินเทอร์เน็ต","У вас пропало соединение с интернетом."],
+    "You_Are_Disconnect":
+        ["You are disconected","Bạn đã  mất kết nối","Hubunganmu terputus","Você está desconectado","Te desconectaste","คุณถูกตัดการเชื่อมต่อ","Вы отсоединены"],
+    "You_Entered_Game_Too_Late":
+        ["You entered the game too late","Bạn vào trò chơi quá chậm","Kamu terlambat masuk ke dalam permainan","Você entrou no jogo tarde demais","Ingresaste al juego demasiado tarde","คุณเข้าเกมช้าเกินไป","Вы слишком поздно вошли в игру."],
+    "Tutorial_Move":
+        ["Drag the joystick to move","Kéo cần điều khiển để di chuyển","Seret joystick untuk bergerak","Arraste o controle para se mover","Arrastra el joystick para moverte","ลากจอยสติ๊กเพื่อย้ายตำแหน่ง","Для передвижения перемещайте джойстик."],
+    "Tutorial_Jump":
+        ["Tap and Hold to jump","Chạm và giữ để nhảy","Ketuk dan Tahan untuk melompat","Toque e segure para pular","Toca y mantén para saltar","กดค้างเพื่อกระโดด","Нажмите и удерживайте, чтобы выполнить прыжок."],
+    "Tutorial_Fire1":
+        ["Tap and Hold to fire","Chạm và giữ để bắn","Ketuk dan Tahan untuk menembak","Toque e segure para disparar","Toca y mantén para disparar","กดค้างเพื่อยิง","Нажмите и удерживайте, чтобы открыть огонь."],
+    "Tutorial_Fire2":
+        ["Press and Drag to fire","Nhấn và kéo để bắn","Tekan dan Seret untuk menembak","Pressione e arraste para disparar","Presiona y arrastra para disparar","กดและลากเพื่อยิง","Нажмите и перетаскивайте, чтобы открыть огонь."],
+    "Complete_Tutorial":
+        ["Complete Tutorial","Hoàn thành màn hướng dẫn","Selesaikan Tutorial","Tutorial concluído","Completar el tutorial","จบการแนะนำ","Пройти обучающий курс"],
+    "Old_Data_Need_Restore":
+        ["Old data detected. Download device data or facebook data?","Phát hiện dữ liệu  cũ. Tải dữ liệu từ thiết bị hoặc facebook?","Data lama terdeteksi. Unduh data perangkat atau data facebook?","Dados antigos detectados. Baixar dados do dispositivo ou do Facebook?","Se detectaron datos anteriores. ¿Descargar datos de dispositivo o Facebook?","พบข้อมูลเก่า ดาวน์โหลดข้อมูลอุปกรณ์หรือข้อมูล Facebook หรือไม่","Обнаружены старые данные. Скачать данные устройства или данные Facebook?"],
+    "Device":
+        ["Device","Thiết bị","Perangkat","Dispositivo","Dispositivo","อุปกรณ์","Устройство"],
+    "Choose_Language":
+        ["Choose Language","Chọn Ngôn Ngữ","Pilih Bahasa","Escolha idioma","Elige tu idioma","เลือกภาษา","Выбрать язык"],
+    "This_mode_require_2_players":
+        ["- This mode requires 2 players to start
+- You and your allies need to destroy the boss to win","- Chế độ này yêu cầu 2 người chơi để bắt đầu
+- Bạn và đồng minh cần tiêu diệt trùm để giành chiến thắng","
+- Mode ini membutuhkan 2 pemain untuk memulai
+- Anda dan sekutu Anda perlu menghancurkan bos untuk menang","- Este modo requer 2 jogadores para começar
+- Você e seus aliados precisam destruir o chefe para ganhar","- Este modo requiere 2 jugadores para comenzar.
+- Tú y tus aliados necesitan destruir al jefe para ganar.E470","- โหมดนี้ต้องการผู้เล่น 2 คนเพื่อเริ่มต้น
+- คุณและพันธมิตรของคุณต้องทำลายหัวหน้าเพื่อให้ได้ชัยชนะ","- Этот режим требует 2 игроков, чтобы начать
+- Вы и ваши союзники должны уничтожить босса, чтобы выиграть"]
+}

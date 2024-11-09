@@ -1,0 +1,118 @@
+
+thuyen.png
+size: 420,420
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 13
+  rotate: false
+  xy: 128, 206
+  size: 12, 11
+  orig: 12, 11
+  offset: 0, 0
+  index: -1
+Layer 22
+  rotate: false
+  xy: 101, 187
+  size: 25, 51
+  orig: 25, 51
+  offset: 0, 0
+  index: -1
+Layer 23
+  rotate: false
+  xy: 2, 93
+  size: 34, 40
+  orig: 34, 40
+  offset: 0, 0
+  index: -1
+Layer 40
+  rotate: false
+  xy: 2, 135
+  size: 67, 45
+  orig: 67, 45
+  offset: 0, 0
+  index: -1
+Layer 41
+  rotate: false
+  xy: 2, 182
+  size: 97, 56
+  orig: 97, 56
+  offset: 0, 0
+  index: -1
+Layer 46
+  rotate: false
+  xy: 2, 240
+  size: 411, 178
+  orig: 411, 178
+  offset: 0, 0
+  index: -1
+Layer 6
+  rotate: false
+  xy: 128, 219
+  size: 35, 19
+  orig: 35, 19
+  offset: 0, 0
+  index: -1
+Layer 602 copy
+  rotate: false
+  xy: 165, 227
+  size: 12, 11
+  orig: 12, 11
+  offset: 0, 0
+  index: -1
+Layer 602 copy 2
+  rotate: false
+  xy: 110, 174
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Layer 602 copy 3
+  rotate: false
+  xy: 9, 80
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Layer 618 copy
+  rotate: false
+  xy: 2, 66
+  size: 5, 25
+  orig: 5, 25
+  offset: 0, 0
+  index: -1
+Layer 618 copy 2
+  rotate: false
+  xy: 415, 389
+  size: 3, 29
+  orig: 3, 29
+  offset: 0, 0
+  index: -1
+Layer 618 copy 3
+  rotate: false
+  xy: 101, 161
+  size: 7, 24
+  orig: 7, 24
+  offset: 0, 0
+  index: -1
+Layer 618 copy 5
+  rotate: false
+  xy: 38, 120
+  size: 16, 13
+  orig: 16, 13
+  offset: 0, 0
+  index: -1
+Layer 7
+  rotate: true
+  xy: 71, 151
+  size: 29, 28
+  orig: 29, 28
+  offset: 0, 0
+  index: -1
+Layer 8
+  rotate: true
+  xy: 71, 142
+  size: 7, 18
+  orig: 7, 18
+  offset: 0, 0
+  index: -1

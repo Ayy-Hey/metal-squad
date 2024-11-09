@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ffcd2c253497a76f5f538867889c16c, type: 3}
+  m_Name: "EnemyKnife"
+  m_EditorClassIdentifier: 
+  datas:
+  - hp: 12
+    damage: 10
+    speed: 2.8
+    timeReload: 0.5
+    maxVision: 5
+  - hp: 52.97
+    damage: 11.72
+    speed: 2.8
+    timeReload: 0.49
+    maxVision: 5
+  - hp: 93.94
+    damage: 13.44
+    speed: 2.8
+    timeReload: 0.48
+    maxVision: 5
+  - hp: 134.91
+    damage: 15.16
+    speed: 2.8
+    timeReload: 0.47
+    maxVision: 5
+  - hp: 175.88
+    damage: 16.88
+    speed: 2.8
+    timeReload: 0.46
+    maxVision: 5
+  - hp: 216.85
+    damage: 18.6
+    speed: 2.8
+    timeReload: 0.45
+    maxVision: 5
+  - hp: 257.82
+    damage: 20.32
+    speed: 2.8
+    timeReload: 0.44
+    maxVision: 5
+  - hp: 298.79
+    damage: 22.04
+    speed: 2.8
+    timeReload: 0.43
+    maxVision: 5
+  - hp: 339.76
+    damage: 23.76
+    speed: 2.8
+    timeReload: 0.42
+    maxVision: 5
+  - hp: 380.73
+    damage: 25.48
+    speed: 2.8
+    timeReload: 0.41
+    maxVision: 5
+  - hp: 421.7
+    damage: 27.2
+    speed: 2.8
+    timeReload: 0.4
+    maxVision: 5
+  - hp: 462.67
+    damage: 28.92
+    speed: 2.8
+    timeReload: 0.39
+    maxVision: 5
+  - hp: 503.64
+    damage: 30.64
+    speed: 2.8
+    timeReload: 0.38
+    maxVision: 5
+  - hp: 544.61
+    damage: 32.36
+    speed: 2.8
+    timeReload: 0.37
+    maxVision: 5
+  - hp: 585.58
+    damage: 34.08
+    speed: 2.8
+    timeReload: 0.36
+    maxVision: 5
+  - hp: 626.55
+    damage: 35.8
+    speed: 2.8
+    timeReload: 0.35
+    maxVision: 5
+  - hp: 667.52
+    damage: 37.52
+    speed: 2.8
+    timeReload: 0.34
+    maxVision: 5
+  - hp: 708.49
+    damage: 39.24
+    speed: 2.8
+    timeReload: 0.33
+    maxVision: 5
+  - hp: 749.46
+    damage: 40.96
+    speed: 2.8
+    timeReload: 0.32
+    maxVision: 5
+  - hp: 790.43
+    damage: 42.68
+    speed: 2.8
+    timeReload: 0.31
+    maxVision: 5
+  - hp: 831.4
+    damage: 44.4
+    speed: 2.8
+    timeReload: 0.3
+    maxVision: 5
+  - hp: 872.37
+    damage: 46.12
+    speed: 2.8
+    timeReload: 0.29
+    maxVision: 5
+  - hp: 913.34
+    damage: 47.84
+    speed: 2.8
+    timeReload: 0.28
+    maxVision: 5
+  - hp: 954.31
+    damage: 49.56
+    speed: 2.8
+    timeReload: 0.27
+    maxVision: 5
+  - hp: 995.28
+    damage: 51.28
+    speed: 2.8
+    timeReload: 0.26
+    maxVision: 5
+  - hp: 1036.25
+    damage: 53
+    speed: 2.8
+    timeReload: 0.25
+    maxVision: 5
+  - hp: 1077.22
+    damage: 54.72
+    speed: 2.8
+    timeReload: 0.24
+    maxVision: 5
+  - hp: 1118.19
+    damage: 56.44
+    speed: 2.8
+    timeReload: 0.23
+    maxVision: 5
+  - hp: 1159.16
+    damage: 58.16
+    speed: 2.8
+    timeReload: 0.22
+    maxVision: 5
+  - hp: 1200
+    damage: 60
+    speed: 2.8
+    timeReload: 0.2
+    maxVision: 5

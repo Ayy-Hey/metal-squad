@@ -1,0 +1,103 @@
+
+Helicopter.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 115
+  size: 287, 137
+  orig: 287, 137
+  offset: 0, 0
+  index: -1
+bomb01
+  rotate: true
+  xy: 382, 2
+  size: 92, 52
+  orig: 92, 52
+  offset: 0, 0
+  index: -1
+bomp02
+  rotate: true
+  xy: 436, 25
+  size: 83, 50
+  orig: 83, 50
+  offset: 0, 0
+  index: -1
+fan
+  rotate: false
+  xy: 436, 12
+  size: 22, 11
+  orig: 22, 11
+  offset: 0, 0
+  index: -1
+fan01
+  rotate: false
+  xy: 2, 67
+  size: 287, 46
+  orig: 287, 46
+  offset: 0, 0
+  index: -1
+fan02
+  rotate: false
+  xy: 2, 19
+  size: 287, 46
+  orig: 287, 46
+  offset: 0, 0
+  index: -1
+gun02
+  rotate: false
+  xy: 291, 38
+  size: 89, 56
+  orig: 89, 56
+  offset: 0, 0
+  index: -1
+muzzle
+  rotate: false
+  xy: 291, 96
+  size: 140, 156
+  orig: 140, 156
+  offset: 0, 0
+  index: -1
+wheel01
+  rotate: true
+  xy: 291, 9
+  size: 27, 59
+  orig: 27, 59
+  offset: 0, 0
+  index: -1
+wheel02
+  rotate: false
+  xy: 487, 226
+  size: 22, 26
+  orig: 22, 26
+  offset: 0, 0
+  index: -1
+wheel03
+  rotate: false
+  xy: 352, 2
+  size: 25, 34
+  orig: 25, 34
+  offset: 0, 0
+  index: -1
+wing
+  rotate: true
+  xy: 433, 110
+  size: 142, 52
+  orig: 142, 52
+  offset: 0, 0
+  index: -1
+
+Helicopter2.png
+size: 512,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fan03
+  rotate: false
+  xy: 2, 2
+  size: 287, 46
+  orig: 287, 46
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ffcd2c253497a76f5f538867889c16c, type: 3}
+  m_Name: "ChoSoi"
+  m_EditorClassIdentifier: 
+  datas:
+  - hp: 110
+    damage: 45
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 485.52
+    damage: 52.76
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 861.04
+    damage: 60.52
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 1236.56
+    damage: 68.28
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 1612.08
+    damage: 76.04
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 1987.6
+    damage: 83.8
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 2363.12
+    damage: 91.56
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 2738.64
+    damage: 99.32
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 3114.16
+    damage: 107.08
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 3489.68
+    damage: 114.84
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 3865.2
+    damage: 122.6
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 4240.72
+    damage: 130.36
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 4616.24
+    damage: 138.12
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 4991.76
+    damage: 145.88
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 5367.28
+    damage: 153.64
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 5742.8
+    damage: 161.4
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 6118.32
+    damage: 169.16
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 6493.84
+    damage: 176.92
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 6869.36
+    damage: 184.68
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 7244.88
+    damage: 192.44
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 7620.4
+    damage: 200.2
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 7995.92
+    damage: 207.96
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 8371.44
+    damage: 215.72
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 8746.96
+    damage: 223.48
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 9122.48
+    damage: 231.24
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 9498
+    damage: 239
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 9873.52
+    damage: 246.76
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 10249.04
+    damage: 254.52
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 10624.56
+    damage: 262.28
+    speed: 6
+    timeReload: 2
+    maxVision: 9
+  - hp: 11000
+    damage: 270
+    speed: 6
+    timeReload: 2
+    maxVision: 9

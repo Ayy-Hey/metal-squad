@@ -1,0 +1,41 @@
+
+UI-NV-1.png
+size: 257,255
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 78
+  rotate: false
+  xy: 0, 44
+  size: 139, 211
+  orig: 139, 211
+  offset: 0, 0
+  index: -1
+Layer 84
+  rotate: false
+  xy: 0, 2
+  size: 60, 40
+  orig: 60, 40
+  offset: 0, 0
+  index: -1
+Layer 87 copy
+  rotate: false
+  xy: 141, 111
+  size: 101, 71
+  orig: 101, 71
+  offset: 0, 0
+  index: -1
+Layer 89
+  rotate: false
+  xy: 141, 184
+  size: 116, 71
+  orig: 116, 71
+  offset: 0, 0
+  index: -1
+Layer 96
+  rotate: true
+  xy: 141, 28
+  size: 81, 90
+  orig: 81, 90
+  offset: 0, 0
+  index: -1

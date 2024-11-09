@@ -1,0 +1,174 @@
+
+Boss13.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Ellipse 13 copy 4
+  rotate: true
+  xy: 768, 778
+  size: 64, 180
+  orig: 64, 180
+  offset: 0, 0
+  index: -1
+Ellipse 13 copy 6
+  rotate: false
+  xy: 273, 786
+  size: 273, 236
+  orig: 273, 236
+  offset: 0, 0
+  index: -1
+Ellipse 9
+  rotate: false
+  xy: 273, 629
+  size: 224, 155
+  orig: 224, 155
+  offset: 0, 0
+  index: -1
+Layer 106
+  rotate: false
+  xy: 2, 99
+  size: 203, 244
+  orig: 203, 244
+  offset: 0, 0
+  index: -1
+Layer 131
+  rotate: false
+  xy: 548, 823
+  size: 218, 199
+  orig: 218, 199
+  offset: 0, 0
+  index: -1
+Layer 132 copy
+  rotate: true
+  xy: 2, 345
+  size: 310, 238
+  orig: 310, 238
+  offset: 0, 0
+  index: -1
+Layer 132 copy 3
+  rotate: false
+  xy: 414, 473
+  size: 124, 154
+  orig: 124, 154
+  offset: 0, 0
+  index: -1
+Layer 144
+  rotate: false
+  xy: 768, 844
+  size: 207, 178
+  orig: 207, 178
+  offset: 0, 0
+  index: -1
+Layer 159
+  rotate: true
+  xy: 242, 345
+  size: 141, 155
+  orig: 141, 155
+  offset: 0, 0
+  index: -1
+Layer 159 copy
+  rotate: true
+  xy: 207, 101
+  size: 127, 156
+  orig: 127, 156
+  offset: 0, 0
+  index: -1
+Layer 90
+  rotate: false
+  xy: 207, 230
+  size: 170, 113
+  orig: 170, 113
+  offset: 0, 0
+  index: -1
+Layer 92
+  rotate: false
+  xy: 111, 3
+  size: 106, 94
+  orig: 106, 94
+  offset: 0, 0
+  index: -1
+Layer 92 copy
+  rotate: false
+  xy: 2, 2
+  size: 107, 95
+  orig: 107, 95
+  offset: 0, 0
+  index: -1
+Layer 95
+  rotate: false
+  xy: 548, 745
+  size: 190, 76
+  orig: 190, 76
+  offset: 0, 0
+  index: -1
+Layer 95 copy
+  rotate: false
+  xy: 499, 659
+  size: 160, 84
+  orig: 160, 84
+  offset: 0, 0
+  index: -1
+co
+  rotate: true
+  xy: 652, 574
+  size: 59, 104
+  orig: 59, 104
+  offset: 0, 0
+  index: -1
+ham duoi'
+  rotate: false
+  xy: 219, 5
+  size: 100, 94
+  orig: 100, 94
+  offset: 0, 0
+  index: -1
+ham tren
+  rotate: false
+  xy: 242, 488
+  size: 170, 139
+  orig: 170, 139
+  offset: 0, 0
+  index: -1
+image 10
+  rotate: true
+  xy: 540, 534
+  size: 123, 110
+  orig: 123, 110
+  offset: 0, 0
+  index: -1
+image 4
+  rotate: false
+  xy: 661, 635
+  size: 102, 108
+  orig: 102, 108
+  offset: 0, 0
+  index: -1
+image 6
+  rotate: false
+  xy: 540, 424
+  size: 112, 108
+  orig: 112, 108
+  offset: 0, 0
+  index: -1
+image 8
+  rotate: false
+  xy: 399, 360
+  size: 123, 111
+  orig: 123, 111
+  offset: 0, 0
+  index: -1
+mat
+  rotate: false
+  xy: 977, 970
+  size: 27, 52
+  orig: 27, 52
+  offset: 0, 0
+  index: -1
+ong thuy tinh copy
+  rotate: false
+  xy: 2, 657
+  size: 269, 365
+  orig: 269, 365
+  offset: 0, 0
+  index: -1

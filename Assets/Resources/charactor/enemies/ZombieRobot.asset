@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ffcd2c253497a76f5f538867889c16c, type: 3}
+  m_Name: "ZombieRobot"
+  m_EditorClassIdentifier: 
+  datas:
+  - hp: 35
+    damage: 40
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 154.48
+    damage: 46.9
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 273.96
+    damage: 53.8
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 393.44
+    damage: 60.7
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 512.92
+    damage: 67.6
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 632.4
+    damage: 74.5
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 751.88
+    damage: 81.4
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 871.36
+    damage: 88.3
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 990.84
+    damage: 95.2
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 1110.32
+    damage: 102.1
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 1229.8
+    damage: 109
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 1349.28
+    damage: 115.9
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 1468.76
+    damage: 122.8
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 1588.24
+    damage: 129.7
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 1707.72
+    damage: 136.6
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 1827.2
+    damage: 143.5
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 1946.68
+    damage: 150.4
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 2066.16
+    damage: 157.3
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 2185.64
+    damage: 164.2
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 2305.12
+    damage: 171.1
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 2424.6
+    damage: 178
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 2544.08
+    damage: 184.9
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 2663.56
+    damage: 191.8
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 2783.04
+    damage: 198.7
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 2902.52
+    damage: 205.6
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 3022
+    damage: 212.5
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 3141.48
+    damage: 219.4
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 3260.96
+    damage: 226.3
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 3380.44
+    damage: 233.2
+    speed: 3
+    timeReload: 2
+    maxVision: 5
+  - hp: 3500
+    damage: 240
+    speed: 3
+    timeReload: 2
+    maxVision: 5

@@ -1,0 +1,48 @@
+
+nong3.png
+size: 195,195
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 3
+  rotate: false
+  xy: 94, 37
+  size: 31, 67
+  orig: 31, 67
+  offset: 0, 0
+  index: -1
+Layer 4
+  rotate: true
+  xy: 127, 27
+  size: 37, 44
+  orig: 37, 44
+  offset: 0, 0
+  index: -1
+Layer 45 copy
+  rotate: false
+  xy: 2, 2
+  size: 90, 102
+  orig: 90, 102
+  offset: 0, 0
+  index: -1
+Layer 61
+  rotate: false
+  xy: 121, 133
+  size: 55, 60
+  orig: 55, 60
+  offset: 0, 0
+  index: -1
+Layer 63
+  rotate: false
+  xy: 127, 66
+  size: 49, 65
+  orig: 49, 65
+  offset: 0, 0
+  index: -1
+nat1
+  rotate: false
+  xy: 2, 106
+  size: 117, 87
+  orig: 117, 87
+  offset: 0, 0
+  index: -1

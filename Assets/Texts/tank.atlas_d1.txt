@@ -1,0 +1,181 @@
+
+tank.png
+size: 660,660
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: true
+  xy: 212, 367
+  size: 155, 170
+  orig: 155, 170
+  offset: 0, 0
+  index: -1
+10
+  rotate: true
+  xy: 307, 200
+  size: 53, 72
+  orig: 53, 76
+  offset: 0, 2
+  index: -1
+2
+  rotate: false
+  xy: 2, 312
+  size: 162, 175
+  orig: 162, 175
+  offset: 0, 0
+  index: -1
+3
+  rotate: true
+  xy: 393, 489
+  size: 169, 180
+  orig: 169, 180
+  offset: 0, 0
+  index: -1
+4
+  rotate: true
+  xy: 307, 2
+  size: 140, 152
+  orig: 140, 152
+  offset: 0, 0
+  index: -1
+5
+  rotate: true
+  xy: 384, 337
+  size: 150, 165
+  orig: 150, 165
+  offset: 0, 0
+  index: -1
+6
+  rotate: true
+  xy: 540, 204
+  size: 95, 112
+  orig: 95, 112
+  offset: 0, 0
+  index: -1
+7
+  rotate: true
+  xy: 461, 93
+  size: 49, 64
+  orig: 49, 68
+  offset: 0, 2
+  index: -1
+8
+  rotate: false
+  xy: 461, 27
+  size: 47, 64
+  orig: 47, 66
+  offset: 0, 1
+  index: -1
+9
+  rotate: true
+  xy: 307, 149
+  size: 49, 68
+  orig: 49, 69
+  offset: 0, 1
+  index: -1
+Layer 1
+  rotate: true
+  xy: 2, 489
+  size: 33, 27
+  orig: 33, 29
+  offset: 0, 1
+  index: -1
+nog
+  rotate: true
+  xy: 31, 489
+  size: 33, 27
+  orig: 33, 29
+  offset: 0, 1
+  index: -1
+tank1
+  rotate: true
+  xy: 2, 4
+  size: 295, 71
+  orig: 295, 73
+  offset: 0, 1
+  index: -1
+tank12
+  rotate: false
+  xy: 381, 270
+  size: 157, 65
+  orig: 157, 67
+  offset: 0, 1
+  index: -1
+tank2
+  rotate: false
+  xy: 2, 592
+  size: 389, 66
+  orig: 389, 68
+  offset: 0, 1
+  index: -1
+tank2 copy
+  rotate: false
+  xy: 2, 524
+  size: 389, 66
+  orig: 389, 68
+  offset: 0, 1
+  index: -1
+tank3
+  rotate: true
+  xy: 166, 443
+  size: 45, 43
+  orig: 45, 45
+  offset: 0, 1
+  index: -1
+tank4
+  rotate: false
+  xy: 60, 490
+  size: 150, 32
+  orig: 150, 34
+  offset: 0, 1
+  index: -1
+tank5
+  rotate: false
+  xy: 540, 106
+  size: 98, 96
+  orig: 98, 98
+  offset: 0, 1
+  index: -1
+tank6
+  rotate: true
+  xy: 575, 301
+  size: 357, 83
+  orig: 357, 85
+  offset: 0, 1
+  index: -1
+tank7
+  rotate: false
+  xy: 381, 207
+  size: 157, 61
+  orig: 157, 63
+  offset: 0, 1
+  index: -1
+tank7 copy
+  rotate: false
+  xy: 381, 144
+  size: 157, 61
+  orig: 157, 63
+  offset: 0, 1
+  index: -1
+tank8
+  rotate: true
+  xy: 307, 255
+  size: 110, 72
+  orig: 110, 74
+  offset: 0, 1
+  index: -1
+tank9
+  rotate: true
+  xy: 166, 8
+  size: 357, 139
+  orig: 357, 141
+  offset: 0, 1
+  index: -1
+tank9 copy
+  rotate: true
+  xy: 75, 31
+  size: 279, 82
+  orig: 279, 84
+  offset: 0, 1
+  index: -1

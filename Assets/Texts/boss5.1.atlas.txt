@@ -1,0 +1,195 @@
+
+boss5.1.png
+size: 560,560
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Group 1 copy 8
+  rotate: false
+  xy: 213, 102
+  size: 90, 120
+  orig: 90, 120
+  offset: 0, 0
+  index: -1
+Layer 10
+  rotate: false
+  xy: 456, 167
+  size: 80, 71
+  orig: 80, 71
+  offset: 0, 0
+  index: -1
+Layer 10 copy
+  rotate: false
+  xy: 457, 11
+  size: 79, 72
+  orig: 79, 72
+  offset: 0, 0
+  index: -1
+Layer 10 copy 4
+  rotate: true
+  xy: 174, 100
+  size: 215, 37
+  orig: 215, 37
+  offset: 0, 0
+  index: -1
+Layer 16
+  rotate: false
+  xy: 374, 167
+  size: 80, 81
+  orig: 80, 81
+  offset: 0, 0
+  index: -1
+Layer 16 copy 2
+  rotate: true
+  xy: 374, 37
+  size: 80, 81
+  orig: 80, 81
+  offset: 0, 0
+  index: -1
+Layer 17 copy 3
+  rotate: false
+  xy: 2, 317
+  size: 201, 198
+  orig: 201, 198
+  offset: 0, 0
+  index: -1
+Layer 17 copy 4
+  rotate: false
+  xy: 364, 250
+  size: 102, 100
+  orig: 102, 100
+  offset: 0, 0
+  index: -1
+Layer 2 copy
+  rotate: false
+  xy: 305, 67
+  size: 67, 68
+  orig: 67, 68
+  offset: 0, 0
+  index: -1
+Layer 24
+  rotate: false
+  xy: 374, 119
+  size: 104, 46
+  orig: 104, 46
+  offset: 0, 0
+  index: -1
+Layer 24 copy
+  rotate: true
+  xy: 530, 383
+  size: 53, 24
+  orig: 53, 24
+  offset: 0, 0
+  index: -1
+Layer 25
+  rotate: false
+  xy: 364, 438
+  size: 194, 77
+  orig: 194, 77
+  offset: 0, 0
+  index: -1
+Layer 26
+  rotate: false
+  xy: 304, 236
+  size: 58, 110
+  orig: 58, 110
+  offset: 0, 0
+  index: -1
+Layer 26 copy
+  rotate: false
+  xy: 468, 240
+  size: 58, 110
+  orig: 58, 110
+  offset: 0, 0
+  index: -1
+Layer 26 copy 1
+  rotate: false
+  xy: 528, 294
+  size: 30, 56
+  orig: 30, 56
+  offset: 0, 0
+  index: -1
+Layer 26 copy 2
+  rotate: true
+  xy: 482, 528
+  size: 30, 56
+  orig: 30, 56
+  offset: 0, 0
+  index: -1
+Layer 27 copy
+  rotate: false
+  xy: 205, 348
+  size: 157, 167
+  orig: 157, 167
+  offset: 0, 0
+  index: -1
+Layer 3 copy 9
+  rotate: false
+  xy: 130, 22
+  size: 76, 76
+  orig: 76, 76
+  offset: 0, 0
+  index: -1
+Layer 36
+  rotate: false
+  xy: 2, 16
+  size: 126, 127
+  orig: 126, 127
+  offset: 0, 0
+  index: -1
+Layer 43 copy
+  rotate: false
+  xy: 213, 224
+  size: 89, 122
+  orig: 89, 122
+  offset: 0, 0
+  index: -1
+Layer 44
+  rotate: false
+  xy: 2, 517
+  size: 478, 41
+  orig: 478, 41
+  offset: 0, 0
+  index: -1
+Layer 44 copy
+  rotate: false
+  xy: 2, 145
+  size: 170, 170
+  orig: 170, 170
+  offset: 0, 0
+  index: -1
+Layer 48
+  rotate: false
+  xy: 480, 85
+  size: 59, 80
+  orig: 59, 80
+  offset: 0, 0
+  index: -1
+Layer 49
+  rotate: false
+  xy: 305, 137
+  size: 67, 97
+  orig: 67, 97
+  offset: 0, 0
+  index: -1
+Layer 50
+  rotate: false
+  xy: 130, 111
+  size: 34, 32
+  orig: 34, 32
+  offset: 0, 0
+  index: -1
+Layer 9 copy 4
+  rotate: false
+  xy: 364, 352
+  size: 164, 84
+  orig: 164, 84
+  offset: 0, 0
+  index: -1
+Layer 9 copy 5
+  rotate: false
+  xy: 364, 352
+  size: 164, 84
+  orig: 164, 84
+  offset: 0, 0
+  index: -1

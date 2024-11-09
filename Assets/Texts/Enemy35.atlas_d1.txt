@@ -1,0 +1,76 @@
+
+Enemy35.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm
+  rotate: true
+  xy: 47, 2
+  size: 26, 51
+  orig: 26, 51
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 139, 31
+  size: 172, 95
+  orig: 172, 95
+  offset: 0, 0
+  index: -1
+bomb
+  rotate: true
+  xy: 2, 20
+  size: 106, 43
+  orig: 106, 43
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 450, 62
+  size: 55, 64
+  orig: 55, 64
+  offset: 0, 0
+  index: -1
+light02
+  rotate: false
+  xy: 47, 30
+  size: 90, 96
+  orig: 90, 96
+  offset: 0, 0
+  index: -1
+wing01
+  rotate: false
+  xy: 374, 46
+  size: 40, 80
+  orig: 40, 80
+  offset: 0, 0
+  index: -1
+wing02
+  rotate: true
+  xy: 384, 4
+  size: 40, 80
+  orig: 40, 80
+  offset: 0, 0
+  index: -1
+wing03
+  rotate: true
+  xy: 313, 40
+  size: 86, 59
+  orig: 86, 59
+  offset: 0, 0
+  index: -1
+wing04
+  rotate: false
+  xy: 313, 2
+  size: 69, 36
+  orig: 69, 36
+  offset: 0, 0
+  index: -1
+wing05
+  rotate: true
+  xy: 416, 55
+  size: 71, 32
+  orig: 71, 32
+  offset: 0, 0
+  index: -1

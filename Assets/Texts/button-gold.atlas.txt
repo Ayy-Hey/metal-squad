@@ -1,0 +1,20 @@
+
+button-gold.png
+size: 177,177
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 3
+  rotate: false
+  xy: 2, 113
+  size: 173, 62
+  orig: 173, 62
+  offset: 0, 0
+  index: -1
+Layer 5
+  rotate: false
+  xy: 2, 54
+  size: 160, 57
+  orig: 160, 57
+  offset: 0, 0
+  index: -1

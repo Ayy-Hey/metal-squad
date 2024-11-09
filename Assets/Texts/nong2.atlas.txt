@@ -1,0 +1,104 @@
+
+nong2.png
+size: 245,245
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 15
+  rotate: false
+  xy: 77, 9
+  size: 62, 47
+  orig: 62, 47
+  offset: 0, 0
+  index: -1
+Layer 20
+  rotate: false
+  xy: 188, 127
+  size: 53, 57
+  orig: 53, 57
+  offset: 0, 0
+  index: -1
+Layer 29
+  rotate: false
+  xy: 183, 19
+  size: 27, 25
+  orig: 27, 25
+  offset: 0, 0
+  index: -1
+Layer 32
+  rotate: true
+  xy: 141, 6
+  size: 38, 40
+  orig: 38, 40
+  offset: 0, 0
+  index: -1
+Layer 34
+  rotate: true
+  xy: 217, 74
+  size: 24, 22
+  orig: 24, 22
+  offset: 0, 0
+  index: -1
+Layer 34 copy
+  rotate: false
+  xy: 217, 100
+  size: 23, 25
+  orig: 23, 25
+  offset: 0, 0
+  index: -1
+Layer 39
+  rotate: false
+  xy: 217, 50
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: -1
+Layer 47
+  rotate: false
+  xy: 212, 19
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+Layer 54 copy
+  rotate: false
+  xy: 2, 73
+  size: 78, 73
+  orig: 78, 73
+  offset: 0, 0
+  index: -1
+Layer 55
+  rotate: true
+  xy: 82, 58
+  size: 88, 67
+  orig: 88, 67
+  offset: 0, 0
+  index: -1
+Layer 57
+  rotate: true
+  xy: 151, 46
+  size: 79, 64
+  orig: 79, 64
+  offset: 0, 0
+  index: -1
+Layer 60
+  rotate: false
+  xy: 188, 186
+  size: 55, 57
+  orig: 55, 57
+  offset: 0, 0
+  index: -1
+Layer 628 copy
+  rotate: false
+  xy: 2, 20
+  size: 73, 51
+  orig: 73, 51
+  offset: 0, 0
+  index: -1
+nat2
+  rotate: false
+  xy: 2, 148
+  size: 184, 95
+  orig: 184, 95
+  offset: 0, 0
+  index: -1

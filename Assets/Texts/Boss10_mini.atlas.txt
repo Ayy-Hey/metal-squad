@@ -1,0 +1,55 @@
+
+Boss10_mini.png
+size: 512,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+3
+  rotate: false
+  xy: 320, 26
+  size: 31, 31
+  orig: 31, 31
+  offset: 0, 0
+  index: -1
+Layer 43
+  rotate: false
+  xy: 2, 11
+  size: 94, 46
+  orig: 94, 46
+  offset: 0, 0
+  index: -1
+Layer 45
+  rotate: false
+  xy: 265, 14
+  size: 53, 43
+  orig: 53, 43
+  offset: 0, 0
+  index: -1
+Layer 46
+  rotate: false
+  xy: 190, 2
+  size: 73, 55
+  orig: 73, 55
+  offset: 0, 0
+  index: -1
+Layer 53
+  rotate: false
+  xy: 353, 31
+  size: 21, 26
+  orig: 21, 26
+  offset: 0, 0
+  index: -1
+Layer 53 copy
+  rotate: false
+  xy: 376, 31
+  size: 19, 26
+  orig: 19, 26
+  offset: 0, 0
+  index: -1
+Layer 58
+  rotate: false
+  xy: 98, 11
+  size: 90, 46
+  orig: 90, 46
+  offset: 0, 0
+  index: -1

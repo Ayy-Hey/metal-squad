@@ -1,0 +1,41 @@
+
+Ceitical_Hit.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Critical Hit
+  rotate: true
+  xy: 132, 98
+  size: 150, 37
+  orig: 150, 37
+  offset: 0, 0
+  index: -1
+Critical Hit  copy
+  rotate: true
+  xy: 171, 122
+  size: 126, 32
+  orig: 126, 32
+  offset: 0, 0
+  index: -1
+Layer 18
+  rotate: false
+  xy: 2, 2
+  size: 98, 86
+  orig: 98, 86
+  offset: 0, 0
+  index: -1
+Layer 19
+  rotate: false
+  xy: 2, 90
+  size: 128, 158
+  orig: 128, 158
+  offset: 0, 0
+  index: -1
+Layer 20
+  rotate: false
+  xy: 205, 188
+  size: 42, 60
+  orig: 42, 60
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,90 @@
+
+Mission.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 718, 344
+  size: 253, 134
+  orig: 253, 134
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 2, 2
+  size: 62, 16
+  orig: 62, 16
+  offset: 0, 0
+  index: -1
+3
+  rotate: false
+  xy: 463, 284
+  size: 153, 55
+  orig: 153, 55
+  offset: 0, 0
+  index: -1
+4
+  rotate: true
+  xy: 142, 62
+  size: 215, 67
+  orig: 215, 67
+  offset: 0, 0
+  index: -1
+5
+  rotate: false
+  xy: 2, 279
+  size: 200, 199
+  orig: 200, 199
+  offset: 0, 0
+  index: -1
+6
+  rotate: true
+  xy: 2, 20
+  size: 257, 138
+  orig: 257, 138
+  offset: 0, 0
+  index: -1
+7
+  rotate: false
+  xy: 463, 341
+  size: 253, 137
+  orig: 253, 137
+  offset: 0, 0
+  index: -1
+Group 1
+  rotate: false
+  xy: 204, 340
+  size: 257, 138
+  orig: 257, 138
+  offset: 0, 0
+  index: -1
+Group 9
+  rotate: false
+  xy: 211, 162
+  size: 176, 176
+  orig: 176, 176
+  offset: 0, 0
+  index: -1
+Layer 5 copy 3
+  rotate: false
+  xy: 211, 90
+  size: 215, 70
+  orig: 215, 70
+  offset: 0, 0
+  index: -1
+Layer 5 copy 8
+  rotate: true
+  xy: 973, 418
+  size: 60, 16
+  orig: 60, 16
+  offset: 0, 0
+  index: -1
+Layer 9
+  rotate: true
+  xy: 389, 168
+  size: 170, 72
+  orig: 170, 72
+  offset: 0, 0
+  index: -1

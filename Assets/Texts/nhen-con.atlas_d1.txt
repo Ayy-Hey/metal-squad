@@ -1,0 +1,118 @@
+
+nhen-con.png
+size: 260,260
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 111
+  rotate: true
+  xy: 2, 16
+  size: 96, 59
+  orig: 96, 59
+  offset: 0, 0
+  index: -1
+Layer 112
+  rotate: true
+  xy: 187, 147
+  size: 60, 62
+  orig: 60, 62
+  offset: 0, 0
+  index: -1
+Layer 114
+  rotate: false
+  xy: 145, 57
+  size: 33, 52
+  orig: 33, 52
+  offset: 0, 0
+  index: -1
+Layer 115
+  rotate: false
+  xy: 158, 137
+  size: 27, 28
+  orig: 27, 28
+  offset: 0, 0
+  index: -1
+Layer 52 copy 3
+  rotate: false
+  xy: 80, 111
+  size: 76, 54
+  orig: 76, 54
+  offset: 0, 0
+  index: -1
+Layer 52 copy 6
+  rotate: true
+  xy: 104, 43
+  size: 66, 39
+  orig: 66, 39
+  offset: 0, 0
+  index: -1
+Layer 60 copy 3
+  rotate: false
+  xy: 2, 114
+  size: 76, 144
+  orig: 76, 144
+  offset: 0, 0
+  index: -1
+Layer 60 copy 6
+  rotate: true
+  xy: 80, 167
+  size: 40, 105
+  orig: 40, 105
+  offset: 0, 0
+  index: -1
+Layer 96
+  rotate: true
+  xy: 63, 2
+  size: 32, 35
+  orig: 32, 35
+  offset: 0, 0
+  index: -1
+Layer 97
+  rotate: false
+  xy: 180, 70
+  size: 30, 42
+  orig: 30, 42
+  offset: 0, 0
+  index: -1
+n1
+  rotate: false
+  xy: 187, 114
+  size: 50, 31
+  orig: 50, 31
+  offset: 0, 0
+  index: -1
+n2
+  rotate: false
+  xy: 212, 79
+  size: 31, 33
+  orig: 31, 33
+  offset: 0, 0
+  index: -1
+n3
+  rotate: false
+  xy: 63, 36
+  size: 39, 73
+  orig: 39, 73
+  offset: 0, 0
+  index: -1
+nd
+  rotate: true
+  xy: 104, 2
+  size: 39, 28
+  orig: 39, 28
+  offset: 0, 0
+  index: -1
+sd
+  rotate: false
+  xy: 80, 209
+  size: 169, 49
+  orig: 169, 49
+  offset: 0, 0
+  index: -1
+to
+  rotate: false
+  xy: 251, 119
+  size: 7, 139
+  orig: 7, 139
+  offset: 0, 0
+  index: -1

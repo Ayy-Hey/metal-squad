@@ -1,0 +1,27 @@
+
+bui.png
+size: 128,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 1
+  rotate: false
+  xy: 2, 66
+  size: 107, 43
+  orig: 107, 43
+  offset: 0, 0
+  index: -1
+Layer 1 copy
+  rotate: false
+  xy: 2, 13
+  size: 52, 17
+  orig: 52, 17
+  offset: 0, 0
+  index: -1
+Layer 3
+  rotate: false
+  xy: 2, 32
+  size: 78, 32
+  orig: 78, 32
+  offset: 0, 0
+  index: -1
