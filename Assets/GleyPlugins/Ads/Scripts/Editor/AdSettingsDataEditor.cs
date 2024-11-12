@@ -8,7 +8,7 @@
         //hide settings in inspector
         public override void OnInspectorGUI()
         {
-            //base.OnInspectorGUI();
+            base.OnInspectorGUI();
         }
     }
 }

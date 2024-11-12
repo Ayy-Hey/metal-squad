@@ -72,6 +72,14 @@
                 }
 
                 UpdateConsent(consent, ccpaConsent);
+                if(settings.directedForChildren)
+                {
+                    IronSource.Agent.setMetaData("is_child_directed", "true");
+                }
+                else
+                {
+                    IronSource.Agent.setMetaData("is_child_directed", "false");
+                }
 
                 if (!string.IsNullOrEmpty(bannerAdUnit))
                 {
@@ -126,6 +134,15 @@
             else
             {
                 IronSource.Agent.setConsent(false);
+            }
+
+            if(ccpaConsent == UserConsent.Unset || ccpaConsent == UserConsent.Accept)
+            {
+                IronSource.Agent.setMetaData("do_not_sell", "false");
+            }
+            else
+            {
+                IronSource.Agent.setMetaData("do_not_sell", "true");
             }
         }
         #endregion
@@ -575,6 +592,21 @@
             }
         }
         #endregion
+
+        private void OnApplicationFocus(bool focus)
+        {
+            if (focus == true)
+            {
+                if (IsInterstitialAvailable() == false)
+                {
+                    if (currentRetryInterstitial == maxRetryCount)
+                    {
+                        LoadInterstitial();
+                    }
+                }
+            }
+        }
+
 
         void OnApplicationPause(bool isPaused)
         {

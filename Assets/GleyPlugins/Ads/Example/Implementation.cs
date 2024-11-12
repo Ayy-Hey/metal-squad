@@ -61,7 +61,7 @@ public class Implementation : MonoBehaviour
     /// </summary>
     void Update()
     {
-        if(Advertisements.Instance.IsInterstitialAvailable())
+        if (Advertisements.Instance.IsInterstitialAvailable())
         {
             intersttialButton.interactable = true;
         }
@@ -70,7 +70,7 @@ public class Implementation : MonoBehaviour
             intersttialButton.interactable = false;
         }
 
-        if(Advertisements.Instance.IsRewardVideoAvailable())
+        if (Advertisements.Instance.IsRewardVideoAvailable())
         {
             rewardedButton.interactable = true;
         }

@@ -4,14 +4,13 @@
     using System.Collections.Generic;
     using UnityEngine;
 #if USE_ADCOLONY
-
     using AdColony;
     using System.Linq;
 #endif
 
     public class CustomAdColony : MonoBehaviour, ICustomAds
     {
-#if USE_ADCOLONY && !UNITY_EDITOR
+#if USE_ADCOLONY
         private const float reloadTime = 30;
         private UnityAction<bool> OnCompleteMethod;
         private UnityAction<bool, string> OnCompleteMethodWithAdvertiser;
@@ -66,16 +65,31 @@
 
             //preparing AdColony SDK for initialization
             AppOptions appOptions = new AppOptions();
-            appOptions.AdOrientation = AdOrientationType.AdColonyOrientationAll;
-            appOptions.GdprRequired = true;
+            appOptions.SetPrivacyFrameworkRequired(AppOptions.GDPR, true);
             if (consent == UserConsent.Unset || consent == UserConsent.Accept)
             {
-                appOptions.GdprConsentString = "1";
+                appOptions.SetPrivacyConsentString(AppOptions.GDPR, "1");
             }
             else
             {
-                appOptions.GdprConsentString = "0";
+                appOptions.SetPrivacyConsentString(AppOptions.GDPR, "0");
             }
+
+            appOptions.SetPrivacyFrameworkRequired(AppOptions.CCPA, true);
+            if(ccpaConsent == UserConsent.Unset || consent == UserConsent.Accept)
+            {
+                appOptions.SetPrivacyConsentString(AppOptions.CCPA, "1");
+            }
+            else
+            {
+                appOptions.SetPrivacyConsentString(AppOptions.CCPA, "0");
+            }
+
+            if(settings.directedForChildren==true)
+            {
+                appOptions.SetPrivacyFrameworkRequired(AppOptions.COPPA, true);
+            }
+
             List<string> zoneIDs = new List<string>();
             if(!string.IsNullOrEmpty(bannerZoneId))
             {
@@ -172,13 +186,24 @@
         public void UpdateConsent(UserConsent consent, UserConsent ccpaConsent)
         {
             AppOptions appOptions = Ads.GetAppOptions();
+            appOptions.SetPrivacyFrameworkRequired(AppOptions.GDPR, true);
             if (consent == UserConsent.Unset || consent == UserConsent.Accept)
             {
-                appOptions.GdprConsentString = "1";
+                appOptions.SetPrivacyConsentString(AppOptions.GDPR, "1");
             }
             else
             {
-                appOptions.GdprConsentString = "0";
+                appOptions.SetPrivacyConsentString(AppOptions.GDPR, "0");
+            }
+
+            appOptions.SetPrivacyFrameworkRequired(AppOptions.CCPA, true);
+            if (ccpaConsent == UserConsent.Unset || consent == UserConsent.Accept)
+            {
+                appOptions.SetPrivacyConsentString(AppOptions.CCPA, "1");
+            }
+            else
+            {
+                appOptions.SetPrivacyConsentString(AppOptions.CCPA, "0");
             }
             if (debug)
             {
@@ -587,6 +612,29 @@
             return bannerUsed;
         }
 
+
+        private void OnApplicationFocus(bool focus)
+        {
+            if (focus == true)
+            {
+                if (IsInterstitialAvailable() == false)
+                {
+                    if (currentRetryInterstitial == maxRetryCount)
+                    {
+                        RequestInterstitial();
+                    }
+                }
+
+                if (IsRewardVideoAvailable() == false)
+                {
+                    if (currentRetryRewardedVideo == maxRetryCount)
+                    {
+                        RequestRewarded();
+                    }
+                }
+            }
+        }
+
 #else
         //dummy interface implementation, used when AdColony is not enabled
         public void HideBanner()
@@ -656,5 +704,5 @@
 
 
 #endif
-    }
+            }
 }

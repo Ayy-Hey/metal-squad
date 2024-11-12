@@ -5,10 +5,8 @@
     using System.IO;
     using System.Linq;
     using UnityEditor;
-#if UNITY_2018_3_OR_NEWER
     using UnityEditor.PackageManager;
     using UnityEditor.PackageManager.Requests;
-#endif
     using UnityEditor.SceneManagement;
     using UnityEditorInternal;
     using UnityEngine;
@@ -30,6 +28,10 @@
 
     public class SettingsWindow : EditorWindow
     {
+        private const string FOLDER_NAME = "Ads";
+        private const string PARENT_FOLDER = "GleyPlugins";
+        private static string rootFolder;
+
         private Vector2 scrollPosition = Vector2.zero;
         private AdSettings adSettings;
         private List<AdvertiserSettings> advertiserSettings;
@@ -47,6 +49,8 @@
         private bool usePlaymaker;
         private bool useBolt;
         private bool useGameflow;
+        private bool enableATT;
+        private string nativePopupText;
         private SupportedMediation bannerMediation;
         private SupportedMediation interstitialMediation;
         private SupportedMediation rewardedMediation;
@@ -57,16 +61,37 @@
         [MenuItem("Window/Gley/Mobile Ads", false, 60)]
         private static void Init()
         {
-            string path = "Assets//GleyPlugins/Ads/Scripts/Version.txt";
+            if (!LoadRootFolder())
+                return;
+
+            string path = $"{rootFolder}/Scripts/Version.txt";
+
             StreamReader reader = new StreamReader(path);
-            string longVersion = JsonUtility.FromJson<GleyPlugins.AssetVersion>(reader.ReadToEnd()).longVersion;
-            SettingsWindow window = (SettingsWindow)GetWindow(typeof(SettingsWindow), true, "Mobile Ads Settings Window - v." + longVersion);
+            string longVersion = JsonUtility.FromJson<Gley.Common.AssetVersion>(reader.ReadToEnd()).longVersion;
+
+            SettingsWindow window = (SettingsWindow)GetWindow(typeof(SettingsWindow));
+            window.titleContent = new GUIContent("Mobile Ads - v." + longVersion);
             window.minSize = new Vector2(520, 520);
             window.Show();
         }
 
+
+        static bool LoadRootFolder()
+        {
+            rootFolder = Gley.Common.EditorUtilities.FindFolder(FOLDER_NAME, PARENT_FOLDER);
+            if (rootFolder == null)
+            {
+                Debug.LogError($"Folder Not Found:'{PARENT_FOLDER}/{FOLDER_NAME}'");
+                return false;
+            }
+            return true;
+        }
+
         private void OnEnable()
         {
+            if (!LoadRootFolder())
+                return;
+
             adSettings = Resources.Load<AdSettings>("AdSettingsData");
             if (adSettings == null)
             {
@@ -96,7 +121,8 @@
             usePlaymaker = adSettings.usePlaymaker;
             useBolt = adSettings.useBolt;
             useGameflow = adSettings.useGameflow;
-
+            enableATT = adSettings.enableATT;
+            nativePopupText = adSettings.nativePopupText;
             target = this;
             so = new SerializedObject(target);
 
@@ -109,6 +135,8 @@
 
         private void OnDisable()
         {
+           
+
             for (int i = 0; i < advertiserSettings.Count; i++)
             {
                 if (advertiserSettings[i].useSDK == true)
@@ -118,11 +146,20 @@
 #if USE_ADMOB_PATCH
 #if USE_ADMOB
 
-                        GoogleMobileAds.Editor.GleyAdmobPatch.SetAdmobAppID(advertiserSettings[i].platformSettings[(int)SupportedPlatforms.Android].appId.id, 
+                        GoogleMobileAds.Editor.GleyAdmobPatch.SetAdmobAppID(advertiserSettings[i].platformSettings[(int)SupportedPlatforms.Android].appId.id,
                             advertiserSettings[i].platformSettings[(int)SupportedPlatforms.iOS].appId.id);
+                        AssetDatabase.SaveAssets();
 #endif
 #endif
                     }
+#if USE_APPLOVIN
+                    Debug.Log("OnDisable");
+                    if(advertiserSettings[i].advertiser == SupportedAdvertisers.AppLovin)
+                    {
+                        AppLovinSettings.Instance.SdkKey = advertiserSettings[i].platformSettings[(int)SupportedPlatforms.Android].appId.id;
+                        EditorUtility.SetDirty(AppLovinSettings.Instance);
+                    }
+#endif
                 }
             }
         }
@@ -130,6 +167,7 @@
         private void OnGUI()
         {
             EditorStyles.label.wordWrap = true;
+            EditorStyles.textField.wordWrap = true;
             scrollPosition = GUILayout.BeginScrollView(scrollPosition, false, false, GUILayout.Width(position.width), GUILayout.Height(position.height));
             GUILayout.Label("Advertisement Settings", EditorStyles.boldLabel);
             EditorGUILayout.Space();
@@ -143,7 +181,23 @@
             useBolt = EditorGUILayout.Toggle("Bolt Support", useBolt);
             useGameflow = EditorGUILayout.Toggle("Game Flow Support", useGameflow);
             EditorGUILayout.Space();
-
+            enableATT = EditorGUILayout.Toggle("Enable iOS Tracking", enableATT);
+            if (enableATT)
+            {
+                EditorGUILayout.Space();
+                EditorGUILayout.LabelField("iOS 14.5 and above requires publishers to obtain permission to track the user's device across applications. This device setting is called App Tracking Transparency, or ATT.\n" +
+                    "\nHit import required packages to enable this functionality.");
+                if (GUILayout.Button("Import Required iOS Packages"))
+                {
+                    Debug.Log("Installation started. Please wait");
+                    Request = Client.Add("com.unity.ads.ios-support");
+                    EditorApplication.update += Progress;
+                }
+                EditorGUILayout.Space();
+                EditorGUILayout.LabelField("This text will be presented to the user in the confirmation popup that will be automatically displayed:");
+                nativePopupText = EditorGUILayout.TextArea(nativePopupText);
+            }
+            EditorGUILayout.Space();
             GUILayout.Label("Select the ad providers you want to include:", EditorStyles.boldLabel);
             EditorGUILayout.Space();
 
@@ -151,7 +205,9 @@
             for (int i = 0; i < advertiserSettings.Count; i++)
             {
                 string mediationText = " Ads";
-                if (advertiserSettings[i].advertiser == SupportedAdvertisers.Heyzap)
+                if (advertiserSettings[i].advertiser == SupportedAdvertisers.Heyzap|| 
+                    advertiserSettings[i].advertiser == SupportedAdvertisers.Facebook ||
+                    advertiserSettings[i].advertiser == SupportedAdvertisers.MoPub)
                 {
                     mediationText = " [Deprecated]";
                 }
@@ -285,10 +341,10 @@
             EditorGUILayout.Space();
             EditorGUILayout.Space();
 
-            //config file settings
+            //configuration file settings
             if (selectedInterstitialAdvertisers.Count > 1)
             {
-                EditorGUILayout.LabelField("A config file can be generated then can be uploaded to an external server and the plugin will automatically read the mediation settings from that file. This is useful to change the order of your ads without updating your build.");
+                EditorGUILayout.LabelField("A configuration file can be generated then can be uploaded to an external server and the plugin will automatically read the mediation settings from that file. This is useful to change the order of your ads without updating your build.");
                 EditorGUILayout.LabelField("If you use Heyzap or Admob you can do exactly the same thing from their dashboard.");
                 EditorGUILayout.Space();
                 externalFileUrl = EditorGUILayout.TextField("External Settings File url", externalFileUrl);
@@ -310,12 +366,11 @@
 
             if (GUILayout.Button("Open Test Scene"))
             {
-                EditorSceneManager.OpenScene("Assets/GleyPlugins/Ads/Example/TestAdsScene.unity");
+                EditorSceneManager.OpenScene($"{rootFolder}/Example/TestAdsScene.unity");
             }
 
             GUILayout.EndScrollView();
         }
-#if UNITY_2018_3_OR_NEWER
         static AddRequest Request;
         private void DownloadUnity()
         {
@@ -336,7 +391,6 @@
                 EditorApplication.update -= Progress;
             }
         }
-#endif
 
         private void SaveSettings()
         {
@@ -349,18 +403,21 @@
             adSettings.bannerMediation = bannerMediation;
             adSettings.interstitialMediation = interstitialMediation;
             adSettings.rewardedMediation = rewardedMediation;
+            adSettings.enableATT = enableATT;
+            adSettings.nativePopupText = nativePopupText;
 
             adSettings.advertiserSettings = new List<AdvertiserSettings>();
             for (int i = 0; i < advertiserSettings.Count; i++)
             {
                 adSettings.advertiserSettings.Add(advertiserSettings[i]);
-                if(advertiserSettings[i].advertiser == SupportedAdvertisers.Admob)
+                if (advertiserSettings[i].advertiser == SupportedAdvertisers.Admob)
                 {
-                    if(advertiserSettings[i].useSDK == true)
+                    if (advertiserSettings[i].useSDK == true)
                     {
                         InstallAdmobPatch();
                     }
                 }
+
             }
 
             adSettings.mediationSettings = new List<MediationSettings>();
@@ -403,6 +460,7 @@
 
             adSettings.externalFileUrl = externalFileUrl;
             EditorUtility.SetDirty(adSettings);
+            Debug.Log("Save Success");
         }
 
         private void InstallAdmobPatch()
@@ -411,8 +469,8 @@
             {
                 AssetDatabase.ImportPackage(Application.dataPath + "/GleyPlugins/Ads/Patches/AdmobPatch.unitypackage", false);
             }
-            AddPreprocessorDirective(Constants.USE_ADMOB_PATCH, false, BuildTargetGroup.Android);
-            AddPreprocessorDirective(Constants.USE_ADMOB_PATCH, false, BuildTargetGroup.iOS);
+            AddPreprocessorDirective(Gley.Common.Constants.USE_ADMOB_PATCH, false, BuildTargetGroup.Android);
+            AddPreprocessorDirective(Gley.Common.Constants.USE_ADMOB_PATCH, false, BuildTargetGroup.iOS);
 
         }
 
@@ -528,11 +586,10 @@
         //this function should be changed when new advertiser is added
         private void UpdateAdvertiserSettings()
         {
-            //Debug.Log("UpdateAdvertiserSettings");
             //AdColony
             if (advertiserSettings.Find(cond => cond.advertiser == SupportedAdvertisers.AdColony) == null)
             {
-                AdvertiserSettings advertiser = new AdvertiserSettings(SupportedAdvertisers.AdColony, "https://github.com/AdColony/", Constants.USE_ADCOLONY);
+                AdvertiserSettings advertiser = new AdvertiserSettings(SupportedAdvertisers.AdColony, "https://github.com/AdColony/", Gley.Common.Constants.USE_ADCOLONY);
                 advertiser.platformSettings = new List<PlatformSettings>
                 {
                     new PlatformSettings(SupportedPlatforms.Android,new AdvertiserId("App ID"),new AdvertiserId("Banner Zone ID"),new AdvertiserId("Interstitial Zone ID"),new AdvertiserId("Rewarded Zone ID"),true,true,true),
@@ -556,7 +613,7 @@
             //Admob
             if (advertiserSettings.Find(cond => cond.advertiser == SupportedAdvertisers.Admob) == null)
             {
-                AdvertiserSettings advertiser = new AdvertiserSettings(SupportedAdvertisers.Admob, "https://github.com/googleads/googleads-mobile-unity/releases", Constants.USE_ADMOB);
+                AdvertiserSettings advertiser = new AdvertiserSettings(SupportedAdvertisers.Admob, "https://github.com/googleads/googleads-mobile-unity/releases", Gley.Common.Constants.USE_ADMOB);
                 advertiser.platformSettings = new List<PlatformSettings>
                 {
                     new PlatformSettings(SupportedPlatforms.Android,new AdvertiserId("App ID"),new AdvertiserId("Banner ID"),new AdvertiserId("Interstitial ID"),new AdvertiserId("Rewarded Video ID"),true,true,true),
@@ -579,7 +636,7 @@
             //Chartboost
             if (advertiserSettings.Find(cond => cond.advertiser == SupportedAdvertisers.Chartboost) == null)
             {
-                AdvertiserSettings advertiser = new AdvertiserSettings(SupportedAdvertisers.Chartboost, "https://answers.chartboost.com/en-us/articles/download", Constants.USE_CHARTBOOST);
+                AdvertiserSettings advertiser = new AdvertiserSettings(SupportedAdvertisers.Chartboost, "https://answers.chartboost.com/en-us/articles/download", Gley.Common.Constants.USE_CHARTBOOST);
                 advertiser.platformSettings = new List<PlatformSettings>
                 {
                     new PlatformSettings(SupportedPlatforms.Android,new AdvertiserId("App ID"),new AdvertiserId(),new AdvertiserId("App Signature"),new AdvertiserId(),false,true,true),
@@ -590,7 +647,7 @@
             //Heyzap
             if (advertiserSettings.Find(cond => cond.advertiser == SupportedAdvertisers.Heyzap) == null)
             {
-                AdvertiserSettings advertiser = new AdvertiserSettings(SupportedAdvertisers.Heyzap, "https://developers.heyzap.com/docs/unity_sdk_setup_and_requirements", Constants.USE_HEYZAP);
+                AdvertiserSettings advertiser = new AdvertiserSettings(SupportedAdvertisers.Heyzap, "https://developers.heyzap.com/docs/unity_sdk_setup_and_requirements", Gley.Common.Constants.USE_HEYZAP);
                 advertiser.platformSettings = new List<PlatformSettings>
                 {
                     new PlatformSettings(SupportedPlatforms.Android,new AdvertiserId("Publisher ID"),new AdvertiserId(),new AdvertiserId(),new AdvertiserId(),true,true,true),
@@ -601,7 +658,7 @@
             //UnityAds
             if (advertiserSettings.Find(cond => cond.advertiser == SupportedAdvertisers.Unity) == null)
             {
-                AdvertiserSettings advertiser = new AdvertiserSettings(SupportedAdvertisers.Unity, "https://assetstore.unity.com/packages/add-ons/services/unity-monetization-66123", Constants.USE_UNITYADS);
+                AdvertiserSettings advertiser = new AdvertiserSettings(SupportedAdvertisers.Unity, "https://assetstore.unity.com/packages/add-ons/services/unity-monetization-66123", Gley.Common.Constants.USE_UNITYADS);
                 advertiser.platformSettings = new List<PlatformSettings>
                 {
                     new PlatformSettings(SupportedPlatforms.Android,new AdvertiserId("Game ID"),new AdvertiserId("Placement ID Banner"),new AdvertiserId("Placement ID Interstitial"),new AdvertiserId("Placement ID Rewarded"),true,true,true),
@@ -625,7 +682,7 @@
             //Vungle
             if (advertiserSettings.Find(cond => cond.advertiser == SupportedAdvertisers.Vungle) == null)
             {
-                AdvertiserSettings advertiser = new AdvertiserSettings(SupportedAdvertisers.Vungle, "https://publisher.vungle.com/sdk/plugins/unity", Constants.USE_VUNGLE);
+                AdvertiserSettings advertiser = new AdvertiserSettings(SupportedAdvertisers.Vungle, "https://publisher.vungle.com/sdk/plugins/unity", Gley.Common.Constants.USE_VUNGLE);
                 advertiser.platformSettings = new List<PlatformSettings>
                 {
                     new PlatformSettings(SupportedPlatforms.Android,new AdvertiserId("App ID"),new AdvertiserId(),new AdvertiserId("Interstitial Placement ID"),new AdvertiserId("Rewarded Placement ID"),false,true,true),
@@ -634,22 +691,86 @@
                 };
                 advertiserSettings.Add(advertiser);
             }
+            else
+            {
+                AdvertiserSettings advertiser = advertiserSettings.Find(cond => cond.advertiser == SupportedAdvertisers.Vungle);
+
+                for (int i = 0; i < advertiser.platformSettings.Count; i++)
+                {
+                    if (advertiser.platformSettings[i].hasBanner == false)
+                    {
+                        advertiser.platformSettings[i].hasBanner = true;
+                        advertiser.platformSettings[i].idBanner = new AdvertiserId("Banner Placement ID");
+                    }
+                }
+
+            }
             //AppLovin
             if (advertiserSettings.Find(cond => cond.advertiser == SupportedAdvertisers.AppLovin) == null)
             {
-                AdvertiserSettings advertiser = new AdvertiserSettings(SupportedAdvertisers.AppLovin, "https://dash.applovin.com/docs/integration#unity3dIntegration", Constants.USE_APPLOVIN);
+                AdvertiserSettings advertiser = new AdvertiserSettings(SupportedAdvertisers.AppLovin, "https://dash.applovin.com/documentation/mediation/unity/getting-started/integration", Gley.Common.Constants.USE_APPLOVIN);
                 advertiser.platformSettings = new List<PlatformSettings>
                 {
-                    new PlatformSettings(SupportedPlatforms.Android,new AdvertiserId("SDK key"),new AdvertiserId(),new AdvertiserId(),new AdvertiserId(),true,true,true),
-                    new PlatformSettings(SupportedPlatforms.iOS,new AdvertiserId("SDK key"),new AdvertiserId(),new AdvertiserId(),new AdvertiserId(),true,true,true)
+                    new PlatformSettings(SupportedPlatforms.Android,new AdvertiserId("SDK key"),new AdvertiserId("Banner ID"),new AdvertiserId("Interstitial ID"),new AdvertiserId("Rewarded Video ID"),true,true,true),
+                    new PlatformSettings(SupportedPlatforms.iOS,new AdvertiserId("SDK key"),new AdvertiserId("Banner ID"),new AdvertiserId("Interstitial ID"),new AdvertiserId("Rewarded Video ID"),true,true,true)
                 };
                 advertiserSettings.Add(advertiser);
+            }
+            else
+            {
+                //append ID support
+                AdvertiserSettings advertiser = advertiserSettings.Find(cond => cond.advertiser == SupportedAdvertisers.AppLovin);
+
+                if (advertiser.sdkLink.Contains("#"))
+                {
+                    advertiser.sdkLink = "https://dash.applovin.com/documentation/mediation/unity/getting-started/integration";
+                }
+
+                for (int i = 0; i < advertiser.platformSettings.Count; i++)
+                {
+                    if (advertiser.platformSettings[i].hasBanner == false)
+                    {
+                        advertiser.platformSettings[i].hasBanner = true;
+                        advertiser.platformSettings[i].idBanner = new AdvertiserId("Banner ID");
+                    }
+                    else
+                    {
+                        if (String.IsNullOrEmpty(advertiser.platformSettings[i].idBanner.displayName))
+                        {
+                            advertiser.platformSettings[i].idBanner.displayName = "Banner ID";
+                        }
+                    }
+                    if (advertiser.platformSettings[i].hasInterstitial == false)
+                    {
+                        advertiser.platformSettings[i].hasInterstitial = true;
+                        advertiser.platformSettings[i].idInterstitial = new AdvertiserId("Interstitial ID");
+                    }
+                    else
+                    {
+                        if (String.IsNullOrEmpty(advertiser.platformSettings[i].idInterstitial.displayName))
+                        {
+                            advertiser.platformSettings[i].idInterstitial.displayName = "Interstitial ID";
+                        }
+                    }
+                    if (advertiser.platformSettings[i].hasRewarded == false)
+                    {
+                        advertiser.platformSettings[i].hasRewarded = true;
+                        advertiser.platformSettings[i].idRewarded = new AdvertiserId("Rewarded Video ID");
+                    }
+                    else
+                    {
+                        if (String.IsNullOrEmpty(advertiser.platformSettings[i].idRewarded.displayName))
+                        {
+                            advertiser.platformSettings[i].idRewarded.displayName = "Rewarded Video ID";
+                        }
+                    }
+                }
             }
 
             //Facebook
             if (advertiserSettings.Find(cond => cond.advertiser == SupportedAdvertisers.Facebook) == null)
             {
-                AdvertiserSettings advertiser = new AdvertiserSettings(SupportedAdvertisers.Facebook, "https://developers.facebook.com/docs/audience-network/download#unity", Constants.USE_FACEBOOKADS);
+                AdvertiserSettings advertiser = new AdvertiserSettings(SupportedAdvertisers.Facebook, "https://developers.facebook.com/docs/audience-network/setting-up/platform-steup/unity/add-sdk", Gley.Common.Constants.USE_FACEBOOKADS);
                 advertiser.platformSettings = new List<PlatformSettings>
                 {
                     new PlatformSettings(SupportedPlatforms.Android,new AdvertiserId(),new AdvertiserId("Banner Placement ID"),new AdvertiserId("Interstitial Placement ID"),new AdvertiserId("Rewarded Placement ID"),true,true,true),
@@ -661,7 +782,7 @@
             //MoPub
             if (advertiserSettings.Find(cond => cond.advertiser == SupportedAdvertisers.MoPub) == null)
             {
-                AdvertiserSettings advertiser = new AdvertiserSettings(SupportedAdvertisers.MoPub, "https://github.com/mopub/mopub-unity-sdk", Constants.USE_MOPUB);
+                AdvertiserSettings advertiser = new AdvertiserSettings(SupportedAdvertisers.MoPub, "https://github.com/mopub/mopub-unity-sdk", Gley.Common.Constants.USE_MOPUB);
                 advertiser.platformSettings = new List<PlatformSettings>
                 {
                     new PlatformSettings(SupportedPlatforms.Android,new AdvertiserId(),new AdvertiserId("Banner Placement ID"),new AdvertiserId("Interstitial Placement ID"),new AdvertiserId("Rewarded Placement ID"),true,true,true),
@@ -673,7 +794,7 @@
             //ironSource
             if (advertiserSettings.Find(cond => cond.advertiser == SupportedAdvertisers.IronSource) == null)
             {
-                AdvertiserSettings advertiser = new AdvertiserSettings(SupportedAdvertisers.IronSource, "https://developers.ironsrc.com/ironsource-mobile-unity/unity-plugin/", Constants.USE_IRONSOURCE);
+                AdvertiserSettings advertiser = new AdvertiserSettings(SupportedAdvertisers.IronSource, "https://developers.ironsrc.com/ironsource-mobile-unity/unity-plugin/", Gley.Common.Constants.USE_IRONSOURCE);
                 advertiser.platformSettings = new List<PlatformSettings>
                 {
                     new PlatformSettings(SupportedPlatforms.Android,new AdvertiserId("App Key"),new AdvertiserId("Banner Placement"),new AdvertiserId("Interstitial Placement"),new AdvertiserId("Rewarded Placement"),true,true,true),
@@ -891,13 +1012,9 @@
         public static void CreateAdSettings()
         {
             AdSettings asset = ScriptableObject.CreateInstance<AdSettings>();
-            if (!AssetDatabase.IsValidFolder("Assets/GleyPlugins/Ads/Resources"))
-            {
-                AssetDatabase.CreateFolder("Assets/GleyPlugins/Ads", "Resources");
-                AssetDatabase.Refresh();
-            }
+            Gley.Common.EditorUtilities.CreateFolder($"{rootFolder}/Resources");
 
-            AssetDatabase.CreateAsset(asset, "Assets/GleyPlugins/Ads/Resources/AdSettingsData.asset");
+            AssetDatabase.CreateAsset(asset, $"{rootFolder}/Resources/AdSettingsData.asset");
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
         }
@@ -934,41 +1051,50 @@
         {
             if (usePlaymaker)
             {
-                AddPreprocessorDirective(Constants.USE_PLAYMAKER_SUPPORT, false, BuildTargetGroup.Android);
-                AddPreprocessorDirective(Constants.USE_PLAYMAKER_SUPPORT, false, BuildTargetGroup.iOS);
-                AddPreprocessorDirective(Constants.USE_PLAYMAKER_SUPPORT, false, BuildTargetGroup.WSA);
+                AddPreprocessorDirective(Gley.Common.Constants.USE_PLAYMAKER_SUPPORT, false, BuildTargetGroup.Android);
+                AddPreprocessorDirective(Gley.Common.Constants.USE_PLAYMAKER_SUPPORT, false, BuildTargetGroup.iOS);
+                AddPreprocessorDirective(Gley.Common.Constants.USE_PLAYMAKER_SUPPORT, false, BuildTargetGroup.WSA);
             }
             else
             {
-                AddPreprocessorDirective(Constants.USE_PLAYMAKER_SUPPORT, true, BuildTargetGroup.Android);
-                AddPreprocessorDirective(Constants.USE_PLAYMAKER_SUPPORT, true, BuildTargetGroup.iOS);
-                AddPreprocessorDirective(Constants.USE_PLAYMAKER_SUPPORT, true, BuildTargetGroup.WSA);
+                AddPreprocessorDirective(Gley.Common.Constants.USE_PLAYMAKER_SUPPORT, true, BuildTargetGroup.Android);
+                AddPreprocessorDirective(Gley.Common.Constants.USE_PLAYMAKER_SUPPORT, true, BuildTargetGroup.iOS);
+                AddPreprocessorDirective(Gley.Common.Constants.USE_PLAYMAKER_SUPPORT, true, BuildTargetGroup.WSA);
             }
 
             if (useBolt)
             {
-                AddPreprocessorDirective(Constants.USE_BOLT_SUPPORT, false, BuildTargetGroup.Android);
-                AddPreprocessorDirective(Constants.USE_BOLT_SUPPORT, false, BuildTargetGroup.iOS);
-                AddPreprocessorDirective(Constants.USE_BOLT_SUPPORT, false, BuildTargetGroup.WSA);
+                AddPreprocessorDirective(Gley.Common.Constants.USE_BOLT_SUPPORT, false, BuildTargetGroup.Android);
+                AddPreprocessorDirective(Gley.Common.Constants.USE_BOLT_SUPPORT, false, BuildTargetGroup.iOS);
+                AddPreprocessorDirective(Gley.Common.Constants.USE_BOLT_SUPPORT, false, BuildTargetGroup.WSA);
             }
             else
             {
-                AddPreprocessorDirective(Constants.USE_BOLT_SUPPORT, true, BuildTargetGroup.Android);
-                AddPreprocessorDirective(Constants.USE_BOLT_SUPPORT, true, BuildTargetGroup.iOS);
-                AddPreprocessorDirective(Constants.USE_BOLT_SUPPORT, true, BuildTargetGroup.WSA);
+                AddPreprocessorDirective(Gley.Common.Constants.USE_BOLT_SUPPORT, true, BuildTargetGroup.Android);
+                AddPreprocessorDirective(Gley.Common.Constants.USE_BOLT_SUPPORT, true, BuildTargetGroup.iOS);
+                AddPreprocessorDirective(Gley.Common.Constants.USE_BOLT_SUPPORT, true, BuildTargetGroup.WSA);
             }
 
             if (useGameflow)
             {
-                AddPreprocessorDirective(Constants.USE_GAMEFLOW_SUPPORT, false, BuildTargetGroup.Android);
-                AddPreprocessorDirective(Constants.USE_GAMEFLOW_SUPPORT, false, BuildTargetGroup.iOS);
-                AddPreprocessorDirective(Constants.USE_GAMEFLOW_SUPPORT, false, BuildTargetGroup.WSA);
+                AddPreprocessorDirective(Gley.Common.Constants.USE_GAMEFLOW_SUPPORT, false, BuildTargetGroup.Android);
+                AddPreprocessorDirective(Gley.Common.Constants.USE_GAMEFLOW_SUPPORT, false, BuildTargetGroup.iOS);
+                AddPreprocessorDirective(Gley.Common.Constants.USE_GAMEFLOW_SUPPORT, false, BuildTargetGroup.WSA);
             }
             else
             {
-                AddPreprocessorDirective(Constants.USE_GAMEFLOW_SUPPORT, true, BuildTargetGroup.Android);
-                AddPreprocessorDirective(Constants.USE_GAMEFLOW_SUPPORT, true, BuildTargetGroup.iOS);
-                AddPreprocessorDirective(Constants.USE_GAMEFLOW_SUPPORT, true, BuildTargetGroup.WSA);
+                AddPreprocessorDirective(Gley.Common.Constants.USE_GAMEFLOW_SUPPORT, true, BuildTargetGroup.Android);
+                AddPreprocessorDirective(Gley.Common.Constants.USE_GAMEFLOW_SUPPORT, true, BuildTargetGroup.iOS);
+                AddPreprocessorDirective(Gley.Common.Constants.USE_GAMEFLOW_SUPPORT, true, BuildTargetGroup.WSA);
+            }
+
+            if (enableATT)
+            {
+                AddPreprocessorDirective(Gley.Common.Constants.USE_ATT, false, BuildTargetGroup.iOS);
+            }
+            else
+            {
+                AddPreprocessorDirective(Gley.Common.Constants.USE_ATT, true, BuildTargetGroup.iOS);
             }
 
 
@@ -976,10 +1102,6 @@
             {
                 if (advertiserSettings[i].useSDK == true)
                 {
-                    if (advertiserSettings[i].advertiser == SupportedAdvertisers.Admob)
-                    {
-
-                    }
                     for (int j = 0; j < advertiserSettings[i].platformSettings.Count; j++)
                     {
                         if (advertiserSettings[i].platformSettings[j].enabled == true)
@@ -1001,10 +1123,18 @@
                         {
                             if (advertiserSettings[i].platformSettings[j].platform == SupportedPlatforms.Android)
                             {
-                                AddPreprocessorDirective(advertiserSettings[i].preprocessorDirective, true, BuildTargetGroup.Android);
+                                if (advertiserSettings[i].advertiser == SupportedAdvertisers.Admob)
+                                {
+                                    AddPreprocessorDirective(Gley.Common.Constants.USE_ADMOB_PATCH, true, BuildTargetGroup.Android);
+                                }
+                                AddPreprocessorDirective(advertiserSettings[i].preprocessorDirective, true, BuildTargetGroup.Android);                             
                             }
                             if (advertiserSettings[i].platformSettings[j].platform == SupportedPlatforms.iOS)
                             {
+                                if (advertiserSettings[i].advertiser == SupportedAdvertisers.Admob)
+                                {
+                                    AddPreprocessorDirective(Gley.Common.Constants.USE_ADMOB_PATCH, true, BuildTargetGroup.iOS);
+                                }
                                 AddPreprocessorDirective(advertiserSettings[i].preprocessorDirective, true, BuildTargetGroup.iOS);
                             }
                             if (advertiserSettings[i].platformSettings[j].platform == SupportedPlatforms.Windows)
@@ -1016,6 +1146,11 @@
                 }
                 else
                 {
+                    if (advertiserSettings[i].advertiser == SupportedAdvertisers.Admob)
+                    {
+                        AddPreprocessorDirective(Gley.Common.Constants.USE_ADMOB_PATCH, true, BuildTargetGroup.Android);
+                        AddPreprocessorDirective(Gley.Common.Constants.USE_ADMOB_PATCH, true, BuildTargetGroup.iOS);
+                    }
                     AddPreprocessorDirective(advertiserSettings[i].preprocessorDirective, true, BuildTargetGroup.Android);
                     AddPreprocessorDirective(advertiserSettings[i].preprocessorDirective, true, BuildTargetGroup.iOS);
                     AddPreprocessorDirective(advertiserSettings[i].preprocessorDirective, true, BuildTargetGroup.WSA);
@@ -1081,71 +1216,18 @@
         /// </summary>
         private void CreateManifestFile()
         {
-            if (AssetDatabase.IsValidFolder("Assets/GleyPlugins/Ads/Plugins"))
+            if (AssetDatabase.IsValidFolder($"{rootFolder}/Plugins"))
             {
-                AssetDatabase.DeleteAsset("Assets/GleyPlugins/Ads/Plugins");
-            }
-;
-            for (int i = 0; i < advertiserSettings.Count; i++)
-            {
-                if (advertiserSettings[i].useSDK == true)
-                {
-                    //if (advertiserSettings[i].advertiser == SupportedAdvertisers.Admob)
-                    //{
-                    //    SetAdmobAppID(i);
-                    //}
-
-                    if (advertiserSettings[i].advertiser == SupportedAdvertisers.Facebook)
-                    {
-                        string facebookSecurity = " android:networkSecurityConfig = \"@xml/network_security_config\"";
-
-                        if (!AssetDatabase.IsValidFolder("Assets/GleyPlugins/Ads/Plugins"))
-                        {
-                            AssetDatabase.CreateFolder("Assets/GleyPlugins/Ads", "Plugins");
-                            AssetDatabase.Refresh();
-                            AssetDatabase.CreateFolder("Assets/GleyPlugins/Ads/Plugins", "Android");
-                            AssetDatabase.Refresh();
-                            AssetDatabase.CreateFolder("Assets/GleyPlugins/Ads/Plugins/Android", "GleyMobileAdsManifest.plugin");
-                            AssetDatabase.Refresh();
-                            AssetDatabase.CreateFolder("Assets/GleyPlugins/Ads/Plugins/Android/GleyMobileAdsManifest.plugin", "res");
-                            AssetDatabase.Refresh();
-                            AssetDatabase.CreateFolder("Assets/GleyPlugins/Ads/Plugins/Android/GleyMobileAdsManifest.plugin/res", "xml");
-                            AssetDatabase.Refresh();
-                            string securityConfig =
-                                "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
-                                "<network-security-config>\n" +
-                                    "<domain-config cleartextTrafficPermitted=\"true\">\n" +
-                                        "<domain includeSubdomains=\"true\">127.0.0.1</domain>\n" +
-                                    "</domain-config>\n" +
-                                "</network-security-config>";
-                            File.WriteAllText(Application.dataPath + "/GleyPlugins/Ads/Plugins/Android/GleyMobileAdsManifest.plugin/res/xml/network_security_config.xml", securityConfig);
-                        }
-
-                        string text = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
-                        "<manifest xmlns:android = \"http://schemas.android.com/apk/res/android\"\n" +
-                        "package=\"com.gley.mobileads\">\n" +
-                        "<uses-sdk android:minSdkVersion=\"16\"/>\n" +
-                        "<application" + facebookSecurity + ">\n" +
-                        "</application>\n" +
-                        "</manifest>";
-
-                        File.WriteAllText(Application.dataPath + "/GleyPlugins/Ads/Plugins/Android/GleyMobileAdsManifest.plugin/AndroidManifest.xml", text);
-
-                        text = "target=android-16\nandroid.library = true";
-                        File.WriteAllText(Application.dataPath + "/GleyPlugins/Ads/Plugins/Android/GleyMobileAdsManifest.plugin/project.properties", text);
-
-                        AssetDatabase.Refresh();
-                    }
-                }
+                AssetDatabase.DeleteAsset($"{rootFolder}/Plugins");
             }
         }
 
         private void DisableManifest()
         {
-            if (AssetDatabase.IsValidFolder("Assets/GleyPlugins/Ads/Plugins/Android/GleyMobileAdsManifest.plugin"))
+            if (AssetDatabase.IsValidFolder($"{rootFolder}/Plugins/Android/GleyMobileAdsManifest.plugin"))
             {
-                ((PluginImporter)PluginImporter.GetAtPath("Assets/GleyPlugins/Ads/Plugins/Android/GleyMobileAdsManifest.plugin")).SetCompatibleWithAnyPlatform(false);
-                ((PluginImporter)PluginImporter.GetAtPath("Assets/GleyPlugins/Ads/Plugins/Android/GleyMobileAdsManifest.plugin")).SetCompatibleWithPlatform(BuildTarget.Android, false);
+                ((PluginImporter)PluginImporter.GetAtPath($"{rootFolder}/Plugins/Android/GleyMobileAdsManifest.plugin")).SetCompatibleWithAnyPlatform(false);
+                ((PluginImporter)PluginImporter.GetAtPath($"{rootFolder}/Plugins/Android/GleyMobileAdsManifest.plugin")).SetCompatibleWithPlatform(BuildTarget.Android, false);
                 AssetDatabase.Refresh();
             }
         }

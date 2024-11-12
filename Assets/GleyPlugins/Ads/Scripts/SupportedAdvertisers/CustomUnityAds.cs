@@ -9,8 +9,11 @@
 #endif
 
 #if USE_UNITYADS
-    public class CustomUnityAds : MonoBehaviour, ICustomAds, IUnityAdsListener
+    public class CustomUnityAds : MonoBehaviour, ICustomAds, IUnityAdsInitializationListener, IUnityAdsLoadListener, IUnityAdsShowListener
     {
+        const int reloadInterval = 20;
+        const int maxRetryCount = 10;
+
         private UnityAction<bool> OnCompleteMethod;
         private UnityAction<bool, string> OnCompleteMethodWithAdvertiser;
         private UnityAction OnInterstitialClosed;
@@ -22,9 +25,16 @@
         private string rewardedVideoAdPlacement;
         private bool debug;
         private bool bannerUsed;
+        private bool interstitialAvailable;
+        private bool rewardedAvailable;
         private global::BannerPosition position;
         private BannerType bannerType;
         private UnityAction<bool, global::BannerPosition, BannerType> DisplayResult;
+
+        private int retryNumberInterstitial;
+        private int retryNumberRewarded;
+
+
 
         /// <summary>
         /// Initializing Unity Ads
@@ -92,11 +102,19 @@
                 Advertisement.SetMetaData(privacyMetaData);
             }
 
-            Advertisement.AddListener(this);
-            Advertisement.Initialize(unityAdsId, false);
+           
+            if (settings.directedForChildren)
+            {
+                MetaData userMetaData = new MetaData("user");
+                MetaData metaData = new MetaData("privacy");
+                userMetaData.Set("nonbehavioral", "true");
+                metaData.Set("mode", "app");
+                Advertisement.SetMetaData(userMetaData);
+                Advertisement.SetMetaData(metaData);
+            }
+
+            Advertisement.Initialize(unityAdsId, false, this);
         }
-
-
 
 
         /// <summary>
@@ -132,19 +150,56 @@
                 }
                 Advertisement.SetMetaData(privacyMetaData);
             }
-
-            Debug.Log(this + " Update consent to " + consent);
-            ScreenWriter.Write(this + " Update consent to " + consent);
+            if (debug)
+            {
+                Debug.Log(this + " Update consent to " + consent);
+                ScreenWriter.Write(this + " Update consent to " + consent);
+            }
         }
 
 
+        public void OnInitializationComplete()
+        {
+            if (debug)
+            {
+                Debug.Log(this + " initialization complete.");
+                ScreenWriter.Write(this + " initialization complete.");
+            }
+            LoadInterstitialAd();
+            LoadRewardedVideo();
+        }
+
+
+        public void OnInitializationFailed(UnityAdsInitializationError error, string message)
+        {
+            if (debug)
+            {
+                Debug.Log($"Unity Ads Initialization Failed: {error} - {message}");
+                ScreenWriter.Write($"Unity Ads Initialization Failed: {error} - {message}");
+            }
+        }
+
+
+        #region Interstitial
         /// <summary>
         /// Check if Unity Ads interstitial is available
         /// </summary>
         /// <returns>true if an interstitial is available</returns>
         public bool IsInterstitialAvailable()
         {
-            return Advertisement.IsReady(videoAdPlacement);
+            return interstitialAvailable;
+        }
+
+
+        public void LoadInterstitialAd()
+        {
+            interstitialAvailable = false;
+            if (debug)
+            {
+                Debug.Log(this + " Loading Interstitial Ad: " + videoAdPlacement);
+                ScreenWriter.Write(this + " Loading Interstitial Ad: " + videoAdPlacement);
+            }
+            Advertisement.Load(videoAdPlacement, this);
         }
 
 
@@ -157,7 +212,7 @@
             if (IsInterstitialAvailable())
             {
                 OnInterstitialClosed = InterstitialClosed;
-                Advertisement.Show(videoAdPlacement);
+                Advertisement.Show(videoAdPlacement, this);
             }
         }
 
@@ -171,18 +226,31 @@
             if (IsInterstitialAvailable())
             {
                 OnInterstitialClosedWithAdvertiser = InterstitialClosed;
-                Advertisement.Show(videoAdPlacement);
+                Advertisement.Show(videoAdPlacement, this);
             }
         }
+        #endregion
 
-
+        #region RewardedVideo
         /// <summary>
         /// Check if Unity Ads rewarded video is available
         /// </summary>
         /// <returns>true if a rewarded video is available</returns>
         public bool IsRewardVideoAvailable()
         {
-            return Advertisement.IsReady(rewardedVideoAdPlacement);
+            return rewardedAvailable;
+        }
+
+
+        private void LoadRewardedVideo()
+        {
+            rewardedAvailable = false;
+            if (debug)
+            {
+                Debug.Log(this + " Loading Rewarded Video Ad: " + rewardedVideoAdPlacement);
+                ScreenWriter.Write(this + " Loading Rewarded Video Ad: " + rewardedVideoAdPlacement);
+            }
+            Advertisement.Load(rewardedVideoAdPlacement, this);
         }
 
 
@@ -195,9 +263,10 @@
             if (IsRewardVideoAvailable())
             {
                 OnCompleteMethod = CompleteMethod;
-                Advertisement.Show(rewardedVideoAdPlacement);
+                Advertisement.Show(rewardedVideoAdPlacement, this);
             }
         }
+
 
         /// <summary>
         /// Show Unity Ads rewarded video
@@ -208,15 +277,178 @@
             if (IsRewardVideoAvailable())
             {
                 OnCompleteMethodWithAdvertiser = CompleteMethod;
-                Advertisement.Show(rewardedVideoAdPlacement);
+                Advertisement.Show(rewardedVideoAdPlacement, this);
+            }
+        }
+        #endregion
+
+        #region Events
+        public void OnUnityAdsAdLoaded(string placementId)
+        {
+            if (placementId == videoAdPlacement)
+            {
+                interstitialAvailable = true;
+                if (debug)
+                {
+                    Debug.Log(this + " Interstitial Ad Loaded: " + placementId);
+                    ScreenWriter.Write(this + " Interstitial Ad Loaded: " + placementId);
+                }
+            }
+
+            if (placementId == rewardedVideoAdPlacement)
+            {
+                rewardedAvailable = true;
+                if (debug)
+                {
+                    Debug.Log(this + " Rewarded Video Ad Loaded: " + placementId);
+                    ScreenWriter.Write(this + " Rewarded Video Ad Loaded: " + placementId);
+                }
             }
         }
 
 
-        //Unity Ads does not support banner ads
+        public void OnUnityAdsFailedToLoad(string placementId, UnityAdsLoadError error, string message)
+        {
+            if (debug)
+            {
+                Debug.Log(this + $"Error loading Ad Unit: {placementId} - {error.ToString()} - {message}");
+                ScreenWriter.Write(this + $"Error loading Ad Unit: {placementId} - {error.ToString()} - {message}");
+            }
+            if (placementId == videoAdPlacement)
+            {
+                retryNumberInterstitial++;
+                if (retryNumberInterstitial < maxRetryCount)
+                {
+                    Invoke("LoadInterstitialAd", reloadInterval);
+                }
+            }
+            if (placementId == rewardedVideoAdPlacement)
+            {
+                retryNumberRewarded++;
+                if (retryNumberRewarded < maxRetryCount)
+                {
+                    Invoke("LoadRewardedVideo", reloadInterval);
+                }
+            }
+        }
+
+
+        public void OnUnityAdsShowFailure(string placementId, UnityAdsShowError error, string message)
+        {
+            if (debug)
+            {
+                Debug.Log(this + $"Error showing Ad Unit {placementId}: {error.ToString()} - {message}");
+                ScreenWriter.Write(this + $"Error showing Ad Unit {placementId}: {error.ToString()} - {message}");
+            }
+            if (placementId == videoAdPlacement)
+            {
+                LoadInterstitialAd();
+            }
+
+            if (placementId == rewardedVideoAdPlacement)
+            {
+                LoadRewardedVideo();
+            }
+        }
+
+
+        public void OnUnityAdsShowStart(string placementId)
+        {
+            if (debug)
+            {
+                Debug.Log(this + " Ad Shown: " + placementId);
+                ScreenWriter.Write(this + " Ad Shown: " + placementId);
+            }
+
+            if (placementId == videoAdPlacement)
+            {
+                retryNumberInterstitial = 0;
+            }
+
+            if (placementId == rewardedVideoAdPlacement)
+            {
+                retryNumberRewarded = 0;
+            }
+        }
+
+
+        public void OnUnityAdsShowClick(string placementId)
+        {
+            if (debug)
+            {
+                Debug.Log(this + " Ad Clicked: " + placementId);
+                ScreenWriter.Write(this + " Ad Clicked: " + placementId);
+            }
+        }
+
+
+        public void OnUnityAdsShowComplete(string placementId, UnityAdsShowCompletionState showCompletionState)
+        {
+            ScreenWriter.Write("OnUnityAdsShowComplete " + placementId);
+            if (placementId == videoAdPlacement)
+            {
+                if (debug)
+                {
+                    Debug.Log(this + "Interstitial result: " + showCompletionState);
+                    ScreenWriter.Write(this + "Interstitial result: " + showCompletionState);
+                }
+
+                if (OnInterstitialClosed != null)
+                {
+                    OnInterstitialClosed();
+                    OnInterstitialClosed = null;
+                }
+
+                if (OnInterstitialClosedWithAdvertiser != null)
+                {
+                    OnInterstitialClosedWithAdvertiser(SupportedAdvertisers.Unity.ToString());
+                    OnInterstitialClosedWithAdvertiser = null;
+                }
+                LoadInterstitialAd();
+            }
+
+            if (placementId == rewardedVideoAdPlacement)
+            {
+                if (debug)
+                {
+                    Debug.Log(this + "Complete method result: " + showCompletionState);
+                    ScreenWriter.Write(this + "Complete method result: " + showCompletionState);
+                }
+                if (showCompletionState == UnityAdsShowCompletionState.COMPLETED)
+                {
+                    if (OnCompleteMethod != null)
+                    {
+                        OnCompleteMethod(true);
+                        OnCompleteMethod = null;
+                    }
+                    if (OnCompleteMethodWithAdvertiser != null)
+                    {
+                        OnCompleteMethodWithAdvertiser(true, SupportedAdvertisers.Unity.ToString());
+                        OnCompleteMethodWithAdvertiser = null;
+                    }
+                }
+                else
+                {
+                    if (OnCompleteMethod != null)
+                    {
+                        OnCompleteMethod(false);
+                        OnCompleteMethod = null;
+                    }
+                    if (OnCompleteMethodWithAdvertiser != null)
+                    {
+                        OnCompleteMethodWithAdvertiser(false, SupportedAdvertisers.Unity.ToString());
+                        OnCompleteMethodWithAdvertiser = null;
+                    }
+                }
+                LoadRewardedVideo();
+            }
+        }
+        #endregion
+
+        #region Banner
         public bool IsBannerAvailable()
         {
-            return Advertisement.IsReady(bannerPlacement);
+            return true;
         }
 
 
@@ -249,16 +481,6 @@
                 this.bannerType = bannerType;
                 this.DisplayResult = DisplayResult;
 
-                BannerLoadOptions options = new BannerLoadOptions
-                {
-                    errorCallback = BannerLoadFailed,
-                    loadCallback = BannerLoadSuccess
-                };
-                if (debug)
-                {
-                    Debug.Log(this + "Start Loading Placement:" + bannerPlacement + " is ready " + Advertisement.IsReady(bannerPlacement));
-                    ScreenWriter.Write(this + "Start Loading Placement:" + bannerPlacement + " is ready " + Advertisement.IsReady(bannerPlacement));
-                }
                 if (position == global::BannerPosition.BOTTOM)
                 {
                     Advertisement.Banner.SetPosition(BannerPosition.BOTTOM_CENTER);
@@ -267,6 +489,18 @@
                 {
                     Advertisement.Banner.SetPosition(BannerPosition.TOP_CENTER);
                 }
+
+                BannerLoadOptions options = new BannerLoadOptions
+                {
+                    errorCallback = BannerLoadFailed,
+                    loadCallback = BannerLoadSuccess
+                };
+                if (debug)
+                {
+                    Debug.Log(this + "Start Loading Placement:" + bannerPlacement);
+                    ScreenWriter.Write(this + "Start Loading Placement:" + bannerPlacement);
+                }
+
                 Advertisement.Banner.Load(bannerPlacement, options);
             }
         }
@@ -334,104 +568,10 @@
             }
             Advertisement.Banner.Hide(true);
         }
-
-        public void OnUnityAdsReady(string placementId)
-        {
-            if (debug)
-            {
-                Debug.Log(this + "OnUnityAdsReady " + placementId);
-                ScreenWriter.Write(this + "OnUnityAdsReady " + placementId);
-            }
-        }
-
-        public void OnUnityAdsDidError(string message)
-        {
-            if (debug)
-            {
-                Debug.Log(this + "OnUnityAdsDidError " + message);
-                ScreenWriter.Write(this + "OnUnityAdsDidError " + message);
-            }
-        }
-
-        public void OnUnityAdsDidStart(string placementId)
-        {
-            if (debug)
-            {
-                Debug.Log(this + "OnUnityAdsDidStart " + placementId);
-                ScreenWriter.Write(this + "OnUnityAdsDidStart " + placementId);
-            }
-        }
-
-        public void OnUnityAdsDidFinish(string placementId, ShowResult showResult)
-        {
-            if (debug)
-            {
-                Debug.Log(this + "OnUnityAdsDidFinish " + placementId + " ShowResult " + showResult);
-                ScreenWriter.Write(this + "OnUnityAdsDidFinish " + placementId + " ShowResult " + showResult);
-            }
-
-            if (placementId == videoAdPlacement)
-            {
-                if (debug)
-                {
-                    Debug.Log(this + "Interstitial result: " + showResult);
-                    ScreenWriter.Write(this + "Interstitial result: " + showResult);
-                }
-
-                if (OnInterstitialClosed != null)
-                {
-                    OnInterstitialClosed();
-                    OnInterstitialClosed = null;
-                }
-
-                if (OnInterstitialClosedWithAdvertiser != null)
-                {
-                    OnInterstitialClosedWithAdvertiser(SupportedAdvertisers.Unity.ToString());
-                    OnInterstitialClosedWithAdvertiser = null;
-                }
-            }
-
-            if (placementId == rewardedVideoAdPlacement)
-            {
-                if (debug)
-                {
-                    Debug.Log(this + "Complete method result: " + showResult.ToString());
-                    ScreenWriter.Write(this + "Complete method result: " + showResult.ToString());
-                }
-                if (showResult == ShowResult.Finished)
-                {
-                    if (OnCompleteMethod != null)
-                    {
-                        OnCompleteMethod(true);
-                        OnCompleteMethod = null;
-                    }
-                    if (OnCompleteMethodWithAdvertiser != null)
-                    {
-                        OnCompleteMethodWithAdvertiser(true, SupportedAdvertisers.Unity.ToString());
-                        OnCompleteMethodWithAdvertiser = null;
-                    }
-                }
-                else
-                {
-                    if (OnCompleteMethod != null)
-                    {
-                        OnCompleteMethod(false);
-                        OnCompleteMethod = null;
-                    }
-                    if (OnCompleteMethodWithAdvertiser != null)
-                    {
-                        OnCompleteMethodWithAdvertiser(false, SupportedAdvertisers.Unity.ToString());
-                        OnCompleteMethodWithAdvertiser = null;
-                    }
-                }
-            }
-        }
-
-
-
+        #endregion
 #else
-    //dummy interface implementation, used when Heyzap is not enabled
-    public class CustomUnityAds : MonoBehaviour, ICustomAds
+        //dummy interface implementation
+        public class CustomUnityAds : MonoBehaviour, ICustomAds
     {
         public void HideBanner()
         {

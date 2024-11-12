@@ -37,11 +37,13 @@
         private bool initialized;
         private bool directedForChildren;
         private bool interstitialIsLoaded;
-        private bool interstitialDidClose;
         private bool bannerUsed;
         private bool rewardedVideoisLoaded;
-        private bool rewardedVideoDidClose;
         private bool triggerCompleteMethod;
+#if UNITY_ANDROID
+        private bool interstitialDidClose;
+        private bool rewardedVideoDidClose;
+#endif
 
         /// <summary>
         /// Initializing Audience Network 
@@ -65,6 +67,14 @@
 #endif
 #if UNITY_IOS
                 PlatformSettings settings = platformSettings.First(cond => cond.platform == SupportedPlatforms.iOS);
+                if(consent == UserConsent.Accept|| consent == UserConsent.Unset)
+                {
+                    AudienceNetwork.AdSettings.SetAdvertiserTrackingEnabled(true);
+                }
+                else
+                {
+                    AudienceNetwork.AdSettings.SetAdvertiserTrackingEnabled(false);
+                }
 #endif
                 //apply settings
                 interstitialId = settings.idInterstitial.id;
@@ -108,7 +118,16 @@
         /// <param name="consent"></param>
         public void UpdateConsent(UserConsent consent, UserConsent ccpaConsent)
         {
-
+#if UNITY_IOS
+            if (consent == UserConsent.Accept || consent == UserConsent.Unset)
+            {
+                AudienceNetwork.AdSettings.SetAdvertiserTrackingEnabled(true);
+            }
+            else
+            {
+                AudienceNetwork.AdSettings.SetAdvertiserTrackingEnabled(false);
+            }
+#endif
         }
 
 
@@ -444,8 +463,9 @@
                 Debug.Log(this + " " + "Reload Interstitial");
                 ScreenWriter.Write(this + " " + "Reload Interstitial");
             }
-
+#if UNITY_ANDROID
             interstitialDidClose = true;
+#endif
             if (interstitialAd != null)
             {
                 interstitialAd.Dispose();
@@ -460,7 +480,7 @@
 
 
         /// <summary>
-        /// Triggeres the corresponding complete method
+        /// Triggers the corresponding complete method
         /// </summary>
         private void CompleteMethodInterstitial()
         {
@@ -511,7 +531,9 @@
             if (interstitialAd.IsValid())
             {
                 interstitialIsLoaded = true;
+#if UNITY_ANDROID
                 interstitialDidClose = false;
+#endif
                 if (debug)
                 {
                     Debug.Log(this + " " + "Interstitial Loaded");
@@ -591,7 +613,9 @@
         /// </summary>
         private void RewardedVideoAdClosed()
         {
+#if UNITY_ANDROID
             rewardedVideoDidClose = true;
+#endif
             if (rewardedVideoAd != null)
             {
                 rewardedVideoAd.Dispose();
@@ -642,7 +666,7 @@
             }
             if (OnCompleteMethodWithAdvertiser != null)
             {
-                OnCompleteMethodWithAdvertiser(val, SupportedAdvertisers.Admob.ToString());
+                OnCompleteMethodWithAdvertiser(val, SupportedAdvertisers.Facebook.ToString());
                 OnCompleteMethodWithAdvertiser = null;
             }
         }
@@ -713,7 +737,9 @@
                     ScreenWriter.Write(this + " " + "Rewarded Video Loaded");
                 }
                 rewardedVideoisLoaded = true;
+#if UNITY_ANDROID
                 rewardedVideoDidClose = false;
+#endif
                 currentRetryRewardedVideo = 0;
             }
             else
@@ -738,8 +764,31 @@
             }
         }
         #endregion
+
+        private void OnApplicationFocus(bool focus)
+        {
+            if (focus == true)
+            {
+                if (IsInterstitialAvailable() == false)
+                {
+                    if (currentRetryInterstitial == maxRetryCount)
+                    {
+                        LoadInterstitial();
+                    }
+                }
+
+                if (IsRewardVideoAvailable() == false)
+                {
+                    if (currentRetryRewardedVideo == maxRetryCount)
+                    {
+                        LoadRewardedVideo();
+                    }
+                }
+            }
+        }
+
 #else
-        public bool BannerAlreadyUsed()
+                public bool BannerAlreadyUsed()
         {
             return false;
         }
@@ -804,5 +853,5 @@
             
         }
 #endif
-    }
+            }
 }

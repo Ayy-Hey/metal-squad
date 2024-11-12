@@ -73,7 +73,7 @@ public class Advertisements : MonoBehaviour
         }
     }
 
-    private static bool initialized;
+    public static bool initialized;
     private static GameObject go;
 
     //independent lists for each advertiser
@@ -235,123 +235,177 @@ public class Advertisements : MonoBehaviour
     {
         if (initialized == false)
         {
-            adSettings = Resources.Load<AdSettings>("AdSettingsData");
-            if (adSettings == null)
-            {
-                Debug.LogError("Gley Ads Plugin is not properly configured. Go to Window->Gley->Ads to set up the plugin. See the documentation");
-                return;
-            }
-            bannerMediation = adSettings.bannerMediation;
-            interstitialMediation = adSettings.interstitialMediation;
-            rewardedMediation = adSettings.rewardedMediation;
-            debug = adSettings.debugMode;
             initialized = true;
+#if UNITY_IOS
+#if USE_ATT
+            //App Tracking Transparency
+            var status = Unity.Advertisement.IosSupport.ATTrackingStatusBinding.GetAuthorizationTrackingStatus();
 
-            AdvertiserSettings currentAdvertiser = adSettings.advertiserSettings.FirstOrDefault(cond => cond.advertiser == SupportedAdvertisers.Admob);
-            if (currentAdvertiser != null)
+            if (status == Unity.Advertisement.IosSupport.ATTrackingStatusBinding.AuthorizationTrackingStatus.NOT_DETERMINED)
             {
-                if (currentAdvertiser.useSDK)
-                {
-                    allAdvertisers.Add(new Advertiser(go.AddComponent<CustomAdmob>(), adSettings.GetAdvertiserSettings(SupportedAdvertisers.Admob), adSettings.GetPlaftormSettings(SupportedAdvertisers.Admob)));
-                }
+                Unity.Advertisement.IosSupport.ATTrackingStatusBinding.RequestAuthorizationTracking();
             }
-
-            currentAdvertiser = adSettings.advertiserSettings.FirstOrDefault(cond => cond.advertiser == SupportedAdvertisers.Vungle);
-            if (currentAdvertiser != null)
-            {
-                if (currentAdvertiser.useSDK)
-                {
-                    allAdvertisers.Add(new Advertiser(go.AddComponent<CustomVungle>(), adSettings.GetAdvertiserSettings(SupportedAdvertisers.Vungle), adSettings.GetPlaftormSettings(SupportedAdvertisers.Vungle)));
-                }
-            }
-
-            currentAdvertiser = adSettings.advertiserSettings.FirstOrDefault(cond => cond.advertiser == SupportedAdvertisers.AdColony);
-            if (currentAdvertiser != null)
-            {
-                if (currentAdvertiser.useSDK)
-                {
-                    allAdvertisers.Add(new Advertiser(go.AddComponent<CustomAdColony>(), adSettings.GetAdvertiserSettings(SupportedAdvertisers.AdColony), adSettings.GetPlaftormSettings(SupportedAdvertisers.AdColony)));
-                }
-            }
-
-            currentAdvertiser = adSettings.advertiserSettings.FirstOrDefault(cond => cond.advertiser == SupportedAdvertisers.Chartboost);
-            if (currentAdvertiser != null)
-            {
-                if (currentAdvertiser.useSDK)
-                {
-                    allAdvertisers.Add(new Advertiser(go.AddComponent<CustomChartboost>(), adSettings.GetAdvertiserSettings(SupportedAdvertisers.Chartboost), adSettings.GetPlaftormSettings(SupportedAdvertisers.Chartboost)));
-                }
-            }
-
-            currentAdvertiser = adSettings.advertiserSettings.FirstOrDefault(cond => cond.advertiser == SupportedAdvertisers.Unity);
-            if (currentAdvertiser != null)
-            {
-                if (currentAdvertiser.useSDK)
-                {
-                    allAdvertisers.Add(new Advertiser(go.AddComponent<CustomUnityAds>(), adSettings.GetAdvertiserSettings(SupportedAdvertisers.Unity), adSettings.GetPlaftormSettings(SupportedAdvertisers.Unity)));
-                }
-            }
-
-            currentAdvertiser = adSettings.advertiserSettings.FirstOrDefault(cond => cond.advertiser == SupportedAdvertisers.Heyzap);
-            if (currentAdvertiser != null)
-            {
-                if (currentAdvertiser.useSDK)
-                {
-                    allAdvertisers.Add(new Advertiser(go.AddComponent<CustomHeyzap>(), adSettings.GetAdvertiserSettings(SupportedAdvertisers.Heyzap), adSettings.GetPlaftormSettings(SupportedAdvertisers.Heyzap)));
-                }
-            }
-
-            currentAdvertiser = adSettings.advertiserSettings.FirstOrDefault(cond => cond.advertiser == SupportedAdvertisers.AppLovin);
-            if (currentAdvertiser != null)
-            {
-                if (currentAdvertiser.useSDK)
-                {
-                    allAdvertisers.Add(new Advertiser(go.AddComponent<CustomAppLovin>(), adSettings.GetAdvertiserSettings(SupportedAdvertisers.AppLovin), adSettings.GetPlaftormSettings(SupportedAdvertisers.AppLovin)));
-                }
-            }
-
-            currentAdvertiser = adSettings.advertiserSettings.FirstOrDefault(cond => cond.advertiser == SupportedAdvertisers.Facebook);
-            if (currentAdvertiser != null)
-            {
-                if (currentAdvertiser.useSDK)
-                {
-                    allAdvertisers.Add(new Advertiser(go.AddComponent<CustomFacebook>(), adSettings.GetAdvertiserSettings(SupportedAdvertisers.Facebook), adSettings.GetPlaftormSettings(SupportedAdvertisers.Facebook)));
-                }
-            }
-
-            currentAdvertiser = adSettings.advertiserSettings.FirstOrDefault(cond => cond.advertiser == SupportedAdvertisers.MoPub);
-            if (currentAdvertiser != null)
-            {
-                if (currentAdvertiser.useSDK)
-                {
-                    allAdvertisers.Add(new Advertiser(go.AddComponent<CustomMoPub>(), adSettings.GetAdvertiserSettings(SupportedAdvertisers.MoPub), adSettings.GetPlaftormSettings(SupportedAdvertisers.MoPub)));
-                }
-            }
-
-            currentAdvertiser = adSettings.advertiserSettings.FirstOrDefault(cond => cond.advertiser == SupportedAdvertisers.IronSource);
-            if (currentAdvertiser != null)
-            {
-                if (currentAdvertiser.useSDK)
-                {
-                    allAdvertisers.Add(new Advertiser(go.AddComponent<CustomIronSource>(), adSettings.GetAdvertiserSettings(SupportedAdvertisers.IronSource), adSettings.GetPlaftormSettings(SupportedAdvertisers.IronSource)));
-                }
-            }
-
-            if (debug)
-            {
-                ScreenWriter.Write("User GDPR consent is set to: " + GetConsent(userConsent));
-                ScreenWriter.Write("User CCPA consent is set to: " + GetConsent(ccpaConsent));
-            }
-
-            for (int i = 0; i < allAdvertisers.Count; i++)
-            {
-                allAdvertisers[i].advertiserScript.InitializeAds(GetConsent(userConsent), GetConsent(ccpaConsent), allAdvertisers[i].platformSettings);
-            }
-
-            ApplySettings();
-
-            LoadFile();
+#endif
+#endif
+            StartCoroutine(WaitForConsent(ContinueInitialization));
         }
+    }
+
+    private IEnumerator WaitForConsent(UnityAction Continue)
+    {
+#if UNITY_IOS && !UNITY_EDITOR
+#if USE_ATT
+        Version ver = Version.Parse(UnityEngine.iOS.Device.systemVersion);
+        if (ver.Major >= 14)
+        {
+            var status = Unity.Advertisement.IosSupport.ATTrackingStatusBinding.GetAuthorizationTrackingStatus();
+            while (status == Unity.Advertisement.IosSupport.ATTrackingStatusBinding.AuthorizationTrackingStatus.NOT_DETERMINED)
+            {
+                status = Unity.Advertisement.IosSupport.ATTrackingStatusBinding.GetAuthorizationTrackingStatus();
+                yield return null;
+            }
+
+            switch (status)
+            {
+                case Unity.Advertisement.IosSupport.ATTrackingStatusBinding.AuthorizationTrackingStatus.AUTHORIZED:
+                    SetUserConsent(true);
+                    break;
+                case Unity.Advertisement.IosSupport.ATTrackingStatusBinding.AuthorizationTrackingStatus.DENIED:
+                    SetUserConsent(false);
+                    break;
+                default:
+                    SetUserConsent(true);
+                    break;
+            }
+        }
+#endif
+#endif
+        if (Continue!=null)
+        {
+            Continue();
+        }
+        yield return null;
+    }
+
+
+    private void ContinueInitialization()
+    {
+        adSettings = Resources.Load<AdSettings>("AdSettingsData");
+        if (adSettings == null)
+        {
+            Debug.LogError("Gley Ads Plugin is not properly configured. Go to Window->Gley->Ads to set up the plugin. See the documentation");
+            return;
+        }
+        bannerMediation = adSettings.bannerMediation;
+        interstitialMediation = adSettings.interstitialMediation;
+        rewardedMediation = adSettings.rewardedMediation;
+        debug = adSettings.debugMode;
+        initialized = true;
+
+        AdvertiserSettings currentAdvertiser = adSettings.advertiserSettings.FirstOrDefault(cond => cond.advertiser == SupportedAdvertisers.Admob);
+        if (currentAdvertiser != null)
+        {
+            if (currentAdvertiser.useSDK)
+            {
+                allAdvertisers.Add(new Advertiser(go.AddComponent<CustomAdmob>(), adSettings.GetAdvertiserSettings(SupportedAdvertisers.Admob), adSettings.GetPlaftormSettings(SupportedAdvertisers.Admob)));
+            }
+        }
+
+        currentAdvertiser = adSettings.advertiserSettings.FirstOrDefault(cond => cond.advertiser == SupportedAdvertisers.Vungle);
+        if (currentAdvertiser != null)
+        {
+            if (currentAdvertiser.useSDK)
+            {
+                allAdvertisers.Add(new Advertiser(go.AddComponent<CustomVungle>(), adSettings.GetAdvertiserSettings(SupportedAdvertisers.Vungle), adSettings.GetPlaftormSettings(SupportedAdvertisers.Vungle)));
+            }
+        }
+
+        currentAdvertiser = adSettings.advertiserSettings.FirstOrDefault(cond => cond.advertiser == SupportedAdvertisers.AdColony);
+        if (currentAdvertiser != null)
+        {
+            if (currentAdvertiser.useSDK)
+            {
+                allAdvertisers.Add(new Advertiser(go.AddComponent<CustomAdColony>(), adSettings.GetAdvertiserSettings(SupportedAdvertisers.AdColony), adSettings.GetPlaftormSettings(SupportedAdvertisers.AdColony)));
+            }
+        }
+
+        currentAdvertiser = adSettings.advertiserSettings.FirstOrDefault(cond => cond.advertiser == SupportedAdvertisers.Chartboost);
+        if (currentAdvertiser != null)
+        {
+            if (currentAdvertiser.useSDK)
+            {
+                allAdvertisers.Add(new Advertiser(go.AddComponent<CustomChartboost>(), adSettings.GetAdvertiserSettings(SupportedAdvertisers.Chartboost), adSettings.GetPlaftormSettings(SupportedAdvertisers.Chartboost)));
+            }
+        }
+
+        currentAdvertiser = adSettings.advertiserSettings.FirstOrDefault(cond => cond.advertiser == SupportedAdvertisers.Unity);
+        if (currentAdvertiser != null)
+        {
+            if (currentAdvertiser.useSDK)
+            {
+                allAdvertisers.Add(new Advertiser(go.AddComponent<CustomUnityAds>(), adSettings.GetAdvertiserSettings(SupportedAdvertisers.Unity), adSettings.GetPlaftormSettings(SupportedAdvertisers.Unity)));
+            }
+        }
+
+        currentAdvertiser = adSettings.advertiserSettings.FirstOrDefault(cond => cond.advertiser == SupportedAdvertisers.Heyzap);
+        if (currentAdvertiser != null)
+        {
+            if (currentAdvertiser.useSDK)
+            {
+                allAdvertisers.Add(new Advertiser(go.AddComponent<CustomHeyzap>(), adSettings.GetAdvertiserSettings(SupportedAdvertisers.Heyzap), adSettings.GetPlaftormSettings(SupportedAdvertisers.Heyzap)));
+            }
+        }
+
+        currentAdvertiser = adSettings.advertiserSettings.FirstOrDefault(cond => cond.advertiser == SupportedAdvertisers.AppLovin);
+        if (currentAdvertiser != null)
+        {
+            if (currentAdvertiser.useSDK)
+            {
+                allAdvertisers.Add(new Advertiser(go.AddComponent<CustomAppLovin>(), adSettings.GetAdvertiserSettings(SupportedAdvertisers.AppLovin), adSettings.GetPlaftormSettings(SupportedAdvertisers.AppLovin)));
+            }
+        }
+
+        currentAdvertiser = adSettings.advertiserSettings.FirstOrDefault(cond => cond.advertiser == SupportedAdvertisers.Facebook);
+        if (currentAdvertiser != null)
+        {
+            if (currentAdvertiser.useSDK)
+            {
+                allAdvertisers.Add(new Advertiser(go.AddComponent<CustomFacebook>(), adSettings.GetAdvertiserSettings(SupportedAdvertisers.Facebook), adSettings.GetPlaftormSettings(SupportedAdvertisers.Facebook)));
+            }
+        }
+
+        currentAdvertiser = adSettings.advertiserSettings.FirstOrDefault(cond => cond.advertiser == SupportedAdvertisers.MoPub);
+        if (currentAdvertiser != null)
+        {
+            if (currentAdvertiser.useSDK)
+            {
+                allAdvertisers.Add(new Advertiser(go.AddComponent<CustomMoPub>(), adSettings.GetAdvertiserSettings(SupportedAdvertisers.MoPub), adSettings.GetPlaftormSettings(SupportedAdvertisers.MoPub)));
+            }
+        }
+
+        currentAdvertiser = adSettings.advertiserSettings.FirstOrDefault(cond => cond.advertiser == SupportedAdvertisers.IronSource);
+        if (currentAdvertiser != null)
+        {
+            if (currentAdvertiser.useSDK)
+            {
+                allAdvertisers.Add(new Advertiser(go.AddComponent<CustomIronSource>(), adSettings.GetAdvertiserSettings(SupportedAdvertisers.IronSource), adSettings.GetPlaftormSettings(SupportedAdvertisers.IronSource)));
+            }
+        }
+
+        if (debug)
+        {
+            ScreenWriter.Write("User GDPR consent is set to: " + GetConsent(userConsent));
+            ScreenWriter.Write("User CCPA consent is set to: " + GetConsent(ccpaConsent));
+        }
+
+        for (int i = 0; i < allAdvertisers.Count; i++)
+        {
+            allAdvertisers[i].advertiserScript.InitializeAds(GetConsent(userConsent), GetConsent(ccpaConsent), allAdvertisers[i].platformSettings);
+        }
+
+        ApplySettings();
+
+        LoadFile();
     }
 
 

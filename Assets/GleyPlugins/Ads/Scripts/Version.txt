@@ -1,5 +1,5 @@
 {
-    "assetName": 0,
-    "longVersion": "1.9.15",
-    "shortVersion": 16
+    "folderName": "Ads",
+    "longVersion": "1.10.12",
+    "shortVersion": 14
 }

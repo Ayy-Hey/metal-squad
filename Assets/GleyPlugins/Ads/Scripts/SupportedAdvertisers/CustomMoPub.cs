@@ -38,7 +38,7 @@
         /// </summary>
         /// <param name="consent">user consent -> if true show personalized ads</param>
         /// <param name="platformSettings">contains all required settings for this publisher</param>
-        public void InitializeAds(UserConsent consent, UserConsent ccpaConsent,List<PlatformSettings> platformSettings)
+        public void InitializeAds(UserConsent consent, UserConsent ccpaConsent, List<PlatformSettings> platformSettings)
         {
             debug = Advertisements.Instance.debug;
             if (initialized == false)
@@ -558,6 +558,28 @@
             currentRetryRewardedVideo = 0;
         }
         #endregion
+
+        private void OnApplicationFocus(bool focus)
+        {
+            if (focus == true)
+            {
+                if (IsInterstitialAvailable() == false)
+                {
+                    if (currentRetryInterstitial == maxRetryCount)
+                    {
+                        LoadInterstitial();
+                    }
+                }
+
+                if (IsRewardVideoAvailable() == false)
+                {
+                    if (currentRetryRewardedVideo == maxRetryCount)
+                    {
+                        LoadRewardedVideo();
+                    }
+                }
+            }
+        }
 
 #else
         public bool BannerAlreadyUsed()

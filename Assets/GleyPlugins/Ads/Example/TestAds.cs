@@ -23,6 +23,10 @@ public class TestAds : MonoBehaviour
         //if consent was not set display 2 buttons to get it and a message to inform the user about what he can do
         if (!Advertisements.Instance.UserConsentWasSet())
         {
+#if UNITY_IOS
+            
+            Advertisements.Instance.Initialize();
+#else
             GUI.Label(new Rect(0, 0, Screen.width, Screen.height), "Do you prefer random ads in your app or ads relevant to you? If you choose Random no personalized data will be collected. If you choose personal all data collected will be used only to serve ads relevant to you.");
             if (GUI.Button(new Rect(buttonWidth, Screen.height - 5 * buttonHeight, buttonWidth, buttonHeight), "Personalized"))
             {
@@ -35,6 +39,7 @@ public class TestAds : MonoBehaviour
                 Advertisements.Instance.SetUserConsent(false);
                 Advertisements.Instance.Initialize();
             }
+#endif
         }
         //if consent was set, display buttons for ads
         else
@@ -109,7 +114,7 @@ public class TestAds : MonoBehaviour
                 bottom = !bottom;
             }
 
-            #region ForEasyDebugPurpose
+#region ForEasyDebugPurpose
             if (showDetails)
             {
                 int nr = 0;
@@ -152,7 +157,7 @@ public class TestAds : MonoBehaviour
                 }
 
             }
-            #endregion
+#endregion
         }
     }
 

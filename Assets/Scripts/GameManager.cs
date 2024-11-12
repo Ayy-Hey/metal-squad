@@ -33,7 +33,6 @@ public class GameManager : MonoBehaviour
 
 	private IEnumerator Start()
 	{
-		AdmobManager.Instance.RequestInterstitial();
 		this.ListEnemy = new List<BaseEnemy>();
 		GameManager.isPlay = true;
 		try

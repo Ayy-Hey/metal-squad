@@ -5,21 +5,27 @@
     using UnityEngine;
 #if USE_VUNGLE
     using System.Linq;
+    using System.Collections;
 #endif
 
-    public class CustomVungle :MonoBehaviour, ICustomAds
+    public class CustomVungle : MonoBehaviour, ICustomAds
     {
 #if USE_VUNGLE
-        UnityAction<bool> OnCompleteMethod;
-        UnityAction<bool,string> OnCompleteMethodWithAdvertiser;
-        UnityAction OnInterstitialClosed;
-        UnityAction<string> OnInterstitialClosedWithAdvertiser;
-        UserConsent consent;
-        string appID = "";
-        string rewardedPlacementId = "";
-        string interstitialPlacementID = "";
-        bool debug;
-        bool initComplete;
+        private UnityAction<bool> OnCompleteMethod;
+        private UnityAction<bool, string> OnCompleteMethodWithAdvertiser;
+        private UnityAction OnInterstitialClosed;
+        private UnityAction<string> OnInterstitialClosedWithAdvertiser;
+        private UnityAction<bool, BannerPosition, BannerType> DisplayResult;
+        private UserConsent consent;
+        private BannerPosition currentPosition;
+        private BannerType bannerType;
+        private string appID = "";
+        private string rewardedPlacementId = "";
+        private string interstitialPlacementID = "";
+        private string bannerPlacementID = "";
+        private bool debug;
+        private bool initComplete;
+        private bool bannerUsed;
 
 
         /// <summary>
@@ -44,6 +50,7 @@
             appID = settings.appId.id;
             rewardedPlacementId = settings.idRewarded.id;
             interstitialPlacementID = settings.idInterstitial.id;
+            bannerPlacementID = settings.idBanner.id;
 
             //verify settings
             if (debug)
@@ -66,13 +73,17 @@
             };
 
             string[] array = new string[placements.Keys.Count];
-            placements.Keys.CopyTo(array, 0);
-            Vungle.init(appID);
-            Vungle.onInitializeEvent += InitCOmplete;
+            placements.Keys.CopyTo(array, 0);            
+            Vungle.onInitializeEvent += InitComplete;
+            Vungle.onAdStartedEvent += AdStarted;
             Vungle.onLogEvent += VungleLog;
-            Vungle.onAdFinishedEvent += Vungle_onAdFinishedEvent;
+            Vungle.onAdEndEvent = OnAdEnd;
+            Vungle.onAdRewardedEvent += OnAdRewarded;
+            Vungle.onErrorEvent += OnErrorEvent;
+            Vungle.onPlacementPreparedEvent += OnPlacementPreparedEvent;
+            Vungle.adPlayableEvent += AdPlayableEvent;
+            Vungle.init(appID);
         }
-
 
         /// <summary>
         /// Updates consent at runtime
@@ -93,62 +104,93 @@
                     break;
             }
 
+            switch (ccpaConsent)
+            {
+                case UserConsent.Unset:
+                    Vungle.updateCCPAStatus(Vungle.Consent.Undefined);
+                    break;
+                case UserConsent.Accept:
+                    Vungle.updateCCPAStatus(Vungle.Consent.Accepted);
+                    break;
+                case UserConsent.Deny:
+                    Vungle.updateCCPAStatus(Vungle.Consent.Denied);
+                    break;
+            }
+
             Debug.Log(this + " Update consent to " + consent);
             ScreenWriter.Write(this + " Update consent to " + consent);
         }
 
+        #region Banner
+        public void ShowBanner(BannerPosition position, BannerType bannerType, UnityAction<bool, BannerPosition, BannerType> DisplayResult)
+        {
+            currentPosition = position;
+            this.bannerType = bannerType;
+            this.DisplayResult = DisplayResult;
+            bannerUsed = true;
+            if (position == BannerPosition.TOP)
+            {
+                Vungle.loadBanner(bannerPlacementID, Vungle.VungleBannerSize.VungleAdSizeBanner, Vungle.VungleBannerPosition.TopCenter);
+            }
+            else
+            {
+                Vungle.loadBanner(bannerPlacementID, Vungle.VungleBannerSize.VungleAdSizeBanner, Vungle.VungleBannerPosition.BottomCenter);
+            }
 
-        /// <summary>
-        /// VUngle specific log event
-        /// </summary>
-        /// <param name="obj"></param>
-        private void VungleLog(string obj)
+            StartCoroutine(WaitForBanner());
+        }
+
+        IEnumerator WaitForBanner()
+        {
+            while (Vungle.isAdvertAvailable(bannerPlacementID, Vungle.VungleBannerSize.VungleAdSizeBanner) == false)
+            {
+                yield return new WaitForSeconds(0.5f);
+            }
+            Vungle.showBanner(bannerPlacementID);
+            BannerShown();
+        }
+
+        void BannerShown()
         {
             if (debug)
             {
-                ScreenWriter.Write(this + " " + obj);
+                Debug.Log(this + " banner ad shown");
+                ScreenWriter.Write(this + " banner ad shown");
+            }
+
+            if (DisplayResult != null)
+            {
+                DisplayResult(true, currentPosition, bannerType);
+                DisplayResult = null;
             }
         }
 
-
-        /// <summary>
-        /// Vungle specific event triggered after initialization is done
-        /// </summary>
-        private void InitCOmplete()
+        public void ResetBannerUsage()
         {
-           
-            initComplete = true;
-            Vungle.onInitializeEvent -= InitCOmplete;
-
-            switch (consent)
-            {
-                case UserConsent.Unset:
-                    Vungle.updateConsentStatus(Vungle.Consent.Undefined);
-                    break;
-                case UserConsent.Accept:
-                    Vungle.updateConsentStatus(Vungle.Consent.Accepted);
-                    break;
-                case UserConsent.Deny:
-                    Vungle.updateConsentStatus(Vungle.Consent.Denied);
-                    break;
-            }
-
-            //load ads
-            if (!string.IsNullOrEmpty(interstitialPlacementID))
-            {
-                Vungle.loadAd(interstitialPlacementID);
-            }
-            if (!string.IsNullOrEmpty(rewardedPlacementId))
-            {
-                Vungle.loadAd(rewardedPlacementId);
-            }
-            if (debug)
-            {
-                ScreenWriter.Write(this + " " + "Init Complete");
-            }
+            bannerUsed = false;
         }
 
 
+        public bool BannerAlreadyUsed()
+        {
+            return bannerUsed;
+        }
+
+
+        public bool IsBannerAvailable()
+        {
+            return true;
+        }
+
+
+        public void HideBanner()
+        {
+            StopAllCoroutines();
+            Vungle.closeBanner(bannerPlacementID);
+        }
+        #endregion
+
+        #region Interstitial
         /// <summary>
         /// Check if Vungle interstitial is available
         /// </summary>
@@ -187,8 +229,9 @@
                 Vungle.playAd(interstitialPlacementID);
             }
         }
+        #endregion
 
-
+        #region RewardedVideo
         /// <summary>
         /// Check if Vungle rewarded video is available
         /// </summary>
@@ -219,7 +262,7 @@
         /// Show Vungle rewarded video
         /// </summary>
         /// <param name="CompleteMethod">callback called when user closes the rewarded video -> if true video was not skipped</param>
-        public void ShowRewardVideo(UnityAction<bool,string> CompleteMethod)
+        public void ShowRewardVideo(UnityAction<bool, string> CompleteMethod)
         {
             if (IsRewardVideoAvailable())
             {
@@ -227,46 +270,97 @@
                 Vungle.playAd(rewardedPlacementId);
             }
         }
+        #endregion
 
-
+        #region Events
         /// <summary>
-        /// Vungle specific event triggered every time a video is closed
+        /// Vungle specific event triggered after initialization is done
         /// </summary>
-        /// <param name="placementID"></param>
-        /// <param name="status"></param>
-        private void Vungle_onAdFinishedEvent(string placementID, AdFinishedEventArgs status)
+        private void InitComplete()
         {
+
+            initComplete = true;
+            Vungle.onInitializeEvent -= InitComplete;
+
+            switch (consent)
+            {
+                case UserConsent.Unset:
+                    Vungle.updateConsentStatus(Vungle.Consent.Undefined);
+                    break;
+                case UserConsent.Accept:
+                    Vungle.updateConsentStatus(Vungle.Consent.Accepted);
+                    break;
+                case UserConsent.Deny:
+                    Vungle.updateConsentStatus(Vungle.Consent.Denied);
+                    break;
+            }
+
+            //load ads
+            if (!string.IsNullOrEmpty(interstitialPlacementID))
+            {
+                Vungle.loadAd(interstitialPlacementID);
+            }
+            if (!string.IsNullOrEmpty(rewardedPlacementId))
+            {
+                Vungle.loadAd(rewardedPlacementId);
+            }
+            if (debug)
+            {
+                ScreenWriter.Write(this + " " + "Init Complete");
+            }
+        }
+
+
+        private void OnAdRewarded(string placementID)
+        {
+            if (debug)
+            {
+                ScreenWriter.Write(this + " OnAdRewarded " + placementID);
+            }
+
             if (placementID == rewardedPlacementId)
             {
-                if (status.IsCompletedView)
+                if (OnCompleteMethod != null)
                 {
-                    if (OnCompleteMethod != null)
-                    {
-                        OnCompleteMethod(true);
-                        OnCompleteMethod = null;
-                    }
-                    if (OnCompleteMethodWithAdvertiser != null)
-                    {
-                        OnCompleteMethodWithAdvertiser(true,SupportedAdvertisers.Vungle.ToString());
-                        OnCompleteMethodWithAdvertiser = null;
-                    }
+                    OnCompleteMethod(true);
+                    OnCompleteMethod = null;
                 }
-                else
+                if (OnCompleteMethodWithAdvertiser != null)
                 {
-                    if (OnCompleteMethod != null)
-                    {
-                        OnCompleteMethod(false);
-                        OnCompleteMethod = null;
-                    }
-                    if (OnCompleteMethodWithAdvertiser != null)
-                    {
-                        OnCompleteMethodWithAdvertiser(false, SupportedAdvertisers.Vungle.ToString());
-                        OnCompleteMethodWithAdvertiser = null;
-                    }
+                    OnCompleteMethodWithAdvertiser(true, SupportedAdvertisers.Vungle.ToString());
+                    OnCompleteMethodWithAdvertiser = null;
+                }
+            }
+        }
+
+
+        private void OnAdEnd(string placementID)
+        {
+            if (debug)
+            {
+                ScreenWriter.Write(this + " OnAdEnd " + placementID);
+            }
+
+            if (placementID == rewardedPlacementId)
+            {
+                if (OnCompleteMethod != null)
+                {
+                    OnCompleteMethod(false);
+                    OnCompleteMethod = null;
+                }
+                if (OnCompleteMethodWithAdvertiser != null)
+                {
+                    OnCompleteMethodWithAdvertiser(false, SupportedAdvertisers.Vungle.ToString());
+                    OnCompleteMethodWithAdvertiser = null;
+                }
+                if (debug)
+                {
+                    ScreenWriter.Write(this + " Load another ad " + placementID);
                 }
                 Vungle.loadAd(rewardedPlacementId);
             }
-            else
+
+            if (placementID == interstitialPlacementID)
             {
                 if (OnInterstitialClosed != null)
                 {
@@ -279,38 +373,87 @@
                     OnInterstitialClosedWithAdvertiser(SupportedAdvertisers.Vungle.ToString());
                     OnInterstitialClosedWithAdvertiser = null;
                 }
+                if (debug)
+                {
+                    ScreenWriter.Write(this + " Load another ad " + placementID);
+                }
+
                 Vungle.loadAd(interstitialPlacementID);
             }
         }
 
-
-        //vungle does not support banner ads
-        public void ShowBanner(BannerPosition position, BannerType bannerType, UnityAction<bool, BannerPosition, BannerType> DisplayResult)
+        private void AdPlayableEvent(string placementID, bool adPlayable)
         {
-
-        }
-
-        public void ResetBannerUsage()
-        {
+            if (debug)
+            {
+                ScreenWriter.Write(this + " Ad's playable state has been changed! placementID " + placementID + ". Now: " + adPlayable);
+            }
         }
 
 
-        public bool BannerAlreadyUsed()
+        private void OnPlacementPreparedEvent(string arg1, string arg2)
         {
-            return true;
+            if (debug)
+            {
+                ScreenWriter.Write(this + " OnPlacementPreparedEvent " + arg1 + " " + arg2);
+            }
         }
 
 
-        public bool IsBannerAvailable()
+        private void OnErrorEvent(string message)
         {
-            return false;
+            if (debug)
+            {
+                ScreenWriter.Write(this + " OnErrorEvent -> " + message);
+            }
+
+            if (message.Contains(bannerPlacementID))
+            {
+                if (DisplayResult != null)
+                {
+                    DisplayResult(false, currentPosition, bannerType);
+                    DisplayResult = null;
+                }
+                StopAllCoroutines();
+            }
+
         }
 
 
-        public void HideBanner()
+        private void AdStarted(string placementID)
         {
-
+            if (debug)
+            {
+                ScreenWriter.Write(this + " AdStarted " + placementID);
+            }
         }
+
+
+        /// <summary>
+        /// VUngle specific log event
+        /// </summary>
+        /// <param name="obj"></param>
+        private void VungleLog(string obj)
+        {
+            if (debug)
+            {
+                ScreenWriter.Write(this + " " + obj);
+            }
+        }
+
+        private void OnApplicationFocus(bool focus)
+        {
+            if (focus == true)
+            {
+                if(initComplete==false)
+                {
+                    Vungle.init(appID);
+                }
+            }
+        }
+
+        #endregion
+
 #else
         //dummy interface implementation, used when Vungle is not enabled
         public void HideBanner()

@@ -19,11 +19,14 @@
         public bool usePlaymaker = false;
         public bool useBolt=false;
         public bool useGameflow = false;
+        public bool enableATT = false;
+        public string nativePopupText= "We will use your data to provide a better and personalized ad experience.";
         public SupportedMediation bannerMediation = SupportedMediation.OrderMediation;
         public SupportedMediation interstitialMediation = SupportedMediation.OrderMediation;
         public SupportedMediation rewardedMediation = SupportedMediation.OrderMediation;
 
         public string externalFileUrl = "Paste your external config file url here";
+
 
         public MediationSettings GetAdvertiserSettings(SupportedAdvertisers advertiser)
         {
