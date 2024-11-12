@@ -798,7 +798,7 @@ public class PopupWinLost : MonoBehaviour
 			if (emode2 == GameMode.Mode.NORMAL)
 			{
 				FireBaseManager.Instance.LogEvent(FireBaseManager.LEVEL_MARKETING + (int)GameManager.Instance.Level);
-			//	InAppManager.Instance.FlyerTrackingEvent(FireBaseManager.LEVEL_MARKETING, (int)GameManager.Instance.Level + string.Empty);
+				InAppManager.Instance.FlyerTrackingEvent(FireBaseManager.LEVEL_MARKETING, (int)GameManager.Instance.Level + string.Empty);
 			}
 			for (int m = 0; m < 3; m++)
 			{

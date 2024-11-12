@@ -12,7 +12,6 @@ public class FormMainMenu : FormBase
 {
 	private void Start()
 	{
-		AdmobManager.Instance.RequestInterstitial();
 		if (AdmobManager.Instance.isTest && ProfileManager.unlockAll)
 		{
 			return;
@@ -56,7 +55,7 @@ public class FormMainMenu : FormBase
 			PlayerPrefs.SetInt("metal.squad.savedailylogin2", PlayerPrefs.GetInt("metal.squad.savedailylogin2", 0) + 1);
 			
 			FireBaseManager.Instance.LogEvent(FireBaseManager.DAILYGIFT_MARKETING + PlayerPrefs.GetInt("metal.squad.savedailylogin2", 0));
-		//	InAppManager.Instance.FlyerTrackingEvent(FireBaseManager.DAILYGIFT_MARKETING, PlayerPrefs.GetInt("metal.squad.savedailylogin2", 0) + string.Empty);
+			InAppManager.Instance.FlyerTrackingEvent(FireBaseManager.DAILYGIFT_MARKETING, PlayerPrefs.GetInt("metal.squad.savedailylogin2", 0) + string.Empty);
 		}
 		Singleton<CrossAdsManager>.Instance.HideFloatAds();
 		AchievementManager.Instance.MissionWeaponShop(null);

@@ -22,14 +22,14 @@ public class VipPopup : PopupBase
 		base.Show();
 		this._vipLevel = (int)ProfileManager.inAppProfile.vipProfile.level;
 		FireBaseManager.Instance.LogEvent(FireBaseManager.VIPGET_MARKETING + Math.Max(0, this._vipLevel));
-		//InAppManager.Instance.FlyerTrackingEvent(FireBaseManager.VIPGET_MARKETING, Math.Max(0, this._vipLevel) + string.Empty);
+		InAppManager.Instance.FlyerTrackingEvent(FireBaseManager.VIPGET_MARKETING, Math.Max(0, this._vipLevel) + string.Empty);
 		this.CheckReward();
 		this.ShowCurrentInfo();
 		this.ShowVipPanel();
 		string text = string.Empty;
 		try
 		{
-			//text = InAppManager.Instance.GetPrice(InAppManager.Instance.ListSkuCurrent[0]);
+			text = InAppManager.Instance.GetPrice(InAppManager.Instance.ListSkuCurrent[0]);
 		}
 		catch
 		{

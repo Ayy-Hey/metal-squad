@@ -8,16 +8,16 @@ public class BestSale : MonoBehaviour
 	public void OnShow(Action OnPurchaseSuccess)
 	{
 		base.gameObject.SetActive(true);
-		// this.OnPurchaseSuccess = OnPurchaseSuccess;
-		// string text = InAppManager.Instance.GetPrice(InAppManager.Instance.GetSku(this.sku_sale));
-		// string text2 = InAppManager.Instance.GetPrice(InAppManager.Instance.GetSku(this.sku_not_sale));
-		// if (string.IsNullOrEmpty(text) || ProfileManager.unlockAll)
-		// {
-		// 	text = InAppManager.Instance.usdList[(int)this.sku_sale];
-		// 	text2 = InAppManager.Instance.usdList[(int)this.sku_not_sale];
-		// }
-		// this.txtUSDSale.text = text;
-		// this.txtUSDNotSale.text = text2;
+		this.OnPurchaseSuccess = OnPurchaseSuccess;
+		string text = InAppManager.Instance.GetPrice(InAppManager.Instance.GetSku(this.sku_sale));
+		string text2 = InAppManager.Instance.GetPrice(InAppManager.Instance.GetSku(this.sku_not_sale));
+		if (string.IsNullOrEmpty(text) || ProfileManager.unlockAll)
+		{
+			text = InAppManager.Instance.usdList[(int)this.sku_sale];
+			text2 = InAppManager.Instance.usdList[(int)this.sku_not_sale];
+		}
+		this.txtUSDSale.text = text;
+		this.txtUSDNotSale.text = text2;
 	}
 
 	public void OnClose()
@@ -27,13 +27,13 @@ public class BestSale : MonoBehaviour
 
 	public void OnPurchase()
 	{
-		// InAppManager.Instance.PurchaseProduct(InAppManager.Instance.ListSkuCurrent[(int)this.sku_sale], delegate(InAppManager.InforCallback callback)
-		// {
-		// 	if (callback.isSuccess && this.OnPurchaseSuccess != null)
-		// 	{
-		// 		this.OnPurchaseSuccess();
-		// 	}
-		// });
+		InAppManager.Instance.PurchaseProduct(InAppManager.Instance.ListSkuCurrent[(int)this.sku_sale], delegate(InAppManager.InforCallback callback)
+		{
+			if (callback.isSuccess && this.OnPurchaseSuccess != null)
+			{
+				this.OnPurchaseSuccess();
+			}
+		});
 		string parameterValue = "GamePlay";
 		try
 		{
@@ -65,9 +65,9 @@ public class BestSale : MonoBehaviour
 		}
 	}
 
-	// public InAppManager.SKU sku_not_sale;
-	//
-	// public InAppManager.SKU sku_sale;
+	public InAppManager.SKU sku_not_sale;
+	
+	public InAppManager.SKU sku_sale;
 
 	public Text txtTimeCountdown;
 

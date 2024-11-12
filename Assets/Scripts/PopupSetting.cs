@@ -254,7 +254,7 @@ public class PopupSetting : PopupBase
 			{
 				if (callback)
 				{
-	//				InAppManager.Instance.RestorePurchases();
+					InAppManager.Instance.RestorePurchases();
 				}
 			}, 1, PopupManager.Instance.GetText(Localization0.Do_you_agree_with_the_restoration, null), PopupManager.Instance.GetText(Localization0.Restore_purchased_items, null));
 		}

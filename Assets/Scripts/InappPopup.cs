@@ -52,7 +52,7 @@ public class InappPopup : PopupBase
 			string text = string.Empty;
 			try
 			{
-		//		text = InAppManager.Instance.GetPrice(InAppManager.Instance.ListSkuCurrent[0]);
+				text = InAppManager.Instance.GetPrice(InAppManager.Instance.ListSkuCurrent[0]);
 			}
 			catch
 			{
@@ -113,23 +113,23 @@ public class InappPopup : PopupBase
 	public void Buy(InappPackage package)
 	{
 		AudioClick.Instance.OnClick();
-		// string sku = InAppManager.Instance.GetSku(package.SKU);
-		// InAppManager.Instance.PurchaseProduct(sku, delegate(InAppManager.InforCallback callback)
-		// {
-		// 	if (callback.isSuccess)
-		// 	{
-		// 		string parameterValue = "GamePlay";
-		// 		try
-		// 		{
-		// 			parameterValue = MenuManager.Instance.GetNameForm(MenuManager.Instance.formCurrent.idForm);
-		// 		}
-		// 		catch
-		// 		{
-		// 		}
-		// 		
-		// 	}
-		// 	this.ShowCoin();
-		// });
+		string sku = InAppManager.Instance.GetSku(package.SKU);
+		InAppManager.Instance.PurchaseProduct(sku, delegate(InAppManager.InforCallback callback)
+		{
+			if (callback.isSuccess)
+			{
+				string parameterValue = "GamePlay";
+				try
+				{
+					parameterValue = MenuManager.Instance.GetNameForm(MenuManager.Instance.formCurrent.idForm);
+				}
+				catch
+				{
+				}
+				
+			}
+			this.ShowCoin();
+		});
 	}
 
 	public void BuyCoin(InappPackage package)
