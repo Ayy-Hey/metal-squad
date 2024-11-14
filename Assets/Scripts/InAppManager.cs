@@ -30,6 +30,16 @@ public class InAppManager : MonoBehaviour
     {
         IAPManager.OnPurchaseCompleted += ProcessPurchase;
         IAPManager.OnPurchaseFailed += OnPurchaseFailed;
+
+        var i = 0;
+        var ids = "";
+        foreach (var item in this.skuListAndroid)
+        {
+            var id = $"{i} :  {item} \n";
+            ids += id;
+            i++;
+        }
+        Debug.Log(ids);
     }
 
     private void OnDisable()
