@@ -14,7 +14,14 @@ public class PreGameOverEnd : MonoBehaviour
 			this.isOnEnd = true;
 			if (PreGameOver.Instance.OnEnded != null)
 			{
+				AdmobManager.Instance?.ShowInterstitial(() =>
+				{
+					
+				});
+				
 				PreGameOver.Instance.OnEnded();
+				
+				
 			}
 			base.gameObject.SetActive(false);
 		}
