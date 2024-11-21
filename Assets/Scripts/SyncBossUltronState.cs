@@ -5,9 +5,9 @@ using Photon.Realtime;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class SyncBossUltronState : MonoBehaviourPunCallbacks
+public class SyncBossUltronState /*: MonoBehaviourPunCallbacks*/
 {
-	private IEnumerator Start()
+	/*private IEnumerator Start()
 	{
 		yield return new WaitUntil(() => this.targetBoss != null);
 		UnityEngine.Debug.Log("++++++++++++++++ SyncBossUltronState Start");
@@ -136,29 +136,29 @@ public class SyncBossUltronState : MonoBehaviourPunCallbacks
 	[PunRPC]
 	public void RemoteCreateSkyStone(byte[] byteArray)
 	{
-		NetworkReader networkReader = new NetworkReader(byteArray);
-		Vector2 pos = this.DecompressVector2(networkReader);
-		this.targetBoss.CreateRemoteSkyStone(pos);
+		//NetworkReader networkReader = new NetworkReader(byteArray);
+		// Vector2 pos = this.DecompressVector2(networkReader);
+		// this.targetBoss.CreateRemoteSkyStone(pos);
 	}
 
-	public void CompressVector2(NetworkWriter networkWriter, Vector2 vec)
-	{
-		networkWriter.Write(HalfHelper.Compress(vec.x));
-		networkWriter.Write(HalfHelper.Compress(vec.y));
-	}
-
-	public Vector2 DecompressVector2(NetworkReader networkReader)
-	{
-		return new Vector2
-		{
-			x = HalfHelper.Decompress(networkReader.ReadUInt16()),
-			y = HalfHelper.Decompress(networkReader.ReadUInt16())
-		};
-	}
+	// public void CompressVector2(NetworkWriter networkWriter, Vector2 vec)
+	// {
+	// 	networkWriter.Write(HalfHelper.Compress(vec.x));
+	// 	networkWriter.Write(HalfHelper.Compress(vec.y));
+	// }
+	//
+	// public Vector2 DecompressVector2(NetworkReader networkReader)
+	// {
+	// 	return new Vector2
+	// 	{
+	// 		x = HalfHelper.Decompress(networkReader.ReadUInt16()),
+	// 		y = HalfHelper.Decompress(networkReader.ReadUInt16())
+	// 	};
+	// }
 
 	private bool IsInit;
 
 	private PhotonView m_photonView;
 
-	public Boss_Ultron targetBoss;
+	public Boss_Ultron targetBoss;*/
 }

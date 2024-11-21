@@ -74,7 +74,7 @@ public class ItemGun : CachingMonoBehaviour
 		{
 			if (!component.IsRemotePlayer && component.syncRamboState != null)
 			{
-				component.syncRamboState.SendRpc_SwitchGun(false, this.ID);
+				// component.syncRamboState.SendRpc_SwitchGun(false, this.ID);
 				component._PlayerInput.SwitchGun(false);
 			}
 		}

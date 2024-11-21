@@ -5,8 +5,9 @@ using UnityEngine.Networking;
 
 namespace Smooth
 {
-	public class NetworkStatePUN2 : MessageBase
+	public class NetworkStatePUN2 /*: MessageBase*/
 	{
+		/*
 		public NetworkStatePUN2()
 		{
 		}
@@ -545,6 +546,7 @@ namespace Smooth
 		{
 			return (syncInformation & this.atRotationalRestMask) == this.atRotationalRestMask;
 		}
+		*/
 
 		public SmoothSyncPUN2 smoothSync;
 

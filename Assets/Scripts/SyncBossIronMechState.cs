@@ -38,51 +38,51 @@ public class SyncBossIronMechState : MonoBehaviourPunCallbacks
 			" targetActorNumber ",
 			targetActorNumber
 		}));
-		NetworkWriter networkWriter = new NetworkWriter();
-		networkWriter.WritePackedUInt32((uint)state);
-		networkWriter.WritePackedUInt32((uint)targetActorNumber);
-		base.photonView.RPC("RemoteBoss_ChanState", RpcTarget.Others, new object[]
-		{
-			networkWriter.AsArray()
-		});
+		// NetworkWriter networkWriter = new NetworkWriter();
+		// networkWriter.WritePackedUInt32((uint)state);
+		// networkWriter.WritePackedUInt32((uint)targetActorNumber);
+		// base.photonView.RPC("RemoteBoss_ChanState", RpcTarget.Others, new object[]
+		// {
+		// 	networkWriter.AsArray()
+		// });
 	}
 
 	[PunRPC]
 	public void RemoteBoss_ChanState(byte[] byteArray)
 	{
-		NetworkReader networkReader = new NetworkReader(byteArray);
-		this.targetBoss._state = (Boss1_6.E_State)networkReader.ReadPackedUInt32();
-		int num = (int)networkReader.ReadPackedUInt32();
-		UnityEngine.Debug.Log(string.Concat(new object[]
-		{
-			"+++++++++++++ Receive state: ",
-			this.targetBoss._state,
-			" targetActorNumber ",
-			num
-		}));
-		this.targetBoss.ChangeBossTarget(num);
-		this.targetBoss.ChanState();
+		// NetworkReader networkReader = new NetworkReader(byteArray);
+		// this.targetBoss._state = (Boss1_6.E_State)networkReader.ReadPackedUInt32();
+		// int num = (int)networkReader.ReadPackedUInt32();
+		// UnityEngine.Debug.Log(string.Concat(new object[]
+		// {
+		// 	"+++++++++++++ Receive state: ",
+		// 	this.targetBoss._state,
+		// 	" targetActorNumber ",
+		// 	num
+		// }));
+		// this.targetBoss.ChangeBossTarget(num);
+		// this.targetBoss.ChanState();
 	}
 
 	public void SendRpcAddHealthPoint(float hp, EWeapon lastWeapon)
 	{
-		NetworkWriter networkWriter = new NetworkWriter();
-		networkWriter.Write(HalfHelper.Compress(hp));
-		networkWriter.WritePackedUInt32((uint)lastWeapon);
-		base.photonView.RPC("RemoteAddHealthPoint", RpcTarget.OthersBuffered, new object[]
-		{
-			networkWriter.AsArray()
-		});
+		// NetworkWriter networkWriter = new NetworkWriter();
+		// networkWriter.Write(HalfHelper.Compress(hp));
+		// networkWriter.WritePackedUInt32((uint)lastWeapon);
+		// base.photonView.RPC("RemoteAddHealthPoint", RpcTarget.OthersBuffered, new object[]
+		// {
+		// 	networkWriter.AsArray()
+		// });
 	}
 
 	[PunRPC]
 	public void RemoteAddHealthPoint(byte[] byteArray)
 	{
-		NetworkReader networkReader = new NetworkReader(byteArray);
-		float num = HalfHelper.Decompress(networkReader.ReadUInt16());
-		EWeapon eweapon = (EWeapon)networkReader.ReadPackedUInt32();
-		this.targetBoss.boxBoss.HP += num;
-		GameManager.Instance.bossManager.ShowLineBloodBoss(this.targetBoss.boxBoss.HP, this.targetBoss.cacheEnemy.HP);
+		// NetworkReader networkReader = new NetworkReader(byteArray);
+		// float num = HalfHelper.Decompress(networkReader.ReadUInt16());
+		// EWeapon eweapon = (EWeapon)networkReader.ReadPackedUInt32();
+		// this.targetBoss.boxBoss.HP += num;
+		// GameManager.Instance.bossManager.ShowLineBloodBoss(this.targetBoss.boxBoss.HP, this.targetBoss.cacheEnemy.HP);
 	}
 
 	public void SendRpc_Die()

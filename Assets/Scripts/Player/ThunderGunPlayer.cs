@@ -79,7 +79,7 @@ namespace Player
 			this.StartPosition = startPosition;
 			if (!this.player.IsRemotePlayer && this.player.syncRamboState != null)
 			{
-				this.player.syncRamboState.SendRpc_ThunderGun_OnCreateBullet(this.StartPosition, this.EndPosition);
+				// this.player.syncRamboState.SendRpc_ThunderGun_OnCreateBullet(this.StartPosition, this.EndPosition);
 			}
 			this.SetLightningLine(this.StartPosition, this.EndPosition);
 			RaycastHit2D raycastHit2D = Physics2D.Raycast(this.StartPosition, this.directionGun, 3000f, this.layerMask);
@@ -141,7 +141,7 @@ namespace Player
 			}
 			if (!this.player.IsRemotePlayer && this.player.syncRamboState != null)
 			{
-				this.player.syncRamboState.SendRpc_ThunderGun_OnRelease();
+				// this.player.syncRamboState.SendRpc_ThunderGun_OnRelease();
 			}
 			this.lightningScript.ClearEffect();
 			this.lightningScript.StartEffect.gameObject.SetActive(false);

@@ -88,7 +88,7 @@ namespace Player
 				this.player._PlayerInput.SwitchGun(!this.player.isGunDefault);
 				if (!this.player.IsRemotePlayer && this.player.syncRamboState != null)
 				{
-					this.player.syncRamboState.SendRpc_SwitchGun(!this.player.isGunDefault, 0);
+					// this.player.syncRamboState.SendRpc_SwitchGun(!this.player.isGunDefault, 0);
 				}
 			}
 		}

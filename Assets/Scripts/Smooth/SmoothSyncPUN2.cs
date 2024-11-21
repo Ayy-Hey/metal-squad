@@ -62,7 +62,7 @@ namespace Smooth
 					num++;
 				}
 			}
-			this.netID = base.GetComponent<NetworkIdentity>();
+			//this.netID = base.GetComponent<NetworkIdentity>();
 			this.rb = this.realObjectToSync.GetComponent<Rigidbody>();
 			this.rb2D = this.realObjectToSync.GetComponent<Rigidbody2D>();
 			if (this.rb)
@@ -202,7 +202,7 @@ namespace Smooth
 			{
 				return;
 			}
-			this.sendingTempState.copyFromSmoothSync(this);
+			//this.sendingTempState.copyFromSmoothSync(this);
 			if (this.restStatePosition == SmoothSyncPUN2.RestState.AT_REST)
 			{
 				this.sendAtPositionalRestMessage = true;
@@ -983,6 +983,7 @@ namespace Smooth
 			}
 		}
 
+		/*
 		private bool isObservedByConnection(NetworkConnection conn)
 		{
 			for (int i = 0; i < this.netID.observers.Count; i++)
@@ -993,7 +994,7 @@ namespace Smooth
 				}
 			}
 			return false;
-		}
+		}*/
 
 		public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
 		{
@@ -1002,11 +1003,11 @@ namespace Smooth
 				this.sendState();
 				if (this.shouldSendNextPUNUpdate)
 				{
-					NetworkWriter networkWriter = new NetworkWriter();
+					/*NetworkWriter networkWriter = new NetworkWriter();
 					this.sendingTempState.Serialize(networkWriter);
 					stream.SendNext(this.shouldSendNextPUNUpdate);
 					stream.SendNext(networkWriter.AsArray());
-					this.shouldSendNextPUNUpdate = false;
+					this.shouldSendNextPUNUpdate = false;*/
 				}
 				else
 				{
@@ -1019,7 +1020,7 @@ namespace Smooth
 			}
 			else
 			{
-				bool flag = (bool)stream.ReceiveNext();
+				/*bool flag = (bool)stream.ReceiveNext();
 				if (flag)
 				{
 					NetworkStatePUN2 networkStatePUN = new NetworkStatePUN2(this);
@@ -1031,7 +1032,7 @@ namespace Smooth
 					{
 						networkStatePUN.smoothSync.addState(networkStatePUN.state);
 					}
-				}
+				}*/
 			}
 		}
 
@@ -1197,8 +1198,8 @@ namespace Smooth
 		[NonSerialized]
 		public Vector3 lastAngularVelocityWhenStateWasSent;
 
-		[NonSerialized]
-		public NetworkIdentity netID;
+		// [NonSerialized]
+		// public NetworkIdentity netID;
 
 		[NonSerialized]
 		public GameObject realObjectToSync;

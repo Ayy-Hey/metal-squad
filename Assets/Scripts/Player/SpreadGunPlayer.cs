@@ -33,7 +33,7 @@ namespace Player
 			{
 				if (!this.player.IsRemotePlayer && this.player.syncRamboState != null)
 				{
-					this.player.syncRamboState.SendRpc_CreateSpread(vector2, this.directionGun, (float)(i * 10 - 10));
+					// this.player.syncRamboState.SendRpc_CreateSpread(vector2, this.directionGun, (float)(i * 10 - 10));
 				}
 				GameManager.Instance.bulletManager.CreateSpread(this.player, vector2, this.directionGun, (float)(i * 10 - 10), true);
 			}

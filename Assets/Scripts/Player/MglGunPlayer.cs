@@ -31,7 +31,7 @@ namespace Player
 			this.directionGun.Normalize();
 			if (!this.player.IsRemotePlayer && this.player.syncRamboState != null)
 			{
-				this.player.syncRamboState.SendRpc_CreateMGL140(vector2, this.directionGun);
+				// this.player.syncRamboState.SendRpc_CreateMGL140(vector2, this.directionGun);
 			}
 			GameManager.Instance.bulletManager.CreateMGL140(this.player, vector2, this.directionGun, true);
 		}

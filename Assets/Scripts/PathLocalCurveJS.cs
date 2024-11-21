@@ -1,5 +1,5 @@
 using System;
-using Boo.Lang.Runtime;
+// using Boo.Lang.Runtime;
 using UnityEngine;
 
 [Serializable]
@@ -32,10 +32,10 @@ public class PathLocalCurveJS : MonoBehaviour
 
 	public virtual void OnDrawGizmos()
 	{
-		if (!RuntimeServices.EqualityOperator(this.spline, null))
-		{
+		// if (!RuntimeServices.EqualityOperator(this.spline, null))
+		// {
 			this.spline.gizmoDraw(1f);
-		}
+		// }
 	}
 
 	public virtual void Main()

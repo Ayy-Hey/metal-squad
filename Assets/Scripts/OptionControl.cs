@@ -166,7 +166,7 @@ public class OptionControl : MonoBehaviour
 		bool isGunDefault = GameManager.Instance.player.isGunDefault;
 		if (!GameManager.Instance.player.IsRemotePlayer && GameManager.Instance.player.syncRamboState != null)
 		{
-			GameManager.Instance.player.syncRamboState.SendRpc_SwitchGun(!isGunDefault, 0);
+			// GameManager.Instance.player.syncRamboState.SendRpc_SwitchGun(!isGunDefault, 0);
 		}
 		GameManager.Instance.player._PlayerInput.SwitchGun(!isGunDefault);
 	}

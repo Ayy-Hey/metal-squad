@@ -31,23 +31,23 @@ public class SyncBossHeavyMechState : MonoBehaviourPunCallbacks
 
 	public void SendRpcAddHealthPoint(float hp, EWeapon lastWeapon)
 	{
-		NetworkWriter networkWriter = new NetworkWriter();
-		networkWriter.Write(HalfHelper.Compress(hp));
-		networkWriter.WritePackedUInt32((uint)lastWeapon);
-		base.photonView.RPC("RemoteAddHealthPoint", RpcTarget.OthersBuffered, new object[]
-		{
-			networkWriter.AsArray()
-		});
+		// NetworkWriter networkWriter = new NetworkWriter();
+		// networkWriter.Write(HalfHelper.Compress(hp));
+		// networkWriter.WritePackedUInt32((uint)lastWeapon);
+		// base.photonView.RPC("RemoteAddHealthPoint", RpcTarget.OthersBuffered, new object[]
+		// {
+		// 	networkWriter.AsArray()
+		// });
 	}
 
 	[PunRPC]
 	public void RemoteAddHealthPoint(byte[] byteArray)
 	{
-		NetworkReader networkReader = new NetworkReader(byteArray);
-		float num = HalfHelper.Decompress(networkReader.ReadUInt16());
-		EWeapon eweapon = (EWeapon)networkReader.ReadPackedUInt32();
-		this.targetBoss.HP += num;
-		GameManager.Instance.bossManager.ShowLineBloodBoss(this.targetBoss.HP, this.targetBoss.cacheEnemy.HP);
+		// NetworkReader networkReader = new NetworkReader(byteArray);
+		// float num = HalfHelper.Decompress(networkReader.ReadUInt16());
+		// EWeapon eweapon = (EWeapon)networkReader.ReadPackedUInt32();
+		// this.targetBoss.HP += num;
+		// GameManager.Instance.bossManager.ShowLineBloodBoss(this.targetBoss.HP, this.targetBoss.cacheEnemy.HP);
 	}
 
 	public void SendRpc_Die()
@@ -64,37 +64,37 @@ public class SyncBossHeavyMechState : MonoBehaviourPunCallbacks
 
 	public void SendRpcChanState(int state, int targetActorNumber)
 	{
-		UnityEngine.Debug.Log(string.Concat(new object[]
-		{
-			"+++++++++++++ Send state: ",
-			state,
-			" targetActorNumber ",
-			targetActorNumber
-		}));
-		NetworkWriter networkWriter = new NetworkWriter();
-		networkWriter.WritePackedUInt32((uint)state);
-		networkWriter.WritePackedUInt32((uint)targetActorNumber);
-		base.photonView.RPC("RemoteBoss_ChanState", RpcTarget.Others, new object[]
-		{
-			networkWriter.AsArray()
-		});
+		// UnityEngine.Debug.Log(string.Concat(new object[]
+		// {
+		// 	"+++++++++++++ Send state: ",
+		// 	state,
+		// 	" targetActorNumber ",
+		// 	targetActorNumber
+		// }));
+		// NetworkWriter networkWriter = new NetworkWriter();
+		// networkWriter.WritePackedUInt32((uint)state);
+		// networkWriter.WritePackedUInt32((uint)targetActorNumber);
+		// base.photonView.RPC("RemoteBoss_ChanState", RpcTarget.Others, new object[]
+		// {
+		// 	networkWriter.AsArray()
+		// });
 	}
 
 	[PunRPC]
 	public void RemoteBoss_ChanState(byte[] byteArray)
 	{
-		NetworkReader networkReader = new NetworkReader(byteArray);
-		int state = (int)networkReader.ReadPackedUInt32();
-		int num = (int)networkReader.ReadPackedUInt32();
-		UnityEngine.Debug.Log(string.Concat(new object[]
-		{
-			"+++++++++++++ Receive state: ",
-			this.targetBoss.State,
-			" targetActorNumber ",
-			num
-		}));
-		this.targetBoss.ChangeBossTarget(num);
-		this.targetBoss.ChangeState(state);
+		// NetworkReader networkReader = new NetworkReader(byteArray);
+		// int state = (int)networkReader.ReadPackedUInt32();
+		// int num = (int)networkReader.ReadPackedUInt32();
+		// UnityEngine.Debug.Log(string.Concat(new object[]
+		// {
+		// 	"+++++++++++++ Receive state: ",
+		// 	this.targetBoss.State,
+		// 	" targetActorNumber ",
+		// 	num
+		// }));
+		// this.targetBoss.ChangeBossTarget(num);
+		// this.targetBoss.ChangeState(state);
 	}
 
 	public override void OnMasterClientSwitched(Photon.Realtime.Player newMasterClient)

@@ -31,7 +31,7 @@ namespace Player
 			this.directionGun.Normalize();
 			if (!this.player.IsRemotePlayer && this.player.syncRamboState != null)
 			{
-				this.player.syncRamboState.SendRpc_CreateM4A1(vector2, this.directionGun);
+				// this.player.syncRamboState.SendRpc_CreateM4A1(vector2, this.directionGun);
 			}
 			GameManager.Instance.bulletManager.CreateM4A1(this.player, vector2, this.directionGun, true);
 		}

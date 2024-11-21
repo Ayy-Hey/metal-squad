@@ -3,7 +3,7 @@ using UnityEngine.Networking;
 
 namespace Smooth
 {
-	public class MsgType : UnityEngine.Networking.MsgType
+	public class MsgType  /* : UnityEngine.Networking.MsgType*/
     {
 		public static short SmoothSyncFromServerToNonOwners = 32765;
 

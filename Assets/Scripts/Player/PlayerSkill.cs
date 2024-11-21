@@ -27,7 +27,7 @@ namespace Player
 			{
 				if (!this.player.IsRemotePlayer && this.player.syncRamboState != null)
 				{
-					this.player.syncRamboState.SendRpc_OnVisible();
+					// this.player.syncRamboState.SendRpc_OnVisible();
 				}
 				this.OnVisible();
 			}
@@ -99,7 +99,7 @@ namespace Player
 				Vector2 pos = new Vector2(x0, y);
 				if (!this.player.IsRemotePlayer && this.player.syncRamboState != null)
 				{
-					this.player.syncRamboState.SendRpc_CreateRainBomb(pos);
+					// this.player.syncRamboState.SendRpc_CreateRainBomb(pos);
 				}
 				GameManager.Instance.skillManager.CreateRainBomb(pos, true);
 				yield return new WaitForSeconds(0.2f);

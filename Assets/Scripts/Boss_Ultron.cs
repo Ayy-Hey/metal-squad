@@ -227,7 +227,7 @@ public class Boss_Ultron : BaseBoss
 					{
 						if (this.syncBossUltronState != null)
 						{
-							this.syncBossUltronState.SendRpcCreateSkyStone(this._skyStonePos);
+							//this.syncBossUltronState.SendRpcCreateSkyStone(this._skyStonePos);
 						}
 						this.CreateSkyStone().Init(this.cacheEnemy.Damage, this._skyStonePos, delegate(SkyStone skt)
 						{
@@ -278,7 +278,7 @@ public class Boss_Ultron : BaseBoss
 						{
 							if (this.syncBossUltronState != null)
 							{
-								this.syncBossUltronState.SendRpcCreateSkyStone(pos);
+								//this.syncBossUltronState.SendRpcCreateSkyStone(pos);
 							}
 							this.CreateSkyStone().Init(this.cacheEnemy.Damage, pos, delegate(SkyStone skt)
 							{
@@ -557,7 +557,7 @@ public class Boss_Ultron : BaseBoss
 		GameManager.Instance.bossManager.ShowLineBloodBoss(0f, this.cacheEnemy.HP);
 		if (this.syncBossUltronState != null)
 		{
-			this.syncBossUltronState.SendRpc_Die();
+			// this.syncBossUltronState.SendRpc_Die();
 		}
 		base.StartCoroutine(this.Die());
 	}
@@ -702,7 +702,7 @@ public class Boss_Ultron : BaseBoss
 				this.ChangeState();
 				if (this.syncBossUltronState != null)
 				{
-					this.syncBossUltronState.SendRpcChanState(this._state, randomRamboActorNumber);
+					//this.syncBossUltronState.SendRpcChanState(this._state, randomRamboActorNumber);
 				}
 			}
 			break;
@@ -718,7 +718,7 @@ public class Boss_Ultron : BaseBoss
 					this.ChangeState();
 					if (this.syncBossUltronState != null)
 					{
-						this.syncBossUltronState.SendRpcChanState(this._state, randomRamboActorNumber2);
+						//this.syncBossUltronState.SendRpcChanState(this._state, randomRamboActorNumber2);
 					}
 				}
 			}

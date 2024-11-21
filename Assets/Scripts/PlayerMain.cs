@@ -310,21 +310,21 @@ public class PlayerMain : BaseRambo, IHealth
 		}
 		if (!this.IsRemotePlayer && this.syncRamboState != null)
 		{
-			switch (this._PlayerData.IDGrenades)
-			{
-			case 0:
-				this.syncRamboState.SendRpc_ThrowGrendeBasic(vector, this._PlayerSpine.FlipX);
-				break;
-			case 1:
-				this.syncRamboState.SendRpc_ThrowGrendeIce(vector, this._PlayerSpine.FlipX);
-				break;
-			case 2:
-				this.syncRamboState.SendRpc_ThrowGrendeFire(vector, this._PlayerSpine.FlipX);
-				break;
-			case 3:
-				this.syncRamboState.SendRpc_ThrowGrendeSmoke(vector, this._PlayerSpine.FlipX);
-				break;
-			}
+			// switch (this._PlayerData.IDGrenades)
+			// {
+			// case 0:
+			// 	this.syncRamboState.SendRpc_ThrowGrendeBasic(vector, this._PlayerSpine.FlipX);
+			// 	break;
+			// case 1:
+			// 	this.syncRamboState.SendRpc_ThrowGrendeIce(vector, this._PlayerSpine.FlipX);
+			// 	break;
+			// case 2:
+			// 	this.syncRamboState.SendRpc_ThrowGrendeFire(vector, this._PlayerSpine.FlipX);
+			// 	break;
+			// case 3:
+			// 	this.syncRamboState.SendRpc_ThrowGrendeSmoke(vector, this._PlayerSpine.FlipX);
+			// 	break;
+			// }
 		}
 		switch (this._PlayerData.IDGrenades)
 		{

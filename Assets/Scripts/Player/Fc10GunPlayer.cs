@@ -37,7 +37,7 @@ namespace Player
 			this.directionGun.Normalize();
 			if (!this.player.IsRemotePlayer && this.player.syncRamboState != null)
 			{
-				this.player.syncRamboState.SendRpc_CreateBulletFc(vector2, this.directionGun);
+				// this.player.syncRamboState.SendRpc_CreateBulletFc(vector2, this.directionGun);
 			}
 			GameManager.Instance.bulletManager.CreateBulletFc(this.player, vector2, this.directionGun, true);
 			this.cacheGunProfile.TotalBullet--;

@@ -61,7 +61,7 @@ namespace Player
 				position.y = vector2.y;
 				if (!this.player.IsRemotePlayer && this.player.syncRamboState != null && ((double)Vector2.Distance(this.lastPos, position) > 0.01 || (double)Vector2.Distance(this.lastDirectionGun, this.directionGun) > 0.01))
 				{
-					this.player.syncRamboState.SendRpc_LaserGun_ChangeFirePos(position, this.directionGun);
+					// this.player.syncRamboState.SendRpc_LaserGun_ChangeFirePos(position, this.directionGun);
 				}
 				this.ChangeFirePos(position, this.directionGun);
 				this.OnCreateBullet();
@@ -81,7 +81,7 @@ namespace Player
 			{
 				if (!this.player.IsRemotePlayer && this.player.syncRamboState != null)
 				{
-					this.player.syncRamboState.SendRpc_LaserGun_ChangeFireActiveStatus(isActive);
+					// this.player.syncRamboState.SendRpc_LaserGun_ChangeFireActiveStatus(isActive);
 				}
 				this.ObjectFire.SetActive(isActive);
 			}

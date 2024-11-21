@@ -76,7 +76,7 @@ namespace PlayFab.Internal
 				else
 				{
 					string @string = Encoding.UTF8.GetString(payload, 0, payload.Length);
-					request = UnityWebRequest.Post(fullUrl, @string);
+					request = UnityWebRequest.PostWwwForm(fullUrl, @string);
 				}
 				request.chunkedTransfer = false;
 				request.SendWebRequest();

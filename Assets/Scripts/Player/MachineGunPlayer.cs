@@ -28,7 +28,7 @@ namespace Player
 				this.directionGun.Normalize();
 				if (!this.player.IsRemotePlayer && this.player.syncRamboState != null)
 				{
-					this.player.syncRamboState.SendRpc_CreateMachine(vector2, this.directionGun);
+					// this.player.syncRamboState.SendRpc_CreateMachine(vector2, this.directionGun);
 				}
 				GameManager.Instance.bulletManager.CreateMachine(this.player, vector2, this.directionGun, true);
 			}
@@ -53,7 +53,7 @@ namespace Player
 			direction.Normalize();
 			if (!this.player.IsRemotePlayer && this.player.syncRamboState != null)
 			{
-				this.player.syncRamboState.SendRpc_CreateMachine(vector, direction);
+				// this.player.syncRamboState.SendRpc_CreateMachine(vector, direction);
 			}
 			GameManager.Instance.bulletManager.CreateMachine(this.player, vector, direction, true);
 		}
@@ -62,13 +62,13 @@ namespace Player
 		{
 			if (!this.player.IsRemotePlayer && this.player.syncRamboState != null)
 			{
-				this.player.syncRamboState.SendRpc_CreateMachine(pos, dir);
+				// this.player.syncRamboState.SendRpc_CreateMachine(pos, dir);
 			}
 			GameManager.Instance.bulletManager.CreateMachine(this.player, pos, dir, true);
 			yield return new WaitForSeconds(this.cacheGunProfile.Time_Reload / 2f);
 			if (!this.player.IsRemotePlayer && this.player.syncRamboState != null)
 			{
-				this.player.syncRamboState.SendRpc_CreateMachine(pos2, dir);
+				// this.player.syncRamboState.SendRpc_CreateMachine(pos2, dir);
 			}
 			GameManager.Instance.bulletManager.CreateMachine(this.player, pos2, dir, true);
 			yield break;

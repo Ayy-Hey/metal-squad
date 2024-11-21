@@ -14,7 +14,7 @@ namespace PlayerWeapon
 				{
 					return;
 				}
-				this.syncRocketPlayer.SendRpc_ExplosiveBullet();
+				// this.syncRocketPlayer.SendRpc_ExplosiveBullet();
 			}
 			base.gameObject.SetActive(false);
 			this.isInit = false;

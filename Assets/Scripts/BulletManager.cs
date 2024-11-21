@@ -598,7 +598,7 @@ public class BulletManager : MonoBehaviour
 		}
 		if (GameMode.Instance.modePlay == GameMode.ModePlay.CoOpMode && ((RocketPlayer)baseBullet).syncRocketPlayer != null && !((RocketPlayer)baseBullet).syncRocketPlayer.IsRemote)
 		{
-			base.StartCoroutine(((RocketPlayer)baseBullet).syncRocketPlayer.SendRpc_Init(pos));
+			// base.StartCoroutine(((RocketPlayer)baseBullet).syncRocketPlayer.SendRpc_Init(pos));
 		}
 		baseBullet.gameObject.SetActive(true);
 		baseBullet.OnInit(player, Vector3.zero, 0f, true);

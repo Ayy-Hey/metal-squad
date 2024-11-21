@@ -70,7 +70,7 @@ public class SkillManager : MonoBehaviour
 					float duration = DataLoader.characterData[IDSKILL].skills[0].ActiveDuration[ProfileManager.rambos[IDSKILL].LevelUpgrade];
 					if (!player.IsRemotePlayer && player.syncRamboState != null)
 					{
-						player.syncRamboState.SendRpc_OnInvisible();
+						// player.syncRamboState.SendRpc_OnInvisible();
 					}
 					player._PlayerSkill.OnInvisible(duration);
 				}
@@ -84,7 +84,7 @@ public class SkillManager : MonoBehaviour
 		{
 			if (!player.IsRemotePlayer && player.syncRamboState != null)
 			{
-				player.syncRamboState.SendRpc_CallEyeBotSupport();
+				// player.syncRamboState.SendRpc_CallEyeBotSupport();
 			}
 			this.callEyeBotSupport.gameObject.SetActive(true);
 			this.callEyeBotSupport.CallSupport(player);
