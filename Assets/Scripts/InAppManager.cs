@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Purchasing;
@@ -6,19 +7,17 @@ using UnityEngine.Purchasing;
 
 public class InAppManager : MonoBehaviour
 {
-    public static InAppManager Instance
+    public static InAppManager Instance;
+
+    private void Awake()
     {
-        get
+        if (Instance == null)
         {
-            if (InAppManager.instance == null)
-            {
-                InAppManager.instance = UnityEngine.Object.FindObjectOfType<InAppManager>();
-            }
-            return InAppManager.instance;
+            Instance = this;
         }
     }
-	
-	
+
+
     [SerializeField]
     [Header("________Android________")]
     private List<string> skuListAndroid;
@@ -79,10 +78,9 @@ public class InAppManager : MonoBehaviour
         }
     }
 
-    private void Start()
+    private IEnumerator Start()
     {
         GetListSku();
-        InitializePurchasing();
 
         try
         {
@@ -95,6 +93,9 @@ public class InAppManager : MonoBehaviour
         catch
         {
         }
+
+        yield return new WaitForSeconds(1);
+        InitializePurchasing();
     }
 
     private void InitializePurchasing()

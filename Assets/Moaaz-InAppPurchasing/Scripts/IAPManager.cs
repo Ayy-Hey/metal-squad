@@ -16,7 +16,6 @@ public class IAPManager : MonoBehaviour,IStoreListener
     public enum State { PendingInitialize, Initializing, SuccessfullyInitialized, FailedToInitialize };
 
     
-    
     private static IAPManager m_instance = null;
     public static IAPManager Instance
     {
@@ -79,11 +78,6 @@ public class IAPManager : MonoBehaviour,IStoreListener
         if (m_instance == null)
         {
             m_instance = this;
-            DontDestroyOnLoad(this);
-        }
-        else
-        {
-            Destroy(this.gameObject);
         }
     }
 
@@ -100,18 +94,11 @@ public class IAPManager : MonoBehaviour,IStoreListener
         {
             products.Add(new ProductDefinition(inAppId,ProductType.Consumable));
         }
-		
-        //	Initialize( null, true );
-
+        
         Debug.Log(products.Count);
         Initialize(products);
     }
-
-    public void Initialize( params ProductDefinition[] products )
-    {
-        Initialize( products, false );
-    }
-
+    
     public void Initialize( IEnumerable<ProductDefinition> products )
     {
         Initialize( products, false );
@@ -121,23 +108,21 @@ public class IAPManager : MonoBehaviour,IStoreListener
     {
         if( m_initializationState != State.PendingInitialize )
         {
-            Debug.LogWarning( "IAP is already initializing!" );
+            Debug.LogError( "IAP is already initializing!" );
             return;
         }
+        
 
-#if UNITY_EDITOR
-		// Allows simulating failed IAP transactions in the Editor
-		StandardPurchasingModule.Instance().useFakeStoreUIMode = FakeStoreUIMode.StandardUser;
-#endif
-
-        ConfigurationBuilder builder = ConfigurationBuilder.Instance( StandardPurchasingModule.Instance() );
+        var builder = ConfigurationBuilder.Instance( StandardPurchasingModule.Instance() );
         if( initializeWithIAPCatalog )
             IAPConfigurationHelper.PopulateConfigurationBuilder( ref builder, ProductCatalog.LoadDefaultCatalog() );
         else if( products != null )
-            builder.AddProducts( products );
+            builder.AddProducts(products);
 
         if( StandardPurchasingModule.Instance().appStore == AppStore.GooglePlay )
             builder.Configure<IGooglePlayConfiguration>().SetDeferredPurchaseListener( OnDeferredPurchase );
+        
+
 
         m_initializationState = State.Initializing;
         UnityPurchasing.Initialize( this, builder );
@@ -165,7 +150,7 @@ public class IAPManager : MonoBehaviour,IStoreListener
         if( !IsInitialized )
         {
             _onPurchaseResultsAction = null;
-            Debug.LogWarning( "IAP isn't initialized yet, can't purchased items!" );
+            Debug.LogError( "IAP isn't initialized yet, can't purchased items!" );
             return;
         }
 
@@ -233,22 +218,26 @@ public class IAPManager : MonoBehaviour,IStoreListener
             case AppStore.AppleAppStore:
             case AppStore.MacAppStore:
             {
-// #if !UNITY_EDITOR
-// 				//byte[] appleTangleData = AppleStoreKitTestTangle.Data(); // While testing with StoreKit Testing
-// 				byte[] appleTangleData = AppleTangle.Data();
-// 				purchaseValidator = new CrossPlatformValidator( GooglePlayTangle.Data(), appleTangleData, Application.identifier );
-// #endif
+
                 break;
             }
+            
+            case AppStore.AmazonAppStore:
+                var amazonUserId = 
+                    storeExtensions.GetExtension<IAmazonExtensions>().amazonUserId;
+                Debug.LogError("<><><><><><><>Amazon<><><>"+amazonUserId);
+                break;
         }
 
         m_initializationState = State.SuccessfullyInitialized;
+        Debug.LogError("<><><><><><><>State<><><>"+m_initializationState);
+
         m_onInitialized?.Invoke( true );
     }
 
     void IStoreListener.OnInitializeFailed( InitializationFailureReason error )
     {
-        Debug.LogWarning( "IAP initialization failed: " + error );
+        Debug.LogError( "IAP initialization failed: " + error );
 
         m_initializationState = State.FailedToInitialize;
         m_onInitialized?.Invoke( false );

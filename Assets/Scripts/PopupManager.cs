@@ -836,7 +836,7 @@ public class PopupManager : MonoBehaviour
 			
 			break;
 		default:
-			UnityEngine.Debug.LogError("Lỗi MenuManager/SaveReward");
+		//	UnityEngine.Debug.LogError("Lỗi MenuManager/SaveReward");
 			break;
 		}
 	}
@@ -859,7 +859,7 @@ public class PopupManager : MonoBehaviour
 					}
 					catch
 					{
-						UnityEngine.Debug.LogError("Lỗi int Parse PopupManager/GetText");
+					//	UnityEngine.Debug.LogError("Lỗi int Parse PopupManager/GetText");
 					}
 					if (num >= 0)
 					{
@@ -884,7 +884,7 @@ public class PopupManager : MonoBehaviour
 					}
 					catch
 					{
-						UnityEngine.Debug.LogError("Lỗi int Parse PopupManager/GetText");
+					//	UnityEngine.Debug.LogError("Lỗi int Parse PopupManager/GetText");
 					}
 					if (num2 >= 0)
 					{
@@ -898,7 +898,7 @@ public class PopupManager : MonoBehaviour
 			}
 			return text;
 		}
-		UnityEngine.Debug.LogWarning("Lỗi Localization: GetIndex " + key);
+	//	UnityEngine.Debug.LogWarning("Lỗi Localization: GetIndex " + key);
 		return string.Empty;
 	}
 

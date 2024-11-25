@@ -29,7 +29,7 @@ public class RamboProfile
 
 	public int ValueUpgrade(int index)
 	{
-        Debug.Log("this.PriceUpgrade " + this.PriceUpgrade[5]);
+//        Debug.Log("this.PriceUpgrade " + this.PriceUpgrade[5]);
 		int num = 0;
 		float num2 = 1f;
 		try
@@ -38,7 +38,7 @@ public class RamboProfile
 			{
 				','
 			})[1];
-            Debug.Log("this.PriceUpgrade " + s);
+           // Debug.Log("this.PriceUpgrade " + s);
             num = int.Parse(s);
             //num2 = (float)RemoteConfigFirebase.Instance.GetDoubleValue(RemoteConfigFirebase.SCALE_PRICE_UPGRADE, 1.0);
             num2 = 1;
